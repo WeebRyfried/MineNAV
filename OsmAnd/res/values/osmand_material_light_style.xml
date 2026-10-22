@@ -5,6 +5,8 @@
 	     Material 3 screens are designed with (connected button groups, sized sliders, expressive
 	     buttons and dialogs). Screens that need the stock M3 switch set its style explicitly. -->
 	<style name="OsmandMaterialLightTheme" parent="Theme.Material3Expressive.Light">
+		<item name="android:fontFamily">@font/nunito</item>
+		<item name="fontFamily">@font/nunito</item>
 
 		<item name="colorSurface">@color/surface_light</item>
 		<item name="colorSurfaceDim">@color/surface_light</item>

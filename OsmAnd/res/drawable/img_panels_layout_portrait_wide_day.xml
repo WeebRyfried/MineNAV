@@ -17,13 +17,13 @@
       android:fillColor="#C3CEDF"/>
   <path
       android:pathData="M104,162C104,163.105 103.105,164 102,164H9C7.895,164 7,163.105 7,162V148H104V162Z"
-      android:fillColor="#237BFF"/>
+      android:fillColor="#5468D4"/>
   <path
       android:pathData="M104,51H79C78.448,51 78,50.552 78,50V43C78,42.448 78.448,42 79,42H104V51Z"
-      android:fillColor="#237BFF"/>
+      android:fillColor="#5468D4"/>
   <path
       android:pathData="M102,7C103.105,7 104,7.895 104,9V37H7V9C7,7.895 7.895,7 9,7H102Z"
-      android:fillColor="#237BFF"/>
+      android:fillColor="#5468D4"/>
   <path
       android:pathData="M19.5,135C19.776,135 20,135.224 20,135.5V143.5C20,143.776 19.776,144 19.5,144H11.5C11.224,144 11,143.776 11,143.5V135.5C11,135.224 11.224,135 11.5,135H19.5Z"
       android:fillColor="#ffffff"/>

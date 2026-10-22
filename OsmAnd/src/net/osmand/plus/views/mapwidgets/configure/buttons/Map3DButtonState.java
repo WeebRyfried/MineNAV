@@ -2,7 +2,7 @@ package net.osmand.plus.views.mapwidgets.configure.buttons;
 
 import static net.osmand.aidlapi.OsmAndCustomizationConstants.MAP_3D_HUD_ID;
 import static net.osmand.plus.settings.enums.Map3DModeVisibility.HIDDEN;
-import static net.osmand.plus.settings.enums.Map3DModeVisibility.VISIBLE;
+import static net.osmand.plus.settings.enums.Map3DModeVisibility.VISIBLE_IN_3D_MODE;
 import static net.osmand.plus.views.OsmandMapTileView.DEFAULT_ELEVATION_ANGLE;
 import static net.osmand.shared.grid.ButtonPositionSize.CELL_SIZE_DP;
 import static net.osmand.shared.grid.ButtonPositionSize.POS_BOTTOM;
@@ -29,7 +29,7 @@ public class Map3DButtonState extends MapButtonState {
 
 	public Map3DButtonState(@NonNull OsmandApplication app) {
 		super(app, MAP_3D_HUD_ID);
-		this.visibilityPref = addPreference(settings.registerEnumStringPreference("map_3d_mode_visibility", VISIBLE, Map3DModeVisibility.values(), Map3DModeVisibility.class)).makeProfile().cache();
+		this.visibilityPref = addPreference(settings.registerEnumStringPreference("map_3d_mode_visibility", VISIBLE_IN_3D_MODE, Map3DModeVisibility.values(), Map3DModeVisibility.class)).makeProfile().cache();
 	}
 
 	@NonNull

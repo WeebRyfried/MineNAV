@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Round launcher icon for Android 7.x, which has no adaptive icons -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape="oval">
+			<solid android:color="@color/mn_primary" />
+		</shape>
+	</item>
+	<item
+		android:bottom="-16dp"
+		android:drawable="@drawable/ic_minenav_launcher_foreground"
+		android:left="-16dp"
+		android:right="-16dp"
+		android:top="-16dp" />
+</layer-list>

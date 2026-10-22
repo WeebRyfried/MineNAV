@@ -88,7 +88,8 @@ public class WidgetsAvailabilityHelper {
 		// left
 		ApplicationMode[] nextTurnSet = {CAR, BICYCLE, BOAT, SKI, TRUCK, MOTORCYCLE, HORSE, MOPED};
 		ApplicationMode[] smallNextTurnSet = {PEDESTRIAN, PUBLIC_TRANSPORT, AIRCRAFT, TRAIN};
-		ApplicationMode[] secondNextTurnSet = {CAR, BICYCLE, PEDESTRIAN, BOAT, SKI, TRUCK, MOTORCYCLE, HORSE, MOPED};
+		// Driving profiles show only the big next-turn banner, like Waze
+		ApplicationMode[] secondNextTurnSet = {BICYCLE, PEDESTRIAN, BOAT, SKI, HORSE};
 
 		boolean enableWidgetsV2 = Version.getInstallTime(app) >= ROUTE_WIDGETS_V2_INTRO_TIME_MS;
 		if (enableWidgetsV2) {

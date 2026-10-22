@@ -68,6 +68,8 @@
     </style>
 
     <style name="OsmandLightTheme" parent="Theme.MaterialComponents.Light">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="fontFamily">@font/nunito</item>
         <item name="alert_dialog_theme">@style/OsmandLightTheme</item>
         <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
         <item name="buttonStyle">@style/Widget.AppCompat.Button.Colored</item>

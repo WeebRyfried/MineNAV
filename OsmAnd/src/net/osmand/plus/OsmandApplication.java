@@ -26,6 +26,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.compose.ui.AndroidComposeUiFlags;
 import androidx.core.app.ActivityCompat.OnRequestPermissionsResultCallback;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.lifecycle.DefaultLifecycleObserver;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.LifecycleOwner;
@@ -115,6 +116,7 @@ import net.osmand.plus.track.helpers.GpxDisplayHelper;
 import net.osmand.plus.track.helpers.GpxSelectionHelper;
 import net.osmand.plus.utils.AndroidUtils;
 import net.osmand.plus.utils.FileUtils;
+import net.osmand.plus.utils.FontCache;
 import net.osmand.plus.utils.UiUtilities;
 import net.osmand.plus.views.OsmandMap;
 import net.osmand.plus.views.PointImageUtils;
@@ -254,6 +256,7 @@ public class OsmandApplication extends MultiDexApplication {
 		enableStrictMode();
 		applyComposeWorkarounds();
 		super.onCreate();
+		initAppTypeface();
 
 		LifecycleObserver appLifecycleObserver = new DefaultLifecycleObserver() {
 			@Override
@@ -395,6 +398,14 @@ public class OsmandApplication extends MultiDexApplication {
 
 	public boolean isAppInForegroundOnAndroidAuto() {
 		return androidAutoInForeground;
+	}
+
+	private void initAppTypeface() {
+		try {
+			FontCache.setAppTypeface(ResourcesCompat.getFont(this, R.font.nunito));
+		} catch (Resources.NotFoundException e) {
+			LOG.error("App font not found", e);
+		}
 	}
 
 	private void createInUiThread() {

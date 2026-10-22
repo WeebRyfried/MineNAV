@@ -11,6 +11,8 @@
 	Strings for OsmAnd core
 	Thx - Hardy
 -->
+	<string name="where_to_hint">Where to?</string>
+	<string name="where_to_set_place">Set %1$s first, then tap again to drive there</string>
 	<string name="cloud_file_name_too_long">File name is too long for this device, rename it in OsmAnd Cloud</string>
 	<string name="average_vertical_speed">Average vertical speed</string>
 	<string name="select_tracks">Select tracks</string>

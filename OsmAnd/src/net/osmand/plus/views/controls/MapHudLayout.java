@@ -228,6 +228,7 @@ public class MapHudLayout extends FrameLayout {
 		addPosition(findViewById(R.id.left_side_menu));
 		addPosition(findViewById(R.id.recording_note_layout));
 		addPosition(findViewById(R.id.add_gpx_point_bottom_sheet));
+		addPosition(findViewById(R.id.where_to_card));
 
 		if (speedometerWidget != null) {
 			addWidget(speedometerWidget);
@@ -449,7 +450,8 @@ public class MapHudLayout extends FrameLayout {
 			position.setPositionVertical(POS_TOP);
 			position.setPositionHorizontal(POS_FULL_WIDTH);
 			position.setNonMoveable();
-		} else if (id == R.id.add_gpx_point_bottom_sheet || id == R.id.recording_note_layout) {
+		} else if (id == R.id.add_gpx_point_bottom_sheet || id == R.id.recording_note_layout
+				|| id == R.id.where_to_card) {
 			if (portrait) {
 				position.setMoveDescendantsVertical();
 			} else {

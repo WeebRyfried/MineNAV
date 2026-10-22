@@ -1749,7 +1749,7 @@ public class OsmandSettings {
 	public final CommonPreference<WidgetSize> SPEEDOMETER_SIZE = new EnumStringPreference<>(this, "speedometer_size", MEDIUM, WidgetSize.values()).makeProfile();
 
 	{
-		SPEEDOMETER_SIZE.setModeDefaultValue(ApplicationMode.CAR, SMALL);
+		SPEEDOMETER_SIZE.setModeDefaultValue(ApplicationMode.CAR, MEDIUM);
 	}
 
 	public final CommonPreference<Boolean> SHOW_SPEED_LIMIT_WARNINGS = new BooleanPreference(this, "show_speed_limit_warnings", false).makeProfile().cache();

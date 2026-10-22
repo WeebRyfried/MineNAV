@@ -3,7 +3,7 @@
           xmlns:tools="http://schemas.android.com/tools">
 	
     <application
-        android:icon="@mipmap/icon_nightly"
+        android:icon="@mipmap/icon_minenav"
         tools:replace="android:icon">
         <activity
             android:name="net.osmand.plus.activities.MapActivity"

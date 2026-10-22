@@ -71,6 +71,8 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content">
 
+		<include layout="@layout/map_where_to_card" />
+
 		<include
 			layout="@layout/recording_note_fragment"
 			tools:visibility="gone" />

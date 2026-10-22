@@ -47,6 +47,6 @@ public class DrawerMenuButton extends MapButton {
 
 	@Override
 	protected boolean shouldShow() {
-		return showBottomButtons && mapActivity.isDrawerAvailable();
+		return showBottomButtons && mapActivity.isDrawerAvailable() && !isWhereToCardVisible();
 	}
 }

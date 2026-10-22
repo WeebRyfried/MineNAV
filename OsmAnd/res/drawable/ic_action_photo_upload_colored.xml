@@ -9,7 +9,7 @@
       android:fillType="evenOdd"/>
   <path
       android:pathData="M4,6h16v12h-16z"
-      android:fillColor="#237BFF"/>
+      android:fillColor="#5468D4"/>
   <path
       android:pathData="M18,16H9L14.5,9L18,16Z"
       android:strokeAlpha="0.8"

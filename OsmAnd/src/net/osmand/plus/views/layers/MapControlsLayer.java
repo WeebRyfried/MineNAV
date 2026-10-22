@@ -33,6 +33,7 @@ import net.osmand.plus.utils.AndroidUtils;
 import net.osmand.plus.utils.UiUtilities;
 import net.osmand.plus.views.OsmandMapTileView;
 import net.osmand.plus.views.controls.MapHudLayout;
+import net.osmand.plus.views.controls.WhereToCard;
 import net.osmand.plus.views.controls.maphudbuttons.MapButton;
 import net.osmand.plus.views.layers.base.OsmandMapLayer;
 import net.osmand.plus.views.mapwidgets.WidgetsVisibilityHelper;
@@ -54,6 +55,7 @@ public class MapControlsLayer extends OsmandMapLayer {
 
 	private View mapHudContainer;
 	private MapHudLayout mapHudLayout;
+	private WhereToCard whereToCard;
 	private List<MapButton> mapButtons = new ArrayList<>();
 	private List<MapButton> customMapButtons = new ArrayList<>();
 
@@ -98,6 +100,7 @@ public class MapControlsLayer extends OsmandMapLayer {
 			mapRouteInfoMenu = null;
 			mapHudLayout = null;
 			mapHudContainer = null;
+			whereToCard = null;
 		}
 	}
 
@@ -128,6 +131,8 @@ public class MapControlsLayer extends OsmandMapLayer {
 		MapActivity activity = requireMapActivity();
 		mapHudContainer = activity.findViewById(R.id.map_hud_container);
 		mapHudLayout = mapHudContainer.findViewById(R.id.map_hud_layout);
+		whereToCard = mapHudLayout.findViewById(R.id.where_to_card);
+		whereToCard.setMapActivity(activity);
 
 		for (MapButton button : mapButtons) {
 			mapHudLayout.removeMapButton(button);
@@ -285,6 +290,10 @@ public class MapControlsLayer extends OsmandMapLayer {
 		set.start();
 	}
 
+	public boolean isWhereToCardVisible() {
+		return whereToCard != null && whereToCard.getVisibility() == VISIBLE;
+	}
+
 	public boolean isMapControlsVisible() {
 		return mapHudContainer != null && mapHudContainer.getVisibility() == VISIBLE;
 	}
@@ -367,6 +376,12 @@ public class MapControlsLayer extends OsmandMapLayer {
 		mapTransparencyHelper.updateTransparencySliderUi();
 
 		mapRouteInfoMenu.setVisible(shouldShowRouteCalculationControls);
+
+		if (whereToCard != null) {
+			boolean showWhereTo = showBottomMenuButtons && !isRoutePlanningMode && !isRouteFollowingMode
+					&& !isRouteDialogOpened && mapActivity.isDrawerAvailable();
+			whereToCard.update(showWhereTo, nightMode);
+		}
 
 		for (MapButton mapButton : getAllMapButtons()) {
 			mapButton.setNightMode(nightMode);

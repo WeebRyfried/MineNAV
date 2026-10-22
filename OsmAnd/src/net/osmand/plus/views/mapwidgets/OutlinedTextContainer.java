@@ -23,6 +23,7 @@ import net.osmand.PlatformUtil;
 import net.osmand.plus.R;
 import net.osmand.plus.base.containers.PaintedText;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.utils.FontCache;
 import net.osmand.plus.widgets.AutoScaleTextView;
 import net.osmand.plus.widgets.FrameLayoutEx;
 import net.osmand.plus.widgets.MultiTextViewEx;
@@ -295,7 +296,7 @@ public class OutlinedTextContainer extends FrameLayoutEx {
 		int outlineColor = Color.WHITE;
 		float outlineWidth = 0f;
 		float textSize = 14f;
-		Typeface typeface = Typeface.DEFAULT;
+		Typeface typeface = FontCache.getAppTypeface();
 		int gravity = 0;
 		CharSequence initialText = "";
 		int maxLines = -1;

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.osmand.plus.views.controls.WhereToCard xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/where_to_card"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="bottom"
+	android:clipToPadding="false"
+	android:padding="@dimen/content_padding_small"
+	android:visibility="gone">
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/where_to_surface"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="@dimen/where_to_card_radius"
+		app:cardElevation="@dimen/where_to_card_elevation"
+		app:strokeWidth="0dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="@dimen/content_padding_small">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:id="@+id/where_to_menu"
+					android:layout_width="@dimen/where_to_field_height"
+					android:layout_height="@dimen/where_to_field_height"
+					android:contentDescription="@string/shared_string_menu"
+					android:padding="@dimen/content_padding_half"
+					android:scaleType="fitCenter"
+					android:src="@drawable/ic_minenav_mascot" />
+
+				<LinearLayout
+					android:id="@+id/where_to_search"
+					android:layout_width="0dp"
+					android:layout_height="@dimen/where_to_field_height"
+					android:layout_marginStart="@dimen/content_padding_small"
+					android:layout_weight="1"
+					android:clickable="true"
+					android:focusable="true"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:paddingHorizontal="@dimen/content_padding">
+
+					<ImageView
+						android:id="@+id/where_to_search_icon"
+						android:layout_width="@dimen/standard_icon_size"
+						android:layout_height="@dimen/standard_icon_size"
+						android:importantForAccessibility="no"
+						android:src="@drawable/ic_action_search_dark" />
+
+					<TextView
+						android:id="@+id/where_to_search_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/content_padding_small"
+						android:fontFamily="@font/nunito_extrabold"
+						app:fontFamily="@font/nunito_extrabold"
+						android:maxLines="1"
+						android:text="@string/where_to_hint"
+						android:textSize="@dimen/where_to_text_size" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/content_padding_small"
+				android:orientation="horizontal">
+
+				<include
+					android:id="@+id/where_to_home"
+					layout="@layout/map_where_to_chip" />
+
+				<include
+					android:id="@+id/where_to_work"
+					layout="@layout/map_where_to_chip"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/where_to_chip_height"
+					android:layout_marginStart="@dimen/content_padding_half" />
+
+				<include
+					android:id="@+id/where_to_saved"
+					layout="@layout/map_where_to_chip"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/where_to_chip_height"
+					android:layout_marginStart="@dimen/content_padding_half" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</com.google.android.material.card.MaterialCardView>
+
+</net.osmand.plus.views.controls.WhereToCard>

@@ -22,11 +22,12 @@ It is a personal, non-commercial fork of [OsmAnd](https://github.com/osmandapp/O
 | `OsmAnd-shared` | Kotlin Multiplatform library (Android and JVM targets) |
 | `OsmAnd-api` | AIDL API for other apps to talk to the app |
 | `plugins/` | Optional plugin apps (Nautical, SRTM, Skimaps, AI Connector) |
+| `branding/` | MineNAV logo source, Nunito font license, and the script that turns the logo into app icons |
 | `test/ais` | Small standalone AIS simulator app used for testing |
 
 ## Building
 
-Requirements: JDK 17 and the Android SDK (compile SDK 35, min SDK 24).
+Requirements: JDK 17 and the Android SDK (compile SDK 36, min SDK 24).
 
 The build reads icons, fonts, voice files, routing configs and POI types from the OsmAnd resources repository, which must sit next to this one in a folder named `resources`:
 

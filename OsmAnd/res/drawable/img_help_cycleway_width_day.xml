@@ -19,7 +19,7 @@
         android:fillColor="#C1C4C8"/>
     <path
         android:pathData="M95 1.52588e-05H151V90H95V1.52588e-05Z"
-        android:fillColor="#237BFF"/>
+        android:fillColor="#5468D4"/>
     <path
         android:pathData="M209 87H207V75H209V87Z"
         android:fillColor="#AEB2B7"/>

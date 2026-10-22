@@ -21,6 +21,21 @@ public class FontCache {
 
 	private static final Map<Pair<Typeface, Integer>, Typeface> FONT_MAP = new ConcurrentHashMap<>();
 
+	@Nullable
+	private static volatile Typeface appTypeface;
+
+	// Replaces the system default family (used when a view has no explicit font) with the app font
+	public static void setAppTypeface(@Nullable Typeface typeface) {
+		appTypeface = typeface;
+		FONT_MAP.clear();
+	}
+
+	@NonNull
+	public static Typeface getAppTypeface() {
+		Typeface typeface = appTypeface;
+		return typeface != null ? typeface : Typeface.DEFAULT;
+	}
+
 	@NonNull
 	public static Typeface getMediumFont() {
 		return getFont(null, FONT_WEIGHT_MEDIUM);
@@ -43,6 +58,9 @@ public class FontCache {
 
 	@NonNull
 	public static Typeface getFont(@Nullable Typeface original, int weight) {
+		if (appTypeface != null && isSystemDefault(original)) {
+			original = appTypeface;
+		}
 		Pair<Typeface, Integer> pair = Pair.create(original, weight);
 
 		Typeface typeface = FONT_MAP.get(pair);
@@ -56,5 +74,10 @@ public class FontCache {
 			FONT_MAP.put(pair, typeface);
 		}
 		return typeface;
+	}
+
+	private static boolean isSystemDefault(@Nullable Typeface typeface) {
+		return typeface == null || typeface.equals(Typeface.DEFAULT) || typeface.equals(Typeface.DEFAULT_BOLD)
+				|| typeface.equals(Typeface.SANS_SERIF);
 	}
 }

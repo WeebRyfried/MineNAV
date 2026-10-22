@@ -48,6 +48,7 @@ import net.osmand.plus.utils.ColorUtilities;
 import net.osmand.plus.utils.UiUtilities;
 import net.osmand.plus.views.OsmandMapTileView;
 import net.osmand.plus.views.controls.ViewChangeProvider;
+import net.osmand.plus.views.layers.MapControlsLayer;
 import net.osmand.plus.views.layers.base.OsmandMapLayer;
 import net.osmand.plus.views.mapwidgets.WidgetsVisibilityHelper;
 import net.osmand.plus.views.mapwidgets.configure.buttons.MapButtonState;
@@ -433,6 +434,11 @@ public abstract class MapButton extends FrameLayoutEx implements OnAttachStateCh
 	}
 
 	protected abstract boolean shouldShow();
+
+	protected boolean isWhereToCardVisible() {
+		MapControlsLayer layer = mapActivity != null ? mapActivity.getMapLayers().getMapControlsLayer() : null;
+		return layer != null && layer.isWhereToCardVisible();
+	}
 
 	public boolean updateVisibility() {
 		MapButtonState buttonState = getButtonState();

@@ -3,7 +3,7 @@ package net.osmand.plus.views.mapwidgets.configure.buttons;
 import static net.osmand.plus.quickaction.ButtonAppearanceParams.BIG_SIZE_DP;
 import static net.osmand.plus.quickaction.ButtonAppearanceParams.ORIGINAL_VALUE;
 import static net.osmand.plus.quickaction.ButtonAppearanceParams.ROUND_RADIUS_DP;
-import static net.osmand.plus.quickaction.ButtonAppearanceParams.TRANSPARENT_ALPHA;
+import static net.osmand.plus.quickaction.ButtonAppearanceParams.OPAQUE_ALPHA;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -119,7 +119,7 @@ public abstract class MapButtonState {
 	}
 
 	public float getDefaultOpacity() {
-		return TRANSPARENT_ALPHA;
+		return OPAQUE_ALPHA;
 	}
 
 	public int getDefaultCornerRadius() {

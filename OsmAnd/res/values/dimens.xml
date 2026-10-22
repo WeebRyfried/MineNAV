@@ -1,4 +1,10 @@
 <resources>
+    <dimen name="splash_mascot_size">160dp</dimen>
+    <dimen name="where_to_card_radius">28dp</dimen>
+    <dimen name="where_to_card_elevation">8dp</dimen>
+    <dimen name="where_to_field_height">56dp</dimen>
+    <dimen name="where_to_chip_height">40dp</dimen>
+    <dimen name="where_to_text_size">20sp</dimen>
     <dimen name="app_defaultsize_w">640dip</dimen>
     <dimen name="app_defaultsize_h">400dip</dimen>
     <dimen name="app_minimumsize_w">400dip</dimen>

@@ -83,7 +83,15 @@ object PanelAppearanceResolver {
 			PanelBackgroundMode.TRANSPARENT -> Color.TRANSPARENT
 			else -> getDefaultBackgroundColor(app, panel, nightMode)
 		}
-		var tintBackground = false
+		// MineNAV: by default the top panel (next turn) is a colored Waze-style banner
+		val bannerPanel = panel == WidgetsPanel.TOP && backgroundMode == PanelBackgroundMode.DEFAULT
+		var tintBackground = bannerPanel
+		if (bannerPanel) {
+			val bannerColors = DynamicWidgetColors.resolve(backgroundColor)
+			dividerColor = bannerColors.divider
+			primaryTextColor = bannerColors.primaryText
+			secondaryTextColor = bannerColors.secondaryText
+		}
 
 		if (applyPanelOverrides) {
 			if (backgroundMode == PanelBackgroundMode.CUSTOM) {
@@ -175,7 +183,9 @@ object PanelAppearanceResolver {
 	@ColorInt
 	fun getDefaultBackgroundColor(app: OsmandApplication, panel: WidgetsPanel,
 	                              nightMode: Boolean): Int {
-		return if (nightMode && !panel.isPanelVertical) {
+		return if (panel == WidgetsPanel.TOP) {
+			ColorUtilities.getColor(app, if (nightMode) R.color.mn_banner_night else R.color.mn_primary)
+		} else if (nightMode && !panel.isPanelVertical) {
 			ColorUtilities.getColor(app, R.color.map_widget_dark)
 		} else {
 			ColorUtilities.getWidgetBackgroundColor(app, nightMode)

@@ -43,6 +43,6 @@ public class QuickSearchButton extends MapButton {
 
 	@Override
 	protected boolean shouldShow() {
-		return !routeDialogOpened && visibilityHelper.shouldShowTopButtons();
+		return !routeDialogOpened && visibilityHelper.shouldShowTopButtons() && !isWhereToCardVisible();
 	}
 }
