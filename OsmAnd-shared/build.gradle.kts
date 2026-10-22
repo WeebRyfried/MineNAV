@@ -29,42 +29,6 @@ kotlin {
 		publishLibraryVariants("release", "debug")
 	}
 
-	listOf(
-		iosX64(),
-		iosArm64(),
-		iosSimulatorArm64()
-	).forEach { iosTarget ->
-		iosTarget.binaries.framework {
-			baseName = "OsmAndShared"
-			isStatic = true
-			// Kotlin/Native's allocator takes its pages with mmap and keeps them: after a route search
-			// the framework held onto what the search had borrowed, hundreds of megabytes on a long
-			// route, and neither collecting nor waiting gave it back. On malloc the pages go back to
-			// the system allocator, which on Darwin returns the large ones to the OS. Measured inside
-			// the iOS app over Freiburg - Rostock (874 km): the second search peaks at 670 MB instead
-			// of 886 and settles at 583 instead of 743, and nine shorter routes end the session at
-			// 580 MB instead of 823, all of it at the same speed.
-			binaryOption("disableMmap", "true")
-		}
-		iosTarget.compilations.getByName("main").cinterops.create("libxml2") {
-			defFile(project.file("src/nativeInterop/cinterop/libxml2.def"))
-			packageName("libxml2")
-		}
-		iosTarget.compilations.getByName("main").cinterops.create("sqlite3") {
-			defFile(project.file("src/nativeInterop/cinterop/sqlite3.def"))
-			packageName("sqlite3")
-		}
-		// sqlite3.def carries no linkerOpts, so the test binaries link sqlite themselves
-		iosTarget.binaries.withType(org.jetbrains.kotlin.gradle.plugin.mpp.TestExecutable::class.java).configureEach {
-			linkerOpts("-lsqlite3")
-		}
-	}
-
-	// the default test binary is a debug build with LLVM optimisations off, which makes any
-	// Kotlin/Native performance number meaningless; this adds an optimised test binary,
-	// run with :OsmAnd-shared:iosSimulatorArm64ReleaseTest
-	iosSimulatorArm64().binaries.test(listOf(org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE))
-
 	val sqliteVersion = "2.3.1"
 	val serializationVersion = "1.6.3"
 	val coroutinesCoreVersion = "1.8.1"
@@ -107,9 +71,6 @@ kotlin {
 			implementation("io.coil-kt.coil3:coil-core:$coilVersion")
 			implementation("io.coil-kt.coil3:coil-network-okhttp:$coilVersion")
             implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
-		}
-		iosMain.dependencies {
-            implementation("io.ktor:ktor-client-darwin:$ktorVersion")
 		}
 
 		commonTest.dependencies {

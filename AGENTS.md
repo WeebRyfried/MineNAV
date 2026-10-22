@@ -19,26 +19,25 @@ The project is divided into several sub-projects:
   - `test/`: Instrumentation and Unit tests.
 - `:OsmAnd-java`: Core logic in pure Java. Contains data models, rendering logic, routing, and search. Independent of Android APIs.
 - `:OsmAnd-api`: API for external applications to interact with OsmAnd.
-- `:OsmAnd-shared`: Kotlin Multiplatform (KMP) library shared between Android, iOS, and server (JVM).
+- `:OsmAnd-shared`: Kotlin Multiplatform (KMP) library shared between Android and JVM (used by `:OsmAnd-java`).
 - `:plugins`: Contains various plugin sub-projects (e.g., `:plugins:Osmand-Nautical`, `:plugins:Osmand-Skimaps`).
 
 ## 3. Shared Code (Kotlin Multiplatform)
-The `:OsmAnd-shared` module is a **Kotlin Multiplatform (KMP)** library designed to share logic across Android, iOS, and JVM platforms.
+The `:OsmAnd-shared` module is a **Kotlin Multiplatform (KMP)** library designed to share logic across Android and JVM. iOS targets were removed in MineNAV.
 
 - **Targets:**
   - `androidTarget`: Android-specific implementations.
-  - `iosX64`, `iosArm64`, `iosSimulatorArm64`: iOS-specific implementations.
   - `jvm`: Pure Java/Desktop implementations.
 - **Source Sets:**
   - `commonMain`: Contains platform-independent logic (serialization, coroutines, data models).
-  - `androidMain`, `iosMain`, `jvmMain`: Contain platform-specific implementations (e.g., SQLite drivers, I/O).
+  - `androidMain`, `jvmMain`: Contain platform-specific implementations (e.g., SQLite drivers, I/O).
 - **Key KMP Technologies:**
   - `kotlinx-serialization`: For JSON handling.
   - `kotlinx-coroutines`: For asynchronous programming.
   - `kotlinx-datetime`: For date and time operations.
   - `okio`: For cross-platform I/O.
   - `stately`: For concurrent collections.
-- **Editing rules:** `OsmAnd-shared` is also compiled by the iOS app and by the standalone JVM build. Keep both compiling: an `actual` for every `expect` in each platform source set, no JVM-only imports in `commonMain`, and no removal of overloads or `@Jvm*`/`@Throws` annotations that Swift or Java callers use. When a change has to break compatibility anyway, name the affected declarations and consumers in the reply and in the pull request.
+- **Editing rules:** `OsmAnd-shared` is compiled for Android and for the JVM target that `:OsmAnd-java` uses. Keep both compiling: an `actual` for every `expect` in `androidMain` and `jvmMain`, no Android-only imports in `commonMain`, and no removal of overloads or `@Jvm*`/`@Throws` annotations that Java callers use.
 
 ## 4. Architecture & Key Components
 ### Plugin Architecture
