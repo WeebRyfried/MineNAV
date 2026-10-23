@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/settings_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clickable="true"
+	android:focusable="true"
+	android:orientation="vertical">
+
+	<FrameLayout
+		android:id="@+id/settings_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/toolbar_height">
+
+		<ImageView
+			android:id="@+id/settings_back"
+			android:layout_width="@dimen/toolbar_height"
+			android:layout_height="@dimen/toolbar_height"
+			android:layout_gravity="start|center_vertical"
+			android:background="?attr/selectableItemBackgroundBorderless"
+			android:contentDescription="@string/shared_string_back"
+			android:padding="@dimen/content_padding"
+			android:src="@drawable/ic_arrow_back" />
+
+		<TextView
+			android:id="@+id/settings_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/shared_string_settings"
+			android:textSize="@dimen/mn_settings_title_size" />
+
+		<ImageView
+			android:id="@+id/settings_close"
+			android:layout_width="@dimen/toolbar_height"
+			android:layout_height="@dimen/toolbar_height"
+			android:layout_gravity="end|center_vertical"
+			android:background="?attr/selectableItemBackgroundBorderless"
+			android:contentDescription="@string/mn_close"
+			android:padding="@dimen/content_padding"
+			android:src="@drawable/ic_action_close" />
+
+	</FrameLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:id="@+id/settings_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingBottom="@dimen/content_padding" />
+
+	</ScrollView>
+
+	<!-- Pill buttons pinned under the list, like the "Go now" sheet -->
+	<LinearLayout
+		android:id="@+id/settings_bottom_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="@dimen/content_padding"
+		android:visibility="gone">
+
+		<TextView
+			android:id="@+id/settings_bottom_secondary"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/route_preview_button_height"
+			android:layout_marginEnd="@dimen/content_padding_small"
+			android:layout_weight="1"
+			android:fontFamily="@font/nunito_bold"
+			android:gravity="center"
+			android:textSize="@dimen/default_list_text_size"
+			android:visibility="gone" />
+
+		<TextView
+			android:id="@+id/settings_bottom_primary"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/route_preview_button_height"
+			android:layout_weight="1"
+			android:fontFamily="@font/nunito_bold"
+			android:gravity="center"
+			android:textSize="@dimen/default_list_text_size"
+			android:visibility="gone" />
+
+	</LinearLayout>
+
+</LinearLayout>

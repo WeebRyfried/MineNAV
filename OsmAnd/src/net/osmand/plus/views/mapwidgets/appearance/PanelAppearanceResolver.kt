@@ -33,6 +33,8 @@ object PanelAppearanceResolver {
 		val verticalWidget = panel.isPanelVertical
 		val backgroundMode = state.backgroundMode
 		val transparent = backgroundMode == PanelBackgroundMode.TRANSPARENT
+		// MineNAV: by default the bottom panel is a Waze-style sheet, which its rows lie on
+		val sheetPanel = panel == WidgetsPanel.BOTTOM && backgroundMode == PanelBackgroundMode.DEFAULT
 
 		var primaryTextColor = if (verticalWidget) {
 			ColorUtilities.getPrimaryTextColor(app, nightMode)
@@ -53,6 +55,17 @@ object PanelAppearanceResolver {
 				roundDrawableRes = R.drawable.btn_round_transparent
 				dividerColorRes = R.color.widget_divider_transparent
 				panelBorderColorRes = R.color.widget_panel_border_transparent
+			}
+			sheetPanel -> {
+				flatDrawableRes = R.drawable.mn_sheet_row_bg
+				rectangleDrawableRes = R.drawable.mn_sheet_row_bg
+				roundDrawableRes = if (nightMode) R.drawable.btn_round_night else R.drawable.btn_round
+				dividerColorRes = if (nightMode) R.color.mn_divider_dark else R.color.mn_divider_light
+				panelBorderColorRes = if (nightMode) {
+					R.color.icon_color_secondary_dark
+				} else {
+					R.color.stroked_buttons_and_links_outline_light
+				}
 			}
 			nightMode -> {
 				flatDrawableRes = R.drawable.btn_flat_night
@@ -90,7 +103,12 @@ object PanelAppearanceResolver {
 			val bannerColors = DynamicWidgetColors.resolve(backgroundColor)
 			dividerColor = bannerColors.divider
 			primaryTextColor = bannerColors.primaryText
-			secondaryTextColor = bannerColors.secondaryText
+			secondaryTextColor = ColorUtilities.getColor(app, R.color.mn_banner_secondary_text)
+		}
+		if (sheetPanel) {
+			primaryTextColor = ColorUtilities.getColor(app, if (nightMode) R.color.mn_text_dark else R.color.mn_text_light)
+			secondaryTextColor = ColorUtilities.getColor(app,
+				if (nightMode) R.color.mn_text_secondary_dark else R.color.mn_text_secondary_light)
 		}
 
 		if (applyPanelOverrides) {
@@ -184,7 +202,9 @@ object PanelAppearanceResolver {
 	fun getDefaultBackgroundColor(app: OsmandApplication, panel: WidgetsPanel,
 	                              nightMode: Boolean): Int {
 		return if (panel == WidgetsPanel.TOP) {
-			ColorUtilities.getColor(app, if (nightMode) R.color.mn_banner_night else R.color.mn_primary)
+			ColorUtilities.getColor(app, R.color.mn_banner)
+		} else if (panel == WidgetsPanel.BOTTOM) {
+			ColorUtilities.getColor(app, if (nightMode) R.color.mn_row_bg_dark else R.color.mn_row_bg_light)
 		} else if (nightMode && !panel.isPanelVertical) {
 			ColorUtilities.getColor(app, R.color.map_widget_dark)
 		} else {

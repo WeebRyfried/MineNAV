@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum RouteService {
-	OSMAND("OsmAnd (offline)"),
+	OSMAND("MineNAV (offline)"),
 	BROUTER("BRouter (offline)"),
 	STRAIGHT("Straight line"),
 	DIRECT_TO("Direct To"),

@@ -71,6 +71,8 @@ public class DiscountHelper {
 	private static PoiUIFilter mFilter;
 	private static boolean mFilterVisible;
 	private static final String URL = "https://osmand.net/api/motd";
+	// MineNAV: no OsmAnd sales or upgrade offers, so the message of the day is never requested
+	private static final boolean PROMOS_ENABLED = false;
 	private static final String INAPP_PREFIX = "osmand-in-app:";
 	private static final String SEARCH_QUERY_PREFIX = "osmand-search-query:";
 	private static final String SHOW_POI_PREFIX = "osmand-show-poi:";
@@ -101,6 +103,9 @@ public class DiscountHelper {
 	private static final String FEATURE_NAUTICAL = "nautical";
 
 	public static void checkAndDisplay(MapActivity mapActivity) {
+		if (!PROMOS_ENABLED) {
+			return;
+		}
 		OsmandApplication app = mapActivity.getApp();
 		OsmandSettings settings = app.getSettings();
 		boolean forceShowDiscountBottomSheet = settings.SHOULD_SHOW_DISCOUNT_BOTTOM_SHEET.get();

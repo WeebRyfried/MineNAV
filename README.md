@@ -22,7 +22,7 @@ It is a personal, non-commercial fork of [OsmAnd](https://github.com/osmandapp/O
 | `OsmAnd-shared` | Kotlin Multiplatform library (Android and JVM targets) |
 | `OsmAnd-api` | AIDL API for other apps to talk to the app |
 | `plugins/` | Optional plugin apps (Nautical, SRTM, Skimaps, AI Connector) |
-| `branding/` | MineNAV logo source, Nunito font license, and the script that turns the logo into app icons |
+| `branding/` | MineNAV logo source, Nunito font license, the script that turns the logo into app icons, and the MineNAV map style (`map-style/`) |
 | `test/ais` | Small standalone AIS simulator app used for testing |
 
 ## Building

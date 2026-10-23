@@ -6,91 +6,140 @@
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	android:descendantFocusability="blocksDescendants"
-	android:gravity="center"
-	android:orientation="horizontal">
+	android:orientation="vertical">
 
-	<FrameLayout
-		android:id="@+id/bg_circle"
-		android:layout_width="@dimen/context_menu_big_icon_size"
-		android:layout_height="@dimen/context_menu_big_icon_size"
-		android:layout_marginLeft="@dimen/content_padding_half"
-		android:layout_marginRight="@dimen/favorites_icon_right_margin"
-		android:layout_marginStart="@dimen/content_padding_half"
-		android:layout_marginEnd="@dimen/favorites_icon_right_margin"
-		android:background="?attr/bg_circle">
-
-		<androidx.appcompat.widget.AppCompatImageView
-			android:id="@+id/icon"
-			android:layout_width="@dimen/standard_icon_size"
-			android:layout_height="@dimen/standard_icon_size"
-			android:layout_gravity="center"
-			tools:src="@drawable/ic_action_bicycle_dark" />
-
-	</FrameLayout>
-
+	<!-- MineNAV header: mascot and app name above the profile switcher -->
 	<LinearLayout
-		android:layout_width="0dp"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_weight="1"
-		android:orientation="vertical">
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:paddingStart="@dimen/content_padding"
+		android:paddingTop="@dimen/content_padding"
+		android:paddingEnd="@dimen/content_padding"
+		android:paddingBottom="@dimen/content_padding_half">
+
+		<ImageView
+			android:layout_width="@dimen/drawer_mascot_size"
+			android:layout_height="@dimen/drawer_mascot_size"
+			android:background="@drawable/bg_drawer_mascot"
+			android:importantForAccessibility="no"
+			android:padding="@dimen/content_padding_half"
+			android:src="@drawable/ic_minenav_mascot" />
 
 		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="@dimen/setting_profile_item_height"
-			android:orientation="horizontal">
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/content_padding"
+			android:layout_weight="1"
+			android:orientation="vertical">
 
-			<LinearLayout
-				android:layout_width="0dp"
-				android:layout_height="match_parent"
-				android:layout_weight="1"
-				android:gravity="center"
-				android:orientation="vertical">
-
-				<net.osmand.plus.widgets.TextViewEx
-					android:id="@+id/title"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_gravity="center_vertical|start"
-					android:ellipsize="end"
-					android:maxLines="2"
-					app:typefaceWeight="medium"
-					android:textColor="?android:textColorPrimary"
-					android:textSize="@dimen/default_list_text_size"
-					tools:text="Bicycle" />
-
-				<net.osmand.plus.widgets.TextViewEx
-					android:id="@+id/description"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_gravity="center_vertical|start"
-					android:ellipsize="end"
-					android:maxLines="1"
-					android:textStyle="normal"
-					android:textColor="?android:textColorSecondary"
-					android:textSize="@dimen/default_desc_text_size"
-					tools:text="Type: Bicycle" />
-
-			</LinearLayout>
-
-			<androidx.appcompat.widget.AppCompatImageView
-				android:id="@+id/ic_expand_list"
+			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_gravity="center"
-				android:layout_marginLeft="@dimen/content_padding_half"
-				android:layout_marginRight="@dimen/favorites_icon_right_margin"
-				app:srcCompat="@drawable/ic_action_arrow_drop_down"
-				android:tint="?attr/default_icon_color"
-				android:layout_marginStart="@dimen/content_padding_half"
-				android:layout_marginEnd="@dimen/favorites_icon_right_margin" />
+				android:fontFamily="@font/nunito_extrabold"
+				android:text="@string/app_name"
+				android:textColor="?android:textColorPrimary"
+				android:textSize="@dimen/drawer_title_text_size"
+				app:fontFamily="@font/nunito_extrabold" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/drawer_greeting"
+				android:textColor="?android:textColorSecondary"
+				android:textSize="@dimen/default_desc_text_size" />
 
 		</LinearLayout>
 
-		<View
-			android:id="@+id/divider_bottom"
-			android:layout_width="match_parent"
-			android:layout_height="1dp"
-			android:background="?attr/divider_color" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<FrameLayout
+			android:id="@+id/bg_circle"
+			android:layout_width="@dimen/context_menu_big_icon_size"
+			android:layout_height="@dimen/context_menu_big_icon_size"
+			android:layout_marginStart="@dimen/content_padding_half"
+			android:layout_marginEnd="@dimen/favorites_icon_right_margin"
+			android:background="?attr/bg_circle">
+
+			<androidx.appcompat.widget.AppCompatImageView
+				android:id="@+id/icon"
+				android:layout_width="@dimen/standard_icon_size"
+				android:layout_height="@dimen/standard_icon_size"
+				android:layout_gravity="center"
+				tools:src="@drawable/ic_action_bicycle_dark" />
+
+		</FrameLayout>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/setting_profile_item_height"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical">
+
+					<net.osmand.plus.widgets.TextViewEx
+						android:id="@+id/title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical|start"
+						android:ellipsize="end"
+						android:maxLines="2"
+						android:textColor="?android:textColorPrimary"
+						android:textSize="@dimen/default_list_text_size"
+						app:typefaceWeight="medium"
+						tools:text="Bicycle" />
+
+					<net.osmand.plus.widgets.TextViewEx
+						android:id="@+id/description"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical|start"
+						android:ellipsize="end"
+						android:maxLines="1"
+						android:textColor="?android:textColorSecondary"
+						android:textSize="@dimen/default_desc_text_size"
+						android:textStyle="normal"
+						tools:text="Type: Bicycle" />
+
+				</LinearLayout>
+
+				<androidx.appcompat.widget.AppCompatImageView
+					android:id="@+id/ic_expand_list"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginStart="@dimen/content_padding_half"
+					android:layout_marginEnd="@dimen/favorites_icon_right_margin"
+					android:tint="?attr/default_icon_color"
+					app:srcCompat="@drawable/ic_action_arrow_drop_down" />
+
+			</LinearLayout>
+
+			<View
+				android:id="@+id/divider_bottom"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="?attr/divider_color" />
+
+		</LinearLayout>
 
 	</LinearLayout>
 

@@ -14,6 +14,7 @@ import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.InsetDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.RippleDrawable;
 import android.text.SpannableString;
@@ -61,6 +62,7 @@ import net.osmand.plus.base.BaseMaterialFragment;
 import net.osmand.plus.base.ISupportInsets;
 import net.osmand.plus.help.HelpArticleUtils;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.helpers.DayNightHelper;
 import net.osmand.plus.helpers.MapFragmentsHelper;
 import net.osmand.plus.render.RenderingIcons;
@@ -317,16 +319,24 @@ public class UiUtilities {
 		}
 		tvMessage.setTextColor(ContextCompat.getColor(ctx, messageColor));
 		if (actionColor == null) {
-			actionColor = ColorUtilities.getActiveColorId(nightMode);
+			// MineNAV: the card is dark in both themes, so the action uses the light accent
+			actionColor = R.color.mn_lilac;
 		}
 		tvAction.setTextColor(ContextCompat.getColor(ctx, actionColor));
+		tvAction.setAllCaps(false);
 		if (maxLines != null) {
 			tvMessage.setMaxLines(maxLines);
 		}
 		if (backgroundColor == null) {
-			backgroundColor = nightMode ? R.color.list_background_color_dark : R.color.activity_background_color_dark;
+			backgroundColor = nightMode ? R.color.mn_field_bg_dark : R.color.mn_banner;
 		}
-		view.setBackgroundColor(ContextCompat.getColor(ctx, backgroundColor));
+		// MineNAV: a floating rounded card, like the Waze toasts, instead of a full-width bar
+		int inset = AndroidUtils.dpToPx(ctx, 12);
+		GradientDrawable card = new GradientDrawable();
+		card.setCornerRadius(AndroidUtils.dpToPx(ctx, 16));
+		card.setColor(ContextCompat.getColor(ctx, backgroundColor));
+		view.setBackground(new InsetDrawable(card, inset));
+		view.setPadding(inset, inset, inset, inset);
 	}
 
 	public static void setupSnackbarVerticalLayout(Snackbar snackbar) {
@@ -470,9 +480,9 @@ public class UiUtilities {
 				activeColor = appMode.getProfileColor(nightMode);
 				break;
 			case TOOLBAR:
-				activeColor = Color.WHITE;
-				inactiveColorPrimary = activeColor;
-				inactiveColorSecondary = ColorUtilities.getColorWithAlpha(Color.BLACK, 0.25f);
+				// MineNAV: the On/Off bar is a normal row, so its switch looks like every other one
+				MineNavStyle.styleToolbarSwitchBar(compoundButton, nightMode);
+				inactiveColorSecondary = ContextCompat.getColor(app, nightMode ? R.color.mn_handle_dark : R.color.mn_handle_light);
 				break;
 		}
 		setupCompoundButton(compoundButton, activeColor, inactiveColorPrimary, inactiveColorSecondary);
@@ -509,15 +519,13 @@ public class UiUtilities {
 				new int[] {-android.R.attr.state_checked},
 				new int[] {android.R.attr.state_checked}
 		};
-		if (compoundButton instanceof SwitchCompat) {
-			int[] thumbColors = {inactiveColorPrimary, inactiveColorPrimary, activeColor};
-			int[] trackColors = {inactiveColorSecondary, inactiveColorSecondary, inactiveColorSecondary};
-
-			SwitchCompat sc = (SwitchCompat) compoundButton;
-			DrawableCompat.setTintList(DrawableCompat.wrap(sc.getThumbDrawable()), new ColorStateList(states, thumbColors));
-			DrawableCompat.setTintList(DrawableCompat.wrap(sc.getTrackDrawable()), new ColorStateList(states, trackColors));
+		if (compoundButton instanceof SwitchCompat sc) {
+			// MineNAV: one Waze-like pill switch across the app
+			MineNavStyle.styleSwitch(sc, inactiveColorSecondary);
 		} else if (compoundButton instanceof TintableCompoundButton) {
-			int[] colors = {inactiveColorPrimary, inactiveColorPrimary, activeColor};
+			// MineNAV: checked radio buttons and check boxes use the same accent as the switches
+			int accentColor = ContextCompat.getColor(compoundButton.getContext(), R.color.mn_primary);
+			int[] colors = {inactiveColorPrimary, inactiveColorPrimary, accentColor};
 			ColorStateList csl = new ColorStateList(states, colors);
 			((TintableCompoundButton) compoundButton).setSupportButtonTintList(csl);
 		}
@@ -818,6 +826,7 @@ public class UiUtilities {
 			nightModeForContent = materialFragmentAboveDashboard.getContentStatusBarNightMode();
 		} else if (activity.getDashboard().isVisible()) {
 			statusBarColorId = activity.getDashboard().getStatusBarColor();
+			nightModeForContent = activity.getDashboard().isStatusBarContentNightMode();
 		} else if (fragmentBelowDashboard != null) {
 			statusBarColorId = fragmentBelowDashboard.getStatusBarColorId();
 			navigationBarOwner = fragmentBelowDashboard;

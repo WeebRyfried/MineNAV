@@ -31,6 +31,7 @@ import net.osmand.plus.base.BaseNestedListFragment;
 import net.osmand.plus.download.DownloadIndexesThread;
 import net.osmand.plus.download.DownloadValidationManager;
 import net.osmand.plus.download.IndexItem;
+import net.osmand.plus.minenav.MineNavColors;
 import net.osmand.plus.routepreparationmenu.MapRouteInfoMenu;
 import net.osmand.plus.search.dialogs.QuickSearchDialogFragment.QuickSearchType;
 import net.osmand.plus.search.history.SearchHistoryHelper;
@@ -46,7 +47,6 @@ import net.osmand.plus.track.data.GPXInfo;
 import net.osmand.plus.track.fragments.TrackMenuFragment;
 import net.osmand.plus.track.helpers.GpxFileLoaderTask;
 import net.osmand.plus.track.helpers.SelectedGpxFile;
-import net.osmand.plus.utils.ColorUtilities;
 import net.osmand.plus.widgets.callback.OnClickListenerContainer;
 import net.osmand.plus.wikivoyage.article.WikivoyageArticleDialogFragment;
 import net.osmand.plus.wikivoyage.data.TravelArticle.TravelArticleIdentifier;
@@ -183,7 +183,8 @@ public abstract class QuickSearchListFragment extends BaseNestedListFragment {
 		listAdapter.setUseMapCenter(dialogFragment.isUseMapCenter());
 		setListAdapter(listAdapter);
 		ListView listView = getListView();
-		listView.setBackgroundColor(ColorUtilities.getActivityBgColor(app, nightMode));
+		// MineNAV: one flat surface from the search bar down, like the search home
+		listView.setBackgroundColor(new MineNavColors(app, nightMode).getRow());
 		listView.setOnTouchListener((v, event) -> {
 			switch (event.getAction()) {
 				case MotionEvent.ACTION_DOWN:
@@ -351,7 +352,12 @@ public abstract class QuickSearchListFragment extends BaseNestedListFragment {
 				mapActivity.getMapActions().selectAddress(name, latitude, longitude, searchType);
 
 				dialogFragment.dismissAllowingStateLoss();
-				mapActivity.getMapActions().showRouteInfoMenu();
+				// MineNAV: setting Home or Work is done here, it does not plan a route
+				if (searchType == QuickSearchType.HOME_POINT || searchType == QuickSearchType.WORK_POINT) {
+					app.showShortToastMessage(R.string.mn_place_saved);
+				} else {
+					mapActivity.getMapActions().showRouteInfoMenu();
+				}
 			} else {
 				app.getSettings().setMapLocationToShow(latitude, longitude, zoom, pointDescription, true, object);
 				MapActivity.launchMapActivityMoveToTop(mapActivity);

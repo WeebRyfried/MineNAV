@@ -16,6 +16,7 @@ import androidx.annotation.NonNull;
 import net.osmand.plus.R;
 import net.osmand.plus.base.OsmandBaseExpandableListAdapter;
 import net.osmand.plus.download.DownloadActivity;
+import net.osmand.plus.minenav.MineNavDownloadStyle;
 import net.osmand.plus.download.DownloadActivityType;
 import net.osmand.plus.download.DownloadItem;
 import net.osmand.plus.download.DownloadResourceGroup;
@@ -31,11 +32,13 @@ public class DownloadResourceGroupAdapter extends OsmandBaseExpandableListAdapte
 
 	private List<DownloadResourceGroup> data = new ArrayList<DownloadResourceGroup>();
 	private final DownloadActivity ctx;
+	private final boolean nightMode;
 	private DownloadResourceGroup mainGroup;
 
 
 	public DownloadResourceGroupAdapter(DownloadActivity ctx) {
 		this.ctx = ctx;
+		this.nightMode = MineNavDownloadStyle.isNightMode(ctx);
 	}
 
 	public void update(DownloadResourceGroup mainGroup) {
@@ -107,6 +110,8 @@ public class DownloadResourceGroupAdapter extends OsmandBaseExpandableListAdapte
 				viewHolder.setShowTypeInDesc(true);
 			}
 			viewHolder.bindDownloadItem(item);
+			convertView.findViewById(R.id.list_item_divider).setVisibility(View.VISIBLE);
+			MineNavDownloadStyle.styleItemRow(convertView, nightMode, item.isDownloaded(), item.isOutdated(), isLastChild);
 		} else {
 			DownloadResourceGroup group = (DownloadResourceGroup) child;
 			DownloadGroupViewHolder viewHolder;
@@ -119,9 +124,8 @@ public class DownloadResourceGroupAdapter extends OsmandBaseExpandableListAdapte
 				convertView.setTag(viewHolder);
 			}
 			viewHolder.bindItem(group);
+			MineNavDownloadStyle.styleGroupRow(convertView, nightMode, isLastChild);
 		}
-		convertView.findViewById(R.id.list_item_divider).setVisibility(View.VISIBLE);
-
 		return convertView;
 	}
 
@@ -144,6 +148,7 @@ public class DownloadResourceGroupAdapter extends OsmandBaseExpandableListAdapte
 		Resources.Theme theme = ctx.getTheme();
 		theme.resolveAttribute(R.attr.activity_background_color, typedValue, true);
 		v.setBackgroundColor(typedValue.data);
+		MineNavDownloadStyle.styleSection(v, nightMode, groupPosition == 0);
 
 		return v;
 	}

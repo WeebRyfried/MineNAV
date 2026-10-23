@@ -1010,6 +1010,8 @@ public class RouteParametersFragment extends BaseSettingsFragment {
 					getPersistentPrefIcon(R.drawable.ic_action_altitude_average);
 			case AVOID_ROUTING_PARAMETER_PREFIX ->
 					getPersistentPrefIcon(R.drawable.ic_action_alert);
+			case PREFER_ROUTING_PARAMETER_PREFIX ->
+					getPersistentPrefIcon(R.drawable.ic_action_map_routes);
 			case DRIVING_STYLE -> getPersistentPrefIcon(R.drawable.ic_action_bicycle_dark);
 			case "fast_route_mode" -> getPersistentPrefIcon(R.drawable.ic_action_fastest_route);
 			case "enable_time_conditional_routing" ->

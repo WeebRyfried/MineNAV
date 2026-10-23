@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Landscape menu: mascot and profile on the left, so every item fits on the right -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/menu_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clickable="true"
+	android:focusable="true"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="2"
+		android:gravity="center_vertical"
+		android:orientation="vertical"
+		android:padding="@dimen/content_padding">
+
+		<ImageView
+			android:layout_width="@dimen/mn_menu_mascot_size"
+			android:layout_height="@dimen/mn_menu_mascot_size"
+			android:importantForAccessibility="no"
+			android:src="@drawable/ic_minenav_mascot" />
+
+		<TextView
+			android:id="@+id/menu_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/content_padding_half"
+			android:fontFamily="@font/nunito_extrabold"
+			android:text="@string/app_name"
+			android:textSize="@dimen/mn_menu_title_size"
+			app:fontFamily="@font/nunito_extrabold" />
+
+		<TextView
+			android:id="@+id/menu_profile"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/content_padding_half"
+			android:drawablePadding="@dimen/content_padding_half"
+			android:fontFamily="@font/nunito_bold"
+			android:gravity="center_vertical"
+			android:paddingHorizontal="@dimen/content_padding"
+			android:paddingVertical="@dimen/content_padding_half"
+			android:textSize="@dimen/default_list_text_size"
+			app:fontFamily="@font/nunito_bold" />
+
+		<TextView
+			android:id="@+id/menu_version"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/content_padding"
+			android:textSize="@dimen/default_desc_text_size" />
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/menu_divider"
+		android:layout_width="1dp"
+		android:layout_height="match_parent"
+		android:layout_marginVertical="@dimen/content_padding" />
+
+	<FrameLayout
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="3">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:id="@+id/menu_items"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:paddingVertical="@dimen/content_padding_half" />
+
+		</ScrollView>
+
+		<ImageView
+			android:id="@+id/menu_close"
+			android:layout_width="@dimen/mn_round_button_size"
+			android:layout_height="@dimen/mn_round_button_size"
+			android:layout_gravity="top|end"
+			android:layout_margin="@dimen/content_padding"
+			android:contentDescription="@string/mn_close"
+			android:padding="@dimen/content_padding_small"
+			android:src="@drawable/ic_action_close" />
+
+	</FrameLayout>
+
+</LinearLayout>

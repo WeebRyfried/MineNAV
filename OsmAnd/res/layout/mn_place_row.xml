@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/place_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/selectableItemBackground"
+		android:gravity="center_vertical"
+		android:minHeight="@dimen/mn_place_row_height"
+		android:orientation="horizontal"
+		android:paddingHorizontal="@dimen/content_padding">
+
+		<ImageView
+			android:id="@+id/place_icon"
+			android:layout_width="@dimen/mn_settings_icon_circle"
+			android:layout_height="@dimen/mn_settings_icon_circle"
+			android:importantForAccessibility="no"
+			android:padding="@dimen/content_padding_half" />
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/content_padding"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:paddingVertical="@dimen/content_padding_small">
+
+			<TextView
+				android:id="@+id/place_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:fontFamily="@font/nunito_extrabold"
+				android:maxLines="1"
+				android:textSize="@dimen/mn_place_title_size"
+				app:fontFamily="@font/nunito_extrabold" />
+
+			<TextView
+				android:id="@+id/place_subtitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:textSize="@dimen/default_list_text_size" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/place_divider"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginStart="@dimen/mn_settings_divider_start" />
+
+</LinearLayout>

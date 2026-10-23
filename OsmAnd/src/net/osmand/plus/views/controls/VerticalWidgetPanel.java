@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.ListUpdateCallback;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.R;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.minenav.MineNavWidgetPanel;
 import net.osmand.plus.settings.backend.ApplicationMode;
 import net.osmand.plus.settings.backend.OsmandSettings;
 import net.osmand.plus.settings.enums.PanelBackgroundMode;
@@ -126,7 +127,16 @@ public class VerticalWidgetPanel extends LinearLayoutEx implements WidgetsContai
 	private void applyShadow() {
 		setClipToPadding(false);
 		setOutlineProvider(ViewOutlineProvider.BOUNDS);
-		ViewCompat.setElevation(this, isAnyRowVisible() && backgroundOpaque ? 5f : 0);
+		boolean sheet = !topPanel && backgroundMode == PanelBackgroundMode.DEFAULT;
+		ViewCompat.setElevation(this, isAnyRowVisible() && backgroundOpaque && !sheet ? 5f : 0);
+	}
+
+	@Override
+	protected void onLayout(boolean changed, int l, int t, int r, int b) {
+		super.onLayout(changed, l, t, r, b);
+		if (!topPanel) {
+			MineNavWidgetPanel.updateSheetTop(this);
+		}
 	}
 
 	public void setVisibilityAllowed(boolean visibilityAllowed) {
@@ -140,7 +150,10 @@ public class VerticalWidgetPanel extends LinearLayoutEx implements WidgetsContai
 		for (VerticalPanelVisibilityListener listener : visibilityListeners) {
 			listener.isVisible(isAnyRowVisible);
 		}
-		if (InsetsUtils.isEdgeToEdgeSupported() && !topPanel) {
+		if (!topPanel && backgroundMode == PanelBackgroundMode.DEFAULT) {
+			// MineNAV: the street name floats over the map, the trip info lies on a rounded sheet
+			MineNavWidgetPanel.styleBottomPanel(this, nightMode);
+		} else if (InsetsUtils.isEdgeToEdgeSupported() && !topPanel) {
 			if (isAnyRowVisible && backgroundMode == PanelBackgroundMode.DEFAULT) {
 				setBackgroundColor(ColorUtilities.getWidgetBackgroundColor(app, nightMode));
 			} else {
@@ -444,6 +457,11 @@ public class VerticalWidgetPanel extends LinearLayoutEx implements WidgetsContai
 			boolean showBottomDivider = (visibleViewsInRowCount > 0 && rowWidgetsSupportBottomDivider)
 					&& ((!lastRow || (topPanel && transparentMode))
 					|| ((InsetsUtils.isEdgeToEdgeSupported() && AndroidUiHelper.isOrientationPortrait(context) && lastRow)));
+			if (!topPanel && backgroundMode == PanelBackgroundMode.DEFAULT) {
+				// MineNAV: no lines on the sheet, nor under the floating street name
+				showTopDivider = false;
+				showBottomDivider = false;
+			}
 
 			AndroidUiHelper.updateVisibility(getTopDivider(), showTopDivider);
 			AndroidUiHelper.updateVisibility(getBottomDivider(), showBottomDivider);

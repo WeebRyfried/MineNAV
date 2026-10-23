@@ -59,6 +59,7 @@ import net.osmand.plus.download.DownloadIndexesThread;
 import net.osmand.plus.download.IndexItem;
 import net.osmand.plus.helpers.AndroidUiHelper;
 import net.osmand.plus.helpers.WaypointDialogHelper;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.plugins.PluginsHelper;
 import net.osmand.plus.plugins.mapillary.MapillaryFiltersFragment;
 import net.osmand.plus.plugins.mapillary.MapillaryFirstDialogFragment;
@@ -93,7 +94,6 @@ import net.osmand.plus.utils.UiUtilities;
 import net.osmand.plus.views.OsmandMapTileView;
 import net.osmand.plus.views.controls.maphudbuttons.MapButton;
 import net.osmand.plus.views.layers.DownloadedRegionsLayer;
-import net.osmand.plus.views.layers.MapControlsLayer;
 import net.osmand.plus.widgets.ctxmenu.ContextMenuAdapter;
 import net.osmand.plus.widgets.ctxmenu.ContextMenuListAdapter;
 import net.osmand.plus.widgets.ctxmenu.ViewCreator;
@@ -531,7 +531,15 @@ public class DashboardOnMap implements ObservableScrollViewCallbacks, IRouteInfo
 
 	@ColorRes
 	public int getStatusBarColor() {
+		if (isCurrentTypeHasIndividualFragment()) {
+			// MineNAV: the bar continues the page's toolbar
+			return nightMode ? R.color.mn_row_bg_dark : R.color.mn_row_bg_light;
+		}
 		return R.color.status_bar_transparent_gradient;
+	}
+
+	public boolean isStatusBarContentNightMode() {
+		return !isCurrentTypeHasIndividualFragment() || nightMode;
 	}
 
 	public void setDashboardVisibility(boolean visible, DashboardType type, boolean animation,
@@ -574,16 +582,8 @@ public class DashboardOnMap implements ObservableScrollViewCallbacks, IRouteInfo
 				setActionButton(visibleTypes.getCurrent());
 				actionButton.setVisibility(View.VISIBLE);
 			} else {
+				// MineNAV: no compass, these screens no longer show the map above the list
 				hideActionButton();
-				if (isCurrentType(CONFIGURE_MAP)) {
-					int size = mapActivity.getResources().getDimensionPixelSize(R.dimen.map_small_button_size);
-					compassButton = dashboardView.findViewById(R.id.map_compass_button);
-					compassButton.setVisibility(View.VISIBLE);
-					compassButton.setLayoutParams(getActionButtonLayoutParams(size));
-					compassButton.setMapActivity(mapActivity);
-					MapControlsLayer mapControlsLayer = mapActivity.getMapLayers().getMapControlsLayer();
-					mapControlsLayer.addCustomMapButton(compassButton);
-				}
 			}
 			updateDownloadBtn();
 			View listViewLayout = dashboardView.findViewById(R.id.dash_list_view_layout);
@@ -633,6 +633,7 @@ public class DashboardOnMap implements ObservableScrollViewCallbacks, IRouteInfo
 				}
 				scrollView.setVisibility(View.VISIBLE);
 				listViewLayout.setVisibility(View.GONE);
+				MineNavStyle.styleDashboardPage(dashboardView, nightMode, this::hideDashboard);
 				applyScrollPosition(scrollView);
 			} else {
 				scrollView.setVisibility(View.GONE);
@@ -1145,6 +1146,10 @@ public class DashboardOnMap implements ObservableScrollViewCallbacks, IRouteInfo
 	}
 
 	private void onScrollChangedImpl(int scrollY) {
+		if (isCurrentTypeHasIndividualFragment()) {
+			// MineNAV: a page with a fixed toolbar, nothing moves or fades with the scroll
+			return;
+		}
 		// Translate list background
 		if (portrait) {
 			if (listBackgroundView != null) {

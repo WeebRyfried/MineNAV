@@ -16,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.UiThread;
 import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
@@ -54,6 +55,8 @@ import net.osmand.plus.utils.InsetTarget;
 import net.osmand.plus.utils.InsetTargetsCollection;
 import net.osmand.plus.views.DirectionDrawable;
 import net.osmand.plus.views.controls.PagerSlidingTabStrip;
+import net.osmand.plus.minenav.MineNavDownloadStyle;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.util.Algorithms;
 
 import java.io.File;
@@ -135,6 +138,7 @@ public class DownloadActivity extends AbstractDownloadActivity implements Downlo
 
 		viewPager.setAdapter(new OsmandFragmentPagerAdapter(getSupportFragmentManager(), tabs));
 		pagerSlidingTabs.setViewPager(viewPager);
+		MineNavDownloadStyle.styleTabs(pagerSlidingTabs, MineNavDownloadStyle.isNightMode(this));
 		pagerSlidingTabs.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
 			@Override
@@ -187,8 +191,12 @@ public class DownloadActivity extends AbstractDownloadActivity implements Downlo
 	public void updateToolbar() {
 		ActionBar actionBar = getSupportActionBar();
 		if (actionBar != null) {
-			actionBar.setTitle(R.string.maps_and_resources);
+			actionBar.setTitle(R.string.mn_menu_download_maps);
 			actionBar.setElevation(0);
+		}
+		Toolbar toolbar = findViewById(androidx.appcompat.R.id.action_bar);
+		if (toolbar != null) {
+			MineNavStyle.centerToolbarTitle(toolbar, MineNavDownloadStyle.isNightMode(this));
 		}
 	}
 

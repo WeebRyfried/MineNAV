@@ -98,7 +98,7 @@ public class ShareOsmPointsAsyncTask extends AsyncTask<OsmPoint, OsmPoint, Strin
 			sz.setFeature("http://xmlpull.org/v1/doc/features.html#indent-output", true);
 			sz.startDocument("UTF-8", true);
 			sz.startTag("", "osmChange");
-			sz.attribute("", "generator", "OsmAnd");
+			sz.attribute("", "generator", "MineNAV");
 			sz.attribute("", "version", "0.6");
 			sz.startTag("", "create");
 			writeContent(sz, points, OsmPoint.Action.CREATE);

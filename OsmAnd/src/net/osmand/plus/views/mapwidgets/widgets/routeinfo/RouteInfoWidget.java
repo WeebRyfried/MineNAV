@@ -26,6 +26,7 @@ import net.osmand.plus.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.base.containers.PaintedText;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.minenav.MineNavWidgetPanel;
 import net.osmand.plus.settings.backend.ApplicationMode;
 import net.osmand.plus.settings.backend.preferences.OsmandPreference;
 import net.osmand.plus.settings.enums.ScreenLayoutMode;
@@ -154,6 +155,11 @@ public class RouteInfoWidget extends MapWidget implements ISupportVerticalPanel,
 			return;
 		}
 		Integer surfaceColor = appearance != null ? appearance.getSurfaceColor() : null;
+		if (surfaceColor == null) {
+			// MineNAV: the default panel look gets the round button of the map
+			MineNavWidgetPanel.styleRouteInfoButton(buttonBody, nightMode);
+			return;
+		}
 		int color = surfaceColor != null
 				? surfaceColor
 				: ColorUtilities.getSecondaryActiveColor(app, nightMode);

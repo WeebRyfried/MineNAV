@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.osmand.plus.views.controls.RoutePreviewCard xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/route_preview_card"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="bottom"
+	android:clipToPadding="false"
+	android:paddingTop="@dimen/content_padding"
+	android:visibility="gone">
+
+	<!-- Waze-like "Go now" sheet shown after picking a destination -->
+	<LinearLayout
+		android:id="@+id/route_preview_surface"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:elevation="@dimen/where_to_card_elevation"
+		android:orientation="vertical"
+		android:paddingHorizontal="@dimen/content_padding"
+		android:paddingBottom="@dimen/content_padding">
+
+		<View
+			android:id="@+id/route_preview_handle"
+			android:layout_width="@dimen/where_to_handle_width"
+			android:layout_height="@dimen/where_to_handle_height"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/content_padding_small" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/content_padding_small"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/route_preview_to"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:textSize="@dimen/default_list_text_size" />
+
+			<ImageView
+				android:id="@+id/route_preview_close"
+				android:layout_width="@dimen/mn_round_button_size"
+				android:layout_height="@dimen/mn_round_button_size"
+				android:contentDescription="@string/shared_string_cancel"
+				android:padding="@dimen/content_padding_small"
+				android:src="@drawable/ic_action_close" />
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/route_preview_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/nunito_extrabold"
+			android:maxLines="1"
+			android:textSize="@dimen/route_preview_time_size"
+			app:fontFamily="@font/nunito_extrabold" />
+
+		<TextView
+			android:id="@+id/route_preview_details"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:maxLines="2"
+			android:textSize="@dimen/default_list_text_size" />
+
+		<ProgressBar
+			android:id="@+id/route_preview_progress"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/content_padding_half"
+			android:indeterminate="true"
+			android:visibility="gone" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/content_padding"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/route_preview_options"
+				android:layout_width="0dp"
+				android:layout_height="@dimen/route_preview_button_height"
+				android:layout_weight="1"
+				android:fontFamily="@font/nunito_bold"
+				android:gravity="center"
+				android:text="@string/route_preview_options"
+				android:textSize="@dimen/default_list_text_size"
+				app:fontFamily="@font/nunito_bold" />
+
+			<TextView
+				android:id="@+id/route_preview_go"
+				android:layout_width="0dp"
+				android:layout_height="@dimen/route_preview_button_height"
+				android:layout_marginStart="@dimen/content_padding_small"
+				android:layout_weight="1"
+				android:fontFamily="@font/nunito_bold"
+				android:gravity="center"
+				android:text="@string/route_preview_go"
+				android:textSize="@dimen/default_list_text_size"
+				app:fontFamily="@font/nunito_bold" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</net.osmand.plus.views.controls.RoutePreviewCard>

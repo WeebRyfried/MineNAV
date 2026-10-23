@@ -26,6 +26,7 @@ import net.osmand.plus.widgets.ctxmenu.data.ContextMenuItem;
 import net.osmand.plus.R;
 import net.osmand.plus.base.BottomSheetDialogFragment;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.minenav.MineNavPlaceCard;
 import net.osmand.plus.utils.AndroidUtils;
 import net.osmand.plus.widgets.tools.ExtendedBottomSheetBehavior;
 import net.osmand.plus.widgets.tools.ExtendedBottomSheetBehavior.BottomSheetCallback;
@@ -110,6 +111,8 @@ public class AdditionalActionsBottomSheetDialogFragment extends BottomSheetDialo
 			}
 		}
 
+		MineNavPlaceCard.styleActionsSheet(mainView, nightMode);
+
 		ExtendedBottomSheetBehavior behavior = ExtendedBottomSheetBehavior.from(scrollView);
 		behavior.setBottomSheetCallback(new BottomSheetCallback() {
 			@Override
@@ -186,6 +189,11 @@ public class AdditionalActionsBottomSheetDialogFragment extends BottomSheetDialo
 	}
 
 	private void updateBackground(boolean expanded) {
+		if (portrait) {
+			scrollView.setBackground(MineNavPlaceCard.actionsSheetBackground(scrollView, nightMode,
+					expanded && expandedToFullScreen()));
+			return;
+		}
 		int bgResId;
 		if (portrait) {
 			bgResId = expanded && expandedToFullScreen()

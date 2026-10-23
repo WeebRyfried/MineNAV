@@ -98,6 +98,18 @@
 
 	</LinearLayout>
 
+	<!-- MineNAV sheets become a left-side panel in landscape, like Waze -->
+	<FrameLayout
+		android:layout_width="@dimen/mn_sheet_land_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|start">
+
+		<include layout="@layout/map_where_to_card" />
+
+		<include layout="@layout/map_route_preview_card" />
+
+	</FrameLayout>
+
 	<include
 		layout="@layout/add_gpx_point_bottom_sheet"
 		android:layout_width="match_parent"

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/menu_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clickable="true"
+	android:focusable="true"
+	android:orientation="vertical">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/content_padding">
+
+		<ImageView
+			android:id="@+id/menu_close"
+			android:layout_width="@dimen/mn_round_button_size"
+			android:layout_height="@dimen/mn_round_button_size"
+			android:layout_gravity="end"
+			android:contentDescription="@string/mn_close"
+			android:padding="@dimen/content_padding_small"
+			android:src="@drawable/ic_action_close" />
+
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:paddingHorizontal="@dimen/content_padding"
+		android:paddingBottom="@dimen/content_padding">
+
+		<ImageView
+			android:layout_width="@dimen/mn_menu_mascot_size"
+			android:layout_height="@dimen/mn_menu_mascot_size"
+			android:importantForAccessibility="no"
+			android:src="@drawable/ic_minenav_mascot" />
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/content_padding"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/menu_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/nunito_extrabold"
+				android:text="@string/app_name"
+				android:textSize="@dimen/mn_menu_title_size"
+				app:fontFamily="@font/nunito_extrabold" />
+
+			<TextView
+				android:id="@+id/menu_profile"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/content_padding_half"
+				android:drawablePadding="@dimen/content_padding_half"
+				android:fontFamily="@font/nunito_bold"
+				android:gravity="center_vertical"
+				android:paddingHorizontal="@dimen/content_padding"
+				android:paddingVertical="@dimen/content_padding_half"
+				android:textSize="@dimen/default_list_text_size"
+				app:fontFamily="@font/nunito_bold" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/menu_divider"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginHorizontal="@dimen/content_padding" />
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:id="@+id/menu_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingVertical="@dimen/content_padding" />
+
+	</ScrollView>
+
+	<TextView
+		android:id="@+id/menu_version"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="@dimen/content_padding"
+		android:textSize="@dimen/default_desc_text_size" />
+
+</LinearLayout>

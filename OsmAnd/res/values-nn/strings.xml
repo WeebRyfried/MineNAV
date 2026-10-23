@@ -103,7 +103,7 @@
     <string name="routing_attr_avoid_ferries_name">Unngår ferjer</string>
     <string name="routing_attr_avoid_ferries_description">Unngå ferjer</string>
     <string name="routing_attr_weight_name">Maksvekt</string>
-    <string name="copying_osmand_files">Kopierer OsmAnd-filer</string>
+    <string name="copying_osmand_files">Kopierer MineNAV-filer</string>
     <string name="app_mode_truck">Lastebil</string>
     <string name="amenity_type_seamark">Sjømerke</string>
     <string name="app_modes_choose">Programprofilar</string>
@@ -193,7 +193,7 @@
     <string name="avoid_motorway">Unngå motorvegar</string>
     <string name="snap_to_road">Lås på veg</string>
     <string name="interrupt_music">Avbryt musikk</string>
-    <string name="osmand_plus_play_title_30_chars">OsmAnd+ kart og navigering</string>
+    <string name="osmand_plus_play_title_30_chars">MineNAV kart og navigering</string>
     <string name="routing_attr_avoid_highway_description">Unngå motorvegar</string>
     <string name="navigation_points">Navigasjonspunkt</string>
     <string name="rendering_attr_showTrainRoutes_name">Togruter</string>

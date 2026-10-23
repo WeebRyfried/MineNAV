@@ -524,7 +524,10 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 	public void updateProgress(int progress) {
 		ProgressBar progressBar = findViewById(R.id.map_horizontal_progress);
 		if (findViewById(R.id.map_hud_layout).getVisibility() == View.VISIBLE) {
-			if (mapRouteInfoMenu.isVisible() || dashboardOnMap.isVisible() || isOnlineRoutingWithApproximation()) {
+			MapControlsLayer controlsLayer = getMapLayers().getMapControlsLayer();
+			// MineNAV: the route preview sheet shows its own progress
+			boolean routePreview = controlsLayer != null && controlsLayer.isRoutePreviewVisible();
+			if (mapRouteInfoMenu.isVisible() || dashboardOnMap.isVisible() || isOnlineRoutingWithApproximation() || routePreview) {
 				AndroidUiHelper.updateVisibility(progressBar, false);
 				return;
 			}
@@ -945,6 +948,11 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 	@Override
 	public Integer getNavigationBarColor() {
 		if (InsetsUtils.isEdgeToEdgeSupported()) {
+			MapContextMenu contextMenu = getContextMenu();
+			if (contextMenu.isVisible() && !contextMenu.isLandscapeLayout()) {
+				// MineNAV: the place card runs to the bottom edge, so the bar takes its color
+				return getColor(isMapUiNightMode() ? R.color.mn_row_bg_dark : R.color.mn_row_bg_light);
+			}
 			if (isBottomWidgetsPanelVisible()) {
 				ScreenLayoutMode layoutMode = ScreenLayoutMode.getDefault(this);
 				ResolvedPanelBackground background = app.getPanelAppearanceSettingsManager()
@@ -1784,6 +1792,11 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 	}
 
 	private void fitCurrentRouteToMap() {
+		MapControlsLayer controlsLayer = getMapLayers().getMapControlsLayer();
+		if (controlsLayer != null && controlsLayer.isRoutePreviewVisible()) {
+			// MineNAV: the route preview shows the whole route itself, in the map space above its sheet
+			return;
+		}
 		boolean portrait = true;
 		int leftBottomPaddingPx = 0;
 		WeakReference<?> fragmentRef = mapRouteInfoMenu.findMenuFragment();

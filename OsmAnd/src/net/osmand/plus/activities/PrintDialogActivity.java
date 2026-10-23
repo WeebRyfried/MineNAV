@@ -86,7 +86,7 @@ public class PrintDialogActivity extends ActionBarProgressActivity {
 
 	private void createWebPrintJob(@NonNull WebView webView) {
 		try {
-			String jobName = "OsmAnd route info";
+			String jobName = "MineNAV route info";
 			PrintDocumentAdapter adapter = webView.createPrintDocumentAdapter(jobName);
 			PrintManager manager = (PrintManager) getSystemService(Context.PRINT_SERVICE);
 

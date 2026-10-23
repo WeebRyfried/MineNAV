@@ -162,6 +162,13 @@ public class OsmandSettings {
 	private final Map<String, CommonPreference<String>> customRendersProps = new LinkedHashMap<>();
 	private final Map<String, CommonPreference<Boolean>> customBooleanRoutingProps = new LinkedHashMap<>();
 	private final Map<String, CommonPreference<Boolean>> customBooleanRendersProps = new LinkedHashMap<>();
+
+	{
+		// A clean, Waze-like map by default; each of these can be turned back on in Configure map
+		for (String attrName : new String[] {"hideIcons", "hidePOILabels", "hideHouseNumbers", "hideBuildings", "noAdminboundaries"}) {
+			registerCustomRenderBooleanProperty(attrName, true);
+		}
+	}
 	private final Map<String, CommonPreference<Boolean>> customBooleanRenderClassProps = new LinkedHashMap<>();
 
 	private final ImpassableRoadsStorage impassableRoadsStorage = new ImpassableRoadsStorage(this);
@@ -1420,16 +1427,11 @@ public class OsmandSettings {
 		NAVIGATION_ICON.setModeDefaultValue(ApplicationMode.HORSE, LocationIcon.MOVEMENT_DEFAULT.name());
 	}
 
-	public final CommonPreference<String> LOCATION_ICON = new StringPreference(this, "location_icon", LocationIcon.STATIC_DEFAULT.name()).makeProfile().cache();
+	// MineNAV: the same arrow as when moving, like Waze, instead of a dot with a view cone
+	public final CommonPreference<String> LOCATION_ICON = new StringPreference(this, "location_icon", LocationIcon.MOVEMENT_DEFAULT.name()).makeProfile().cache();
 
 	{
-		LOCATION_ICON.setModeDefaultValue(ApplicationMode.DEFAULT, LocationIcon.STATIC_DEFAULT.name());
-		LOCATION_ICON.setModeDefaultValue(ApplicationMode.CAR, LocationIcon.STATIC_CAR.name());
-		LOCATION_ICON.setModeDefaultValue(ApplicationMode.BICYCLE, LocationIcon.STATIC_BICYCLE.name());
-		LOCATION_ICON.setModeDefaultValue(ApplicationMode.BOAT, LocationIcon.STATIC_DEFAULT.name());
-		LOCATION_ICON.setModeDefaultValue(ApplicationMode.AIRCRAFT, LocationIcon.STATIC_CAR.name());
-		LOCATION_ICON.setModeDefaultValue(ApplicationMode.SKI, LocationIcon.STATIC_BICYCLE.name());
-		LOCATION_ICON.setModeDefaultValue(ApplicationMode.HORSE, LocationIcon.STATIC_BICYCLE.name());
+		LOCATION_ICON.setModeDefaultValue(ApplicationMode.BOAT, LocationIcon.MOVEMENT_NAUTICAL.name());
 	}
 
 	public final CommonPreference<Integer> APP_MODE_ORDER = new IntPreference(this, "app_mode_order", 0).makeProfile().cache();
@@ -1616,13 +1618,10 @@ public class OsmandSettings {
 	public final CommonPreference<Long> LAST_AUTO_BACKUP_TIMESTAMP = registerLongPreference("last_auto_backup_timestamp", 0L).makeGlobal();
 	public final CommonPreference<Long> AUTO_BACKUP_INTERVAL_MS = registerLongPreference("auto_backup_interval_ms", DEFAULT_AUTO_BACKUP_INTERVAL_MS).makeGlobal();
 
-	public final CommonPreference<DayNightMode> DAYNIGHT_MODE = new EnumStringPreference<>(this, "daynight_mode", DayNightMode.DAY, DayNightMode.values());
+	public final CommonPreference<DayNightMode> DAYNIGHT_MODE = new EnumStringPreference<>(this, "daynight_mode", DayNightMode.APP_THEME, DayNightMode.values());
 
 	{
 		DAYNIGHT_MODE.makeProfile().cache();
-		DAYNIGHT_MODE.setModeDefaultValue(ApplicationMode.CAR, DayNightMode.AUTO);
-		DAYNIGHT_MODE.setModeDefaultValue(ApplicationMode.BICYCLE, DayNightMode.AUTO);
-		DAYNIGHT_MODE.setModeDefaultValue(ApplicationMode.PEDESTRIAN, DayNightMode.DAY);
 	}
 
 	public final CommonPreference<Boolean> AUTO_ZOOM_MAP = new BooleanPreference(this, "auto_zoom_map_on_off", false).makeProfile().cache();
@@ -1664,8 +1663,9 @@ public class OsmandSettings {
 	}
 
 	public final CommonPreference<Boolean> PREVIEW_NEXT_TURN = new BooleanPreference(this, "preview_next_turn", true).makeProfile().cache();
-	public final CommonPreference<MarkerDisplayOption> VIEW_ANGLE_VISIBILITY = new EnumStringPreference<>(this, "view_angle_visibility", MarkerDisplayOption.RESTING, MarkerDisplayOption.values()).makeProfile().makeShared();
-	public final CommonPreference<MarkerDisplayOption> LOCATION_RADIUS_VISIBILITY = new EnumStringPreference<>(this, "location_radius_visibility", MarkerDisplayOption.RESTING_NAVIGATION, MarkerDisplayOption.values()).makeProfile().makeShared();
+	// MineNAV: no view cone or accuracy circle around the position arrow, like Waze
+	public final CommonPreference<MarkerDisplayOption> VIEW_ANGLE_VISIBILITY = new EnumStringPreference<>(this, "view_angle_visibility", MarkerDisplayOption.OFF, MarkerDisplayOption.values()).makeProfile().makeShared();
+	public final CommonPreference<MarkerDisplayOption> LOCATION_RADIUS_VISIBILITY = new EnumStringPreference<>(this, "location_radius_visibility", MarkerDisplayOption.OFF, MarkerDisplayOption.values()).makeProfile().makeShared();
 
 	public final CommonPreference<Boolean> INTERRUPT_MUSIC = new BooleanPreference(this, "interrupt_music", false).makeProfile();
 
@@ -1998,13 +1998,8 @@ public class OsmandSettings {
 	public static final int ROTATE_MAP_COMPASS = 2;
 	public static final int ROTATE_MAP_MANUAL = 3;
 
-	public final CommonPreference<Integer> ROTATE_MAP = new IntPreference(this, "rotate_map", ROTATE_MAP_MANUAL).makeProfile().cache();
-
-	{
-		ROTATE_MAP.setModeDefaultValue(ApplicationMode.CAR, ROTATE_MAP_BEARING);
-		ROTATE_MAP.setModeDefaultValue(ApplicationMode.BICYCLE, ROTATE_MAP_BEARING);
-		ROTATE_MAP.setModeDefaultValue(ApplicationMode.PEDESTRIAN, ROTATE_MAP_BEARING);
-	}
+	// MineNAV: every profile faces the direction of travel by default, like Waze
+	public final CommonPreference<Integer> ROTATE_MAP = new IntPreference(this, "rotate_map", ROTATE_MAP_BEARING).makeProfile().cache();
 
 	public boolean isCompassMode(@NonNull CompassMode compassMode) {
 		return ROTATE_MAP.get() == compassMode.getValue();
@@ -3240,12 +3235,12 @@ public class OsmandSettings {
 		return Algorithms.isEmpty(voiceProvider) || VOICE_PROVIDER_NOT_USE.equals(voiceProvider);
 	}
 
-	public final CommonPreference<String> RENDERER = new StringPreference(this, "renderer", RendererRegistry.DEFAULT_RENDER) {
+	public final CommonPreference<String> RENDERER = new StringPreference(this, "renderer", RendererRegistry.MINENAV_RENDER) {
 
 		@Override
 		protected boolean setValue(Object prefs, String val) {
 			if (val == null) {
-				val = RendererRegistry.DEFAULT_RENDER;
+				val = RendererRegistry.MINENAV_RENDER;
 			}
 			RenderingRulesStorage loaded = ctx.getRendererRegistry().getRenderer(val);
 			if (loaded != null) {

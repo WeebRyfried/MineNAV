@@ -59,6 +59,7 @@ import net.osmand.plus.mapcontextmenu.AdditionalActionsBottomSheetDialogFragment
 import net.osmand.plus.mapcontextmenu.MenuController.MenuState;
 import net.osmand.plus.mapcontextmenu.controllers.FavouritePointMenuController;
 import net.osmand.plus.mapcontextmenu.other.MenuObjectUtils;
+import net.osmand.plus.minenav.MineNavPlaceCard;
 import net.osmand.plus.routepreparationmenu.ChooseRouteFragment;
 import net.osmand.plus.routepreparationmenu.MapRouteInfoMenu;
 import net.osmand.plus.settings.backend.menuitems.MainContextMenuItemsSettings;
@@ -588,6 +589,7 @@ public class MapContextMenuFragment extends BaseFullScreenFragment implements Do
 
 		fitPolygon();
 		created = true;
+		MineNavPlaceCard.style(view, nightMode);
 		return view;
 	}
 
@@ -681,6 +683,7 @@ public class MapContextMenuFragment extends BaseFullScreenFragment implements Do
 			}
 		}
 		buttons.setGravity(Gravity.CENTER);
+		MineNavPlaceCard.styleActions(buttons, nightMode);
 	}
 
 	private View getActionView(ContextMenuItem contextMenuItem,
@@ -1806,7 +1809,9 @@ public class MapContextMenuFragment extends BaseFullScreenFragment implements Do
 			menu.setMapCenter(mapCenter);
 		}
 		if (!alreadyAdjusted) {
-			calcLatLon = getAdjustedMarkerLocation(getPosY(), calcLatLon, true, zoom);
+			calcLatLon = menu.isLandscapeLayout()
+					? getAdjustedMarkerLocation(getPosY(), calcLatLon, true, zoom)
+					: getVisibleMapTarget(latLon, getPosY(), zoom);
 		}
 		thread.startMoving(calcLatLon.getLatitude(), calcLatLon.getLongitude(), zoom);
 	}
@@ -2034,12 +2039,9 @@ public class MapContextMenuFragment extends BaseFullScreenFragment implements Do
 	@ColorInt
 	@Override
 	public Integer getNavigationBarColor() {
-		if (menu.getCurrentMenuState() == MenuState.HEADER_ONLY && menu.isVisible()) {
-			int colorId = nightMode ? R.color.list_background_color_dark : R.color.activity_background_color_light;
-			return ContextCompat.getColor(requireContext(), colorId);
-		} else {
-			return super.getNavigationBarColor();
-		}
+		// MineNAV: the card always runs to the bottom edge, so the bar takes its color and hides what lies below
+		int colorId = nightMode ? R.color.mn_row_bg_dark : R.color.mn_row_bg_light;
+		return ContextCompat.getColor(requireContext(), colorId);
 	}
 
 	private int getPosY() {
@@ -2137,7 +2139,10 @@ public class MapContextMenuFragment extends BaseFullScreenFragment implements Do
 	private void adjustMapPosition(int y, boolean animated, boolean center, int dZoom) {
 		map.getAnimatedDraggingThread().stopAnimatingSync();
 		int zoom = getZoom() + dZoom;
-		LatLon latlon = getAdjustedMarkerLocation(y, menu.getLatLon(), center, zoom);
+		boolean visibleCenter = center && !menu.isLandscapeLayout();
+		LatLon latlon = visibleCenter
+				? getVisibleMapTarget(menu.getLatLon(), y, zoom)
+				: getAdjustedMarkerLocation(y, menu.getLatLon(), center, zoom);
 
 		if (displayPositionManager.hasCustomMapRatio()
 				|| (map.getLatitude() == latlon.getLatitude() && map.getLongitude() == latlon.getLongitude() && dZoom == 0)) {
@@ -2145,7 +2150,10 @@ public class MapContextMenuFragment extends BaseFullScreenFragment implements Do
 		}
 
 		if (!fitPolygon()) {
-			if (animated) {
+			if (animated && visibleCenter) {
+				// The target is already for the map's own center point
+				map.getAnimatedDraggingThread().startMoving(latlon.getLatitude(), latlon.getLongitude(), zoom);
+			} else if (animated) {
 				showOnMap(latlon, false, true, zoom);
 			} else {
 				if (dZoom != 0) {
@@ -2226,6 +2234,23 @@ public class MapContextMenuFragment extends BaseFullScreenFragment implements Do
 			}
 		}
 		return latlon;
+	}
+
+	/**
+	 * MineNAV: where to move the map so the place shows in the middle of the map space left
+	 * above the card, whatever the map's own center point is.
+	 */
+	@NonNull
+	private LatLon getVisibleMapTarget(@NonNull LatLon place, int cardTopY, int zoom) {
+		RotatedTileBox box = map.getRotatedTileBox();
+		// The map ends on the whole zoom level, without the fraction it may have now
+		box.setZoomAndAnimation(zoom, 0, 0);
+		box.setLatLonCenter(place.getLatitude(), place.getLongitude());
+		float centerX = box.getCenterPixelX();
+		float centerY = box.getCenterPixelY();
+		float placeX = box.getPixWidth() / 2f;
+		float placeY = (AndroidUtils.getStatusBarHeight(app) + cardTopY) / 2f;
+		return box.getLatLonFromPixel(2 * centerX - placeX, 2 * centerY - placeY);
 	}
 
 	private int getZoomButtonsY(int y) {

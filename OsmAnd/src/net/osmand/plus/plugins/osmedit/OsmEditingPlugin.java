@@ -145,7 +145,7 @@ public class OsmEditingPlugin extends OsmandPlugin {
 		OSM_USER_DISPLAY_NAME = registerStringPreference("user_display_name", "").makeGlobal();
 		OSM_UPLOAD_VISIBILITY = registerEnumStringPreference("upload_visibility", UploadVisibility.getDefaultValue(), UploadVisibility.getAvailableValues(), UploadVisibility.class).makeGlobal().makeShared();
 
-		USER_OSM_BUG_NAME = registerStringPreference("user_osm_bug_name", "NoName/OsmAnd").makeGlobal().makeShared();
+		USER_OSM_BUG_NAME = registerStringPreference("user_osm_bug_name", "NoName/MineNAV").makeGlobal().makeShared();
 		OSM_USER_PASSWORD = registerStringPreference("user_password", "").makeGlobal();
 		OSM_USER_ACCESS_TOKEN = registerStringPreference("user_access_token", "").makeGlobal();
 		OSM_USER_ACCESS_TOKEN_SECRET = registerStringPreference("user_access_token_secret", "").makeGlobal();

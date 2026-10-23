@@ -36,4 +36,10 @@
     <item name="initial_padding_bottom" type="id"/>
     <item name="widget_panel_view_pager_left" type="id" />
     <item name="widget_panel_view_pager_right" type="id" />
+	<item name="mn_settings_close" type="id" />
+	<item name="mn_sheet_target" type="id" />
+	<item name="mn_card_handle" type="id" />
+	<item name="mn_title_centered" type="id" />
+	<item name="mn_sheet_background" type="id" />
+	<item name="mn_sheet_extension" type="id" />
 </resources>

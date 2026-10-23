@@ -154,8 +154,8 @@
     <string name="lang_uk">Ucraíno</string>
     <string name="lang_vi">Vietnamita</string>
     <string name="lang_cy">Galés</string>
-    <string name="calculate_osmand_route_without_internet">Cálculo sen conexión do segmento da rota do OsmAnd</string>
-    <string name="gpx_option_calculate_first_last_segment">Calcular a ruta do OsmAnd para o primeiro e o derradeiro segmento</string>
+    <string name="calculate_osmand_route_without_internet">Cálculo sen conexión do segmento da rota do MineNAV</string>
+    <string name="gpx_option_calculate_first_last_segment">Calcular a ruta do MineNAV para o primeiro e o derradeiro segmento</string>
     <string name="keep_and_add_destination_point">Engadir coma seguinte destino</string>
     <string name="route_descr_select_destination">Estabelecer destino</string>
     <string name="shared_string_select_on_map">Seleccionar no mapa</string>
@@ -173,11 +173,11 @@
     <string name="routing_attr_avoid_motorway_description">Evitar autoestradas</string>
     <string name="routing_attr_weight_name">Peso</string>
     <string name="routing_attr_weight_description">Indica o peso do vehículo permitido nos itinerarios.</string>
-    <string name="android_19_location_disabled">Dende o Android 4.4 (KitKat), o cartafol de almacenamento antiga (%s) atópase en desuso. Copiar todos os ficheiros do OsmAnd á nova localización de almacenamento\? 
+    <string name="android_19_location_disabled">Dende o Android 4.4 (KitKat), o cartafol de almacenamento antiga (%s) atópase en desuso. Copiar todos os ficheiros do MineNAV á nova localización de almacenamento\? 
 \n Nota 1: Os ficheiros antigos permanecerán intactos (pero poden ser eliminados de xeiti manual). 
-\n Nota 2: Na nova localización de almacenamento será imposíbel compartir ficheiros entre o OsmAnd e o OsmAnd+.</string>
-    <string name="copying_osmand_files">Estanse a copiar os ficheiros de datos do OsmAnd…</string>
-    <string name="calculate_osmand_route_gpx">Cálculo da rota do OsmAnd sen conexión</string>
+\n Nota 2: Na nova localización de almacenamento será imposíbel compartir ficheiros entre o MineNAV e o MineNAV.</string>
+    <string name="copying_osmand_files">Estanse a copiar os ficheiros de datos do MineNAV…</string>
+    <string name="calculate_osmand_route_gpx">Cálculo da rota do MineNAV sen conexión</string>
     <string name="app_mode_truck">Camión</string>
     <string name="speech_rate_descr">Indica a velocidade na fala sintetizada.</string>
     <string name="speech_rate">Velocidade da fala</string>
@@ -334,11 +334,11 @@
     <string name="snap_to_road">Axustar á estrada</string>
     <string name="interrupt_music_descr">As indicacións por voz deteñen a reprodución de música.</string>
     <string name="interrupt_music">Deter a música</string>
-    <string name="osmand_play_title_30_chars">Mapas e navegación OsmAnd</string>
+    <string name="osmand_play_title_30_chars">Mapas e navegación MineNAV</string>
     <string name="osmand_short_description_80_chars">Visualización e navegación móbil de mapas globais do OSM con e sen conexión</string>
-    <string name="osmand_long_description_1000_chars">OsmAnd (Indicacións de navegación automatizadas do OSM)
+    <string name="osmand_long_description_1000_chars">MineNAV (Indicacións de navegación automatizadas do OSM)
 \n
-\n O OsmAnd é unha aplicación de navegación de código aberto con acceso a unha ampla variedade de datos globais do OSM. Tódolos datos do mapa (mapas vectoriais ou teselas) poden ser almacenados no cartón de memoria do teléfono móbil para empregalos sen conexión. O OsmAnd tamen fornece a funcionalidade de cálculo de rotas sen conexión, incluíndo a guía por voz paso a paso.
+\n O MineNAV é unha aplicación de navegación de código aberto con acceso a unha ampla variedade de datos globais do OSM. Tódolos datos do mapa (mapas vectoriais ou teselas) poden ser almacenados no cartón de memoria do teléfono móbil para empregalos sen conexión. O MineNAV tamen fornece a funcionalidade de cálculo de rotas sen conexión, incluíndo a guía por voz paso a paso.
 \n
 \n Algunhas das funcións principais:
 \n - Funcionalidade completa sen conexión (os mapas vectoriais ou de teselas baixados almacénanse no cartafol que se escolla)
@@ -353,14 +353,14 @@
 \n - Aliñamento do mapa dependendo do compás ou da dirección do movemento
 \n - Guía de faixas ou carrís da estrada, límites de velocidade, voces gravadas e TTS
 \n
-\n Limitacións desta versión de balde do OsmAnd:
+\n Limitacións desta versión de balde do MineNAV:
 \n - O número de mapas a baixar está limitado
 \n - Non hai acceso ós puntos de interese (PDI) da Wikipedia sen conexión
 \n
-\n O OsmAnd está a ser desenvolvido activamente e o noso proxecto e o seu progreso futuro depende da contribución financeira para financia-lo desenvolvemento e as probas das funcionalidades novas. Coida a posibilidade de mercar o OsmAnd+ ou de financiar funcións novas específicas ou de facer unha doazón xeral no osmand.net.</string>
-    <string name="osmand_plus_play_title_30_chars">Mapas e navegación de OsmAnd+</string>
+\n O MineNAV está a ser desenvolvido activamente e o noso proxecto e o seu progreso futuro depende da contribución financeira para financia-lo desenvolvemento e as probas das funcionalidades novas. Coida a posibilidade de mercar o MineNAV ou de financiar funcións novas específicas ou de facer unha doazón xeral no osmand.net.</string>
+    <string name="osmand_plus_play_title_30_chars">Mapas e navegación de MineNAV</string>
     <string name="osmand_plus_short_description_80_chars">Visualización e navegación móbil de mapas globais para mapas de OSM con e sen conexión</string>
-    <string name="osmand_plus_long_description_1000_chars">O OsmAnd+ (Indicacións da navegación automatizadas do OSM) é un aplicativo de navegación de código aberto con acceso a unha ampla variedade de datos globais do OSM. Tódolos mapas dos datos (mapas vectoriais ou teselas) poden seren almacenados no cartón de memoria do teléfono para empregalos sen conexión. O OsmAnd tamén fornece funcionalidade de cálculo de rotas sen conexión, incluíndo a guía por voz paso a paso. \n \nO OsmAnd+ é a versión de pagamento, mais ó mercala estás a apoiar o proxecto, financiar o desenvolvemento de funcións novas e tes a oportunidade de recibir as últimas actualizacións. \n \nAlgunhas das funcións principais son: \n-Funcionalidade completa sen conexión (os mapas vectoriais ou de teselas baixados almacénanse no cartafol que se escolleu) \n-Mapas vectoriais compactos sen conexión para todo o mundo. \n-Pódense baixar mapas de países ou rexións de xeito directo dende a aplicación. \n-É posíbel sobrepór varias capas de mapas, coma pistas de GPX ou de navegación, puntos de interese (PDI), favoritos, curvas do nivel, paradas de transporte público ou mapas adicionais con transparencia regulábel. \n \n- Procura sen conexión de enderezos e lugares (PDI). \n-Cálculo de rotas sen conexión para distancias curtas (distancias medias) \n- Modos para automóbil, bicicleta e peóns, con: \n-Vistas de noite e día automatizadas opcionais. \n-Achegamento opcional do mapa dependendo da velocidade \n-Aliñamento opcional do mapa dependendo do compás ou da dirección do movemento. \n-Guía opcional de faixas ou carrís da estrada, límites de velocidade, voces gravadas e TTS</string>
+    <string name="osmand_plus_long_description_1000_chars">O MineNAV (Indicacións da navegación automatizadas do OSM) é un aplicativo de navegación de código aberto con acceso a unha ampla variedade de datos globais do OSM. Tódolos mapas dos datos (mapas vectoriais ou teselas) poden seren almacenados no cartón de memoria do teléfono para empregalos sen conexión. O MineNAV tamén fornece funcionalidade de cálculo de rotas sen conexión, incluíndo a guía por voz paso a paso. \n \nO MineNAV é a versión de pagamento, mais ó mercala estás a apoiar o proxecto, financiar o desenvolvemento de funcións novas e tes a oportunidade de recibir as últimas actualizacións. \n \nAlgunhas das funcións principais son: \n-Funcionalidade completa sen conexión (os mapas vectoriais ou de teselas baixados almacénanse no cartafol que se escolleu) \n-Mapas vectoriais compactos sen conexión para todo o mundo. \n-Pódense baixar mapas de países ou rexións de xeito directo dende a aplicación. \n-É posíbel sobrepór varias capas de mapas, coma pistas de GPX ou de navegación, puntos de interese (PDI), favoritos, curvas do nivel, paradas de transporte público ou mapas adicionais con transparencia regulábel. \n \n- Procura sen conexión de enderezos e lugares (PDI). \n-Cálculo de rotas sen conexión para distancias curtas (distancias medias) \n- Modos para automóbil, bicicleta e peóns, con: \n-Vistas de noite e día automatizadas opcionais. \n-Achegamento opcional do mapa dependendo da velocidade \n-Aliñamento opcional do mapa dependendo do compás ou da dirección do movemento. \n-Guía opcional de faixas ou carrís da estrada, límites de velocidade, voces gravadas e TTS</string>
     <string name="day_night_info_description">Amencer: %1$s
 \nSolpor: %2$s</string>
     <string name="day_night_info">Información sobre o día e a noite</string>
@@ -416,7 +416,7 @@
     <string name="gpxup_private">Privado</string>
     <string name="asap">O antes posíbel</string>
     <string name="share_route_as_gpx">Compartir a ruta coma ficheiro GPX</string>
-    <string name="share_route_subject">Ruta compartida por OsmAnd</string>
+    <string name="share_route_subject">Ruta compartida por MineNAV</string>
     <string name="route_roundabout">Rotonda: Tome a %1$dª saída cara</string>
     <string name="route_kl">Mantéñase á esquerda e continúe</string>
     <string name="route_kr">Mantéñase á dereita e continúe</string>
@@ -438,16 +438,16 @@
     <string name="shared_string_online_maps">Mapas con conexión</string>
     <string name="osmand_rastermaps_plugin_description">Accede a tantos tipos de mapas en liña (chamados teselas, tiles ou ráster) que desexes, dende teselas predefinidas do OSM (coma o Mapnik) a imaxes satelitais e capas de propósito especial coma mapas do tempo, mapas do clima, mapas xeolóxicos, capas de asombreado, etc. 
 \n 
-\nCalquera destes mapas pode empregarse como o mapa predefinido que se amosará, ou como unha sobreposición ou subxacencia doutro mapa base (como os mapas estándar do OsmAnd en liña). Certos elementos dos mapas vectoriais do OsmAnd poden agocharse a través do menú \'Configurar mapa\' para facer calquera subxacencia máis visíbel. 
+\nCalquera destes mapas pode empregarse como o mapa predefinido que se amosará, ou como unha sobreposición ou subxacencia doutro mapa base (como os mapas estándar do MineNAV en liña). Certos elementos dos mapas vectoriais do MineNAV poden agocharse a través do menú \'Configurar mapa\' para facer calquera subxacencia máis visíbel. 
 \n 
-\nBaixa as teselas dos mapas directamente en liña, ou prepárao para o seu emprego sen conexión (copiar de xeito manual no cartagol de datos OsmAnd) coma unha base de datos SQLite que pode ser producida por unha variedade de ferramentas de preparación de mapas de terceiros.</string>
-    <string name="osmand_accessibility_description">Activa as funcións de accesibilidade do dispositivo de xeito directo no OsmAnd. Fai máis doado por exemplo, o axuste da velocidade da voz para sintetizadores de voz, os axustes de navegación D-pad, empregando a roda de desprazamento para o control do achegamento (zoom), ou a retroalimentación de texto a voz, por exemplo, para anunciar a túa posición de xeito automático.</string>
-    <string name="osmand_development_plugin_description">Fornece funcionalidades para probar e depurar OsmAnd: simular rutas de navegación, supervisar a representación na pantalla, comprobar o rendemento, etc. Este complemento non é necesario para o uso normal da aplicación.</string>
+\nBaixa as teselas dos mapas directamente en liña, ou prepárao para o seu emprego sen conexión (copiar de xeito manual no cartagol de datos MineNAV) coma unha base de datos SQLite que pode ser producida por unha variedade de ferramentas de preparación de mapas de terceiros.</string>
+    <string name="osmand_accessibility_description">Activa as funcións de accesibilidade do dispositivo de xeito directo no MineNAV. Fai máis doado por exemplo, o axuste da velocidade da voz para sintetizadores de voz, os axustes de navegación D-pad, empregando a roda de desprazamento para o control do achegamento (zoom), ou a retroalimentación de texto a voz, por exemplo, para anunciar a túa posición de xeito automático.</string>
+    <string name="osmand_development_plugin_description">Fornece funcionalidades para probar e depurar MineNAV: simular rutas de navegación, supervisar a representación na pantalla, comprobar o rendemento, etc. Este complemento non é necesario para o uso normal da aplicación.</string>
     <string name="plugins_screen">Plugins</string>
     <string name="prefs_plugins">Plugins</string>
     <string name="osm_editing_plugin_description">Faga achegas a OpenStreetMap, unha comunidade global que mantén un mapa completo do mundo e ofrece datos de código aberto actualizados a todos os usuarios.\n\nPode atopar instrucións sobre como editar o mapa no noso sitio web %1$s.</string>
     <string name="play_commands_of_currently_selected_voice">Escolle unha voz e reproduce probas dos avisos:</string>
-    <string name="debugging_and_development">Desenvolvemento de OsmAnd</string>
+    <string name="debugging_and_development">Desenvolvemento de MineNAV</string>
     <string name="test_voice_prompts">Probar indicacións por voz</string>
     <string name="gpx_visibility_txt">Visibilidade</string>
     <string name="gpx_tags_txt">Etiquetas</string>
@@ -538,7 +538,7 @@
     <string name="user_name">O teu nome de usuario no OSM</string>
     <string name="user_password">Contrasinal</string>
     <string name="osmand_service">Modo en segundo plano</string>
-    <string name="osmand_service_descr">O OsmAnd execútase en segundo plano coa pantalla apagada.</string>
+    <string name="osmand_service_descr">O MineNAV execútase en segundo plano coa pantalla apagada.</string>
     <string name="download_files_not_enough_space">Non fica moito espazo libre para baixar %1$s MB (libre: %2$s).</string>
     <string name="download_files_question_space">Baixar {0} ficheiro(s)\?
 \n {1} MB (de {2} MB) serán empregados.</string>
@@ -561,7 +561,7 @@
     <string name="file_with_name_already_exists">Xa existe un ficheiro con ese nome.</string>
     <string name="poi_query_by_name_matches_categories">Atopadas varias categorías de PDI relacionadas.</string>
     <string name="poi_filter_by_name">Procurar polo nome</string>
-    <string name="button_upgrade_osmandplus">Actualizar OsmAnd+</string>
+    <string name="button_upgrade_osmandplus">Actualizar MineNAV</string>
     <string name="map_version_changed_info">Baixa a nova versión da aplicación, para poder empregar os novos ficheiros dos mapas.</string>
     <string name="shared_string_rename">Mudar o nome</string>
     <string name="poi_filter_nominatim">Nominatim con conexión</string>
@@ -661,13 +661,13 @@
     <string name="version_index_is_big_for_memory">O índice \"{0}\" non cabe na memoria</string>
     <string name="version_index_is_not_supported">Non se admite a versión do índice \"{0}\"</string>
     <string name="application_dir">Cartafol de almacenamento dos datos</string>
-    <string name="osmand_net_previously_installed">Tódolos datos sen conexión na versión vella do OsmAnd son compatíbeis ca nova versión, pero os puntos dos Favoritos deben exportarse dende a versión viella e despois, importarse na nova.</string>
+    <string name="osmand_net_previously_installed">Tódolos datos sen conexión na versión vella do MineNAV son compatíbeis ca nova versión, pero os puntos dos Favoritos deben exportarse dende a versión viella e despois, importarse na nova.</string>
     <string name="build_installed">A compilación {0} foi instalada ({1}).</string>
     <string name="downloading_build">Estase a baixar a compilación…</string>
-    <string name="install_selected_build">Instalar o OsmAnd - {0} de {1} {2} MB\?</string>
-    <string name="loading_builds_failed">Fallou a obtención da listaxe das compilacións do OsmAnd</string>
-    <string name="loading_builds">A cargar as compilacións de OsmAnd…</string>
-    <string name="select_build_to_install">Escoller unha compilación do OsmAnd para instalar</string>
+    <string name="install_selected_build">Instalar o MineNAV - {0} de {1} {2} MB\?</string>
+    <string name="loading_builds_failed">Fallou a obtención da listaxe das compilacións do MineNAV</string>
+    <string name="loading_builds">A cargar as compilacións de MineNAV…</string>
+    <string name="select_build_to_install">Escoller unha compilación do MineNAV para instalar</string>
     <string name="gps_status_app_not_found">A aplicación de estado do GPS non está instalado. Desexa procuralo na Google Play\?</string>
     <string name="daynight_mode_day">Día</string>
     <string name="daynight_mode_night">Noite</string>
@@ -700,7 +700,7 @@
     <string name="no_fav_to_save">Non hai puntos dos Favoritos que gardar</string>
     <string name="shared_string_import">Importar</string>
     <string name="shared_string_share">Compartir</string>
-    <string name="share_fav_subject">Favoritos compartidos mediante OsmAnd</string>
+    <string name="share_fav_subject">Favoritos compartidos mediante MineNAV</string>
     <string name="error_occurred_loading_gpx">Non foi posíbel cargar o GPX.</string>
     <string name="send_report">Enviar denuncia</string>
     <string name="poi_namefinder_query_empty">Escribir para atopar un PDI</string>
@@ -711,7 +711,7 @@
     <string name="layer_map">Fonte dos mapas…</string>
     <string name="use_trackball_descr">Emprega un dispositivo con roda de desprazamento para mover o mapa.</string>
     <string name="use_trackball">Empregar a trackball</string>
-    <string name="process_navigation_service">Servizo de navegación do OsmAnd</string>
+    <string name="process_navigation_service">Servizo de navegación do MineNAV</string>
     <string name="int_seconds">segundos</string>
     <string name="int_min">min.</string>
     <string name="search_poi_filter">Filtro</string>
@@ -736,7 +736,7 @@
     <string name="transport_stops">paradas</string>
     <string name="transport">Transporte</string>
     <string name="shared_string_ok">Feito</string>
-    <string name="hello">OsmAnd, aplicación de navegación</string>
+    <string name="hello">MineNAV, aplicación de navegación</string>
     <string name="favorite">Favorito</string>
     <string name="shared_string_clear_all">Limpar todo</string>
     <string name="shared_string_history">Historial</string>
@@ -771,7 +771,7 @@
     <string name="invalid_locations">As coordenadas non che son válidas</string>
     <string name="shared_string_close">Pechar</string>
     <string name="loading_data">A cargar os datos…</string>
-    <string name="previous_run_crashed">O OsmAnd fallou na última execución. O ficheiro de rexistro está en {0}. Informa, se podes, deste problema e achega o ficheiro de rexistro.</string>
+    <string name="previous_run_crashed">O MineNAV fallou na última execución. O ficheiro de rexistro está en {0}. Informa, se podes, deste problema e achega o ficheiro de rexistro.</string>
     <string name="saving_gpx_tracks">Estase a gardar ficheiro GPX…</string>
     <string name="finished_task">Rematado</string>
     <string name="data_settings">Data</string>
@@ -949,7 +949,7 @@
     <string name="lang_ceb">Cebuano ou sugbuanon</string>
     <string name="gps_network_not_enabled">O servizo de localización está desactivado. Desexas activalo\?</string>
     <string name="disable_recording_once_app_killed">Evitar o rexistro autónomo</string>
-    <string name="shared_string_import2osmand">Importar ó OsmAnd</string>
+    <string name="shared_string_import2osmand">Importar ó MineNAV</string>
     <string name="read_full_article">Ler o artigo completo (na rede)</string>
     <string name="shared_string_show_details">Amosar detalles</string>
     <string name="rendering_value_disabled_name">Desactivado</string>
@@ -1030,7 +1030,7 @@
     <string name="shared_string_release">Publicado</string>
     <string name="plugin_install_needs_network">Precisas estar conectado para instalar este plugin.</string>
     <string name="shared_string_get">Obter</string>
-    <string name="do_you_like_osmand">Gosta do OsmAnd?</string>
+    <string name="do_you_like_osmand">Gosta do MineNAV?</string>
     <string name="user_hates_app_get_feedback">Dinos o por que.</string>
     <string name="user_hates_app_get_feedback_long">Por favor, fáganos saber calquera suxestión.</string>
     <string name="delete_change">Eliminar modificación</string>
@@ -1039,7 +1039,7 @@
     <string name="error_message_pattern">Erro: {0}</string>
     <string name="shared_string_skip">Omitir</string>
     <string name="shared_string_undo">Desfacer</string>
-    <string name="app_name_osmand">OsmAnd</string>
+    <string name="app_name_osmand">MineNAV</string>
     <string name="tab_title_basic">Básico</string>
     <string name="tab_title_advanced">Avanzado</string>
     <string name="building_number">Número do edificio</string>
@@ -1142,7 +1142,7 @@
     <string name="shared_string_contact">Contacto</string>
     <string name="map_legend">Lenda do mapa</string>
     <string name="plugin_touringview_name">Vista de mapa turístico</string>
-    <string name="plugin_touringview_descr">Ó activares esta vista múdase o estilo do mapa do OsmAnd cara a \"Vista turística\", que é unha vista especial moi detallada para viaxeiros e condutores profesionais. 
+    <string name="plugin_touringview_descr">Ó activares esta vista múdase o estilo do mapa do MineNAV cara a \"Vista turística\", que é unha vista especial moi detallada para viaxeiros e condutores profesionais. 
 \n 
 \nEsta vista fornece, en tódolos achegamentos do mapa, o nivel máximo de detalles de viaxe dispoñíbeis cos datos do mapa (en concreto, estradas, pistas, camiños e marcaxes de orientación). 
 \n 
@@ -1197,7 +1197,7 @@
     <string name="osn_close_dialog_error">Non foi posíbel pechar a nota.</string>
     <string name="shared_string_commit">Remitir</string>
     <string name="shared_string_location">Localización</string>
-    <string name="share_osm_edits_subject">Edicións do OSM compartidas a través do OsmAnd</string>
+    <string name="share_osm_edits_subject">Edicións do OSM compartidas a través do MineNAV</string>
     <string name="lang_nds">Baixo alemán</string>
     <string name="lang_mk">Macedonio</string>
     <string name="world_map_download_descr">O mapa base mundial (abrangue todo o mundo en achegamentos pequenos), falla ou está desactualizado. Coida baixalo para unha ollada xeral.</string>
@@ -1221,7 +1221,7 @@
     <string name="only_download_over_wifi">Baixar só co Wi-Fi</string>
     <string name="live_update">Actualización ao vivo</string>
     <string name="update_now">Actualizar agora</string>
-    <string name="missing_write_external_storage_permission">O OsmAnd non ten permiso para empregar o cartón de memoria</string>
+    <string name="missing_write_external_storage_permission">O MineNAV non ten permiso para empregar o cartón de memoria</string>
     <string name="update_time">Hora da actualización</string>
     <string name="updates_size">Tamaño da actualización</string>
     <string name="hourly">Cada hora</string>
@@ -1317,7 +1317,7 @@
     <string name="si_mi_meters">Millas/metros</string>
     <string name="search_another_country">Escoller outra rexión</string>
     <string name="search_map">Estase a procurar mapas…</string>
-    <string name="first_usage_wizard_desc">Deixa que o OsmAnd pescude a túa localización e suxira mapas a baixar para esa rexión.</string>
+    <string name="first_usage_wizard_desc">Deixa que o MineNAV pescude a túa localización e suxira mapas a baixar para esa rexión.</string>
     <string name="location_not_found">Localización non atopada</string>
     <string name="no_inet_connection">Non hai conexión á Internet</string>
     <string name="give_permission">Fornecer permiso</string>
@@ -1330,7 +1330,7 @@
     <string name="confirmation_to_delete_history_items">Desexas eliminar os elementos seleccionados do historial\?</string>
     <string name="show_something_on_map">Amosar %1$s no mapa</string>
     <string name="dist_away_from_my_location">Procurar a %1$s arredor</string>
-    <string name="share_history_subject">compartido por OsmAnd</string>
+    <string name="share_history_subject">compartido por MineNAV</string>
     <string name="search_categories">Categorías</string>
     <string name="postcode">Código postal</string>
     <string name="shared_string_from">dende</string>
@@ -1357,7 +1357,7 @@
     <string name="shared_string_change">Mudar</string>
     <string name="route_stops_before">%1$s paradas antes</string>
     <string name="access_direction_haptic_feedback_descr">Inserir o enderezo do destino mediante vibración.</string>
-    <string name="use_osm_live_routing_description">Activar a navegación por modificacións do OsmAnd ao Vivo.</string>
+    <string name="use_osm_live_routing_description">Activar a navegación por modificacións do MineNAV ao Vivo.</string>
     <string name="map_widget_magnetic_bearing">Rumbo magnético</string>
     <string name="map_widget_bearing">Rumbo relativo</string>
     <string name="rendering_attr_surfaceIntegrity_name">Integridade da superficie da estrada</string>
@@ -1382,7 +1382,7 @@
     <string name="donations">Doazóns</string>
     <string name="number_of_recipients">Número de destinatarios</string>
     <string name="osm_editors_ranking">Escolma de editores do OSM</string>
-    <string name="osm_live_ask_for_purchase">Merca primeiro unha subscrición ó OsmAnd ao Vivo</string>
+    <string name="osm_live_ask_for_purchase">Merca primeiro unha subscrición ó MineNAV ao Vivo</string>
     <string name="download_files_error_not_enough_space">Non hai espazo dabondo!
 \n Precísanse {3} MB de xeito temporal e {1} MB de xeito permanente.
 \n (Só hai dispoñíbeis {2} MB.)</string>
@@ -1472,7 +1472,7 @@
     <string name="shared_string_automatic">Automático</string>
     <string name="do_not_show_startup_messages">Non amosar mensaxes do inicio</string>
     <string name="parking_options">Opcións de aparcamento</string>
-    <string name="full_version_thanks">Grazas por mercar a versión de pagamento do OsmAnd.</string>
+    <string name="full_version_thanks">Grazas por mercar a versión de pagamento do MineNAV.</string>
     <string name="routing_attr_relief_smoothness_factor_hills_name">Inclinado</string>
     <string name="routing_attr_relief_smoothness_factor_plains_name">Pouco inclinado</string>
     <string name="routing_attr_relief_smoothness_factor_more_plains_name">Chairo</string>
@@ -1532,7 +1532,7 @@
     <string name="mapillary_menu_descr_username">Ollar só imaxes engadidas por</string>
     <string name="mapillary_menu_title_username">Nome de usuario</string>
     <string name="shared_string_permissions">Permisos</string>
-    <string name="import_gpx_failed_descr">Non foi posíbel importar o ficheiro. Por favor, asegúrate de que o OsmAnd ten permiso para lelo.</string>
+    <string name="import_gpx_failed_descr">Non foi posíbel importar o ficheiro. Por favor, asegúrate de que o MineNAV ten permiso para lelo.</string>
     <string name="distance_moving">Distancia corrixida</string>
     <string name="mapillary_image">Imaxe de Mapillary</string>
     <string name="shared_string_add_photos">Engadir imaxes</string>
@@ -1591,11 +1591,11 @@
     <string name="add_point_before">Engadir punto antes</string>
     <string name="add_point_after">Engadir punto despois</string>
     <string name="shared_string_options">Opcións</string>
-    <string name="measurement_tool_snap_to_road_descr">OsmAnd vai conectar os puntos ós recursos do perfil escollido.</string>
+    <string name="measurement_tool_snap_to_road_descr">MineNAV vai conectar os puntos ós recursos do perfil escollido.</string>
     <string name="choose_navigation_type">Escoller o perfil de navegación</string>
     <string name="none_point_error">Engade polo menos un punto.</string>
     <string name="appearance_on_the_map">Aparencia no mapa</string>
-    <string name="add_track_to_markers_descr">Escolle os puntos de pasaxe da pista que desexas que o OsmAnd engada ás marcaxes.</string>
+    <string name="add_track_to_markers_descr">Escolle os puntos de pasaxe da pista que desexas que o MineNAV engada ás marcaxes.</string>
     <string name="add_group">Engadir un grupo</string>
     <string name="empty_state_markers_active_desc">Preme en \"Lugares\" e despois preme na bandeira da marcaxe.</string>
     <string name="empty_state_markers_groups">Importar grupos</string>
@@ -1701,7 +1701,7 @@
     <string name="shared_string_restore">Restaurar</string>
     <string name="keep_passed_markers">Manter no mapa as marcaxes desbotadas</string>
     <string name="more_transport_on_stop_hint">Máis transportes dispoñíbeis dende esta parada.</string>
-    <string name="ask_for_location_permission">Para proseguer, permite acceder á localización ó OsmAnd.</string>
+    <string name="ask_for_location_permission">Para proseguer, permite acceder á localización ó MineNAV.</string>
     <string name="thank_you_for_feedback">Grazas polos teus comentarios</string>
     <string name="poi_cannot_be_found">Non foi posíbel atopar o nó ou a vía.</string>
     <string name="search_no_results_feedback">Sen resultados de procura\?
@@ -1710,10 +1710,10 @@
     <string name="shared_string_world">Mundo</string>
     <string name="coord_input_save_as_track">Gardar coma pista</string>
     <string name="coord_input_save_as_track_descr">Engadiches %1$s puntos. Insire un nome do ficheiro e preme en \"Gardar\".</string>
-    <string name="read_wikipedia_offline_description">Obteña unha subscrición do OsmAnd ao Vivo para ler artigos da Wikipedia e Wikiviaxes, sen conexión.</string>
-    <string name="osmand_team">Equipa do OsmAnd</string>
+    <string name="read_wikipedia_offline_description">Obteña unha subscrición do MineNAV ao Vivo para ler artigos da Wikipedia e Wikiviaxes, sen conexión.</string>
+    <string name="osmand_team">Equipa do MineNAV</string>
     <string name="welcome_to_open_beta_description">Os guieiros de viaxe, baséanse actualmente na Wikiviaxes. Proba tódolos trazos durante as probas beta abertas, de balde.</string>
-    <string name="wikivoyage_travel_guide_descr">Os guieiros dos lugares máis interesantes do planeta, no OsmAnd e sen conexión á Internet.</string>
+    <string name="wikivoyage_travel_guide_descr">Os guieiros dos lugares máis interesantes do planeta, no MineNAV e sen conexión á Internet.</string>
     <string name="download_maps_travel">Guieiros de viaxe</string>
     <string name="shared_string_travel_guides">Guieiros de viaxe</string>
     <string name="shared_string_gpx_waypoints">Puntos de pasaxe da pista</string>
@@ -1746,7 +1746,7 @@
     <string name="ski_map_render_descr">Para esquiar. Conta con pistas de esquí, remontes, pistas de esquí de fondo, etc. Atenúa os obxectos de mapas secundarios.</string>
     <string name="light_rs_render_descr">Estilo de condución sinxelo. Modo noite suave, curvas de nivel, camiños contrastantes con aparencia laranxa, atenúa os obxectos de mapas secundarios.</string>
     <string name="topo_render_descr">Para practicar andainas, sendeirismo e ciclismo na natureza. Lexíbel ao ar libre. Camiños e obxectos naturais en contraste, diferentes tipos de percorridos, opcións avanzadas en curvas de nivel, detalles adicionais. Axustar a integridade da superficie, distingue a calidade do camiño. Sen modo noite.</string>
-    <string name="touring_view_render_descr">Estilo turístico con alto contraste e máximo detalle. Inclúe todas as opcións do estilo predefinido do OsmAnd, mentres que amosa tantos detalles como sexa posíbel, en camiños, sendeiros e outros xeitos de viaxe. Clara distinción do \"atlas turístico\" entre tipos de camiños. Axeitado para emprego de día, de noite e ao ar libre.</string>
+    <string name="touring_view_render_descr">Estilo turístico con alto contraste e máximo detalle. Inclúe todas as opcións do estilo predefinido do MineNAV, mentres que amosa tantos detalles como sexa posíbel, en camiños, sendeiros e outros xeitos de viaxe. Clara distinción do \"atlas turístico\" entre tipos de camiños. Axeitado para emprego de día, de noite e ao ar libre.</string>
     <string name="default_render_descr">Estilo de emprego xeral. Cidade densas amosadas de xeito limpo. Conta con curvas de nivel, percorridos, calidade da superficie, restricións de acceso, sinais, visualización de camiños segundo a escala SA e elementos de deportes acuáticos.</string>
     <string name="how_to_open_link">De que xeito abrir a ligazón\?</string>
     <string name="read_wikipedia_offline">Ler a Wikipedia sen conexión</string>
@@ -1838,7 +1838,7 @@
     <string name="rendering_value_black_name">Negro</string>
     <string name="lang_lo">Laosiano</string>
     <string name="rendering_value_walkingRoutesOSMC_name">OSMC</string>
-    <string name="plugin_ski_descr">Este plugin para o OsmAnd pon ó teu acade detalles sobre pistas do esquí de baixada, de travesía, roteiros do esquí alpino, teleféricos e refachos a nivel mundial. As rotas e pistas amósanse polo código de cor en función da súa dificuldade e representados cun estilo do mapa especial \"Inverno\" que o asemella a unha paisaxe invernal nevada.
+    <string name="plugin_ski_descr">Este plugin para o MineNAV pon ó teu acade detalles sobre pistas do esquí de baixada, de travesía, roteiros do esquí alpino, teleféricos e refachos a nivel mundial. As rotas e pistas amósanse polo código de cor en función da súa dificuldade e representados cun estilo do mapa especial \"Inverno\" que o asemella a unha paisaxe invernal nevada.
 \n 
 \nActivando esta vista, muda o estilo do mapa a «Inverno e esquí», amosando as características do terreo en condicións invernais. Esta vista pódese revertir desactivando de novo eiquí ou mudando o \"Estilo do mapa\" en \"Configurar mapa\" cando o desexes.</string>
     <string name="navigate_point_olc">Código de Localización Aberto (OLC)</string>
@@ -1853,12 +1853,12 @@
     <string name="moving_time">Tempo en movemento</string>
     <string name="min_max">Mín/Máx</string>
     <string name="route_is_too_long_v2">Para longas distancias: Engade destinos intermedios se non se atopan camiños dentro dos 10 minutos.</string>
-    <string name="osmand_extended_description_part1">O OsmAnd (OSM Automated Navigation Directions, e no galego, Guía da Navegación Automatizada do OSM) é unha aplicación de mapa e navegación co acceso ós datos ceibes ou libres do OSM, en todo o mundo e de alta calidade. 
+    <string name="osmand_extended_description_part1">O MineNAV (OSM Automated Navigation Directions, e no galego, Guía da Navegación Automatizada do OSM) é unha aplicación de mapa e navegación co acceso ós datos ceibes ou libres do OSM, en todo o mundo e de alta calidade. 
 \n 
 \n Desfruta do navegador por voz e óptico, a visualización dos PDI (puntos de interese), a creación e xestión das pistas GPX, emprega a información de visualización e a altitude das curvas do nivel (mediante un plugin), escolle entre modos de automóbil, bicicleta ou peón, edita no OSM e moito máis.</string>
     <string name="osmand_extended_description_part4">Esquí 
-\nO plugin do OsmAnd para o estilo do mapa de inverno, amosa pistas co nivel de complexidade e algunha información adicional, coma a localización dos elevadoiros e outras instalacións invernais.</string>
-    <string name="osmand_extended_description_part8">O OsmAnd é software de código aberto desenvolvido activamente. Todo o mundo pode contribuír á aplicación ó informar de erros, mellorando traducións ou desenvolvendo funcións novas. Ademais o proxecto confía en contribucións financeiras para financiar o desenvolvemento e probando de funcións novas. 
+\nO plugin do MineNAV para o estilo do mapa de inverno, amosa pistas co nivel de complexidade e algunha información adicional, coma a localización dos elevadoiros e outras instalacións invernais.</string>
+    <string name="osmand_extended_description_part8">O MineNAV é software de código aberto desenvolvido activamente. Todo o mundo pode contribuír á aplicación ó informar de erros, mellorando traducións ou desenvolvendo funcións novas. Ademais o proxecto confía en contribucións financeiras para financiar o desenvolvemento e probando de funcións novas. 
 \n Cobertura do mapa e calidade: 
 \n • Europa Occidental: **** 
 \n • Europa Oriental: *** 
@@ -1916,10 +1916,10 @@
 \n• Mediante un plugin adicional, podes activar as curvas de nivel e o asombreado dos outeiros ou colinas</string>
     <string name="osmand_extended_description_part6">Camiñar, sendeirismo, turismo de cidade \n • O mapa amosa as rotas para camiñar e de sendeirismo \n • Wikipedia na lingua de preferencia, pode dicir moito durante unha visita turística \n • As paradas do transporte público (autobús, tranvía, tren), incluíndo os nomes de liña, axuda a navigar nunha nova cidade \n • Navegación GPS no modo peón, constrúe a rota empregando rotas de sendeirismo \n • Soba e sigua unha rota GPX ou grave e partille ou comparta as súas propias rotas</string>
     <string name="osmand_extended_description_part7">Contribúe co OSM \n • Informa sobre problemas dos datos no mapa \n • Sobe trazas GPX ó OSM de xeito directo dende a aplicación \n • Engade PDI e súbeos de xeito directo ó OSM (ou máis tarde, se non estás conectado)</string>
-    <string name="osmand_plus_extended_description_part1">O OsmAnd+ (OSM Automated Navigation Directions, e no galego, Guía de Navegación Automatizada do OSM) é unha aplicación de mapa e navegación con acceso ós datos ceibes ou libres do OSM, en todo o mundo e de alta calidade. 
+    <string name="osmand_plus_extended_description_part1">O MineNAV (OSM Automated Navigation Directions, e no galego, Guía de Navegación Automatizada do OSM) é unha aplicación de mapa e navegación con acceso ós datos ceibes ou libres do OSM, en todo o mundo e de alta calidade. 
 \n Desfruta do navigador por voz e óptico, a visualización dos PDI (puntos de interese), a creación e xestión das pistas GPX, emprega a información da visualización e a altitude das curvas do nivel (mediante un engadido), escolle entre modos de automóbil, bicicleta ou peón, edita no OSM e moito máis. 
 \n 
-\nO OsmAnd+ é a versión de pagamento. Mercando a aplicación, axudas ó proxecto, financiando o desenvolvemento de novas funcións e recibindo as últimas actualizacións. 
+\nO MineNAV é a versión de pagamento. Mercando a aplicación, axudas ó proxecto, financiando o desenvolvemento de novas funcións e recibindo as últimas actualizacións. 
 \n 
 \nAlgunhas das principais funcións son:</string>
     <string name="osmand_plus_extended_description_part2">Navegación GPS 
@@ -1947,7 +1947,7 @@
 \n • (Opcional) Grava a viaxe de xeito local nun ficheiro GPX ou con un servizo en liña 
 \n • (Opcional) Amosa a velocidade e altitude 
 \n • Activa a visualización das curvas do nivel e o asombreado dos outeiros ou colinas (mediante un plugin adicional)</string>
-    <string name="osmand_plus_extended_description_part7">Contribuír directamente a OSM \n • Informar de erros \n • Carga pistas GPX a OSM directamente desde a aplicación \n • Engade POIs e cárgaos directamente a OSM (ou máis tarde se está fóra de liña) \n • Gravación da viaxe opcional tamén de fondo (mentres o dispositivo está en modo de suspensión) \n OsmAnd é un software de código aberto desenvolvido activamente. Todo o mundo pode contribuír á aplicación informando de erros, mellorando as traducións ou codificando novas funcións. Ademais, o proxecto depende das contribucións financeiras para financiar a codificación e a proba de novas funcions.</string>
+    <string name="osmand_plus_extended_description_part7">Contribuír directamente a OSM \n • Informar de erros \n • Carga pistas GPX a OSM directamente desde a aplicación \n • Engade POIs e cárgaos directamente a OSM (ou máis tarde se está fóra de liña) \n • Gravación da viaxe opcional tamén de fondo (mentres o dispositivo está en modo de suspensión) \n MineNAV é un software de código aberto desenvolvido activamente. Todo o mundo pode contribuír á aplicación informando de erros, mellorando as traducións ou codificando novas funcións. Ademais, o proxecto depende das contribucións financeiras para financiar a codificación e a proba de novas funcions.</string>
     <string name="osmand_plus_extended_description_part8">Cobertura e calidade aproximada do mapa: \n • Europa Occidental: **** \n • Europa Oriental: *** \n • Rusia: *** \n • Norteamérica: *** \n • Suramérica: ** \n • Asia: ** \n • Xapón e Corea: *** \n • Medio Oriente: ** \n • África: ** \n • Antártida: * \n Máis países darredor do globo están dispoñíbeis para baixar! \nDende Afganistán a Zimbabue, dende Australia ós Estados Unidos. A Arxentina, Brasil, Canadá, Francia, Alemaña, México, Reino Unido, España, …</string>
     <string name="osm_live_payment_month_cost_descr">%1$s / mes</string>
     <string name="osm_live_payment_month_cost_descr_ex">%1$.2f %2$s / mes</string>
@@ -1979,7 +1979,7 @@
     <string name="intermediate_destinations">Destinos intermedios</string>
     <string name="arrive_at_time">Chegada ás %1$s</string>
     <string name="lang_gn_py">Guaraní</string>
-    <string name="quick_action_switch_day_night_descr">Un botón que troca entre o modo día e noite para o OsmAnd.</string>
+    <string name="quick_action_switch_day_night_descr">Un botón que troca entre o modo día e noite para o MineNAV.</string>
     <string name="previous_route">Ruta anterior</string>
     <string name="add_home">Engadir a miña casa</string>
     <string name="add_work">Engadir o meu lugar de traballo</string>
@@ -2045,11 +2045,11 @@
     <string name="rendering_attr_highway_class_path_name">Camiño</string>
     <string name="rendering_attr_highway_class_cycleway_name">Senda ciclista</string>
     <string name="rendering_attr_undefined_name">Sen definir</string>
-    <string name="use_osm_live_public_transport_description">Activar o transporte público para as modificacións do OsmAnd Live.</string>
+    <string name="use_osm_live_public_transport_description">Activar o transporte público para as modificacións do Live.</string>
     <string name="shared_string_walk">A pé</string>
     <string name="save_poi_value_exceed_length">Acurta a lonxitude da etiqueta \"%s\" polo menos a 255 caracteres.</string>
     <string name="save_poi_value_exceed_length_title">Lonxitude do valor de \"%s\"</string>
-    <string name="public_transport_warning_descr_blog">Le máis sobre o cálculo das rutas do OsmAnd no noso blogue.</string>
+    <string name="public_transport_warning_descr_blog">Le máis sobre o cálculo das rutas do MineNAV no noso blogue.</string>
     <string name="public_transport_warning_title">A navegación en transporte público atópase agora en fase de proba beta, poden xerarse erros e imprecisións.</string>
     <string name="add_intermediate">Engadir punto intermedio</string>
     <string name="routing_attr_avoid_tram_name">Sen tranvías</string>
@@ -2075,7 +2075,7 @@
     <string name="files_failed">Non se puideron copiar %1$d ficheiros (%2$s).</string>
     <string name="dont_move_maps">Non mover</string>
     <string name="public_transport_ped_route_title">A ruta a pé é de aproximadamente %1$s e podería ser máis rápida que no transporte público</string>
-    <string name="public_transport_no_route_title">Por desgraza, OsmAnd non puido atopar unha ruta adecuada para a túa configuración.</string>
+    <string name="public_transport_no_route_title">Por desgraza, MineNAV non puido atopar unha ruta adecuada para a túa configuración.</string>
     <string name="public_transport_try_ped">Téntao coa navegación a pé.</string>
     <string name="public_transport_try_change_settings">Tenta mudar os axustes.</string>
     <string name="public_transport_calc_pedestrian">Calcular a ruta a pé</string>
@@ -2084,15 +2084,15 @@
     <string name="coordinates_widget">Trebello de coordenadas</string>
     <string name="rate_dialog_descr">Por favor, comparte os teus comentarios e valora na Google Play o noso traballo.</string>
     <string name="shared_string_privacy_policy">Política de privacidade</string>
-    <string name="help_us_make_osmand_better">Axúdanos a mellorar o OsmAnd</string>
-    <string name="make_osmand_better_descr">Permite que o OsmAnd recompile e procese datos anónimos de uso da aplicación. Non recompilamos datos sobre a túa localización, nin sobre os lugares que ves no mapa. 
+    <string name="help_us_make_osmand_better">Axúdanos a mellorar o MineNAV</string>
+    <string name="make_osmand_better_descr">Permite que o MineNAV recompile e procese datos anónimos de uso da aplicación. Non recompilamos datos sobre a túa localización, nin sobre os lugares que ves no mapa. 
 \n 
 \nConfigura en calquera intre en \"Axustes\" → \"Privacidade e seguranza\".</string>
     <string name="choose_data_to_share">Escoller os tipos de datos a compartir:</string>
     <string name="downloaded_maps">Mapas baixados</string>
     <string name="visited_screens">Pantallas visitadas</string>
     <string name="downloaded_maps_collect_descr">Axúdanos a comprender a popularidade dos mapas de países e rexións.</string>
-    <string name="visited_screens_collect_descr">Axúdanos a comprender a popularidade das funcións do OsmAnd.</string>
+    <string name="visited_screens_collect_descr">Axúdanos a comprender a popularidade das funcións do MineNAV.</string>
     <string name="privacy_and_security_change_descr">Preme en \"Permitir\" se concordas coa nosa %1$s</string>
     <string name="settings_privacy_and_security">Privacidade e seguranza</string>
     <string name="settings_privacy_and_security_desc">Escolle que datos compartes</string>
@@ -2114,11 +2114,11 @@
     <string name="profile_alert_need_profile_name_title">Insire o nome do perfil</string>
     <string name="profile_alert_need_profile_name_msg">Primeiro tes que especificar un nome de perfil.</string>
     <string name="profile_alert_duplicate_name_msg">Xa existe un perfil con ese nome</string>
-    <string name="profile_alert_cant_delete_base">Non se poden eliminar os perfís de base do OsmAnd</string>
+    <string name="profile_alert_cant_delete_base">Non se poden eliminar os perfís de base do MineNAV</string>
     <string name="profile_alert_delete_title">Eliminar perfil</string>
     <string name="profile_alert_delete_msg">Tes a certeza de que desexas eliminar o perfil \"%s\"</string>
     <string name="select_base_profile_dialog_title">Escoller o perfil para comezar</string>
-    <string name="process_downloading_service">Servizo de descargas do OsmAnd</string>
+    <string name="process_downloading_service">Servizo de descargas do MineNAV</string>
     <string name="shared_string_color_magenta">Maxenta</string>
     <string name="shared_string_icon">Icona</string>
     <string name="press_again_to_change_the_map_orientation">Preme novamente para mudar a orientación do mapa</string>
@@ -2128,7 +2128,7 @@
     <string name="default_speed_setting_descr">Mudar os axustes da velocidade predefinida</string>
     <string name="new_profile">Novo perfil</string>
     <string name="shared_string_crash">Erro</string>
-    <string name="last_launch_crashed">O último lanzamento do OsmAnd fallou. Axúdanos a mellorar o OsmAnd compartindo a mensaxe de erro.</string>
+    <string name="last_launch_crashed">O último lanzamento do MineNAV fallou. Axúdanos a mellorar o MineNAV compartindo a mensaxe de erro.</string>
     <string name="select_base_profile_dialog_message">Basea o teu perfil personalizado nun dos perfís de aplicación predeterminados, isto define os axustes básicos coma a visibilidade dos trebellos e as unidades de velocidade e distancia. Estes son os perfís de aplicación predeterminados, xunto con exemplos de perfís personalizados que poden ser amplíados:</string>
     <string name="select_nav_profile_dialog_title">Escoller o tipo de navegación</string>
     <string name="base_profile_descr_car">Automóbil, camión, motocicleta</string>
@@ -2140,7 +2140,7 @@
     <string name="routing_profile_geocoding">Xeocodificación</string>
     <string name="routing_profile_straightline">Liña recta</string>
     <string name="routing_profile_broutrer">BRouter (sen conexión)</string>
-    <string name="osmand_default_routing">Enrutamento do OsmAnd</string>
+    <string name="osmand_default_routing">Enrutamento do MineNAV</string>
     <string name="special_routing_type">Enrutamento especial</string>
     <string name="third_party_routing_type">Enrutamento de terceiros</string>
     <string name="application_profiles">Perfís de aplicación</string>
@@ -2247,7 +2247,7 @@
     <string name="switch_profile">Mudar de perfil</string>
     <string name="reset_to_default">Restabelecer a valores por defecto</string>
     <string name="osmand_settings_descr">Afecta a toda a aplicación</string>
-    <string name="osmand_settings">Axustes de OsmAnd</string>
+    <string name="osmand_settings">Axustes de MineNAV</string>
     <string name="copy_from_other_profile">Copiar doutro perfil</string>
     <string name="turn_screen_on">Acender a pantalla</string>
     <string name="map_during_navigation_info">Mapa durante a navegación</string>
@@ -2266,12 +2266,12 @@
     <string name="shared_string_by_default">Predefinido</string>
     <string name="plugins_settings">Axustes do plugin</string>
     <string name="download_detailed_map">Baixa o mapa detallado de %s para ollar esta área.</string>
-    <string name="change_data_storage_full_description">Mover os ficheiros de datos do OsmAnd ó novo destino\? 
+    <string name="change_data_storage_full_description">Mover os ficheiros de datos do MineNAV ó novo destino\? 
 \n%1$s &gt; %2$s</string>
     <string name="enter_path_to_folder">Insire a ruta do cartafol</string>
     <string name="shared_string_select_folder">Cartafol…</string>
-    <string name="paste_Osmand_data_folder_path">Pegar a ruta do cartafol cos datos do OsmAnd</string>
-    <string name="change_osmand_data_folder_question">Mudar o cartafol de datos do OsmAnd\?</string>
+    <string name="paste_Osmand_data_folder_path">Pegar a ruta do cartafol cos datos do MineNAV</string>
+    <string name="change_osmand_data_folder_question">Mudar o cartafol de datos do MineNAV\?</string>
     <string name="move_maps_to_new_destination">Mover ó novo destino</string>
     <string name="change_data_storage_folder">Mudar o cartafol de almacenamento</string>
     <string name="rendering_attr_piste_type_snow_park_name">Parque do terreo</string>
@@ -2299,7 +2299,7 @@
     <string name="rendering_attr_piste_difficulty_aerialway_name">Vía aeroportuaria</string>
     <string name="rendering_attr_piste_difficulty_connection_name">Conexión</string>
     <string name="shared_string_calculate">Calcular</string>
-    <string name="shared_string_osmand_usage">Uso do OsmAnd</string>
+    <string name="shared_string_osmand_usage">Uso do MineNAV</string>
     <string name="shared_string_tiles">Teselas</string>
     <string name="shared_string_maps">Mapas</string>
     <string name="shared_string_memory_tb_desc">%1$s TB</string>
@@ -2360,7 +2360,7 @@
     <string name="button_rate">Avaliar</string>
     <string name="delete_profiles_descr">Ó premer en \'Aplicar\' os perfís eliminados eliminaranse de xeito permanente.</string>
     <string name="select_color">Escoller a cor</string>
-    <string name="edit_profiles_descr">Os perfís por defecto do OsmAnd non se poden eliminar, senón desactivar (na pantalla anterior) ou ordenarse na parte inferior.</string>
+    <string name="edit_profiles_descr">Os perfís por defecto do MineNAV non se poden eliminar, senón desactivar (na pantalla anterior) ou ordenarse na parte inferior.</string>
     <string name="edit_profiles">Editar perfís</string>
     <string name="profile_appearance">Aparencia do perfil</string>
     <string name="choose_icon_color_name">Icona, cor e nome</string>
@@ -2382,7 +2382,7 @@
     <string name="live_monitoring_descr">Permite compartir a localización actual empregando a gravación da viaxe.</string>
     <string name="live_monitoring">Seguimento en liña</string>
     <string name="save_track_logging_accuracy">Precisión de rexistro</string>
-    <string name="tracks_view_descr">As túas pistas gravadas están en %1$s, ou no cartafol do OsmAnd.</string>
+    <string name="tracks_view_descr">As túas pistas gravadas están en %1$s, ou no cartafol do MineNAV.</string>
     <string name="video_notes">Notas de vídeo</string>
     <string name="photo_notes">Notas de imaxe</string>
     <string name="accessibility_announce">Anuncio</string>
@@ -2437,7 +2437,7 @@
     <string name="plugin_disabled">Plugin desactivado</string>
     <string name="plugin_disabled_descr">Este plugin é unha aplicación independente, terás que eliminalo por separado se non pensas seguir empregándoo. 
 \n 
-\nO plugin ficará no dispositivo após desinstalar o OsmAnd.</string>
+\nO plugin ficará no dispositivo após desinstalar o MineNAV.</string>
     <string name="shared_string_menu">Menú</string>
     <string name="ltr_or_rtl_triple_combine_via_dash">%1$s — %2$s — %3$s</string>
     <string name="shared_string_routing">Enrutamento</string>
@@ -2453,12 +2453,12 @@
     <string name="shared_string_nothing_selected">Ren selecionado</string>
     <string name="shared_string_quick_actions">Accións rápidas</string>
     <string name="shared_string_profiles">Perfís</string>
-    <string name="listed_exist">%1$s listado, xa existe no OsmAnd.</string>
+    <string name="listed_exist">%1$s listado, xa existe no MineNAV.</string>
     <string name="replace_all_desc">Os elementos actuais serán substituídos polos elementos do ficheiro</string>
     <string name="replace_all">Substituír todo</string>
     <string name="keep_both">Manter os dous</string>
     <string name="keep_both_desc">Os elementos importados serán engadidos con prefixo</string>
-    <string name="import_duplicates_description">O OsmAnd xa posúe elementos cos mesmos nomes que os importados.
+    <string name="import_duplicates_description">O MineNAV xa posúe elementos cos mesmos nomes que os importados.
 \n
 \nEscolle unha acción.</string>
     <string name="import_duplicates_title">Algúns elementos xa existen</string>
@@ -2472,7 +2472,7 @@
     <string name="replace_point_descr">Substitúe outro punto por este.</string>
     <string name="app_mode_ski_touring">Esquí de ruta</string>
     <string name="app_mode_ski_snowmobile">Moto de neve</string>
-    <string name="custom_osmand_plugin">Plugin personalizado do OsmAnd</string>
+    <string name="custom_osmand_plugin">Plugin personalizado do MineNAV</string>
     <string name="shared_string_items">Elementos</string>
     <string name="changes_applied_to_profile">Modificacións aplicadas ó perfil \'%1$s\'.</string>
     <string name="settings_item_read_error">Non foi posíbel ler \'%1$s\'.</string>
@@ -2528,7 +2528,7 @@
     <string name="import_complete_description">Todos os datos de %1$s son importados, podes empregar os botóns de abaixo para abrir a parte necesaria da aplicación para xestionala.</string>
     <string name="shared_string_import_complete">Importación completada</string>
     <string name="items_added">Elementos engadidos</string>
-    <string name="checking_for_duplicate_description">O OsmAnd comproba %1$s para ver se hai duplicados cos elementos existentes na aplicación. 
+    <string name="checking_for_duplicate_description">O MineNAV comproba %1$s para ver se hai duplicados cos elementos existentes na aplicación. 
 \n 
 \nPode levar algún tempo.</string>
     <string name="shared_string_importing">Estase a importar</string>
@@ -2570,7 +2570,7 @@
     <string name="search_poi_types">Procurar tipos de PDI</string>
     <string name="search_poi_types_descr">Combina tipos de PDI de diferentes categorías. Preme en \"trocar\" para marcar todo, preme o lado esquerdo para escoller unha categoría.</string>
     <string name="download_unsupported_action">Acción %1$s non admitida</string>
-    <string name="tracker_item">Rastrexador do OsmAnd</string>
+    <string name="tracker_item">Rastrexador do MineNAV</string>
     <string name="quick_action_item">Acción rápida</string>
     <string name="map_markers_item">Marcaxes do mapa</string>
     <string name="favorites_item">Favoritos</string>
@@ -2605,10 +2605,10 @@
     <string name="profiles_for_action_not_found">Non foi posíbel atopar ningún destes perfís.</string>
     <string name="index_item_world_basemap_detailed">Mapa xeral do mundo (detallado)</string>
     <string name="unsupported_type_error">Tipo non admitido</string>
-    <string name="gpx_parse_error">O GPX do OsmAnd non está ben formado, por favor, contacta co equipo de soporte para pescudar máis.</string>
+    <string name="gpx_parse_error">O GPX do MineNAV non está ben formado, por favor, contacta co equipo de soporte para pescudar máis.</string>
     <string name="screen_control">Control da pantalla</string>
     <string name="system_screen_timeout">Emprega o tempo de espera da pantalla do sistema</string>
-    <string name="turn_screen_on_descr">Escolle as opcións de acender a pantalla (asegúrate de que o OsmAnd está no primeiro plano cando o dispositivo está a ser bloqueado):</string>
+    <string name="turn_screen_on_descr">Escolle as opcións de acender a pantalla (asegúrate de que o MineNAV está no primeiro plano cando o dispositivo está a ser bloqueado):</string>
     <string name="turn_screen_on_navigation_instructions">Instrucións de navegación</string>
     <string name="turn_screen_on_power_button">Botón de acendido</string>
     <string name="turn_screen_on_wake_time_descr">Escolle o tempo de espera da pantalla após acender. (\"%1$s\" non aplica tempo de espera.)</string>
@@ -2617,7 +2617,7 @@
     <string name="shared_string_always">Sempre</string>
     <string name="system_screen_timeout_descr">Apaga a apantalla segundo o tempo de espera da pantalla do sistema.</string>
     <string name="turn_screen_on_navigation_instructions_descr">Cada instrución de navegación activará a pantalla.</string>
-    <string name="turn_screen_on_power_button_descr">Premendo o botón de acendido do dispositivo acenderá a pantalla co OsmAnd na pantalla de bloqueo.</string>
+    <string name="turn_screen_on_power_button_descr">Premendo o botón de acendido do dispositivo acenderá a pantalla co MineNAV na pantalla de bloqueo.</string>
     <string name="turn_screen_on_proximity_sensor">Sensor de proximidade</string>
     <string name="keep_screen_on">Manter a pantalla acendida</string>
     <string name="screen_timeout_descr">Se \"%1$s\" está activado, o tempo de actividade dependerá diso.</string>
@@ -2668,7 +2668,7 @@
 \n
 \nEscolle %1$s e recibirás alertas e avisos sobre radares de velocidade.
 \n
-\nEscolle %2$s. Todos os datos relacionados de radares de velocidade: alertas, notificacións e PDI serán eliminados até que o OsmAnd sexa reinstalado de xeito completo.</string>
+\nEscolle %2$s. Todos os datos relacionados de radares de velocidade: alertas, notificacións e PDI serán eliminados até que o MineNAV sexa reinstalado de xeito completo.</string>
     <string name="keep_active">Manter activo</string>
     <string name="shared_string_uninstall">Desinstalar</string>
     <string name="speed_cameras_restart_descr">Reiniciar para eliminar todos os datos do radar de velocidade.</string>
@@ -2766,7 +2766,7 @@
     <string name="shared_string_file_name">Nome do ficheiro</string>
     <string name="number_of_gpx_files_selected_pattern">%s ficheiros de pista seleccionados</string>
     <string name="monitoring_control_start">Gravar</string>
-    <string name="disable_recording_once_app_killed_descrp">A gravación da pista deterase ó pechar a aplicación (mediante aplicacións recentes). (A indicación de fondo do OsmAnd, desaparecerá da barra de notificacións do Android.)</string>
+    <string name="disable_recording_once_app_killed_descrp">A gravación da pista deterase ó pechar a aplicación (mediante aplicacións recentes). (A indicación de fondo do MineNAV, desaparecerá da barra de notificacións do Android.)</string>
     <string name="save_global_track_interval_descr">Especifica o intre de gravación xeral para pistas (habilitado a través do trebello de \'Gravación no mapa\').</string>
     <string name="sort_last_modified">Última modificación</string>
     <string name="sort_name_descending">Nome: Z – A</string>
@@ -2781,8 +2781,8 @@
     <string name="routing_attr_avoid_footways_description">Evitar sendas peonís, camiños e beirarrúas</string>
     <string name="routing_attr_avoid_footways_name">Evitar sendas peonís</string>
     <string name="development">Desenvolvemento</string>
-    <string name="use_live_public_transport">Datos do OsmAnd Live</string>
-    <string name="use_live_routing">Datos do OsmAnd Live</string>
+    <string name="use_live_public_transport">Datos do Live</string>
+    <string name="use_live_routing">Datos do Live</string>
     <string name="use_native_pt">Desenvolvemento do transporte público nativo</string>
     <string name="use_native_pt_desc">Activar cálculo da ruta de transporte público do Java (seguro)</string>
     <string name="what_is_new">Novidades</string>
@@ -2843,7 +2843,7 @@
     <string name="plan_route_split_before">Dividir antes</string>
     <string name="plan_route_split_after">Dividir despois</string>
     <string name="plan_route_add_new_segment">Engadir novo segmento</string>
-    <string name="profile_type_osmand_string">Perfil do OsmAnd</string>
+    <string name="profile_type_osmand_string">Perfil do MineNAV</string>
     <string name="profile_type_user_string">Perfil do usuario</string>
     <string name="release_3_9">• Engadiuse a opción de exportar e importar todos os datos, incluíndo os axustes, os recursos e \"Os meus sitios\" \n \n • Planificar ruta: engadíronse gráficos para os segmentos de pistas coa ruta e capacidade de crear ou editar pistas de segmentos múltiples \n \n • Engadiuse o método de autenticación OAuth para o OpenStreetMap e mellorouse a interface de usuario dos diálogos do OSM \n \n • Engadíronse cores personalizadas para os favoritos e os puntos de referencia da pista</string>
     <string name="reverse_all_points">Inverter todos os puntos</string>
@@ -2957,8 +2957,8 @@
     <string name="temporary_conditional_routing_descr">Empregar as restricións de estrada que están activas agora no mapa</string>
     <string name="routing_attr_short_way_description">Ruta optimizada máis curta (baixo consumo)</string>
     <string name="routing_attr_driving_style_description">Escolle o propósito da condución para obter unha ruta máis curta, máis rápida ou máis segura</string>
-    <string name="release_4_0_beta">• Engadiuse a opción para baixar as curvas de nivel en pés. \n \n• Paisaxe do plan de ruta: engadíronse lapelas para alternar entre puntos ou gráficos \n \n• As actualizacións do OsmAnd Live movéronse a \"Descargas &gt; Actualizacións\". \n \n• As pistas agora poden corarse por altitude, velocidade ou pendente. \n \n• Engadiuse a opción da aparencia da liña de ruta. \n \n• Actualizouse o cadro de diálogo \"Gravación de viaxe\"</string>
-    <string name="trip_recording_logging_interval_info">O intre de rexistro estabelece o período de tempo no que o OsmAnd pedirá os datos da posición actual.</string>
+    <string name="release_4_0_beta">• Engadiuse a opción para baixar as curvas de nivel en pés. \n \n• Paisaxe do plan de ruta: engadíronse lapelas para alternar entre puntos ou gráficos \n \n• As actualizacións do Live movéronse a \"Descargas &gt; Actualizacións\". \n \n• As pistas agora poden corarse por altitude, velocidade ou pendente. \n \n• Engadiuse a opción da aparencia da liña de ruta. \n \n• Actualizouse o cadro de diálogo \"Gravación de viaxe\"</string>
+    <string name="trip_recording_logging_interval_info">O intre de rexistro estabelece o período de tempo no que o MineNAV pedirá os datos da posición actual.</string>
     <string name="trip_recording_save_and_continue">Gardar e continuar</string>
     <string name="lost_data_warning">Todos os datos non gardados serán perdidos.</string>
     <string name="show_start_dialog">Amosar cadro de diálogo do inicio</string>
@@ -2971,7 +2971,7 @@
     <string name="empty_purchases_description">Se as túas compras non aparecen aquí, preme en \"%1$s\", ou ponte en contacto co noso equipo de asistencia.</string>
     <string name="contact_support">Contacto co soporte</string>
     <string name="troubleshooting">Solución de problemas</string>
-    <string name="osmand_live">OsmAnd Live</string>
+    <string name="osmand_live">Live</string>
     <string name="annual_subscription">Subscrición anual</string>
     <string name="monthly_subscription">Subscrición mensual</string>
     <string name="three_months_subscription">Subscrición de tres meses</string>
@@ -2984,7 +2984,7 @@
     <string name="update_all_maps_added">Actualizar todos os mapas engadidos a %1$s\?</string>
     <string name="shared_string_feet">pés</string>
     <string name="srtm_unit_format">Variante da unidade das curvas de nivel</string>
-    <string name="srtm_download_list_help_message">O OsmAnd fornece datos de curvas de nivel en metros e pés. Terás que volver baixar o ficheiro para mudar o formato.</string>
+    <string name="srtm_download_list_help_message">O MineNAV fornece datos de curvas de nivel en metros e pés. Terás que volver baixar o ficheiro para mudar o formato.</string>
     <string name="srtm_download_single_help_message">Selecciona a variante. Terás que volver baixar o ficheiro para mudar o formato.</string>
     <string name="exit_number">Número da saída</string>
     <string name="announce_when_exceeded">Anunciar ao excederse</string>
@@ -3046,7 +3046,7 @@
     <string name="smart_folder_name_present">Este cartafol intelixente xa está presente</string>
     <string name="shared_string_cache">Caché</string>
     <string name="empty_smart_folder_description">Todas as pistas coincidentes aparecerán automaticamente aquí</string>
-    <string name="internal_app_storage_description">Almacenamento interno, oculto para todos os usuarios e outras aplicacións, polo que só OsmAnd pode acceder aos teus datos.</string>
+    <string name="internal_app_storage_description">Almacenamento interno, oculto para todos os usuarios e outras aplicacións, polo que só MineNAV pode acceder aos teus datos.</string>
     <string name="contact_us">Contacta connosco</string>
     <string name="sort_size_descending">Tamaño grande primeiro</string>
     <string name="smart_folder_saved">Gardouse o cartafol intelixente</string>
@@ -3264,7 +3264,7 @@
     <string name="gradient_no_data_point_summary">Cor aplicada cando os datos están ausentes ou non definidos.</string>
     <string name="help_article_map_legend_nautical_map_name">Estilo de mapa náutico</string>
     <string name="gradient_input_value_too_low_warn">O valor mínimo permitido é %1$s.</string>
-    <string name="help_article_map_legend_osmand_name">Estilo de mapa OsmAnd</string>
+    <string name="help_article_map_legend_osmand_name">Estilo de mapa MineNAV</string>
     <string name="gradient_input_value_too_high_warn">O valor máximo permitido é %1$s.</string>
     <string name="help_article_map_legend_ski_map_name">Estilo de mapa de esquí</string>
     <string name="gradient_input_value_duplicate_warn">Este valor xa existe na paleta.</string>
@@ -3310,7 +3310,7 @@
     <string name="delete_colors_palette_dialog_summary">Estás seguro de que queres eliminar a paleta %1$s?</string>
     <string name="help_article_navigation_routing_online_routing_name">Navegación en líña</string>
     <string name="astro_min_magnitude">Magnitude mínima</string>
-    <string name="help_article_navigation_routing_osmand_routing_name">Acerca da navegación de OsmAnd</string>
+    <string name="help_article_navigation_routing_osmand_routing_name">Acerca da navegación de MineNAV</string>
     <string name="intersection">Intersección</string>
     <string name="help_article_navigation_routing_pedestrian_routing_name">Navegación a pé</string>
     <string name="help_article_navigation_routing_public_transport_navigation_name">Navegación en transporte público</string>
@@ -3351,7 +3351,7 @@
     <string name="help_article_search_search_coordinates_name">Buscar coordenadas</string>
     <string name="help_article_search_search_poi_name">Buscar PDI</string>
     <string name="building_3d_low_details_content_desc">Detalles baixos de edificios 3D</string>
-    <string name="help_article_start_with_name">Comezar con OsmAnd</string>
+    <string name="help_article_start_with_name">Comezar con MineNAV</string>
     <string name="building_3d_high_details_content_desc">Edificios 3D altos</string>
     <string name="help_article_start_with_first_steps_name">Primeiros pasos</string>
     <string name="building_3d_near_distance_content_desc">Distancia de edificios 3D próxima</string>

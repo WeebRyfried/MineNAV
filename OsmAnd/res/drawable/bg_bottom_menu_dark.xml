@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <nine-patch android:src="@drawable/bg_contextmenu_shadow_top_light" />
-    </item>
-    <item>
-        <shape>
-            <solid android:color="@color/list_background_color_dark" />
-        </shape>
-    </item>
-</layer-list>
+<!-- Rounded top corners, matching the Where-to card on the map -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+	<solid android:color="@color/list_background_color_dark" />
+	<corners
+		android:topLeftRadius="@dimen/ui_corner_radius_large"
+		android:topRightRadius="@dimen/ui_corner_radius_large" />
+</shape>

@@ -3,23 +3,24 @@ package net.osmand;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
 import net.osmand.plus.R;
-import net.osmand.plus.Version;
 import net.osmand.plus.base.BaseFullScreenFragment;
 import net.osmand.plus.helpers.AndroidUiHelper;
-import net.osmand.plus.inapp.InAppPurchaseUtils;
 import net.osmand.plus.utils.AndroidUtils;
 import net.osmand.plus.utils.ColorUtilities;
 
@@ -62,45 +63,21 @@ public class SecondSplashScreenFragment extends BaseFullScreenFragment {
 				R.color.map_background_color_light;
 		view.setBackgroundColor(getColor(backgroundColorId));
 
+		// MineNAV mascot centered, the same as on the launch splash
 		ImageView logo = new ImageView(getContext());
 		logo.setId(LOGO_ID);
-		if (Version.isFreeVersion(app)) {
-			logo.setImageDrawable(AppCompatResources.getDrawable(activity, R.drawable.ic_logo_splash_osmand));
-		} else if (Version.isPaidVersion(app) || Version.isDeveloperVersion(app)) {
-			logo.setImageDrawable(AppCompatResources.getDrawable(activity, R.drawable.ic_logo_splash_osmand_plus));
-		}
-		RelativeLayout.LayoutParams logoLayoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-		if (!AndroidUiHelper.isTablet(activity)) {
-			logoLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);
-			logoLayoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
-		} else {
-			logoLayoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
-		}
+		logo.setImageDrawable(AppCompatResources.getDrawable(activity, R.drawable.ic_minenav_mascot));
+		int mascotSize = getDimensionPixelSize(R.dimen.splash_mascot_size);
+		RelativeLayout.LayoutParams logoLayoutParams = new RelativeLayout.LayoutParams(mascotSize, mascotSize);
+		logoLayoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
 
-		ImageView text = new ImageView(activity);
-		text.setId(TEXT_ID);
 		int textColorId = ColorUtilities.getTertiaryTextColorId(nightMode);
-		if (Version.isFreeVersion(app)) {
-			if (InAppPurchaseUtils.isOsmAndProAvailable(app)) {
-				text.setImageDrawable(uiUtilities.getIcon(R.drawable.image_text_osmand_pro, textColorId));
-			} else if (InAppPurchaseUtils.isMapsPlusAvailable(app)) {
-				text.setImageDrawable(uiUtilities.getIcon(R.drawable.image_text_osmand_maps_plus, textColorId));
-			} else if (InAppPurchaseUtils.isLiveUpdatesAvailable(app)) {
-				text.setImageDrawable(uiUtilities.getIcon(R.drawable.image_text_osmand_osmlive, textColorId));
-			} else if (InAppPurchaseUtils.isFullVersionAvailable(app)) {
-				text.setImageDrawable(uiUtilities.getIcon(R.drawable.image_text_osmand_inapp, textColorId));
-			} else {
-				text.setImageDrawable(uiUtilities.getIcon(R.drawable.image_text_osmand, textColorId));
-			}
-		} else if (Version.isPaidVersion(app) || Version.isDeveloperVersion(app)) {
-			if (InAppPurchaseUtils.isOsmAndProAvailable(app)) {
-				text.setImageDrawable(uiUtilities.getIcon(R.drawable.image_text_osmand_plus_pro, textColorId));
-			} else if (InAppPurchaseUtils.isLiveUpdatesAvailable(app)) {
-				text.setImageDrawable(uiUtilities.getIcon(R.drawable.image_text_osmand_plus_osmlive, textColorId));
-			} else {
-				text.setImageDrawable(uiUtilities.getIcon(R.drawable.image_text_osmand_plus, textColorId));
-			}
-		}
+		TextView text = new TextView(activity);
+		text.setId(TEXT_ID);
+		text.setText(R.string.app_name);
+		text.setTextColor(getColor(nightMode ? R.color.mn_text_dark : R.color.mn_text_light));
+		text.setTextSize(TypedValue.COMPLEX_UNIT_PX, getDimensionPixelSize(R.dimen.splash_title_text_size));
+		text.setTypeface(ResourcesCompat.getFont(activity, R.font.nunito_extrabold));
 		RelativeLayout.LayoutParams textLayoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 		textLayoutParams.addRule(RelativeLayout.ABOVE, OSM_TEXT_ID);
 		textLayoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
@@ -112,7 +89,6 @@ public class SecondSplashScreenFragment extends BaseFullScreenFragment {
 		osmTextLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
 		osmTextLayoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
 
-		int defaultLogoMarginTop = getDimensionPixelSize(R.dimen.splash_screen_logo_top);
 		int textMarginBottom = getDimensionPixelSize(R.dimen.splash_screen_text_bottom);
 		int osmTextMarginBottom = getDimensionPixelSize(R.dimen.splash_screen_osm_text_bottom);
 		int elementsPaddingLeft = 0;
@@ -127,7 +103,6 @@ public class SecondSplashScreenFragment extends BaseFullScreenFragment {
 		} else {
 			elementsPaddingLeft = getNavigationBarWidth();
 		}
-		AndroidUtils.setMargins(logoLayoutParams, 0, defaultLogoMarginTop, 0, 0);
 		logo.setPadding(elementsPaddingLeft, 0, elementsPaddingRight, 0);
 		logo.setLayoutParams(logoLayoutParams);
 		view.addView(logo);

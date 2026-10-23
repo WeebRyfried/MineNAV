@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -31,6 +32,7 @@ import androidx.fragment.app.FragmentActivity;
 import net.osmand.plus.R;
 import net.osmand.plus.base.bottomsheetmenu.BaseBottomSheetItem;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.utils.AndroidUtils;
 import net.osmand.plus.utils.ColorUtilities;
 import net.osmand.plus.utils.InsetTarget;
@@ -88,6 +90,7 @@ public abstract class MenuBottomSheetDialogFragment extends BottomSheetDialogFra
 		createMenuItems(savedInstanceState);
 
 		inflateMenuItems();
+		MineNavStyle.styleSheet(mainView, items, nightMode);
 		setupScrollShadow(mainView);
 		setupBottomButtons(mainView.findViewById(R.id.main_container));
 		setupHeightAndBackground(mainView);
@@ -142,6 +145,7 @@ public abstract class MenuBottomSheetDialogFragment extends BottomSheetDialogFra
 			for (BaseBottomSheetItem item : items) {
 				item.inflate(mainView.getContext(), itemsContainer, nightMode);
 			}
+			MineNavStyle.styleSheet(mainView, items, nightMode);
 			setupHeightAndBackground(mainView);
 		}
 	}
@@ -461,7 +465,12 @@ public abstract class MenuBottomSheetDialogFragment extends BottomSheetDialogFra
 	}
 
 	protected Drawable getPortraitBg(@NonNull Context ctx) {
-		return createBackgroundDrawable(ctx, R.drawable.bg_contextmenu_shadow_top_light);
+		// Rounded top corners, matching the Where-to card on the map
+		float radius = ctx.getResources().getDimension(R.dimen.ui_corner_radius_large);
+		GradientDrawable drawable = new GradientDrawable();
+		drawable.setColor(getColor(getBgColorId()));
+		drawable.setCornerRadii(new float[] {radius, radius, radius, radius, 0, 0, 0, 0});
+		return drawable;
 	}
 
 	protected Drawable getLandscapeTopsidesBg(@NonNull Context ctx) {

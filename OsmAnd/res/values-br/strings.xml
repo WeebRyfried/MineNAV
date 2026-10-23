@@ -35,7 +35,7 @@
     <string name="shared_string_gpx_file">Restr GPX</string>
     <string name="osc_file">Restr OSC</string>
     <string name="choose_file_type">Dibabit rizh ar restr</string>
-    <string name="use_osm_live_routing_description">Gweredekaat ar merdeiñ gant roadennoù OsmAnd Live.</string>
+    <string name="use_osm_live_routing_description">Gweredekaat ar merdeiñ gant roadennoù Live.</string>
     <string name="finish_navigation">Echuiñ ar merdeiñ</string>
     <string name="shared_string_navigation">Merdeiñ</string>
     <string name="routing_settings_2">Arventennoù ar merdeiñ</string>
@@ -103,7 +103,7 @@
     <string name="download_depth_countours">Trolinenn an donder merdeel</string>
     <string name="location_source">Mamenn al lec\'hiadur</string>
     <string name="days_2_4">Deiz</string>
-    <string name="manage_storage_delete_data_dialog_summary">Ha sur oc\'h e vennit diverkañ %1$s diwar Koumoulenn OsmAnd ?\n\nAdkavout anezho er gest a c\'hellit ober e-pad 30 devezh.</string>
+    <string name="manage_storage_delete_data_dialog_summary">Ha sur oc\'h e vennit diverkañ %1$s diwar Koumoulenn MineNAV ?\n\nAdkavout anezho er gest a c\'hellit ober e-pad 30 devezh.</string>
     <string name="days_5">Deizioù</string>
     <string name="shared_string_price">Priz</string>
     <string name="week">Sizhun</string>

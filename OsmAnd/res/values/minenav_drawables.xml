@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- The old OsmAnd logo slot (welcome screen, help, notifications) now shows the MineNAV mascot -->
+	<drawable name="ic_action_osmand_logo">@drawable/ic_minenav_mascot</drawable>
+</resources>

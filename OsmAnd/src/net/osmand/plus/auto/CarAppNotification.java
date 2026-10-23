@@ -49,7 +49,7 @@ public class CarAppNotification extends OsmandNotification {
 		String notificationTitle;
 		String notificationText;
 		icon = R.drawable.ic_action_osmand_logo;
-		notificationTitle = "OsmAnd Android Auto";
+		notificationTitle = "MineNAV Android Auto";
 		notificationText = "Running...";
 
 		return createBuilder(wearable)

@@ -41,6 +41,7 @@ import net.osmand.plus.download.DownloadIndexesThread.DownloadEvents;
 import net.osmand.plus.inapp.InAppPurchaseHelper;
 import net.osmand.plus.inapp.InAppPurchaseHelper.InAppPurchaseListener;
 import net.osmand.plus.inapp.InAppPurchaseHelper.InAppPurchaseTaskType;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.plugins.custom.CustomIndexItem;
 import net.osmand.plus.plugins.custom.CustomRegion;
 import net.osmand.plus.plugins.weather.listener.RemoveLocalForecastListener;
@@ -481,6 +482,7 @@ public class DownloadResourceGroupFragment extends BaseFullScreenDialogFragment
 		if (group != null) {
 			listAdapter.update(group);
 			toolbar.setTitle(group.getName(activity));
+			MineNavStyle.centerToolbarTitle(toolbar, nightMode);
 			WorldRegion region = group.getRegion();
 			if (region instanceof CustomRegion customRegion) {
 				int headerColor = customRegion.getHeaderColor();

@@ -1,7 +1,5 @@
 package net.osmand.plus.feedback;
 
-import static net.osmand.aidlapi.OsmAndCustomizationConstants.FRAGMENT_CRASH_ID;
-
 import android.os.Bundle;
 import android.view.View;
 
@@ -44,14 +42,7 @@ public class CrashBottomSheetDialogFragment extends MenuBottomSheetDialogFragmen
 	}
 
 	public static boolean shouldShow(@Nullable OsmandSettings settings, @NonNull MapActivity activity) {
-		OsmandApplication app = activity.getApp();
-		if (app.getAppCustomization().isFeatureEnabled(FRAGMENT_CRASH_ID)) {
-			if (app.getRoutingHelper().isFollowingMode()) {
-				return false;
-			}
-			boolean javaCrash = app.getAppInitializer().checkPreviousRunsForExceptions(activity, settings != null);
-			return javaCrash || app.getFeedbackHelper().hasNewSystemCrash();
-		}
+		// MineNAV is a personal build: crash reports must not be sent to the OsmAnd team
 		return false;
 	}
 

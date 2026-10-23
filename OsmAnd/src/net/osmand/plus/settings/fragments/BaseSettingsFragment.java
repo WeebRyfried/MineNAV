@@ -48,6 +48,8 @@ import net.osmand.plus.base.dialog.IOsmAndFragment;
 import net.osmand.plus.base.dialog.interfaces.controller.IDialogController;
 import net.osmand.plus.feedback.AnalyticsHelper;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.minenav.MineNavListPreferenceFragment;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.profiles.SelectAppModesBottomSheetDialogFragment;
 import net.osmand.plus.profiles.SelectAppModesBottomSheetDialogFragment.AppModeChangedListener;
 import net.osmand.plus.settings.backend.ApplicationMode;
@@ -60,7 +62,6 @@ import net.osmand.plus.settings.bottomsheets.ChangeGeneralProfilesPrefBottomShee
 import net.osmand.plus.settings.bottomsheets.CustomizableSingleSelectionBottomSheet;
 import net.osmand.plus.settings.bottomsheets.EditTextPreferenceBottomSheet;
 import net.osmand.plus.settings.bottomsheets.MultiSelectPreferencesBottomSheet;
-import net.osmand.plus.settings.bottomsheets.SingleSelectPreferenceBottomSheet;
 import net.osmand.plus.settings.enums.ThemeUsageContext;
 import net.osmand.plus.settings.preferences.ListPreferenceEx;
 import net.osmand.plus.settings.preferences.MultiSelectBooleanPreference;
@@ -137,6 +138,7 @@ public abstract class BaseSettingsFragment extends PreferenceFragmentCompat impl
 				if (prefManager.setPreferences(preferenceScreen)) {
 					setupPreferences();
 					registerPreferences(preferenceScreen);
+					MineNavStyle.hideSettingsDecorations(preferenceScreen);
 				}
 			} else {
 				updateAllSettings();
@@ -199,6 +201,7 @@ public abstract class BaseSettingsFragment extends PreferenceFragmentCompat impl
 		LayoutInflater themedInflater = UiUtilities.getInflater(getActivity(), isNightMode());
 		RecyclerView recyclerView = super.onCreateRecyclerView(themedInflater, parent, savedInstanceState);
 		recyclerView.setPadding(0, 0, 0, AndroidUtils.dpToPx(app, 80));
+		recyclerView.addItemDecoration(MineNavStyle.createRowDividers(themedInflater.getContext(), isNightMode()));
 		return recyclerView;
 	}
 
@@ -214,6 +217,7 @@ public abstract class BaseSettingsFragment extends PreferenceFragmentCompat impl
 				Preference preference = getItem(position);
 				if (preference != null) {
 					onBindPreferenceViewHolder(preference, holder);
+					MineNavStyle.styleSettingsRow(this, position, preference, holder, isNightMode());
 				}
 			}
 		};
@@ -379,7 +383,8 @@ public abstract class BaseSettingsFragment extends PreferenceFragmentCompat impl
 
 		ApplicationMode appMode = getSelectedAppMode();
 		if (preference instanceof ListPreferenceEx) {
-			SingleSelectPreferenceBottomSheet.showInstance(fragmentManager, preference.getKey(), this, false, appMode, isProfileDependent(), false);
+			// MineNAV: options open as a Waze-style page with check marks
+			MineNavListPreferenceFragment.showInstance(fragmentManager, preference.getKey(), this);
 		} else if (preference instanceof SwitchPreferenceEx) {
 			BooleanPreferenceBottomSheet.showInstance(fragmentManager, preference.getKey(), getApplyQueryType(), this, appMode, false, isProfileDependent());
 		} else if (preference instanceof EditTextPreference) {
@@ -531,6 +536,12 @@ public abstract class BaseSettingsFragment extends PreferenceFragmentCompat impl
 			});
 			switchProfile.setVisibility(View.GONE);
 		}
+		MineNavStyle.styleSettingsToolbar(view, isNightMode(), () -> {
+			FragmentActivity activity = getActivity();
+			if (activity != null) {
+				MineNavStyle.closeAllSettings(activity);
+			}
+		});
 	}
 
 	protected void updateToolbar() {
@@ -601,6 +612,7 @@ public abstract class BaseSettingsFragment extends PreferenceFragmentCompat impl
 			}
 			setupPreferences();
 			registerPreferences(getPreferenceScreen());
+			MineNavStyle.hideSettingsDecorations(getPreferenceScreen());
 		}
 	}
 
@@ -720,7 +732,7 @@ public abstract class BaseSettingsFragment extends PreferenceFragmentCompat impl
 
 	@ColorRes
 	protected int getBackgroundColorRes() {
-		return ColorUtilities.getListBgColorId(isNightMode());
+		return isNightMode() ? R.color.mn_screen_bg_dark : R.color.mn_screen_bg_light;
 	}
 
 	@ColorInt
@@ -894,7 +906,7 @@ public abstract class BaseSettingsFragment extends PreferenceFragmentCompat impl
 				}
 				fragment.setArguments(args);
 				fragment.setTargetFragment(target, 0);
-				fragmentManager.beginTransaction()
+				MineNavStyle.setForwardAnimations(fragmentManager.beginTransaction())
 						.replace(R.id.fragmentContainer, fragment, tag)
 						.addToBackStack(DRAWER_SETTINGS_ID)
 						.commitAllowingStateLoss();

@@ -435,9 +435,9 @@ public abstract class MapButton extends FrameLayoutEx implements OnAttachStateCh
 
 	protected abstract boolean shouldShow();
 
-	protected boolean isWhereToCardVisible() {
+	protected boolean isMineNavSheetVisible() {
 		MapControlsLayer layer = mapActivity != null ? mapActivity.getMapLayers().getMapControlsLayer() : null;
-		return layer != null && layer.isWhereToCardVisible();
+		return layer != null && layer.isMineNavSheetVisible();
 	}
 
 	public boolean updateVisibility() {

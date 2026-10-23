@@ -8,15 +8,40 @@
 	<color name="mn_blush">#F9D2D0</color>
 	<color name="mn_primary">#5468D4</color>
 	<color name="mn_primary_pressed">#4152B8</color>
-	<color name="mn_banner_night">#34427A</color>
+	<color name="mn_banner">#1C2233</color>
+	<color name="mn_banner_secondary_text">#8FC1FF</color>
+	<color name="mn_speed_bg">#2A2E38</color>
+	<color name="mn_speed_text">#FFFFFF</color>
+	<color name="mn_speed_units">#B9BECB</color>
 	<color name="mn_card_bg_light">#FFFFFF</color>
-	<color name="mn_card_bg_dark">#1D2235</color>
-	<color name="mn_field_bg_light">#EEF0FA</color>
-	<color name="mn_field_bg_dark">#2A3149</color>
-	<color name="mn_text_light">#1E305C</color>
-	<color name="mn_text_dark">#E6EAF8</color>
-	<color name="mn_chip_stroke_light">#D5DAF0</color>
-	<color name="mn_chip_stroke_dark">#3A4363</color>
+	<color name="mn_card_bg_dark">#202227</color>
+	<color name="mn_field_bg_light">#EEF0F3</color>
+	<color name="mn_field_bg_dark">#3A3D44</color>
+	<color name="mn_text_light">#1F2329</color>
+	<color name="mn_text_dark">#FFFFFF</color>
+	<color name="mn_chip_stroke_light">#DADDE2</color>
+	<color name="mn_chip_stroke_dark">#4A4D55</color>
+	<color name="mn_text_secondary_light">#6B7078</color>
+	<color name="mn_text_secondary_dark">#A0A4AB</color>
+	<color name="mn_handle_light">#D0D3D8</color>
+	<color name="mn_handle_dark">#55585F</color>
+	<color name="mn_icon_home">#F28C38</color>
+	<color name="mn_icon_work">#D9822B</color>
+	<color name="mn_screen_bg_light">#F2F2F5</color>
+	<color name="mn_screen_bg_dark">#000000</color>
+	<color name="mn_row_bg_light">#FFFFFF</color>
+	<color name="mn_row_bg_dark">#202227</color>
+	<color name="mn_divider_light">#E4E6EA</color>
+	<color name="mn_divider_dark">#2E3036</color>
+	<color name="mn_circle_cyan">#26C6F2</color>
+	<color name="mn_circle_green">#2DBE74</color>
+	<color name="mn_circle_blue">#3D7BF2</color>
+	<color name="mn_circle_orange">#FF8A1F</color>
+	<color name="mn_circle_red">#FF6B4A</color>
+	<color name="mn_circle_pink">#F2449A</color>
+	<color name="mn_circle_purple">#A35BEF</color>
+	<color name="mn_circle_grey">#6B6F78</color>
+	<color name="mn_circle_teal">#19B5B5</color>
 
 	<color name="lunar_eclipse_visibility">#7E57C2</color>
 	<color name="lunar_eclipse_marker">#ECEFF1</color>
@@ -28,12 +53,12 @@
 	<color name="solar_eclipse_marker_halo">#FFFFFF</color>
 
 	<!-- Background -->
-	<color name="activity_background_color_light">#f0f0f0</color>
-	<color name="activity_background_color_dark">#0D0D0D</color>
-	<color name="card_and_list_background_light">#ffffff</color>
-	<color name="card_and_list_background_dark">#222526</color>
-	<color name="list_background_color_light">#ffffff</color>
-	<color name="list_background_color_dark">#1E1F20</color>
+	<color name="activity_background_color_light">#F2F2F5</color>
+	<color name="activity_background_color_dark">#000000</color>
+	<color name="card_and_list_background_light">#FFFFFF</color>
+	<color name="card_and_list_background_dark">#202227</color>
+	<color name="list_background_color_light">#FFFFFF</color>
+	<color name="list_background_color_dark">#202227</color>
 	<color name="widget_background_color_light">#FFFFFF</color>
 	<color name="widget_background_color_dark">#000000</color>
 	<color name="widget_secondary_background_color_light">#FFFFFF</color>
@@ -66,13 +91,13 @@
 	<color name="map_button_icon_color_light">#727272</color>
 	<color name="map_button_icon_color_dark">#cccccc</color>
 	<color name="map_button_background_color_light">#FFFFFF</color>
-	<color name="map_button_background_color_dark">#000000</color>
+	<color name="map_button_background_color_dark">#202227</color>
 	<color name="icon_color_inverse_light">#FFFFFF</color>
 	<color name="icon_color_inverse_dark">#F2F2F2</color>
 	
 	<!-- AppBar & Status bar -->
 	<color name="app_bar_main_light">#5468D4</color>
-	<color name="app_bar_main_dark">#252727</color>
+	<color name="app_bar_main_dark">#202227</color>
 	<color name="app_bar_secondary_light">#FFFFFF</color>
 	<color name="app_bar_secondary_dark">#252727</color>
 	<color name="app_bar_active_light">#5468D4</color>
@@ -82,7 +107,7 @@
 	<color name="navigation_bar_bg_dark">#000000</color>
 
 	<color name="status_bar_main_light">#4152B8</color>
-	<color name="status_bar_main_dark">#1E1F1F</color>
+	<color name="status_bar_main_dark">#202227</color>
 	<color name="status_bar_secondary_light">#F0F0F0</color>
 	<color name="status_bar_secondary_dark">#1E1F1F</color>
 	<color name="status_bar_selection_color_light">#0F6FFF</color>
@@ -120,8 +145,8 @@
 	<color name="icon_color_active_dark_v2">#9AABE4</color>
 
 	<!-- Divider -->
-	<color name="divider_color_light">#e6e6e6</color>
-	<color name="divider_color_dark">#2c3033</color>
+	<color name="divider_color_light">#E4E6EA</color>
+	<color name="divider_color_dark">#2E3036</color>
 	<color name="divider_color">#ccc</color>
 
 	<!-- Progress bar-->
@@ -231,8 +256,8 @@
 	<color name="chip_bg_light">#FFFFFF</color>
     <color name="chip_bg_dark">#1E1F20</color>
 
-	<color name="chip_bg_selected_light">#C7DDFF</color>
-	<color name="chip_bg_selected_dark">#16396E</color>
+	<color name="chip_bg_selected_light">#D7DCF5</color>
+	<color name="chip_bg_selected_dark">#34407A</color>
 
 	<color name="chip_search_scope_bg_light">#EDEFF3</color>
 	<color name="chip_search_scope_bg_dark">#2E343D</color>
@@ -359,7 +384,7 @@
 	<color name="speedometer_bg_tolerance_day">#FFBF00</color>
 	<color name="speedometer_bg_tolerance_night">#FFBF00</color>
 
-	<color name="color_myloc_distance">#0080FF</color>
+	<color name="color_myloc_distance">#697FBE</color>
 	<color name="wpt_distance_color">#dd6CB336</color>
 
 	<color name="row_selection_color">#CC33BBE0</color>
@@ -576,7 +601,7 @@
 	<color name="text_field_box_dark">#3F474B</color>
 	<color name="text_field_box_light">#eeeeee</color>
 
-	<color name="preference_category_title">#7E33FF</color>
+	<color name="preference_category_title">@color/mn_primary</color>
 	<color name="preference_top_switch_off">#808080</color>
 	<color name="preference_action_button_text">#0047B2</color>
 

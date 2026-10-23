@@ -36,6 +36,7 @@ import net.osmand.plus.helpers.CurrentPositionHelper;
 import net.osmand.plus.helpers.LocationPointWrapper;
 import net.osmand.plus.helpers.WaypointDialogHelper;
 import net.osmand.plus.helpers.WaypointHelper;
+import net.osmand.plus.minenav.MineNavWidgetPanel;
 import net.osmand.plus.render.RendererRegistry;
 import net.osmand.plus.render.TextDrawInfo;
 import net.osmand.plus.render.TextRenderer;
@@ -48,6 +49,7 @@ import net.osmand.plus.routing.RoutingHelper;
 import net.osmand.plus.routing.RoutingHelperUtils;
 import net.osmand.plus.settings.backend.ApplicationMode;
 import net.osmand.plus.settings.backend.OsmandSettings;
+import net.osmand.plus.settings.enums.PanelBackgroundMode;
 import net.osmand.plus.settings.enums.ScreenLayoutMode;
 import net.osmand.plus.utils.AndroidUtils;
 import net.osmand.plus.views.layers.MapInfoLayer;
@@ -403,6 +405,9 @@ public class StreetNameWidget extends MapWidget {
 
 		turnDrawable.updateColors(nightMode);
 		turnDrawable.invalidateSelf();
+		if (appearance.getPanel() == WidgetsPanel.BOTTOM && appearance.getBackground().getMode() == PanelBackgroundMode.DEFAULT) {
+			MineNavWidgetPanel.styleStreetName(view, nightMode);
+		}
 	}
 
 	@Override

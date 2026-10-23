@@ -38,7 +38,7 @@ import java.io.OutputStream;
 public final class MediaStorageUtils {
 
 	private static final Log log = PlatformUtil.getLog(MediaStorageUtils.class);
-	static final String MEDIA_SUBFOLDER = "OsmAnd";
+	static final String MEDIA_SUBFOLDER = "MineNAV";
 
 	// ---- Storage-type predicates ----
 

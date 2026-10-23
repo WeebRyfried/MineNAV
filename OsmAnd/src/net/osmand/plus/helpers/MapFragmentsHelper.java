@@ -41,6 +41,7 @@ import net.osmand.plus.mapcontextmenu.other.TrackDetailsMenuFragment;
 import net.osmand.plus.mapmarkers.PlanRouteFragment;
 import net.osmand.plus.measurementtool.GpxApproximationFragment;
 import net.osmand.plus.measurementtool.MeasurementToolFragment;
+import net.osmand.plus.minenav.MineNavSettingsFragment;
 import net.osmand.plus.measurementtool.SnapTrackWarningFragment;
 import net.osmand.plus.exploreplaces.ExplorePlacesFragment;
 import net.osmand.plus.plugins.astronomy.StarMapFragment;
@@ -555,7 +556,7 @@ public class MapFragmentsHelper implements OnPreferenceStartFragmentCallback {
 
 	public void showSettings() {
 		dismissSettingsScreens();
-		BaseSettingsFragment.showInstance(activity, SettingsScreenType.MAIN_SETTINGS);
+		MineNavSettingsFragment.showInstance(activity.getSupportFragmentManager());
 	}
 
 	private void hideVisibleMenu() {

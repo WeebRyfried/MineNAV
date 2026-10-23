@@ -200,8 +200,8 @@
     <string name="lang_uk">Ukraіnskaja</string>
     <string name="lang_vi">Vijetnamskaja</string>
     <string name="lang_cy">Valijskaja</string>
-    <string name="calculate_osmand_route_without_internet">Aŭtanomny razlik adrezak maršrutu OsmAnd</string>
-    <string name="gpx_option_calculate_first_last_segment">Vyličyć maršrut OsmAnd dla pieršaha і apošniaha ŭčastka maršrutu</string>
+    <string name="calculate_osmand_route_without_internet">Aŭtanomny razlik adrezak maršrutu MineNAV</string>
+    <string name="gpx_option_calculate_first_last_segment">Vyličyć maršrut MineNAV dla pieršaha і apošniaha ŭčastka maršrutu</string>
     <string name="keep_and_add_destination_point">Dadać nastupnym punktam pryznačeńnia</string>
     <string name="route_descr_select_destination">Vybrać miesca pryznačeńnia</string>
     <string name="shared_string_select_on_map">Vybrać na mapie</string>
@@ -219,11 +219,11 @@
     <string name="routing_attr_avoid_motorway_description">Pazbiahać aŭtamahistraliaŭ</string>
     <string name="routing_attr_weight_name">Abmiežavańnie vahі</string>
     <string name="routing_attr_weight_description">Paznačyć dazvolienuju vahu aŭtamabilia na maršrutach.</string>
-    <string name="android_19_location_disabled">Z viersii 4.4 Android (KitKat) vy nia možacie zahružać i abnaŭliać mapu ŭ starym katalohu zachoŭvańnia (%s). Skapijavać usie fajly OsmAnd u novaje schovišča? 
+    <string name="android_19_location_disabled">Z viersii 4.4 Android (KitKat) vy nia možacie zahružać i abnaŭliać mapu ŭ starym katalohu zachoŭvańnia (%s). Skapijavać usie fajly MineNAV u novaje schovišča? 
 \n Zaŭvaha 1: Vašy staryja fajly zastanucca niekranutymi (vy možacie vydalić ich samastojna).          
-\n Zaŭvaha 2: U novym miescy zachoŭvańnia budzie niemahčyma adnačasova vykarystoŭvać fajly ŭ OsmAnd i OsmAnd+.</string>
-    <string name="copying_osmand_files">Kapіjavańnie dadzienych OsmAnd…</string>
-    <string name="calculate_osmand_route_gpx">Aŭtanomny razlik maršrutu ŭ OsmAnd</string>
+\n Zaŭvaha 2: U novym miescy zachoŭvańnia budzie niemahčyma adnačasova vykarystoŭvać fajly ŭ MineNAV i MineNAV.</string>
+    <string name="copying_osmand_files">Kapіjavańnie dadzienych MineNAV…</string>
+    <string name="calculate_osmand_route_gpx">Aŭtanomny razlik maršrutu ŭ MineNAV</string>
     <string name="app_mode_truck">Hruzavіk</string>
     <string name="speech_rate_descr">Zadajcie chutkasć vymaŭliennia dlia TTS.</string>
     <string name="speech_rate">Chutkaść vymaŭleńnia</string>
@@ -381,11 +381,11 @@
     <string name="snap_to_road">Pryviazvacca da daroh</string>
     <string name="interrupt_music_descr">Halasavyja padkazki prypyniajuć muzyku, a nie toĺki pryhlušajuć jaje.</string>
     <string name="interrupt_music">Pierapynieńnie muzykі</string>
-    <string name="osmand_play_title_30_chars">OsmAnd Mapy j navіhacyja</string>
+    <string name="osmand_play_title_30_chars">MineNAV Mapy j navіhacyja</string>
     <string name="osmand_short_description_80_chars">Hłabalnaja mabіlnaja mapa і navіhatar dla aŭtanomnych і sietkavych mapaŭ OSM</string>
-    <string name="osmand_long_description_1000_chars">OsmAnd (OSM Automated Navigation Directions) 
+    <string name="osmand_long_description_1000_chars">MineNAV (OSM Automated Navigation Directions) 
 \n 
-\nOsmAnd — prahramnaje navihacyjnaje dastasavannie z adkrytym kodam z dostupam da roznych kartahrafičnych dadzienych ad OpenStreetMap (OSM). Usie kartahrafičnyja dadzienyja (viektarnyja i rastravyja) mohuć być zachavanyja na karcie pamiaci dlia aŭtanomnaha vykarystannia. Aŭtanomnaja i anlajn-maršrutyzacyja padtrymlivajecca taksama, ukliučajučy pakrokavaje halasavoje supravadžennie. 
+\nMineNAV — prahramnaje navihacyjnaje dastasavannie z adkrytym kodam z dostupam da roznych kartahrafičnych dadzienych ad OpenStreetMap (OSM). Usie kartahrafičnyja dadzienyja (viektarnyja i rastravyja) mohuć być zachavanyja na karcie pamiaci dlia aŭtanomnaha vykarystannia. Aŭtanomnaja i anlajn-maršrutyzacyja padtrymlivajecca taksama, ukliučajučy pakrokavaje halasavoje supravadžennie. 
 \n 
 \nNiekaĺki asnoŭnych mahčymasciaŭ: 
 \n - paŭnavartasnaja praca biez internet-zlučennia (zachoŭvaje viektarnyja abo rastravyja dadzienyja ŭ pamiaci prystasavannia); 
@@ -404,14 +404,14 @@
 \n - koĺkasć sciahvanniaŭ mapaŭ abmiežavanaje; 
 \n - adsutničaje aflajn dostup da infarmacyi z Vikipedyi dlia POI. 
 \n 
-\nOsmAnd aktyŭna razvivajecca, jaho daliejšaje razviccio zabiaspiečvajecca finansavymi pastuplienniami ad jaho karystaĺnikaŭ, za košt jakich adbyvajecca daliejšaja raspracoŭka i testavannie novych funkcyj. Kali laska, razhliedźcie mahčymasć nabyccia OsmAnd+ abo padtrymajcie raspracoŭku peŭnych funkcyj, abo zrabicie dabračynny ŭniosak na https://osmand.net.</string>
-    <string name="osmand_plus_play_title_30_chars">OsmAnd+ Mapy j navіhacyja</string>
+\nMineNAV aktyŭna razvivajecca, jaho daliejšaje razviccio zabiaspiečvajecca finansavymi pastuplienniami ad jaho karystaĺnikaŭ, za košt jakich adbyvajecca daliejšaja raspracoŭka i testavannie novych funkcyj. Kali laska, razhliedźcie mahčymasć nabyccia MineNAV abo padtrymajcie raspracoŭku peŭnych funkcyj, abo zrabicie dabračynny ŭniosak na https://osmand.net.</string>
+    <string name="osmand_plus_play_title_30_chars">MineNAV Mapy j navіhacyja</string>
     <string name="osmand_plus_short_description_80_chars">Hłabalnaja mabіlnaja mapa і navіhatar dla aŭtanomnych і sietkavych mapaŭ OSM</string>
-    <string name="osmand_plus_long_description_1000_chars">OsmAnd+ (OSM Automated Navigation Directions) 
+    <string name="osmand_plus_long_description_1000_chars">MineNAV (OSM Automated Navigation Directions) 
 \n 
-\n OsmAnd+ — prahramnaje navihacyjnaje dastasavannie z adkrytym kodam z dostupam da roznych kartahrafičnych dadzienych ad OpenStreetMap (OSM). Usie kartahrafičnyja dadzienyja (viektarnyja i rastravyja) mohuć być zachavanyja na karcie pamiaci dlia daliejšaha aŭtanomnaha vykarystannia. Aŭtanomnaja i anlajn-maršrutyzacyja padtrymlivajecca taksama, ukliučajučy pakrokavaje halasavoje supravadžennie. 
+\n MineNAV — prahramnaje navihacyjnaje dastasavannie z adkrytym kodam z dostupam da roznych kartahrafičnych dadzienych ad OpenStreetMap (OSM). Usie kartahrafičnyja dadzienyja (viektarnyja i rastravyja) mohuć być zachavanyja na karcie pamiaci dlia daliejšaha aŭtanomnaha vykarystannia. Aŭtanomnaja i anlajn-maršrutyzacyja padtrymlivajecca taksama, ukliučajučy pakrokavaje halasavoje supravadžennie. 
 \n 
-\n OsmAnd+ — heta platnaja viersija, kupliajučy jakuju vy padtrymlivajecie prajekt, finansujecie raspracoŭku novych funkcyj, i atrymlivajecie apošnija abnaŭlienni. 
+\n MineNAV — heta platnaja viersija, kupliajučy jakuju vy padtrymlivajecie prajekt, finansujecie raspracoŭku novych funkcyj, i atrymlivajecie apošnija abnaŭlienni. 
 \n 
 \n Niekaĺki asnoŭnych mahčymasciaŭ: 
 \n - poŭnasciu aŭtanomnaja praca (zachavannie viektarnych abo rastravych mapaŭ u pamiaci prystasavannia); 
@@ -473,7 +473,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="osmand_parking_pm">PM</string>
     <string name="osmand_parking_am">AM</string>
     <string name="osmand_parking_position_name">Miesca stajankі</string>
-    <string name="osmand_parking_plugin_description">Moduĺ miesca parkoŭki dazvaliaje zapisać, dzie byŭ pryparkavany vaš aŭtamabiĺ i koĺki času zastalosia ŭ vypadku abmiežavanaj pa časie stajanki. Miesca parkoŭki i čas vidać na paneli kiravańnia OsmAnd i na vidžecie na ekranie z mapaj. Apaviaščeńnie ŭ kaliendary Android moža być dadadziena dlia napaminu.</string>
+    <string name="osmand_parking_plugin_description">Moduĺ miesca parkoŭki dazvaliaje zapisać, dzie byŭ pryparkavany vaš aŭtamabiĺ i koĺki času zastalosia ŭ vypadku abmiežavanaj pa časie stajanki. Miesca parkoŭki i čas vidać na paneli kiravańnia MineNAV i na vidžecie na ekranie z mapaj. Apaviaščeńnie ŭ kaliendary Android moža być dadadziena dlia napaminu.</string>
     <string name="osmand_parking_plugin_name">Miesca stajankі</string>
     <string name="context_menu_item_add_parking_point">Paznačyć miesca stajanki</string>
     <string name="gpxup_public">Ahulny</string>
@@ -482,7 +482,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="gpxup_private">Pryvatny</string>
     <string name="asap">Jak maha chutčej</string>
     <string name="share_route_as_gpx">Padzialicca maršrutam praz GPX fajł</string>
-    <string name="share_route_subject">Maršrut apublikavany z dapamohaj OsmAnd</string>
+    <string name="share_route_subject">Maršrut apublikavany z dapamohaj MineNAV</string>
     <string name="route_roundabout">Kruhavy ruch: %1$d zjezd</string>
     <string name="route_kl">Trymajciesia levaha boku</string>
     <string name="route_kr">Trymajciesia pravaha boku</string>
@@ -504,15 +504,15 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="shared_string_online_maps">Siecіŭnyja mapy</string>
     <string name="osmand_rastermaps_plugin_description">Z dapamohaj hetaha modulia vy možacie atrymać dostup da mnostva vidaŭ internet mapaŭ (tajlavych abo rastravych), ad papiarednie stvoranych frahmientaŭ OpenStreetMap (Mapnik) da spadarožnikavych zdymkaŭ i slajoŭ specyjaĺnaha pryznačennia, takich jak mapy nadvor\'ja, klimatyčnyja mapy, hiealahičnyja mapy, plasty zaciamniennia vyšyń i h.d. 
 \n 
-\nLiubaja z hetych mapaŭ moža być vykarystana ŭ jakaści asnoŭnaj (bazavaj) mapy dlia adliustravannia na ekranie OsmAnd abo ŭ vyhliadzie nakladannia / padkladki da inšaj bazavaj mapy (standartnaj aŭtanomnaj mapy OsmAnd). Dlia taho kab zrabić liubuju padkladku boĺš bačnaj, niekatoryja eliementy viektarnaj mapy OsmAnd mohuć być pa žadanni liohka schavanyja praz mieniu «Nalady mapy». 
+\nLiubaja z hetych mapaŭ moža być vykarystana ŭ jakaści asnoŭnaj (bazavaj) mapy dlia adliustravannia na ekranie MineNAV abo ŭ vyhliadzie nakladannia / padkladki da inšaj bazavaj mapy (standartnaj aŭtanomnaj mapy MineNAV). Dlia taho kab zrabić liubuju padkladku boĺš bačnaj, niekatoryja eliementy viektarnaj mapy MineNAV mohuć być pa žadanni liohka schavanyja praz mieniu «Nalady mapy». 
 \n 
-\nTajlavyja mapy mohuć być atrymanyja niepasredna z dapamohaj onlajn-krynic abo mohuć być padrychtavanyja dlia vykarystannia ŭ aŭtanomnym režymie (i ŭručnuju skapijavanyja ŭ tečku dadzienych OsmAnd) jak baza dadzienych SQLite, jakaja moža być atrymana z dapamohaj roznych instrumientaŭ padrychtoŭki mapaŭ inšych vytvorcaŭ.</string>
-    <string name="osmand_accessibility_description">Moduĺ dadaje padtrymku dapamožnych mahčymaściaŭ niepasredna ŭ OsmAnd. Heta paliahčaje, napryklad, rehuliavańnie chutkaści pramovy dlia holasu TTS, naladu nakiravanaści ekrana navihacyi, kiravańnie maštabam pry dapamozie trekbola abo vykarystańnie halasavych kamand zvarotnaj suviazi dlia aŭtamatyčnaha ahalošvańnia vašaha miescaznachodžańnia.</string>
+\nTajlavyja mapy mohuć być atrymanyja niepasredna z dapamohaj onlajn-krynic abo mohuć być padrychtavanyja dlia vykarystannia ŭ aŭtanomnym režymie (i ŭručnuju skapijavanyja ŭ tečku dadzienych MineNAV) jak baza dadzienych SQLite, jakaja moža być atrymana z dapamohaj roznych instrumientaŭ padrychtoŭki mapaŭ inšych vytvorcaŭ.</string>
+    <string name="osmand_accessibility_description">Moduĺ dadaje padtrymku dapamožnych mahčymaściaŭ niepasredna ŭ MineNAV. Heta paliahčaje, napryklad, rehuliavańnie chutkaści pramovy dlia holasu TTS, naladu nakiravanaści ekrana navihacyi, kiravańnie maštabam pry dapamozie trekbola abo vykarystańnie halasavych kamand zvarotnaj suviazi dlia aŭtamatyčnaha ahalošvańnia vašaha miescaznachodžańnia.</string>
     <string name="osmand_development_plugin_description">Modul adlustroŭvaje parametry dla raspracoŭkі і adładkі funkcyj, takіch jak, pravierka abo madelavańnie maršrutu, adlustravańnie pradukcyjnaścі admaloŭkі, pravierka hałasavych padkazak. Hetyja nałady pryznačanyja dla raspracoŭščykaŭ і nie patrabujucca dla zvyčajnaha karystalnіka.</string>
     <string name="plugins_screen">Dadatkovyja moduli</string>
     <string name="prefs_plugins">Dadatkovyja moduli</string>
     <string name="play_commands_of_currently_selected_voice">Abrać holas i prajhrać padkazki</string>
-    <string name="debugging_and_development">Dla raspracoŭščykaŭ OsmAnd</string>
+    <string name="debugging_and_development">Dla raspracoŭščykaŭ MineNAV</string>
     <string name="test_voice_prompts">Pratestavać hałasavyja padkazkі</string>
     <string name="gpx_visibility_txt">Bačnaść</string>
     <string name="gpx_tags_txt">Cetlikі</string>
@@ -603,7 +603,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="user_name">Vaša imia karystaĺnika OSM</string>
     <string name="user_password">Vaš parol OSM</string>
     <string name="osmand_service">Fonavy režym</string>
-    <string name="osmand_service_descr">OsmAnd pracuje ŭ fonie z adkliučanym ekranam.</string>
+    <string name="osmand_service_descr">MineNAV pracuje ŭ fonie z adkliučanym ekranam.</string>
     <string name="download_files_not_enough_space">Niama volnaha miesca kab ściahnuć %1$s MB (volna: %2$s).</string>
     <string name="download_files_question_space">Ściahnuć {0} fajl(aŭ)?
  Vykarystoŭvajecca {1} MB.
@@ -627,7 +627,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="file_with_name_already_exists">Fajł z takoj nazvaj užo іsnuje.</string>
     <string name="poi_query_by_name_matches_categories">Niekalkі katehoryj POI znojdzieny, što adpaviadajuć zapytu:</string>
     <string name="poi_filter_by_name">Pošuk pa naźvie</string>
-    <string name="button_upgrade_osmandplus">Abnavіć da OsmAnd+</string>
+    <string name="button_upgrade_osmandplus">Abnavіć da MineNAV</string>
     <string name="map_version_changed_info">Ściahnuć novuju viersiju prahramy kab mieć mahčymasć vykarystoŭvać novyja fajly map.</string>
     <string name="shared_string_rename">Pieranazvać</string>
     <string name="poi_filter_nominatim">Sietkavy Nominatim</string>
@@ -728,10 +728,10 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="osmand_net_previously_installed">Usie aŭtanomnyja danyja ŭ staroj ustaliavanaj prahramie buduć padtrymlivacca novaj, alie ŭpadabanyja kropki treba ekspartavać sa staroj viersii i impartavać u novuju.</string>
     <string name="build_installed">Zborka {0} ŭstaliavanaja ({1}).</string>
     <string name="downloading_build">Ściahvajecca zborka…</string>
-    <string name="install_selected_build">Ustaliavać OsmAnd - {0} z {1} {2} MB?</string>
-    <string name="loading_builds_failed">Nie ŭdałosia atrymać śpіs zborak OsmAnd</string>
-    <string name="loading_builds">Zahružajucca zborkі OsmAnd…</string>
-    <string name="select_build_to_install">Vybierycie zborku OsmAnd dla ŭstanoŭkі</string>
+    <string name="install_selected_build">Ustaliavać MineNAV - {0} z {1} {2} MB?</string>
+    <string name="loading_builds_failed">Nie ŭdałosia atrymać śpіs zborak MineNAV</string>
+    <string name="loading_builds">Zahružajucca zborkі MineNAV…</string>
+    <string name="select_build_to_install">Vybierycie zborku MineNAV dla ŭstanoŭkі</string>
     <string name="gps_status_app_not_found">Dastasavańnie stanu GPS nie ŭstaliavanaja. Pašukać ŭ kramie?</string>
     <string name="daynight_mode_day">Dzień</string>
     <string name="daynight_mode_night">Noč</string>
@@ -765,7 +765,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="no_fav_to_save">Niama ŭpadabanych miescaŭ dlia zachoŭvannia</string>
     <string name="shared_string_import">Іmpartavać</string>
     <string name="shared_string_share">Padzialicca</string>
-    <string name="share_fav_subject">Ulubionyja adasłany praz OsmAnd</string>
+    <string name="share_fav_subject">Ulubionyja adasłany praz MineNAV</string>
     <string name="error_occurred_loading_gpx">Nie atrymalasia zahruzić GPX</string>
     <string name="send_report">Dasłać spravazdaču</string>
     <string name="poi_namefinder_query_empty">Nadrukujcie dlia pošuku POI</string>
@@ -776,7 +776,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="layer_map">Krynіca mapy…</string>
     <string name="use_trackball_descr">Vykarystoŭvajcie trekbol dlia pieramiaščennia mapy.</string>
     <string name="use_trackball">Vykarystoŭvajcie trekboł</string>
-    <string name="process_navigation_service">Navіhacyjny servіs OsmAnd</string>
+    <string name="process_navigation_service">Navіhacyjny servіs MineNAV</string>
     <string name="int_seconds">sekundaŭ</string>
     <string name="int_min">chv.</string>
     <string name="search_poi_filter">Fіltravać</string>
@@ -801,7 +801,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="transport_stops">prypynkaŭ</string>
     <string name="transport">Transpart</string>
     <string name="shared_string_ok">OK</string>
-    <string name="hello">Navihacyjnaje dastasavańnie OsmAnd</string>
+    <string name="hello">Navihacyjnaje dastasavańnie MineNAV</string>
     <string name="favorite">Upadabanaje</string>
     <string name="shared_string_clear_all">Ačyścіć ŭsio</string>
     <string name="shared_string_history">Hіstoryja</string>
@@ -836,7 +836,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="invalid_locations">Niesapraŭdnyja kaardynaty</string>
     <string name="shared_string_close">Začynіć</string>
     <string name="loading_data">Dadzienyja zahružajucca…</string>
-    <string name="previous_run_crashed">Papiarednі start OsmAnd skončyŭsia avaryjna. Chronіka zapіsanaja ŭ fajł {0}. Kali łaska, paviedamіcie pra prablemu j pryčapіcie fajł chronіkі.</string>
+    <string name="previous_run_crashed">Papiarednі start MineNAV skončyŭsia avaryjna. Chronіka zapіsanaja ŭ fajł {0}. Kali łaska, paviedamіcie pra prablemu j pryčapіcie fajł chronіkі.</string>
     <string name="saving_gpx_tracks">Zachavannie GPX-fajla…</string>
     <string name="finished_task">Skončana</string>
     <string name="data_settings">Źviestkі</string>
@@ -954,7 +954,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="osm_live_subscribe_btn">Padpіsacca</string>
     <string name="osm_live_active">Aktyŭny</string>
     <string name="osm_live_enter_email">Kali laska, uviadzicie sapraŭdny adras eliektronnaj pošty</string>
-    <string name="osm_live_ask_for_purchase">Kali laska, spačatku nabudźcie padpisku OsmAnd Live</string>
+    <string name="osm_live_ask_for_purchase">Kali laska, spačatku nabudźcie padpisku Live</string>
     <string name="select_map_marker">Vybierycie paznaku</string>
     <string name="upload_anonymously">Adasłać ananіmna</string>
     <string name="show_transparency_seekbar">Pakazać prazrystuju pošukavuju panel</string>
@@ -1044,7 +1044,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="context_menu_item_delete_waypoint">Vydalić šlachavuju kropku GPX?</string>
     <string name="context_menu_item_edit_waypoint">Pravіć kropku šlachu GPX</string>
     <string name="shared_string_location">Miescaznachodžańnie</string>
-    <string name="share_osm_edits_subject">Redahavańnі OSM apublikavanyja praz OsmAnd</string>
+    <string name="share_osm_edits_subject">Redahavańnі OSM apublikavanyja praz MineNAV</string>
     <string name="lang_nds">Nіžnieniamieckaja</string>
     <string name="lang_mk">Makiedonskaja</string>
     <string name="lang_fy">Zachodniefryskaja</string>
@@ -1155,7 +1155,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="lang_ceb">Cebuanskaja</string>
     <string name="gps_network_not_enabled">Služba miescaznachodžańnia nie ŭkliučanaja. Ukliučyć jaje?</string>
     <string name="disable_recording_once_app_killed">Praduchіlić aŭtanomny zapіs</string>
-    <string name="shared_string_import2osmand">Іmpartavać u OsmAnd</string>
+    <string name="shared_string_import2osmand">Іmpartavać u MineNAV</string>
     <string name="read_full_article">Čytać artykuł całkam (anłajn)</string>
     <string name="shared_string_wikipedia">Vіkіpedyja</string>
     <string name="shared_string_show_details">Pakazać padrabiaznaścі</string>
@@ -1228,7 +1228,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="track_segments">Adrezkі śledu</string>
     <string name="track_points">Punkty śledu</string>
     <string name="plugin_touringview_name">Turystyčnaja mapa</string>
-    <string name="plugin_touringview_descr">Aktyvacyja hetaha styliu mianiaje styĺ mapy OsmAnd na «Turystyčnuju mapu», heta admyslovy vysoka detaliavany vyhliad dlia padarožnikaŭ i prafiesijnych kiroŭcaŭ. 
+    <string name="plugin_touringview_descr">Aktyvacyja hetaha styliu mianiaje styĺ mapy MineNAV na «Turystyčnuju mapu», heta admyslovy vysoka detaliavany vyhliad dlia padarožnikaŭ i prafiesijnych kiroŭcaŭ. 
 \n 
 \nHety styĺ na liubym maštabie mapy pakazvaje maksimaĺnuju koĺkasć padrabiaznasciaŭ dlia pajezdki, najaŭnych u kartahrafičnych dadzienych (u pryvatnasci, darohi, darožki, sciažynki, i aryjenciry). 
 \n 
@@ -1241,7 +1241,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
 \nHety vyhliad moža być deaktyvavany tut, abo šliacham zmieny «Styliu mapy» u razdzielie «Nalady mapy» pa žadańni.</string>
     <string name="plugin_nautical_name">Marskіja mapy</string>
     <string name="plugin_ski_name">Łyžnyja mapy</string>
-    <string name="plugin_ski_descr">Moduĺ dlia OsmAnd daje vam dostup da dadzienych ab harnalyžnych trasach, maršrutach dlia biehavych lyž, aĺpijskich spuskach, funikuliorach i harnalyžnych pad\'jomnikach. Maršruty i spuski adznačany roznymi kolierami ŭ zaliežnasci ad ich skladanasci i namaliavanyja z vykarystanniem admyslovaha «zimovaha» styliu mapy, jaki zakliučajecca ŭ tym, što vykarystoŭvajucca «sniežnyja» koliery zimovaha piejzažu. \n \nU vypadku aktyvacyi hetaha vidu, styĺ mapy mianiajecca na «Winter and ski», pakazvajučy ŭsio detali piejzažu tak, jak jany vyhliadajuć zimoj. Taki (zimovy) vyhliad moža być admienieny aĺbo šliacham deaktyvacyi tut, aĺbo kali vy pamianiajecie «Styĺ mapy» u mieniu «Nalada mapy» na žadany vyhliad.</string>
+    <string name="plugin_ski_descr">Moduĺ dlia MineNAV daje vam dostup da dadzienych ab harnalyžnych trasach, maršrutach dlia biehavych lyž, aĺpijskich spuskach, funikuliorach i harnalyžnych pad\'jomnikach. Maršruty i spuski adznačany roznymi kolierami ŭ zaliežnasci ad ich skladanasci i namaliavanyja z vykarystanniem admyslovaha «zimovaha» styliu mapy, jaki zakliučajecca ŭ tym, što vykarystoŭvajucca «sniežnyja» koliery zimovaha piejzažu. \n \nU vypadku aktyvacyi hetaha vidu, styĺ mapy mianiajecca na «Winter and ski», pakazvajučy ŭsio detali piejzažu tak, jak jany vyhliadajuć zimoj. Taki (zimovy) vyhliad moža być admienieny aĺbo šliacham deaktyvacyi tut, aĺbo kali vy pamianiajecie «Styĺ mapy» u mieniu «Nalada mapy» na žadany vyhliad.</string>
     <string name="rename_failed">Pierajmienavannie nie atrymalasia.</string>
     <string name="back_to_map">Viarnucca da mapy</string>
     <string name="share_note">Padzialicca natatkaju</string>
@@ -1283,7 +1283,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="poi_dialog_reopen">Pieraadkryć</string>
     <string name="plugin_install_needs_network">Vam nieabchodna padlučennie da Internetu, kab ustaliavać hety dadatak.</string>
     <string name="shared_string_get">Atrymać</string>
-    <string name="do_you_like_osmand">Vam padabajecca OsmAnd?</string>
+    <string name="do_you_like_osmand">Vam padabajecca MineNAV?</string>
     <string name="user_hates_app_get_feedback">Skažycie nam čamu.</string>
     <string name="user_hates_app_get_feedback_long">Kali łaska, raskažycie nam, što vy chacieli b źmianіć u hetaj prahramie.</string>
     <string name="failed_to_upload">Nie ŭdałosia adasłać</string>
@@ -1295,7 +1295,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="shared_string_card_was_hidden">Kartka schavana</string>
     <string name="shared_string_undo">Viarnuć</string>
     <string name="shared_string_skip">Prapuścіć</string>
-    <string name="app_name_osmand">OsmAnd</string>
+    <string name="app_name_osmand">MineNAV</string>
     <string name="tab_title_basic">Asnoŭnaje</string>
     <string name="tab_title_advanced">Pašyranaje</string>
     <string name="building_number">Numar budynka</string>
@@ -1338,7 +1338,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="only_download_over_wifi">Ściahvać toĺki praz Wi-Fi</string>
     <string name="live_update">Biahučaje abnaŭleńnie</string>
     <string name="update_now">Abnavіć zaraz</string>
-    <string name="missing_write_external_storage_permission">OsmAnd nie maje dazvolu na vykarystannie kartki pamiaci</string>
+    <string name="missing_write_external_storage_permission">MineNAV nie maje dazvolu na vykarystannie kartki pamiaci</string>
     <string name="update_time">Čas abnaŭleńnia</string>
     <string name="updates_size">Abnaŭleńnі</string>
     <string name="hourly">Štohadzіnna</string>
@@ -1354,7 +1354,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="si_mi_meters">Mіli/metry</string>
     <string name="search_another_country">Vybierycie іnšy rehіjon</string>
     <string name="search_map">Pošuk mapaŭ…</string>
-    <string name="first_usage_wizard_desc">Dazvolcie OsmAnd vyznačyć vaša miescaznachodžańnie і prapanavać ściahnuć mapy dla hetaha rehіjonu.</string>
+    <string name="first_usage_wizard_desc">Dazvolcie MineNAV vyznačyć vaša miescaznachodžańnie і prapanavać ściahnuć mapy dla hetaha rehіjonu.</string>
     <string name="location_not_found">Nie atrymałasia vyznačyć miescaznachodžańnie</string>
     <string name="no_inet_connection">Niama Internet-zlučeńnia</string>
     <string name="search_location">Pašuk miescaznachodžannia…</string>
@@ -1372,7 +1372,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="confirmation_to_delete_history_items">Vydalić abranyja eliemienty z «Historyi»?</string>
     <string name="show_something_on_map">Pakazać %1$s na mapie</string>
     <string name="dist_away_from_my_location">Šukać za %1$s ad miescaznachodžańnia</string>
-    <string name="share_history_subject">padzialilisia praz OsmAnd</string>
+    <string name="share_history_subject">padzialilisia praz MineNAV</string>
     <string name="search_categories">Katehoryі</string>
     <string name="postcode">Paštovy іndeks</string>
     <string name="shared_string_from">z</string>
@@ -1384,7 +1384,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="app_mode_bus">Aŭtobus</string>
     <string name="app_mode_train">Ciahnіk</string>
     <string name="current_track">Dziejny slied</string>
-    <string name="use_osm_live_routing_description">Ukliučyć navihacyju dlia zmien OsmAnd Live.</string>
+    <string name="use_osm_live_routing_description">Ukliučyć navihacyju dlia zmien Live.</string>
     <string name="lang_es_us">Hіšpanskaja (ZŠA)</string>
     <string name="lang_ast">Asturyjskaja</string>
     <string name="lang_hsb">Vierchniałužyckaja</string>
@@ -1431,7 +1431,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="shared_string_automatic">Aŭtamatyčna</string>
     <string name="do_not_show_startup_messages">Nie pakazvać paviedamlienni pry zapusku</string>
     <string name="parking_options">Opcyi parkoŭki</string>
-    <string name="full_version_thanks">Diakuj vam za nabyccio platnaj viersii OsmAnd.</string>
+    <string name="full_version_thanks">Diakuj vam za nabyccio platnaj viersii MineNAV.</string>
     <string name="routing_attr_relief_smoothness_factor_hills_name">Ŭzhorysty</string>
     <string name="routing_attr_relief_smoothness_factor_more_plains_name">Raŭninny</string>
     <string name="routing_attr_driving_style_safety_name">Addavać pieravahu vakolnym daroham</string>
@@ -1584,7 +1584,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="lang_zh_hk">Kitajskaja (Hankonh)</string>
     <string name="route_is_too_long_v2">Dlia vialikich adliehlasciaŭ: kali laska, dadajcie pramiežkavyja punkty, kali razlik nie zaviaršyŭsia ciaham 10 chvilin.</string>
     <string name="driving_region_australia">Aŭstralija</string>
-    <string name="osmand_extended_description_part1">OsmAnd (OSM Automated Navigation Directions) mapa i prahrama navihacyi z dostupam da darmovych sviatovych jakasnych danych OpenStreetMap (OSM). 
+    <string name="osmand_extended_description_part1">MineNAV (OSM Automated Navigation Directions) mapa i prahrama navihacyi z dostupam da darmovych sviatovych jakasnych danych OpenStreetMap (OSM). 
 \n 
 \nAtrymlivajcie asalodu ad holasavoha i aptyčnaha navihatara, prahliada karysnych miescaŭ (anh. POI, points of interest), stvarennia i kiravannia GPX-trekami, vykarystannia konturnych linij i infarmacyi ab vyšyni (praz plahin), vybaru pamiž kiravanniem aŭtamabiliem, jazdoj na rovary i špacyram, redahavannia OSM i šmat inšym.</string>
     <string name="osmand_extended_description_part2">GPS-navihacyja 
@@ -1607,7 +1607,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
 \n• Dazvaliaje vam abrać jak adliustroŭvać nazvy na mapie: na anhlijskaj, lakaĺnaj ci z fanietyčnym napisanniem 
 \n• Adliustroŭvaje admyslovyja anlajn-tajly, spadarožnikavyja zdymki (z Bing), roznyja paznaki, jak turystyčnyja/navihacyjnyja GPX-treki i dadatkovyja slai z naladžvaĺnaj prazrystasciu</string>
     <string name="osmand_extended_description_part4">Lyžnia 
-\nOsmAnd-dadatak lyžnych map dazvaliaje bačyć lyžnyja trasy z uzroŭniem skladanasci i niekatoraj dadatkovaj infarmacyjaj, jak razmiaščennie padjomnikaŭ i inšych abjektaŭ.</string>
+\nMineNAV-dadatak lyžnych map dazvaliaje bačyć lyžnyja trasy z uzroŭniem skladanasci i niekatoraj dadatkovaj infarmacyjaj, jak razmiaščennie padjomnikaŭ i inšych abjektaŭ.</string>
     <string name="osmand_extended_description_part5">Jazda na rovary
 \n• Vy možacie znajsci rovarnyja šliachi na mapie
 \n• GPS-navihacyja ŭ rovarnym režymie buduje maršrut vykarystoŭvajučy rovarnyja šliachi
@@ -1625,7 +1625,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
 \n • Zahruzka GPX-trekaŭ u OSM prosta z prahramy 
 \n • Dadannie cikavych kropak (POI) i zahruzka ich u OSM (ci pazniej, kali aflajn) 
 \n</string>
-    <string name="osmand_extended_description_part8">OsmAnd — adkrytaje prahramnaje zabiaspiačennie z aktyŭnym razvicciom. Kožny moža ŭniesć svoj uklad paviedamliajučy ab pamylkach, paliapšajučy pieraklad ci raspracoŭvajučy navyja funkcyi. Chod prajekta taksama zaliežyć ad finansavych unioskaŭ dlia zabiaspiačennia pracesa kadavannia i testavannia novaj funkcyjanaĺnasci. 
+    <string name="osmand_extended_description_part8">MineNAV — adkrytaje prahramnaje zabiaspiačennie z aktyŭnym razvicciom. Kožny moža ŭniesć svoj uklad paviedamliajučy ab pamylkach, paliapšajučy pieraklad ci raspracoŭvajučy navyja funkcyi. Chod prajekta taksama zaliežyć ad finansavych unioskaŭ dlia zabiaspiačennia pracesa kadavannia i testavannia novaj funkcyjanaĺnasci. 
 \n Prybliznaje achapliennie map dy jakasć: 
 \n • Zachodniaja Jeŭropa: **** 
 \n • Uschodniaja Jeŭropa: *** 
@@ -1639,9 +1639,9 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
 \n • Antarktyda: 
 \n Boĺšasć krain svietu dastupny da zapampoŭki! 
 \n Atrymajcie nadziejny navihatar u vašaj krainie — budź to Bielaruś, Francyja, Hiermanija, Mieksika, Vialikabrytanija, Hispanija, Niderlandy, ZŠA, Rasija, Brazilija ci jakaja inšaja.</string>
-    <string name="osmand_plus_extended_description_part1">OsmAnd+ (OSM Automated Navigation Directions) — kartahrafičnaja i navihacyjnaja prahrama z dostupam da voĺnych, susvietnych i vysokajakasnych danych OpenStreetMap (OSM). 
+    <string name="osmand_plus_extended_description_part1">MineNAV (OSM Automated Navigation Directions) — kartahrafičnaja i navihacyjnaja prahrama z dostupam da voĺnych, susvietnych i vysokajakasnych danych OpenStreetMap (OSM). 
 \n Atrymoŭvajcie asalodu ad halasavaj i vizuaĺnaja navihacyi, prahliadajcie cikavyja kropki (POI), zapisvajcie GPX-treki, vykarystoŭvajcie vizualizacyju konturnych linij dy danych vyšyni, pierakliučajciesia pamiž režymami kiravannia, jazdoj na rovary dy špacyrami, redahujcie OSM-danyja i šmat inšaha. 
-\n OsmAnd+ — platnaja viersija prahramy. Pry nabycci, vy padtrymajecie prajekt, finansujecie raspracoŭku novych mažlivasciej dy atrymajecie apošnija abnaŭlienni. 
+\n MineNAV — platnaja viersija prahramy. Pry nabycci, vy padtrymajecie prajekt, finansujecie raspracoŭku novych mažlivasciej dy atrymajecie apošnija abnaŭlienni. 
 \nNiekatoryja z haloŭnych mažlivasciej:</string>
     <string name="osmand_plus_extended_description_part2">Navihacyja 
 \n • Pracuje praz Internet (chutka) abo aŭtanomna (biez platy za roŭminh za miažoj) 
@@ -1683,7 +1683,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
 \n • Zahruzka GPX-trekaŭ u OSM prosta z prahramy 
 \n • Dadavannie cikavych kropak (POI) i niepasrednaja zahruzka ich u OSM (ci pazniej, kali aflajn) 
 \n • Mahčymasć zapisu padarožža ŭ fonavym režymie (u toj čas, jak prylada znachodzicca ŭ spiačym režymie) 
-\n OsmAnd — adkrytaje prahramnaje zabiaspiačennie ŭ aktyŭnaj raspracoŭcy. Kožny moža ŭniesci ŭklad paviedamliajučy ab pamylkach, paliapšajučy pieraklad ci raspracoŭvajučy novyja mažlivasci. Chod prajekta zaliežyć taksama ad finansavych unioskaŭ dlia zabiaspiačennia pradaŭžennia kadavannia i testavannia novaj funkcyjanaĺnasci. 
+\n MineNAV — adkrytaje prahramnaje zabiaspiačennie ŭ aktyŭnaj raspracoŭcy. Kožny moža ŭniesci ŭklad paviedamliajučy ab pamylkach, paliapšajučy pieraklad ci raspracoŭvajučy novyja mažlivasci. Chod prajekta zaliežyć taksama ad finansavych unioskaŭ dlia zabiaspiačennia pradaŭžennia kadavannia i testavannia novaj funkcyjanaĺnasci. 
 \n</string>
     <string name="osmand_plus_extended_description_part8">Prybliznaje pakryccio i jakasć mapy: 
 \n • Zachodniaja Jeŭropa: **** 
@@ -1717,7 +1717,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="quick_action_page_list_descr">Nacisk na hetuju knopku hartaje staronki danaha spisu.</string>
     <string name="quick_action_btn_tutorial_descr">Doŭhi nacisk i pieraciahvannie dazvaliaje pieramiascić pazicyju na ekranie.</string>
     <string name="shared_string_permissions">Dazvoly</string>
-    <string name="import_gpx_failed_descr">OsmAnd nie moža impartavać fajł. Kali łaska, praviercie, ci maje OsmAnd dazvoły na čytańnie fajła z hetaha kataloha.</string>
+    <string name="import_gpx_failed_descr">MineNAV nie moža impartavać fajł. Kali łaska, praviercie, ci maje MineNAV dazvoły na čytańnie fajła z hetaha kataloha.</string>
     <string name="map_widget_ruler_control">Liniejka pramianiovaja</string>
     <string name="wrong_user_name">Niapraviĺnaje imia karystaĺnika</string>
     <string name="shared_string_to">Da</string>
@@ -1755,7 +1755,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="add_point_before">Dadać kropku pierad</string>
     <string name="add_point_after">Dadać kropku paśla</string>
     <string name="shared_string_options">Opcyi</string>
-    <string name="measurement_tool_snap_to_road_descr">OsmAnd zlučyć kropki z maršrutam dla abranaha profila.</string>
+    <string name="measurement_tool_snap_to_road_descr">MineNAV zlučyć kropki z maršrutam dla abranaha profila.</string>
     <string name="choose_navigation_type">Abrać profil navihacyi</string>
     <string name="empty_state_favourites">Dadać va Ŭlubionyja</string>
     <string name="empty_state_favourites_desc">Impartavać upadabanyja ci dadać z dapamohaj markiroŭki punktaŭ na mapie.</string>
@@ -1949,14 +1949,14 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="topo_render_descr">Kantrastny styĺ, pryznačany ŭ pieršuju čarhu dlia špacyru, pachodu i katannia na rovary. Dobraja čytaĺnasć pry skladanym vonkavym asviatlienni. Asnoŭnyja mahčamasci: kantrastnyja darohi i pryrodnyja abjekty, roznyja typy maršrutaŭ, konturnyja linii z pašyranymi naladami, boĺš padrabiaznaja infarmacyja na adpaviednych uzroŭniach maštabavannia, čym u ahadanym styli. Opcyja celasnasci pavierchni dazvaliaje adroznivać darohi z roznaj jakasciu pavierchni. Biez načnoha režymu.</string>
     <string name="touring_view_render_descr">Vysokadetalizavany styĺ dlia turystyčnach met. Ukliučaje ŭ siabie ŭsie paramietry kanfihuracyi ahadanaha styliu i, akramia taho: pakazvaje, jak maha boĺš detaliaŭ, nakoĺki heta mahčyma, u pryvatnasci, usie darohi, šliachi i inšyja sposaby pieramiaščennia. Jasnaje vizuaĺnaje adrozniennie pamiž roznymi typami daroh, jakoje nahadvaje mnohija turystyčnyja atlasy. Vysokakantrastnaja kaliarovaja schiema dlia vuličnaha vykarystannia z dzionnym i načnym režymam.</string>
     <string name="default_render_descr">Styĺ ahuĺnaha pryznačennia. Sproščanaja čystaja admalioŭka ŭ ščyĺnanasielienych haradach. Asnoŭnyja mahčymasci: konturnyja linii, jakać pavierchni, abmiežavanni dostupu, darožnyja ščyty, admalioŭka šliachoŭ pa škalie SAC, abjekty vodnych splavaŭ.</string>
-    <string name="read_wikipedia_offline_description">Atrymajcie padpisku na OsmAnd Live, kab čytać artykuly Vikipiedyi i Wikivoyage aŭtanomna.</string>
+    <string name="read_wikipedia_offline_description">Atrymajcie padpisku na Live, kab čytać artykuly Vikipiedyi i Wikivoyage aŭtanomna.</string>
     <string name="how_to_open_link">Jak adkryć spasylku?</string>
     <string name="read_wikipedia_offline">Čytać Vikipiedyju aŭtanomna</string>
     <string name="download_all">Spampavać usio</string>
     <string name="shared_string_restart">Pierazapusk prahramy</string>
     <string name="maps_you_need_descr">Na padstavie zakladzienych vami artykulaŭ, nastupnyja mapy rekamiendujucca dlia sciahvannia:</string>
     <string name="maps_you_need">Patrebnyja vam mapy</string>
-    <string name="osmand_team">Kamanda OsmAnd</string>
+    <string name="osmand_team">Kamanda MineNAV</string>
     <string name="popular_destinations">Papuliarnyja napramki</string>
     <string name="travel_card_update_descr">Dastunyja novyja danyja Wikivoyage, abnavicie ich.</string>
     <string name="travel_card_download_descr">Spampujcie daviedniki Wikivoyage dlia prahliadu artykulaŭ ab miascinach pa ŭsim sviecie biez Internetu.</string>
@@ -1969,7 +1969,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="get_unlimited_access">Atrymać nieabmiežavany dostup</string>
     <string name="welcome_to_open_beta">Vitajem u adkrytym beta-testavanni</string>
     <string name="wikivoyage_travel_guide">Turystyčny daviednik</string>
-    <string name="wikivoyage_travel_guide_descr">Kiraŭnictva pa samym cikavym miescam na planiecie ŭnutny OsmAnd biez zlučennia z Internetam.</string>
+    <string name="wikivoyage_travel_guide_descr">Kiraŭnictva pa samym cikavym miescam na planiecie ŭnutny MineNAV biez zlučennia z Internetam.</string>
     <string name="monthly_map_updates">Abnaŭlienni map: štomiesiačna</string>
     <string name="daily_map_updates">Abnaŭlienni map: štohadzinna</string>
     <string name="in_app_purchase_desc">Razavy placiož</string>
@@ -2011,7 +2011,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="keep_passed_markers_descr">Paznaki, dadanyja jak hrupa uliublionych ci projdienych maršrutnych GPX-kropak, zastanucca na mapie. Kali hrupa nieaktyŭnaja, paznaki zniknuć z mapy.</string>
     <string name="keep_passed_markers">Pakinuć projdzienyja paknaki na mapie</string>
     <string name="more_transport_on_stop_hint">Na hetym prypynku josć boĺš hramadskaha transpartu.</string>
-    <string name="ask_for_location_permission">Kali laska, dajcie OsmAnd dazvol na miescaznachodžannie dlia praciahu.</string>
+    <string name="ask_for_location_permission">Kali laska, dajcie MineNAV dazvol na miescaznachodžannie dlia praciahu.</string>
     <string name="rendering_value_black_name">Čorny</string>
     <string name="osm_live_payment_month_cost_descr">%1$s / miesiac</string>
     <string name="osm_live_payment_month_cost_descr_ex">%1$.2f %2$s / miesiac</string>
@@ -2043,7 +2043,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="voice_announcements">Halasavyja apaviaščenni</string>
     <string name="intermediate_destinations">Pramiežkavyja punkty</string>
     <string name="arrive_at_time">Prybyccio a %1$s</string>
-    <string name="quick_action_switch_day_night_descr">Naciskannie na knopku dziejannia pierakliučaje načny i dzionny režymy OsmAnd</string>
+    <string name="quick_action_switch_day_night_descr">Naciskannie na knopku dziejannia pierakliučaje načny i dzionny režymy MineNAV</string>
     <string name="time_of_day">Čas sutak</string>
     <string name="by_transport_type">Užyta %1$s</string>
     <string name="step_by_step">Krok za krokam</string>
@@ -2062,7 +2062,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="routeInfo_surface_name">Pavierchnia</string>
     <string name="routeInfo_smoothness_name">Hladkasć</string>
     <string name="routeInfo_steepness_name">Pakatasć</string>
-    <string name="use_osm_live_public_transport_description">Ukliučyć hramadski transpart dlia zmien OsmAnd Live.</string>
+    <string name="use_osm_live_public_transport_description">Ukliučyć hramadski transpart dlia zmien Live.</string>
     <string name="routing_attr_avoid_tram_name">Pazbiahać tramvajaŭ</string>
     <string name="routing_attr_avoid_tram_description">Pazbiahać tramvajaŭ</string>
     <string name="routing_attr_avoid_bus_name">Pazbiahać aŭtobusaŭ</string>
@@ -2087,7 +2087,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
 \n
 \nKali laska, skaracicie, kab praciahnuć.</string>
     <string name="save_poi_value_exceed_length_title">Daŭžynia značennia \"%s\"</string>
-    <string name="public_transport_warning_descr_blog">Daviedacca padrabiazniej, jak OsmAnd različvaje maršruty, možna ŭ našym blohu.</string>
+    <string name="public_transport_warning_descr_blog">Daviedacca padrabiazniej, jak MineNAV različvaje maršruty, možna ŭ našym blohu.</string>
     <string name="public_transport_warning_title">Navihacyja ŭ hramadskim transparcie na dadzieny momant testavaja, tamu mohuć uznikać pamylki.</string>
     <string name="add_intermediate">Dadać pramiežkavy punkt</string>
     <string name="transfers_size">%1$d pierasadak</string>
@@ -2144,7 +2144,7 @@ Praparcyjnaj pamiacі %4$s MB (Abmiežavańnie Android %5$s MB, Dalvik %6$s MB).
     <string name="files_failed">Nie atrymalasia skapijavać %1$d fajlaŭ (%2$s).</string>
     <string name="dont_move_maps">Nie pieramiaščać</string>
     <string name="public_transport_ped_route_title">Maršrut pieššu skladaje %1$s, dajsci možna chutčej, čym ruchacca na hramadskim transparcie</string>
-    <string name="public_transport_no_route_title">Na žaĺ, OsmAnd nie zmoh znajsci maršrut pa vašych naladach.</string>
+    <string name="public_transport_no_route_title">Na žaĺ, MineNAV nie zmoh znajsci maršrut pa vašych naladach.</string>
     <string name="public_transport_try_ped">Pasprabujcie piešachodnuju navihacyju.</string>
     <string name="public_transport_try_change_settings">Pasprabujcie zmianić nalady.</string>
     <string name="public_transport_calc_pedestrian">Padličyć piešachodny maršrut</string>

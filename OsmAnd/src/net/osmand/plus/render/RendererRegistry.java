@@ -39,6 +39,7 @@ public class RendererRegistry {
 	private static final Log log = PlatformUtil.getLog(RendererRegistry.class);
 
 	public static final String DEFAULT_RENDER = "OsmAnd";
+	public static final String MINENAV_RENDER = "MineNAV";
 	public static final String DEFAULT_RENDER_FILE_PATH = "default.render.xml";
 	public static final String TOURING_VIEW = "Touring view (contrast and details)";
 	public static final String WINTER_SKI_RENDER = "Winter and ski";
@@ -83,6 +84,7 @@ public class RendererRegistry {
 	public RendererRegistry(@NonNull OsmandApplication app) {
 		this.app = app;
 		internalRenderers.put(DEFAULT_RENDER, DEFAULT_RENDER_FILE_PATH);
+		internalRenderers.put(MINENAV_RENDER, "MineNAV" + RENDERER_INDEX_EXT);
 		internalRenderers.put(TOURING_VIEW, "Touring-view_(more-contrast-and-details)" + RENDERER_INDEX_EXT);
 		internalRenderers.put(TOPO_RENDER, "topo" + RENDERER_INDEX_EXT);
 		internalRenderers.put(OSM_CARTO_RENDER, "osm-carto" + RENDERER_INDEX_EXT);
@@ -305,7 +307,9 @@ public class RendererRegistry {
 				}
 
 				File internalFile = getFileForInternalStyle(name);
-				if (internalFile.exists() && !IGNORE_CACHED_STYLES) {
+				// The MineNAV style changes between builds of the same version, so it is always refreshed
+				boolean refreshCachedStyle = MINENAV_RENDER.equals(name);
+				if (internalFile.exists() && !IGNORE_CACHED_STYLES && !refreshCachedStyle) {
 					is = new FileInputStream(internalFile);
 				} else {
 					copyFileForInternalStyle(name);
@@ -452,6 +456,8 @@ public class RendererRegistry {
 	@Nullable
 	public static String getTranslatedRendererName(@NonNull Context ctx, @NonNull String key) {
 		switch (key) {
+			case DEFAULT_RENDER:
+				return ctx.getString(R.string.classic_renderer);
 			case TOURING_VIEW:
 				return ctx.getString(R.string.touring_view_renderer);
 			case WINTER_SKI_RENDER:
@@ -467,6 +473,8 @@ public class RendererRegistry {
 	@NonNull
 	public static String getRendererDescription(@NonNull Context ctx, @NonNull String key) {
 		switch (key) {
+			case MINENAV_RENDER:
+				return ctx.getString(R.string.minenav_render_descr);
 			case DEFAULT_RENDER:
 				return ctx.getString(R.string.default_render_descr);
 			case TOURING_VIEW:

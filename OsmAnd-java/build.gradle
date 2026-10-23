@@ -38,6 +38,10 @@ tasks.register('collectMiscResources', Copy) {
 
 tasks.register('collectRenderingStylesResources', Sync) {
 	from "../../resources/rendering_styles"
+	// MineNAV map style, kept in this repo as *.style.xml because *.render.xml is git-ignored
+	from("../branding/map-style") {
+		rename { name -> name.replace('.style.xml', '.render.xml') }
+	}
 	into "src/main/resources/net/osmand/render"
 	include "*.xml"
 }

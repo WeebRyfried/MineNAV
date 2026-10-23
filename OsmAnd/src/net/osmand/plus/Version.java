@@ -186,8 +186,12 @@ public class Version {
 		return getAppName(app).contains("~") || app.getPackageName().equals(FREE_DEV_VERSION_NAME);
 	}
 
+	/**
+	 * OsmAnd marks the builds made from source (its F-Droid build "OsmAnd~") as developer builds,
+	 * which have every feature without purchases. MineNAV is always built from source.
+	 */
 	public static boolean isDeveloperBuild(@NonNull OsmandApplication app) {
-		return getAppName(app).contains("~");
+		return true;
 	}
 
 	public static boolean isTripltekBuild() {

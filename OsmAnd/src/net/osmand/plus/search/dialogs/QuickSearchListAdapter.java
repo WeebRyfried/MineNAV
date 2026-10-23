@@ -29,6 +29,7 @@ import net.osmand.plus.chooseplan.OsmAndFeature;
 import net.osmand.plus.download.DownloadIndexesThread;
 import net.osmand.plus.download.IndexItem;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.plugins.accessibility.AccessibilityAssistant;
 import net.osmand.plus.poi.PoiUIFilter;
 import net.osmand.plus.search.MapObjectViewHolder;
@@ -101,6 +102,8 @@ public class QuickSearchListAdapter extends ArrayAdapter<QuickSearchListItem> {
 		bigDividerMargin = AndroidUtils.dpToPx(app, 72);
 		dp1 = AndroidUtils.dpToPx(app, 1f);
 		updateLocationViewCache = UpdateLocationUtils.getUpdateLocationViewCache(activity);
+		// MineNAV: plain grey distances, without the orange or blue coloring
+		updateLocationViewCache.paintTxt = false;
 		trackDataResolver = new SearchTrackDataResolver(app, this::notifyDataSetChanged);
 	}
 
@@ -251,12 +254,11 @@ public class QuickSearchListAdapter extends ArrayAdapter<QuickSearchListItem> {
 			view = bindSelectAllItem(position, convertView);
 		} else if (type == HEADER) {
 			view = bindHeaderItem(convertView, listItem);
-		} else if (type == TOP_SHADOW) {
-			return bindTopShadowItem(convertView);
-		} else if (type == BOTTOM_SHADOW) {
-			return bindBottomShadowItem(convertView);
-		} else if (type == CARD_DIVIDER) {
-			return bindCardDividerItem(convertView);
+		} else if (type == TOP_SHADOW || type == BOTTOM_SHADOW || type == CARD_DIVIDER) {
+			View separator = type == TOP_SHADOW ? bindTopShadowItem(convertView)
+					: type == BOTTOM_SHADOW ? bindBottomShadowItem(convertView) : bindCardDividerItem(convertView);
+			MineNavStyle.styleSearchSeparator(separator, nightMode);
+			return separator;
 		} else if (searchResult != null && (ObjectType.isAddress(searchResult.objectType) ||
 				searchResult.object instanceof Amenity amenity && amenity.getType().isAdministrative())
 		) {
@@ -273,6 +275,7 @@ public class QuickSearchListAdapter extends ArrayAdapter<QuickSearchListItem> {
 
 		setupBackground(position, view, listItem);
 		setupDivider(position, view, listItem, useBigDividerMargin);
+		MineNavStyle.styleSearchRow(view, nightMode);
 		ViewCompat.setAccessibilityDelegate(view, accessibilityAssistant);
 		return view;
 	}
@@ -767,6 +770,7 @@ public class QuickSearchListAdapter extends ArrayAdapter<QuickSearchListItem> {
 			updateLocationViewCache.specialFrom = phrase.getSettings().getOriginalLocation();
 		}
 		UpdateLocationUtils.updateLocationView(app, updateLocationViewCache, direction, distanceText, location);
+		MineNavStyle.styleSearchDistance(direction, distanceText);
 	}
 
 	public void setPoiUIFilter(@Nullable PoiUIFilter poiUIFilter) {

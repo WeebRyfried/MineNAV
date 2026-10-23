@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- MineNAV: the pages over the map have a flat toolbar, so the shadow under it takes no space -->
 <androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:id="@+id/shadow_on_map"
 	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
+	android:layout_height="0dp"
 	android:scaleType="fitXY"
 	app:srcCompat="@drawable/bg_shadow_onmap" />

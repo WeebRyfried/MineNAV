@@ -41,7 +41,7 @@
     <string name="user_name">Votre identifiant OSM</string>
     <string name="user_password">Mot de passe</string>
     <string name="osmand_service">Mode arrière-plan</string>
-    <string name="osmand_service_descr">OsmAnd s\'exécute en arrière-plan, écran éteint.</string>
+    <string name="osmand_service_descr">MineNAV s\'exécute en arrière-plan, écran éteint.</string>
     <string name="download_files_not_enough_space">Il n\'y a pas suffisamment d\'espace pour télécharger %1$s Mo (disponible : %2$s).</string>
     <string name="download_files_question_space">Télécharger {0} fichier(s) \?
 \n{1} Mo (sur {2} Mo) seront utilisés.</string>
@@ -62,7 +62,7 @@
     <string name="file_with_name_already_exists">Un fichier avec ce nom existe déjà.</string>
     <string name="poi_query_by_name_matches_categories">Plusieurs catégories de POI ont été trouvées.</string>
     <string name="poi_filter_by_name">Rechercher par nom</string>
-    <string name="button_upgrade_osmandplus">Mettre à jour OsmAnd+</string>
+    <string name="button_upgrade_osmandplus">Mettre à jour MineNAV</string>
     <string name="map_version_changed_info">Téléchargez la nouvelle version de l\'application pour utiliser les nouvelles cartes.</string>
     <string name="shared_string_rename">Renommer</string>
     <string name="poi_filter_nominatim">Recherche OSM en ligne</string>
@@ -165,10 +165,10 @@
     <string name="osmand_net_previously_installed">Toutes les anciennes données hors ligne peuvent être utilisées par la nouvelle application mais les favoris doivent être exportés de l\'ancienne application puis réimportés dans la nouvelle.</string>
     <string name="build_installed">Version {0} installée avec succès ({1}).</string>
     <string name="downloading_build">Téléchargement de l\'application…</string>
-    <string name="install_selected_build">Installer OsmAnd - {0} sur {1} {2} Mo ?</string>
-    <string name="loading_builds_failed">Le chargement des versions OsmAnd a échoué.</string>
+    <string name="install_selected_build">Installer MineNAV - {0} sur {1} {2} Mo ?</string>
+    <string name="loading_builds_failed">Le chargement des versions MineNAV a échoué.</string>
     <string name="loading_builds">Chargement des versions disponibles…</string>
-    <string name="select_build_to_install">Sélectionner la version d\'OsmAnd à installer</string>
+    <string name="select_build_to_install">Sélectionner la version d\'MineNAV à installer</string>
     <string name="contribution_activity">Installer cette version</string>
     <string name="gps_status_app_not_found">L\'application GPS Status n\'est pas installée. Souhaitez-vous l\'installer ?</string>
     <string name="daynight_mode_day">Jour</string>
@@ -215,7 +215,7 @@
     <string name="layer_map">Source de carte…</string>
     <string name="use_trackball_descr">Utiliser le pointeur pour déplacer la carte.</string>
     <string name="use_trackball">Utiliser le pointeur</string>
-    <string name="process_navigation_service">Service de guidage OsmAnd</string>
+    <string name="process_navigation_service">Service de guidage MineNAV</string>
     <string name="int_seconds">secondes</string>
     <string name="int_min">min.</string>
     <string name="search_poi_filter">Filtre</string>
@@ -241,7 +241,7 @@
     <string name="transport_stops">arrêts</string>
     <string name="transport">Transport</string>
     <string name="shared_string_ok">OK</string>
-    <string name="hello">Application de navigation OsmAnd</string>
+    <string name="hello">Application de navigation MineNAV</string>
     <string name="favorite">Favoris</string>
     <string name="shared_string_clear_all">Tout supprimer</string>
     <string name="shared_string_history">Historique</string>
@@ -275,7 +275,7 @@
     <string name="invalid_locations">Coordonnées invalides</string>
     <string name="shared_string_close">Fermer</string>
     <string name="loading_data">Chargement des données…</string>
-    <string name="previous_run_crashed">La dernière exécution d\'OsmAnd a plantée. Le fichier journal se trouve sur {0}. Veuillez signaler cette anomalie et joindre le fichier journal.</string>
+    <string name="previous_run_crashed">La dernière exécution d\'MineNAV a plantée. Le fichier journal se trouve sur {0}. Veuillez signaler cette anomalie et joindre le fichier journal.</string>
     <string name="saving_gpx_tracks">Enregistrement du fichier GPX…</string>
     <string name="finished_task">Terminé</string>
     <string name="data_settings">Données</string>
@@ -346,14 +346,14 @@
     <string name="map_online_plugin_is_not_installed">Activez l’extension « Cartes en ligne » pour sélectionner différentes sources de cartes</string>
     <string name="map_online_data">Cartes tuilées en ligne</string>
     <string name="shared_string_online_maps">Cartes en ligne</string>
-    <string name="osmand_rastermaps_plugin_description">Accédez à un grand nombre de cartes en ligne (aussi appelées tuiles ou cartes raster) comme des tuiles OSM pré-rendues, des images satellites ou encore des cartes spécialisées comme des cartes météo, des cartes de climat, des cartes géologiques, l\'ombrage du relief, etc. \n \nChacune de ces cartes peut être affichée en tant que carte principale, surcouche ou sous-couche d\'une autre carte. Afin de gérer au mieux la superposition des cartes et améliorer la lisibilité, vous pouvez masquer certains éléments des cartes vectorielles hors ligne depuis le menu « Configurer la carte ». \n \nLes cartes tuiles peuvent être obtenues directement en ligne ou peuvent être préparées pour un usage hors ligne grâce à des outils tiers puis copiées dans le dossier de données d\'OsmAnd sous forme de base de données SQLite.</string>
-    <string name="osmand_accessibility_description">Active, directement dans OsmAnd, les options d\'accessibilité de votre appareil (régler la vitesse de la synthèse vocale, utiliser le trackball pour zoomer ou activer les annonces vocales de votre position).</string>
-    <string name="osmand_development_plugin_description">Permet d\'accéder à des fonctionnalités pour tester et déboguer OsmAnd : simuler des guidages, gérer les rendus, vérifier les performances, etc. Cette extension n\'est pas recommandée pour une utilisation normale de l\'application.</string>
+    <string name="osmand_rastermaps_plugin_description">Accédez à un grand nombre de cartes en ligne (aussi appelées tuiles ou cartes raster) comme des tuiles OSM pré-rendues, des images satellites ou encore des cartes spécialisées comme des cartes météo, des cartes de climat, des cartes géologiques, l\'ombrage du relief, etc. \n \nChacune de ces cartes peut être affichée en tant que carte principale, surcouche ou sous-couche d\'une autre carte. Afin de gérer au mieux la superposition des cartes et améliorer la lisibilité, vous pouvez masquer certains éléments des cartes vectorielles hors ligne depuis le menu « Configurer la carte ». \n \nLes cartes tuiles peuvent être obtenues directement en ligne ou peuvent être préparées pour un usage hors ligne grâce à des outils tiers puis copiées dans le dossier de données d\'MineNAV sous forme de base de données SQLite.</string>
+    <string name="osmand_accessibility_description">Active, directement dans MineNAV, les options d\'accessibilité de votre appareil (régler la vitesse de la synthèse vocale, utiliser le trackball pour zoomer ou activer les annonces vocales de votre position).</string>
+    <string name="osmand_development_plugin_description">Permet d\'accéder à des fonctionnalités pour tester et déboguer MineNAV : simuler des guidages, gérer les rendus, vérifier les performances, etc. Cette extension n\'est pas recommandée pour une utilisation normale de l\'application.</string>
     <string name="plugins_screen">Extensions</string>
     <string name="prefs_plugins">Extensions</string>
     <string name="osm_editing_plugin_description">Contribuez à OpenStreetMap, une communauté mondiale qui maintient à jour une carte complète du monde et fournit des données géographiques libres. \n \nPour découvrir comment modifier une carte, consultez notre site %1$s.</string>
     <string name="play_commands_of_currently_selected_voice">Sélectionnez une voix et essayez-la en écoutant une annonce :</string>
-    <string name="debugging_and_development">Développement d\'OsmAnd</string>
+    <string name="debugging_and_development">Développement d\'MineNAV</string>
     <string name="test_voice_prompts">Tester les annonces vocales</string>
     <string name="gpx_visibility_txt">Visibilité</string>
     <string name="gpx_tags_txt">Balises</string>
@@ -481,10 +481,10 @@
     <string name="map_widget_renderer">Style de carte</string>
     <string name="int_continuosly">En continu</string>
     <string name="osmand_short_description_80_chars">Logiciel de cartographie et de guidage fonctionnant avec des cartes OSM hors ligne et en ligne</string>
-    <string name="osmand_plus_short_description_80_chars">OsmAnd est un logiciel libre de guidage pouvant fonctionner avec des cartes hors ligne ou en ligne</string>
+    <string name="osmand_plus_short_description_80_chars">MineNAV est un logiciel libre de guidage pouvant fonctionner avec des cartes hors ligne ou en ligne</string>
     <string name="snap_to_road">Déplacer sur la route</string>
-    <string name="osmand_long_description_1000_chars">OsmAnd (OSM Automated Navigation Directions) \n \nOsmAnd est un logiciel libre de navigation par satellites utilisant les données du projet OpenStreetMap (OSM). Toutes les données (cartes vectorielles ou à base de tuiles) peuvent être stockées dans la mémoire de l\'appareil pour un usage hors ligne. OsmAnd permet également le suivi d\'itinéraires en ligne et hors ligne en fournissant des instructions visuelles et vocales pas à pas. \n \nFonctionnalités principales : \n- Fonctionne complètement hors ligne \n- Cartes hors lignes dans un format compact (vectoriel) disponibles pour le monde entier \n- Téléchargement des cartes pour un pays ou une région directement depuis l\'application \n- Possibilité de superposer plusieurs couches, telles que des traces GPX, des points d\'intérêt, des favoris, des données topographiques (courbes de niveau, ombrage du relief, pente), les arrêts de transport public et bien d\'autres cartes avec une transparence personnalisable \n- Recherche hors ligne d\'adresses et de lieux (POI) \n- Navigation hors ligne sur des distances moyennes \n- Mode voiture, vélo et piéton \n- Affichage jour/nuit automatique \n- Option de zoom automatique adapté à la vitesse de déplacement \n- Orientation de la carte paramétrable (vers le nord, selon le déplacement, fixe) \n- Affichage des limitations de vitesse et des voies de circulation à l\'approche des bifurcations \n- Guidage vocale par voix enregistrée ou voix de synthèse. \n \nLimitations de cette version gratuite d\'OsmAnd : \n- Nombre limité de téléchargements de carte \n- Pas d\'accès aux POI Wikipédia hors ligne. \n \nOsmAnd et le développement de nouvelles fonctionnalités dépendent de vos contributions. Vous pouvez acheter la version payante OsmAnd+ ou faire un don en vous rendant sur https://osmand.net.</string>
-    <string name="osmand_plus_long_description_1000_chars">OsmAnd+ (OpenStreetMap Automated Navigation and Directions) \n \nOsmAnd+ est un logiciel open source de navigation utilisant les données cartographiques d\'OpenStreetMap. Toutes les données (cartes vectorielles ou à base de tuiles) peuvent être stockées sur l\'appareil pour un usage hors ligne. En plus de la consultation des cartes, OsmAnd permet la navigation grâce à des instructions détaillées à l\'écran et à un guidage vocal. \n \nOsmAnd+, version payante de l\'application, n\'est pas limitée en nombre de téléchargements et permet d\'obtenir de nouvelles cartes, des mises à jour des cartes existantes ou encore des extensions et d\'autres données (courbes de niveau, ...). En achetant OsmAnd+ vous contribuez au projet et financez le développement de nouvelles fonctionnalités. \n \nFonctionnalités principales : \n- Fonctionne complètement hors ligne (après téléchargement des cartes sur l\'appareil) \n- Téléchargement illimité des cartes pour un pays ou une région directement depuis l\'application \n- Points d\'intérêt Wikipédia hors ligne, idéal pour les visites touristiques \n- Possibilité de superposer plusieurs couches, telles que des traces, des points d\'intérêt, des favoris, des courbes de niveau, les transports public et bien d\'autres cartes (pistes de ski, chemins de randonnée, circuits à vélo, balisage maritime ...) avec une transparence personnalisable \n- Recherche hors ligne d\'adresses et de POI\n- Navigation hors ligne sur des itinéraires de moyenne distance \n- Plusieurs modes de navigation : voiture, cycliste et piéton \n- Options : affichage jour/nuit automatique, zoom automatique adaptée à la vitesse, plusieurs modes d\'orientation de la carte (vers le nord ou selon le déplacement), affichage des voies de circulation, guidage vocal par voix enregistrée ou par synthèse vocale</string>
+    <string name="osmand_long_description_1000_chars">MineNAV (OSM Automated Navigation Directions) \n \nMineNAV est un logiciel libre de navigation par satellites utilisant les données du projet OpenStreetMap (OSM). Toutes les données (cartes vectorielles ou à base de tuiles) peuvent être stockées dans la mémoire de l\'appareil pour un usage hors ligne. MineNAV permet également le suivi d\'itinéraires en ligne et hors ligne en fournissant des instructions visuelles et vocales pas à pas. \n \nFonctionnalités principales : \n- Fonctionne complètement hors ligne \n- Cartes hors lignes dans un format compact (vectoriel) disponibles pour le monde entier \n- Téléchargement des cartes pour un pays ou une région directement depuis l\'application \n- Possibilité de superposer plusieurs couches, telles que des traces GPX, des points d\'intérêt, des favoris, des données topographiques (courbes de niveau, ombrage du relief, pente), les arrêts de transport public et bien d\'autres cartes avec une transparence personnalisable \n- Recherche hors ligne d\'adresses et de lieux (POI) \n- Navigation hors ligne sur des distances moyennes \n- Mode voiture, vélo et piéton \n- Affichage jour/nuit automatique \n- Option de zoom automatique adapté à la vitesse de déplacement \n- Orientation de la carte paramétrable (vers le nord, selon le déplacement, fixe) \n- Affichage des limitations de vitesse et des voies de circulation à l\'approche des bifurcations \n- Guidage vocale par voix enregistrée ou voix de synthèse. \n \nLimitations de cette version gratuite d\'MineNAV : \n- Nombre limité de téléchargements de carte \n- Pas d\'accès aux POI Wikipédia hors ligne. \n \nMineNAV et le développement de nouvelles fonctionnalités dépendent de vos contributions. Vous pouvez acheter la version payante MineNAV ou faire un don en vous rendant sur https://osmand.net.</string>
+    <string name="osmand_plus_long_description_1000_chars">MineNAV (OpenStreetMap Automated Navigation and Directions) \n \nMineNAV est un logiciel open source de navigation utilisant les données cartographiques d\'OpenStreetMap. Toutes les données (cartes vectorielles ou à base de tuiles) peuvent être stockées sur l\'appareil pour un usage hors ligne. En plus de la consultation des cartes, MineNAV permet la navigation grâce à des instructions détaillées à l\'écran et à un guidage vocal. \n \nMineNAV, version payante de l\'application, n\'est pas limitée en nombre de téléchargements et permet d\'obtenir de nouvelles cartes, des mises à jour des cartes existantes ou encore des extensions et d\'autres données (courbes de niveau, ...). En achetant MineNAV vous contribuez au projet et financez le développement de nouvelles fonctionnalités. \n \nFonctionnalités principales : \n- Fonctionne complètement hors ligne (après téléchargement des cartes sur l\'appareil) \n- Téléchargement illimité des cartes pour un pays ou une région directement depuis l\'application \n- Points d\'intérêt Wikipédia hors ligne, idéal pour les visites touristiques \n- Possibilité de superposer plusieurs couches, telles que des traces, des points d\'intérêt, des favoris, des courbes de niveau, les transports public et bien d\'autres cartes (pistes de ski, chemins de randonnée, circuits à vélo, balisage maritime ...) avec une transparence personnalisable \n- Recherche hors ligne d\'adresses et de POI\n- Navigation hors ligne sur des itinéraires de moyenne distance \n- Plusieurs modes de navigation : voiture, cycliste et piéton \n- Options : affichage jour/nuit automatique, zoom automatique adaptée à la vitesse, plusieurs modes d\'orientation de la carte (vers le nord ou selon le déplacement), affichage des voies de circulation, guidage vocal par voix enregistrée ou par synthèse vocale</string>
     <string name="avoid_motorway">Éviter les autoroutes</string>
     <string name="add_as_last_destination_point">Ajouter comme dernière étape</string>
     <string name="add_as_first_destination_point">Ajouter comme première étape</string>
@@ -557,8 +557,8 @@
     <string name="shared_string_map">Carte</string>
     <string name="access_arrival_time">Heure d\'arrivée</string>
     <string name="map_widget_gps_info">Informations GPS</string>
-    <string name="osmand_play_title_30_chars">Cartes et navigation OsmAnd</string>
-    <string name="osmand_plus_play_title_30_chars">Cartes et navigation OsmAnd+</string>
+    <string name="osmand_play_title_30_chars">Cartes et navigation MineNAV</string>
+    <string name="osmand_plus_play_title_30_chars">Cartes et navigation MineNAV</string>
     <string name="street_name">Nom de la rue</string>
     <string name="hno">Numéro de bâtiment</string>
     <string name="monitoring_settings">Enregistrer le trajet</string>
@@ -641,11 +641,11 @@
     <string name="speech_rate_descr">Indiquez la vitesse de lecture pour la synthèse vocale (TTS).</string>
     <string name="speech_rate">Vitesse d\'élocution</string>
     <string name="complex_route_calculation_failed">Échec du calcul rapide de la route (%s), essai avec la méthode lente.</string>
-    <string name="android_19_location_disabled">A partir d\'Android 4.4 (KitKat), il n\'est plus possible d\'utiliser le dossier de stockage (%s). Voulez-vous copier l\'ensemble des fichiers OsmAnd dans un nouveau dossier \? 
+    <string name="android_19_location_disabled">A partir d\'Android 4.4 (KitKat), il n\'est plus possible d\'utiliser le dossier de stockage (%s). Voulez-vous copier l\'ensemble des fichiers MineNAV dans un nouveau dossier \? 
 \n Note 1 : Les anciens fichiers seront conservés (mais vous pouvez les supprimer manuellement) 
-\n Note 2 : En raison de ce nouveau dossier de stockage, il ne sera plus possible de partager des fichiers entre OsmAnd et OsmAnd+.</string>
-    <string name="copying_osmand_files">Copie des fichiers de données OsmAnd…</string>
-    <string name="calculate_osmand_route_gpx">Calcul de la route OsmAnd hors ligne</string>
+\n Note 2 : En raison de ce nouveau dossier de stockage, il ne sera plus possible de partager des fichiers entre MineNAV et MineNAV.</string>
+    <string name="copying_osmand_files">Copie des fichiers de données MineNAV…</string>
+    <string name="calculate_osmand_route_gpx">Calcul de la route MineNAV hors ligne</string>
     <string name="app_mode_truck">Camion</string>
     <string name="routing_attr_prefer_motorway_name">Privilégier les autoroutes</string>
     <string name="routing_attr_prefer_motorway_description">Privilégier les autoroutes</string>
@@ -664,7 +664,7 @@
     <string name="shared_string_favorite">Favori</string>
     <string name="route_info">Informations sur l\'itinéraire</string>
     <string name="keep_and_add_destination_point">Ajouter comme destination</string>
-    <string name="gpx_option_calculate_first_last_segment">Calculer un itinéraire OsmAnd pour le début et la fin de l\'itinéraire</string>
+    <string name="gpx_option_calculate_first_last_segment">Calculer un itinéraire MineNAV pour le début et la fin de l\'itinéraire</string>
     <string name="calculate_osmand_route_without_internet">Calcul de l\'itinéraire hors ligne</string>
     <string name="index_item_nation_addresses">Adresses sur l\'ensemble du pays</string>
     <string name="index_item_world_altitude_correction">Monde - Correction d\'altitude</string>
@@ -717,12 +717,12 @@
     <string name="interrupt_music_descr">Les annonces vocales interrompent la musique.</string>
     <string name="interrupt_music">Interrompre la musique</string>
     <string name="share_route_as_gpx">Partager l\'itinéraire au format GPX</string>
-    <string name="share_route_subject">Itinéraire partagé grâce à OsmAnd</string>
+    <string name="share_route_subject">Itinéraire partagé grâce à MineNAV</string>
     <string name="keep_informing_never">Manuelle (en appuyant sur la flèche)</string>
     <string name="keep_informing">Répéter les instructions de guidage</string>
     <string name="navigation_intent_invalid">Format invalide : %s</string>
     <string name="shared_string_share">Partager</string>
-    <string name="share_fav_subject">Favoris partagés grâce à OsmAnd</string>
+    <string name="share_fav_subject">Favoris partagés grâce à MineNAV</string>
     <string name="osmo_connect_menu">Connecter</string>
     <string name="rendering_value_pink_name">Rose</string>
     <string name="rendering_value_brown_name">Brun</string>
@@ -990,7 +990,7 @@
     <string name="read_full_article">Lire l\'article complet (en ligne)</string>
     <string name="shared_string_wikipedia">Wikipédia</string>
     <string name="download_wikipedia_maps">Wikipédia</string>
-    <string name="shared_string_import2osmand">Importer dans OsmAnd</string>
+    <string name="shared_string_import2osmand">Importer dans MineNAV</string>
     <string name="gps_network_not_enabled">Le service de localisation est arrêté. Souhaitez-vous l’activer ?</string>
     <string name="disable_recording_once_app_killed">Empêcher l’enregistrement après fermeture de l’application</string>
     <string name="lang_ms">Malaisien</string>
@@ -1045,7 +1045,7 @@
     <string name="lang_tl">Tagalog</string>
     <string name="rendering_value_default13_name">Par défaut (13)</string>
     <string name="rendering_value_defaultTranslucentCyan_name">Par défaut (cyan translucide)</string>
-    <string name="do_you_like_osmand">Aimez-vous OsmAnd ?</string>
+    <string name="do_you_like_osmand">Aimez-vous MineNAV ?</string>
     <string name="user_hates_app_get_feedback">Indiquez-nous pourquoi.</string>
     <string name="user_hates_app_get_feedback_long">N’hésitez pas à nous faire part de vos suggestions.</string>
     <string name="download_live_updates">Mises à jour temps réel</string>
@@ -1060,7 +1060,7 @@
     <string name="dahboard_options_dialog_title">Configurer le tableau de bord</string>
     <string name="shared_string_undo">Annuler</string>
     <string name="shared_string_skip">Ignorer</string>
-    <string name="app_name_osmand">OsmAnd</string>
+    <string name="app_name_osmand">MineNAV</string>
     <string name="plugin_settings">Extensions</string>
     <string name="tab_title_basic">Basique</string>
     <string name="tab_title_advanced">Étendue</string>
@@ -1148,7 +1148,7 @@
     <string name="lang_fy">Frison occidental</string>
     <string name="lang_als">Tosque</string>
     <string name="lang_nds">Bas allemand</string>
-    <string name="share_osm_edits_subject">Éditions OSM partagées grâce à OsmAnd</string>
+    <string name="share_osm_edits_subject">Éditions OSM partagées grâce à MineNAV</string>
     <string name="save_poi_without_poi_type_message">Enregistrer ce POI sans type ?</string>
     <string name="shared_string_location">Position</string>
     <string name="context_menu_item_delete_waypoint">Supprimer le point de passage GPX ?</string>
@@ -1265,7 +1265,7 @@
     <string name="recalculate_route">Recalculer l\'itinéraire</string>
     <string name="storage_directory_shared">Mémoire partagée</string>
     <string name="shared_string_topbar">Barre supérieure</string>
-    <string name="osm_live_ask_for_purchase">Veuillez d\'abord acheter un abonnement OsmAnd Live</string>
+    <string name="osm_live_ask_for_purchase">Veuillez d\'abord acheter un abonnement Live</string>
     <string name="avoid_road">Éviter la route</string>
     <string name="osm_editors_ranking">Classement des éditeurs OSM</string>
     <string name="shared_string_move_up">Déplacer ↑</string>
@@ -1298,7 +1298,7 @@
     <string name="access_no_destination">Extension d\'accessibilité : Aucune destination n\'est définie</string>
     <string name="map_widget_magnetic_bearing">Cap magnétique</string>
     <string name="map_widget_bearing">Cap relatif</string>
-    <string name="use_osm_live_routing_description">Activer le guidage avec les données OsmAnd Live.</string>
+    <string name="use_osm_live_routing_description">Activer le guidage avec les données Live.</string>
     <string name="map_widget_battery">Niveau de batterie</string>
     <string name="lang_hu_formal">Hongrois (formel)</string>
     <string name="current_track">Trace actuelle</string>
@@ -1324,7 +1324,7 @@
     <string name="city_type_neighbourhood">Quartier</string>
     <string name="postcode">Code postal</string>
     <string name="search_categories">Catégories</string>
-    <string name="share_history_subject">partagé via OsmAnd</string>
+    <string name="share_history_subject">partagé via MineNAV</string>
     <string name="back_to_search">Retour à la recherche</string>
     <string name="confirmation_to_delete_history_items">Supprimer les éléments sélectionnés de « Historique » ?</string>
     <string name="show_something_on_map">Afficher %1$s sur la carte</string>
@@ -1339,7 +1339,7 @@
     <string name="routing_attr_short_way_name">Trajet économe en carburant</string>
     <string name="search_another_country">Sélectionner une autre région</string>
     <string name="search_map">Recherche des cartes …</string>
-    <string name="first_usage_wizard_desc">Autoriser OsmAnd à vous localiser et à vous suggérer le téléchargement de la carte de la région.</string>
+    <string name="first_usage_wizard_desc">Autoriser MineNAV à vous localiser et à vous suggérer le téléchargement de la carte de la région.</string>
     <string name="location_not_found">Position non trouvée</string>
     <string name="no_inet_connection">Aucune connexion Internet</string>
     <string name="search_location">Recherche de la position…</string>
@@ -1490,24 +1490,24 @@
     <string name="routing_attr_driving_style_speed_name">Routes plus courtes</string>
     <string name="routing_attr_driving_style_balance_name">Équilibré</string>
     <string name="routing_attr_driving_style_safety_name">Privilégier les routes secondaires</string>
-    <string name="full_version_thanks">Merci d\'avoir acheté la version payante d\'OsmAnd.</string>
+    <string name="full_version_thanks">Merci d\'avoir acheté la version payante d\'MineNAV.</string>
     <string name="routing_attr_relief_smoothness_factor_name">Sélectionner les préférences de relief</string>
     <string name="parking_options">Type de stationnement</string>
     <string name="do_not_show_startup_messages">N\'afficher aucun message au démarrage</string>
     <string name="right_side_navigation">Conduite à droite</string>
     <string name="shared_string_automatic">Automatique</string>
-    <string name="osmand_extended_description_part1">OsmAnd (OSM Automated Navigation Directions) est une application de visualisation de cartes et de navigation utilisant les données gratuites couvrant le monde entier du projet OpenStreetMap (OSM). \n \nProfitez d\'un guidage vocal comme visuel ; Découvrez des POI (points d\'intérêt) ; Créez et gérez des traces GPX ; Installez des extensions pour visualiser l\'altitude et les courbes de niveau ; Utilisez les modes Conduite, Piéton, Cycliste ; Contribuez à l\'amélioration des cartes OSM et bien plus encore.</string>
+    <string name="osmand_extended_description_part1">MineNAV (OSM Automated Navigation Directions) est une application de visualisation de cartes et de navigation utilisant les données gratuites couvrant le monde entier du projet OpenStreetMap (OSM). \n \nProfitez d\'un guidage vocal comme visuel ; Découvrez des POI (points d\'intérêt) ; Créez et gérez des traces GPX ; Installez des extensions pour visualiser l\'altitude et les courbes de niveau ; Utilisez les modes Conduite, Piéton, Cycliste ; Contribuez à l\'amélioration des cartes OSM et bien plus encore.</string>
     <string name="osmand_extended_description_part4">Ski
-\nL\'extension OsmAnd ski maps permet de visualiser les pistes de ski avec leur niveau de difficulté et d\'autres informations utiles comme l\'emplacement et le type des remontées mécaniques.</string>
+\nL\'extension MineNAV ski maps permet de visualiser les pistes de ski avec leur niveau de difficulté et d\'autres informations utiles comme l\'emplacement et le type des remontées mécaniques.</string>
     <string name="osmand_extended_description_part7">Contribuez à OpenStreetMap (OSM) \n • Signalez des anomalies \n • Envoyez des traces GPX vers OSM directement depuis l\'application \n • Ajoutez des POI et envoyez-les vers OSM (immédiatement ou plus tard si vous êtes hors ligne)</string>
     <string name="osmand_plus_extended_description_part8">Couverture et qualité des cartes : \n • Europe de l\'Ouest : **** \n • Europe de l\'Est : *** \n • Russie : *** \n • Amérique du Nord : *** \n • Amérique du Sud : ** \n • Asie : ** \n • Japon et Corée : *** \n • Moyen-Orient : ** \n • Afrique : ** \n • Antarctique : * \n La majorité des pays autour du Monde sont disponibles au téléchargement\nDe l\'Afghanistan au Zimbabwe, de l\'Australie aux États-Unis. Argentine, Brésil, Canada, France, Allemagne, Mexique, Royaume-Uni, Espagne, …</string>
     <string name="fonts_header">Polices des textes sur la carte</string>
     <string name="osmand_plus_extended_description_part5">Fonctions liées à la sécurité \n • Bascule automatique en mode jour/nuit (option) \n • Affichage des limitations de vitesse avec rappels en cas de dépassement (option) \n • Zoom adapté à la vitesse (option) \n • Partage de votre position afin qu\'on puisse vous rejoindre rapidement</string>
     <string name="restore_purchases">Restaurer vos achats</string>
     <string name="shared_string_visible">Visible</string>
-    <string name="osmand_plus_extended_description_part7">Contribuez concrètement à l\'amélioration d\'OpenStreetMap : \n • Signalez des erreurs de données \n • Téléversez des traces GPX à OpenStreetMap directement depuis l\'application \n • Ajoutez des POI et téléversez-les à OpenStreetMap (immédiatement si vous êtes en ligne ou plus tard si vous êtes hors ligne) \n • Enregistrez vos trajets en arrière-plan (pendant que votre appareil est en veille). \nOsmAnd est une application open source très active. Toutes les contributions sont bienvenues que ce soit en signalant des bugs, en participant à la traduction ou en développant de nouvelles fonctionnalités. Grâce aux interactions entre les utilisateurs et les développeurs l\'application est en évolution permanente. Le projet est bien sûr ouvert à toute participation financière pour accélérer encore son développement.</string>
+    <string name="osmand_plus_extended_description_part7">Contribuez concrètement à l\'amélioration d\'OpenStreetMap : \n • Signalez des erreurs de données \n • Téléversez des traces GPX à OpenStreetMap directement depuis l\'application \n • Ajoutez des POI et téléversez-les à OpenStreetMap (immédiatement si vous êtes en ligne ou plus tard si vous êtes hors ligne) \n • Enregistrez vos trajets en arrière-plan (pendant que votre appareil est en veille). \nMineNAV est une application open source très active. Toutes les contributions sont bienvenues que ce soit en signalant des bugs, en participant à la traduction ou en développant de nouvelles fonctionnalités. Grâce aux interactions entre les utilisateurs et les développeurs l\'application est en évolution permanente. Le projet est bien sûr ouvert à toute participation financière pour accélérer encore son développement.</string>
     <string name="analyze_on_map">Analyser sur la carte</string>
-    <string name="osmand_plus_extended_description_part1">OsmAnd+ (OpenStreetMap Automated Navigation and Directions) est une application de visualisation de cartes et de navigation utilisant les données gratuites couvrant le monde entier du projet OpenStreetMap. Bénéficiez d\'un guidage vocal comme visuel ; découvrez des POI (points d\'intérêt) ; créez et gérez des traces GPX ; installez des extensions pour visualiser l\'altitude et les courbes de niveau ; utilisez les modes Voiture, Piéton, Cycliste ; contribuez à l\'amélioration des cartes et bien plus encore ! \n \nOsmAnd+ est la version payante de l\'application, en l\'achetant vous supportez le projet, financez le développement de nouvelles fonctionnalités et recevez les dernières mises à jour. \n \nFonctionnalités principales :</string>
+    <string name="osmand_plus_extended_description_part1">MineNAV (OpenStreetMap Automated Navigation and Directions) est une application de visualisation de cartes et de navigation utilisant les données gratuites couvrant le monde entier du projet OpenStreetMap. Bénéficiez d\'un guidage vocal comme visuel ; découvrez des POI (points d\'intérêt) ; créez et gérez des traces GPX ; installez des extensions pour visualiser l\'altitude et les courbes de niveau ; utilisez les modes Voiture, Piéton, Cycliste ; contribuez à l\'amélioration des cartes et bien plus encore ! \n \nMineNAV est la version payante de l\'application, en l\'achetant vous supportez le projet, financez le développement de nouvelles fonctionnalités et recevez les dernières mises à jour. \n \nFonctionnalités principales :</string>
     <string name="sea_depth_thanks">Merci d\'avoir acheté l\'extension « Courbes de profondeur nautique »</string>
     <string name="index_item_depth_contours_osmand_ext">Courbes de profondeur nautique</string>
     <string name="index_item_depth_points_southern_hemisphere">Points de profondeur nautique de l\'hémisphère sud</string>
@@ -1578,7 +1578,7 @@
     <string name="mapillary_image">Image Mapillary</string>
     <string name="distance_moving">Distance corrigée</string>
     <string name="shared_string_permissions">Autorisations</string>
-    <string name="import_gpx_failed_descr">Impossible d’importer le fichier. Veuillez vérifier qu’OsmAnd a l’autorisation de le lire.</string>
+    <string name="import_gpx_failed_descr">Impossible d’importer le fichier. Veuillez vérifier qu’MineNAV a l’autorisation de le lire.</string>
     <string name="map_widget_ruler_control">Règle de rayon</string>
     <string name="wrong_user_name">Nom d\'utilisateur incorrect</string>
     <string name="shared_string_to">Vers</string>
@@ -1616,7 +1616,7 @@
     <string name="add_point_before">Ajouter un point avant</string>
     <string name="add_point_after">Ajouter un point après</string>
     <string name="shared_string_options">Options</string>
-    <string name="measurement_tool_snap_to_road_descr">OsmAnd va relier les points pour établir un itinéraire adapté au profil sélectionné.</string>
+    <string name="measurement_tool_snap_to_road_descr">MineNAV va relier les points pour établir un itinéraire adapté au profil sélectionné.</string>
     <string name="choose_navigation_type">Sélectionner le type de navigation</string>
     <string name="empty_state_favourites">Ajouter aux favoris</string>
     <string name="empty_state_favourites_desc">Importez vos favoris ou ajoutez-les en marquant des points sur la carte.</string>
@@ -1628,7 +1628,7 @@
     <string name="osmand_extended_description_part6">Marche, randonnée, visite guidée \n• Carte des sentiers pédestres et de randonnée \n• Articles Wikipédia dans la langue de votre choix pour découvrir les lieux visités \n• Arrêts de transports publics (bus, tram, train), incluant les noms de lignes, pour vous aider dans vos déplacements en ville \n• Guidage de navigation piéton en suivant les itinéraires piétons \n• Vous pouvez téléverser et suivre une trace GPX existante ; enregistrer et partager un nouvel itinéraire GPX</string>
     <string name="move_all_to_history">Déplacer tout dans l\'historique</string>
     <string name="sort_by">Trier par</string>
-    <string name="osmand_extended_description_part8">OsmAnd est un projet open source très actif. Tout le monde peut contribuer à l\'application en signalant des bugs, en améliorant les traductions ou en développant de nouvelles fonctionnalités. Les nombreux échanges entre développeurs et utilisateurs permettent d\'améliorer régulièrement OsmAnd et les contributions financières permettent de développer de nouvelles fonctionnalités. 
+    <string name="osmand_extended_description_part8">MineNAV est un projet open source très actif. Tout le monde peut contribuer à l\'application en signalant des bugs, en améliorant les traductions ou en développant de nouvelles fonctionnalités. Les nombreux échanges entre développeurs et utilisateurs permettent d\'améliorer régulièrement MineNAV et les contributions financières permettent de développer de nouvelles fonctionnalités. 
 \n 
 \nCouverture et qualité approximative des cartes : 
 \n• Europe de l\'Ouest : **** (4) 
@@ -1824,7 +1824,7 @@
     <string name="shared_string_wifi_only">Seulement en Wi-Fi</string>
     <string name="select_travel_book">Sélectionner un carnet de voyage</string>
     <string name="download_images">Télécharger les images</string>
-    <string name="wikivoyage_travel_guide_descr">Guides des lieux les plus intéressants au monde depuis OsmAnd et sans connexion Internet.</string>
+    <string name="wikivoyage_travel_guide_descr">Guides des lieux les plus intéressants au monde depuis MineNAV et sans connexion Internet.</string>
     <string name="wikivoyage_travel_guide">Guides de voyage</string>
     <string name="in_app_purchase_desc">Paiement en une fois</string>
     <string name="monthly_map_updates">Mise à jour des cartes : mensuelle</string>
@@ -1847,11 +1847,11 @@
     <string name="popular_destinations">Destinations populaires</string>
     <string name="welcome_to_open_beta_description">Les guides de voyage s’appuient sur Wikivoyage. Durant la phase bêta, testez toutes les fonctionnalités gratuitement.</string>
     <string name="wiki_article_search_text">Recherche de l\'article wiki correspondant</string>
-    <string name="osmand_team">Équipe OsmAnd</string>
+    <string name="osmand_team">Équipe MineNAV</string>
     <string name="maps_you_need_descr">D\'après les articles que vous avez marqué comme favori, nous vous conseillons de télécharger les cartes suivantes :</string>
     <string name="maps_you_need">Cartes conseillées</string>
     <string name="shared_string_restart">Redémarrer l\'application</string>
-    <string name="read_wikipedia_offline_description">Abonnez-vous à OsmAnd Live pour lire les articles Wikipédia et Wikivoyage hors ligne.</string>
+    <string name="read_wikipedia_offline_description">Abonnez-vous à Live pour lire les articles Wikipédia et Wikivoyage hors ligne.</string>
     <string name="how_to_open_link">Comment ouvrir le lien ?</string>
     <string name="read_wikipedia_offline">Consultez Wikipédia hors ligne</string>
     <string name="download_all">Télécharger tout</string>
@@ -1864,7 +1864,7 @@
     <string name="shared_string_bookmark">Favori</string>
     <string name="topo_render_descr">Pour la randonnée, le trek et le vélo en pleine nature. Lisible en extérieur. Contraste entre les routes et les éléments naturels, différents types de routes, options avancées pour les courbes de niveau, détails supplémentaires. Le réglage « intégrité de la surface » permet de distinguer la qualité des routes. Pas de mode nuit.</string>
     <string name="off_road_render_descr">Pour la conduite sur voies non revêtues. Style basé sur le style « Topo » et à utiliser avec la sous-couche verte d\'images satellites. Largeur réduite pour les routes, largeur augmentée pour les chemins et autres pistes.</string>
-    <string name="touring_view_render_descr">Style très détaillé pour le tourisme. Inclus tous les caractéristiques du style OsmAnd par défaut plus : information les plus détaillées possibles sur les routes, chemins, sentiers et tous les moyens permettant de se déplacer. Distinction visuelle claire des différents types de routes. Adapté à un usage en extérieur, de jour comme de nuit.</string>
+    <string name="touring_view_render_descr">Style très détaillé pour le tourisme. Inclus tous les caractéristiques du style MineNAV par défaut plus : information les plus détaillées possibles sur les routes, chemins, sentiers et tous les moyens permettant de se déplacer. Distinction visuelle claire des différents types de routes. Adapté à un usage en extérieur, de jour comme de nuit.</string>
     <string name="unirs_render_descr">Modification du style par défaut pour augmenter le contraste des voies piétonnes et cyclables. Utilise les couleurs héritées de Mapnik.</string>
     <string name="quick_action_edit_actions">Modifier les actions</string>
     <string name="coord_input_edit_point">Modifier le point</string>
@@ -1881,7 +1881,7 @@
     <string name="search_no_results_feedback">Aucun résultat de recherche \? 
 \nSignalez-le nous</string>
     <string name="test_voice_desrc">Appuyez sur un bouton pour écoutez l\'annonce vocale correspondante afin d\'identifier les annonces erronées ou manquantes</string>
-    <string name="ask_for_location_permission">Avant de poursuivre, veuillez accorder à OsmAnd l\'autorisation d’utiliser votre position.</string>
+    <string name="ask_for_location_permission">Avant de poursuivre, veuillez accorder à MineNAV l\'autorisation d’utiliser votre position.</string>
     <string name="rendering_value_black_name">Noir</string>
     <string name="more_transport_on_stop_hint">Autres moyens de transport disponibles à cet arrêt.</string>
     <string name="search_street">Recherche par rue</string>
@@ -1901,7 +1901,7 @@
     <string name="osm_live_payment_renews_annually">Tous les ans</string>
     <string name="mapillary_menu_title_pano">Afficher uniquement les images à 360°</string>
     <string name="shared_string_launch">Ouvrir</string>
-    <string name="quick_action_switch_day_night_descr">Bascule entre les modes Jour et Nuit d\'OsmAnd.</string>
+    <string name="quick_action_switch_day_night_descr">Bascule entre les modes Jour et Nuit d\'MineNAV.</string>
     <string name="lang_gn_py">Guarani</string>
     <string name="add_destination_point">Définir l\'arrivée</string>
     <string name="add_intermediate_point">Ajouter une étape</string>
@@ -1939,7 +1939,7 @@
     <string name="step_by_step">Instructions pas à pas</string>
     <string name="routeInfo_road_types_name">Types de route</string>
     <string name="exit_at">Sortir à</string>
-    <string name="use_osm_live_public_transport_description">Activer les modifications de transports en commun en temps réel avec OsmAnd Live.</string>
+    <string name="use_osm_live_public_transport_description">Activer les modifications de transports en commun en temps réel avec Live.</string>
     <string name="sit_on_the_stop">Panneau d\'affichage à l\'arrêt</string>
     <string name="quick_action_show_hide_gpx_tracks_descr">Bouton affichant ou masquant, sur la carte, les traces sélectionnées.</string>
     <string name="transfers_size">%1$d transferts</string>
@@ -1989,7 +1989,7 @@
     <string name="rendering_attr_surface_paving_stones_name">Pavés réguliers</string>
     <string name="rendering_attr_surface_pebblestone_name">Galets</string>
     <string name="rendering_attr_surface_compacted_name">Compacté</string>
-    <string name="public_transport_warning_descr_blog">Pour savoir comment OsmAnd calcule les itinéraires, visitez notre blog.</string>
+    <string name="public_transport_warning_descr_blog">Pour savoir comment MineNAV calcule les itinéraires, visitez notre blog.</string>
     <string name="public_transport_warning_title">Les itinéraires en transports en commun sont actuellement en phase de test. Des erreurs ou des imprécisions peuvent avoir lieu.</string>
     <string name="add_intermediate">Ajouter une étape</string>
     <string name="shared_string_walk">Marche</string>
@@ -2018,7 +2018,7 @@
     <string name="files_failed">Impossible de copier %1$d fichiers (%2$s).</string>
     <string name="dont_move_maps">Ne pas déplacer</string>
     <string name="public_transport_ped_route_title">L\'itinéraire piéton est approximativement de %1$s et peut être plus rapide que les transports en commun</string>
-    <string name="public_transport_no_route_title">Malheureusement, OsmAnd n\'a pas trouvé d\'itinéraire avec les paramètres actuels.</string>
+    <string name="public_transport_no_route_title">Malheureusement, MineNAV n\'a pas trouvé d\'itinéraire avec les paramètres actuels.</string>
     <string name="public_transport_try_ped">Essayez l\'itinéraire piéton.</string>
     <string name="public_transport_try_change_settings">Essayez de modifier les paramètres.</string>
     <string name="public_transport_calc_pedestrian">Calculer l\'itinéraire piéton</string>
@@ -2026,7 +2026,7 @@
     <string name="searching_gps">Recherche des signaux GPS</string>
     <string name="coordinates_widget">Widget de coordonnées</string>
     <string name="shared_string_privacy_policy">Politique de confidentialité</string>
-    <string name="help_us_make_osmand_better">Aidez-nous à améliorer OsmAnd</string>
+    <string name="help_us_make_osmand_better">Aidez-nous à améliorer MineNAV</string>
     <string name="choose_data_to_share">Choisissez le type de données que vous souhaitez partager :</string>
     <string name="downloaded_maps">Cartes téléchargées</string>
     <string name="visited_screens">Écrans visités</string>
@@ -2044,28 +2044,28 @@
     <string name="routing_profile_ski">Ski</string>
     <string name="profile_type_descr_string">Type : %s</string>
     <string name="profile_alert_need_profile_name_title">Entrez le nom du profil</string>
-    <string name="profile_alert_cant_delete_base">Vous ne pouvez pas supprimer les profils de base OsmAnd</string>
+    <string name="profile_alert_cant_delete_base">Vous ne pouvez pas supprimer les profils de base MineNAV</string>
     <string name="profile_alert_delete_title">Supprimer le profil</string>
     <string name="profile_alert_delete_msg">Supprimer le profil « %s »</string>
     <string name="select_base_profile_dialog_title">Sélectionner un profil avec lequel démarrer</string>
     <string name="shared_string_color_magenta">Magenta</string>
     <string name="shared_string_icon">icône</string>
     <string name="rate_dialog_descr">Merci de donner votre avis et d\'évaluer notre travail sur Google Play.</string>
-    <string name="visited_screens_collect_descr">Aidez-nous à analyser quelles sont les fonctions d\'OsmAnd les plus utilisées.</string>
+    <string name="visited_screens_collect_descr">Aidez-nous à analyser quelles sont les fonctions d\'MineNAV les plus utilisées.</string>
     <string name="select_icon_profile_dialog_title">Sélectionner une icône</string>
     <string name="profile_alert_need_profile_name_msg">Vous devez d\'abord indiquer un nom de profil.</string>
     <string name="profile_alert_duplicate_name_msg">Il existe déjà un profil avec ce nom</string>
     <string name="select_nav_profile_dialog_title">Sélectionner le type de navigation</string>
     <string name="routing_profile_geocoding">Géocodage</string>
     <string name="routing_profile_straightline">Ligne droite</string>
-    <string name="osmand_default_routing">Routage OsmAnd</string>
+    <string name="osmand_default_routing">Routage MineNAV</string>
     <string name="routing_attr_piste_type_skitour_description">Itinéraires de randonnée à ski.</string>
     <string name="routing_attr_allow_advanced_name">Autoriser les itinéraires avancés</string>
     <string name="routing_attr_allow_advanced_description">Itinéraires difficiles, avec des obstacles dangereux et des sections escarpées.</string>
     <string name="routing_attr_allow_expert_name">Autoriser les itinéraires experts</string>
     <string name="routing_attr_allow_expert_description">Itinéraires extrêmement difficiles, avec des obstacles et des environnements dangereux.</string>
     <string name="routing_attr_freeride_policy_name">Hors-piste</string>
-    <string name="process_downloading_service">Service de téléchargement OsmAnd</string>
+    <string name="process_downloading_service">Service de téléchargement MineNAV</string>
     <string name="press_again_to_change_the_map_orientation">Appuyez à nouveau pour modifier l\'orientation de la carte</string>
     <string name="shared_string_min_speed">Vitesse minimale</string>
     <string name="shared_string_max_speed">Vitesse Max.</string>
@@ -2097,11 +2097,11 @@
     <string name="shared_string_file_is_saved">%s enregistré</string>
     <string name="shared_string_open_track">Ouvrir trace</string>
     <string name="shared_string_crash">Oups</string>
-    <string name="last_launch_crashed">La dernière utilisation d\'OsmAnd a planté. Aidez-nous à améliorer OsmAnd en nous envoyant le message d\'erreur.</string>
+    <string name="last_launch_crashed">La dernière utilisation d\'MineNAV a planté. Aidez-nous à améliorer MineNAV en nous envoyant le message d\'erreur.</string>
     <string name="app_mode_shuttle_bus">Bus navette</string>
     <string name="base_profile_descr_ski">Ski</string>
     <string name="show_compass_ruler">Afficher la boussole</string>
-    <string name="make_osmand_better_descr">Autoriser OsmAnd à collecter et traiter des données d’utilisation anonymes. Aucune information sur votre position ou les lieux affichés sur la carte n’est collectée.\n\nVous pouvez modifier ce paramètre à tout moment dans « Paramètres → Confidentialité et sécurité ».</string>
+    <string name="make_osmand_better_descr">Autoriser MineNAV à collecter et traiter des données d’utilisation anonymes. Aucune information sur votre position ou les lieux affichés sur la carte n’est collectée.\n\nVous pouvez modifier ce paramètre à tout moment dans « Paramètres → Confidentialité et sécurité ».</string>
     <string name="downloaded_maps_collect_descr">Aidez nous à connaître les pays et régions les plus populaires.</string>
     <string name="privacy_and_security_change_descr">Appuyez sur « Autoriser » pour accepter nos %1$s</string>
     <string name="base_profile_descr_car">Voiture, camion, moto</string>
@@ -2181,7 +2181,7 @@
     <string name="screen_alerts_descr">Afficher les alertes en bas à gauche de l\'écran pendant le guidage.</string>
     <string name="switch_profile">Basculer de profil</string>
     <string name="osmand_settings_descr">S\'appliquent à toute l\'application</string>
-    <string name="osmand_settings">Paramètres OsmAnd</string>
+    <string name="osmand_settings">Paramètres MineNAV</string>
     <string name="copy_from_other_profile">Copier depuis un autre profil</string>
     <string name="turn_screen_on">Allumer l\'écran</string>
     <string name="map_during_navigation_info">Carte pendant le guidage</string>
@@ -2208,12 +2208,12 @@
     <string name="plugins_settings">Paramètres de l\'extension</string>
     <string name="shared_string_by_default">Par défaut</string>
     <string name="download_detailed_map">Pour voir les détails de cette zone, téléchargez la carte %s.</string>
-    <string name="change_data_storage_full_description">Déplacer les fichiers de données OsmAnd vers la nouvelle destination \?
+    <string name="change_data_storage_full_description">Déplacer les fichiers de données MineNAV vers la nouvelle destination \?
 \n%1$s &gt; %2$s</string>
     <string name="enter_path_to_folder">Saisir le chemin du dossier</string>
     <string name="shared_string_select_folder">Dossier…</string>
-    <string name="paste_Osmand_data_folder_path">Coller le chemin du dossier contenant les données OsmAnd</string>
-    <string name="change_osmand_data_folder_question">Modifier le dossier des données OsmAnd \?</string>
+    <string name="paste_Osmand_data_folder_path">Coller le chemin du dossier contenant les données MineNAV</string>
+    <string name="change_osmand_data_folder_question">Modifier le dossier des données MineNAV \?</string>
     <string name="move_maps_to_new_destination">Déplacer vers la nouvelle destination</string>
     <string name="change_data_storage_folder">Modifier le dossier de stockage</string>
     <string name="rendering_attr_piste_type_snow_park_name">Snow park</string>
@@ -2241,7 +2241,7 @@
     <string name="rendering_attr_piste_difficulty_connection_name">Connexion</string>
     <string name="rendering_attr_piste_difficulty_aerialway_name">Transport par câble aérien</string>
     <string name="shared_string_calculate">Calculer</string>
-    <string name="shared_string_osmand_usage">Stockage utilisé par OsmAnd</string>
+    <string name="shared_string_osmand_usage">Stockage utilisé par MineNAV</string>
     <string name="shared_string_tiles">Tuiles</string>
     <string name="shared_string_maps">Cartes</string>
     <string name="shared_string_memory_tb_desc">%1$s To</string>
@@ -2301,7 +2301,7 @@
     <string name="desert_render_descr">Pour les déserts et autres zones faiblement peuplées, affiche plus de détails.</string>
     <string name="delete_profiles_descr">« Appliquer » supprimera définitivement les profils.</string>
     <string name="select_color">Sélectionner la couleur</string>
-    <string name="edit_profiles_descr">Les profils OsmAnd par défaut ne peuvent pas être supprimés mais vous pouvez les désactiver (depuis l\'écran précédent) ou les déplacer vers le bas.</string>
+    <string name="edit_profiles_descr">Les profils MineNAV par défaut ne peuvent pas être supprimés mais vous pouvez les désactiver (depuis l\'écran précédent) ou les déplacer vers le bas.</string>
     <string name="edit_profiles">Modifier les profils</string>
     <string name="profile_appearance">Apparence du profil</string>
     <string name="choose_icon_color_name">Icône, couleur et nom</string>
@@ -2324,13 +2324,13 @@
     <string name="live_monitoring_descr">Permet le partage de votre position grâce à l\'enregistrement du trajet.</string>
     <string name="live_monitoring">Suivi en ligne</string>
     <string name="save_track_logging_accuracy">Précision de l\'enregistrement</string>
-    <string name="tracks_view_descr">Vos traces enregistrées se trouvent dans %1$s ou dans le dossier OsmAnd.</string>
+    <string name="tracks_view_descr">Vos traces enregistrées se trouvent dans %1$s ou dans le dossier MineNAV.</string>
     <string name="video_notes">Notes vidéo</string>
     <string name="photo_notes">Notes photo</string>
     <string name="accessibility_announce">Annonce</string>
     <string name="plugin_global_prefs_info">Les paramètres de cette extension sont globaux et s\'appliquent à tous les profils</string>
     <string name="osm_editing">Édition OSM</string>
-    <string name="osm_edits_view_descr">Consultez vos modifications et vos bugs OSM non encore envoyés dans %1$s. Les modifications envoyées ne seront plus affichées dans OsmAnd.</string>
+    <string name="osm_edits_view_descr">Consultez vos modifications et vos bugs OSM non encore envoyés dans %1$s. Les modifications envoyées ne seront plus affichées dans MineNAV.</string>
     <string name="app_mode_osm">OSM</string>
     <string name="logcat_buffer_descr">Vérifier et partager les logs détaillés de l\'application</string>
     <string name="permission_is_required">Vous n\'êtes pas autorisés à utiliser cette option.</string>
@@ -2393,12 +2393,12 @@
     <string name="shared_string_nothing_selected">Aucun élément sélectionné</string>
     <string name="shared_string_quick_actions">Actions rapides</string>
     <string name="shared_string_profiles">Profils</string>
-    <string name="listed_exist">Les %1$s listés existent déjà dans OsmAnd.</string>
+    <string name="listed_exist">Les %1$s listés existent déjà dans MineNAV.</string>
     <string name="replace_all_desc">Les éléments actuels seront remplacés par les éléments du fichier</string>
     <string name="replace_all">Tout remplacer</string>
     <string name="keep_both">Conserver les deux</string>
     <string name="keep_both_desc">Les éléments seront importés avec un préfixe</string>
-    <string name="import_duplicates_description">Des éléments portant les mêmes noms existent déjà dans OsmAnd. \n \nSélectionner une action.</string>
+    <string name="import_duplicates_description">Des éléments portant les mêmes noms existent déjà dans MineNAV. \n \nSélectionner une action.</string>
     <string name="import_duplicates_title">Certains éléments existent déjà</string>
     <string name="select_data_to_import">Sélectionner les données à importer.</string>
     <string name="shared_string_rendering_style">Style de rendu</string>
@@ -2411,7 +2411,7 @@
     <string name="shared_string_importing">Import en cours</string>
     <string name="items_added">Éléments ajoutés</string>
     <string name="shared_string_import_complete">Import terminé</string>
-    <string name="checking_for_duplicate_description">OsmAnd vérifie que l\'élément %1$s n\'existe pas déjà dans l\'application.
+    <string name="checking_for_duplicate_description">MineNAV vérifie que l\'élément %1$s n\'existe pas déjà dans l\'application.
 \n
 \nCela peut prendre un certain temps.</string>
     <string name="import_complete_description">Les données ont été importées depuis %1$s. Utilisez les boutons ci-dessous pour ouvrir la partie adéquate de l\'application afin de les gérer.</string>
@@ -2441,7 +2441,7 @@
     <string name="shared_string_octagon">Octogone</string>
     <string name="app_mode_ski_touring">Ski de randonnée</string>
     <string name="app_mode_ski_snowmobile">Motoneige</string>
-    <string name="custom_osmand_plugin">Extension OsmAnd personnalisée</string>
+    <string name="custom_osmand_plugin">Extension MineNAV personnalisée</string>
     <string name="replace_point_descr">Remplacer un point par celui-ci.</string>
     <string name="changes_applied_to_profile">Modifications appliquées au profil « %1$s ».</string>
     <string name="settings_item_read_error">Impossible de lire depuis « %1$s ».</string>
@@ -2520,7 +2520,7 @@
     <string name="unsupported_type_error">Type non pris en charge</string>
     <string name="gpx_parse_error">Ce fichier GPX contient des erreurs.
 \n
-\nContactez le support OsmAnd pour analyser le problème.</string>
+\nContactez le support MineNAV pour analyser le problème.</string>
     <string name="system_screen_timeout_descr">Éteint l\'écran en fonction du délai système.</string>
     <string name="map_source_zoom_levels_descr">Affecte l\'affichage de la carte ou des surcouche/sous-couche. \n \n%1$s : La carte est limitée aux zooms sélectionnés. \n \n%2$s sont les niveaux de zoom auxquels les tuiles originales seront visibles. En dehors de ces valeurs, il y aura une augmentation ou une diminution d\'échelle.</string>
     <string name="turn_screen_on_navigation_instructions_descr">L\'écran s\'allumera pour afficher les instructions de guidage.</string>
@@ -2534,9 +2534,9 @@
     <string name="shared_string_always">Toujours</string>
     <string name="screen_control">Contrôle de l\'écran</string>
     <string name="system_screen_timeout">Utiliser le délai système pour l’extinction de l\'écran</string>
-    <string name="turn_screen_on_descr">Sélectionnez les options d\'allumage de l’écran (assurez-vous qu’OsmAnd est au premier plan au moment du verrouillage de l’appareil) :</string>
+    <string name="turn_screen_on_descr">Sélectionnez les options d\'allumage de l’écran (assurez-vous qu’MineNAV est au premier plan au moment du verrouillage de l’appareil) :</string>
     <string name="turn_screen_on_navigation_instructions">Instructions de guidage</string>
-    <string name="turn_screen_on_power_button_descr">Appuyez sur le bouton d\'alimentation de l\'appareil pour allumer l\'écran avec OsmAnd par dessus l’écran de verrouillage.</string>
+    <string name="turn_screen_on_power_button_descr">Appuyez sur le bouton d\'alimentation de l\'appareil pour allumer l\'écran avec MineNAV par dessus l’écran de verrouillage.</string>
     <string name="turn_screen_on_power_button">Bouton marche/arrêt</string>
     <string name="turn_screen_on_proximity_sensor">Capteur de proximité</string>
     <string name="keep_screen_on">Conserver l\'écran allumé</string>
@@ -2659,7 +2659,7 @@
     <string name="gpx_monitoring_start">Reprendre l\'enregistrement du trajet</string>
     <string name="gpx_monitoring_stop">Suspendre l\'enregistrement du trajet</string>
     <string name="save_global_track_interval_descr">Indiquer l’intervalle d’enregistrement des points du trajet (activé via le widget « Enregistrement de trajet » sur la carte).</string>
-    <string name="disable_recording_once_app_killed_descrp">L\'enregistrement de la trace sera suspendu si l\'application est fermée via Applications récentes (les indications OsmAnd ne seront plus affichées dans la barre de notifications).</string>
+    <string name="disable_recording_once_app_killed_descrp">L\'enregistrement de la trace sera suspendu si l\'application est fermée via Applications récentes (les indications MineNAV ne seront plus affichées dans la barre de notifications).</string>
     <string name="all_next_segments_will_be_recalc">Tous les segments suivants seront recalculés avec le profil sélectionné.</string>
     <string name="all_previous_segments_will_be_recalc">Tous les segments précédents seront recalculés avec le profil sélectionné.</string>
     <string name="all_next_segments">Tous les segments suivants</string>
@@ -2681,8 +2681,8 @@
     <string name="routing_attr_avoid_footways_description">Éviter les trottoirs</string>
     <string name="routing_attr_avoid_footways_name">Éviter les trottoirs</string>
     <string name="development">Développement</string>
-    <string name="use_live_public_transport">OsmAnd Live data</string>
-    <string name="use_live_routing">OsmAnd Live data</string>
+    <string name="use_live_public_transport">Live data</string>
+    <string name="use_live_routing">Live data</string>
     <string name="use_native_pt_desc">Basculer vers le calcul d\'itinéraire Transports en commun Java (sécurisé)</string>
     <string name="what_is_new">Nouveautés</string>
     <string name="use_native_pt">Développement du transport en commun autochtone</string>
@@ -2744,7 +2744,7 @@
     <string name="plan_route_add_new_segment">Ajouter un nouveau segment</string>
     <string name="gpx_upload_identifiable_visibility_descr">« Identifiable » signifie que la trace sera affichée publiquement dans « Mes traces GPS » ainsi que dans les listes de traces GPS publiques. Ainsi les autres utilisateurs pourront télécharger la trace brute et l\'associer avec votre nom d\'utilisateur. Les données de points de passage horodatés fournis par l\'API GPS publique feront référence à la page d\'origine de votre trace.</string>
     <string name="gpx_upload_public_visibility_descr">« Publique » signifie que la trace est affichée publiquement dans vos traces GPS et dans les listes de traces GPS publiques. Les données diffusées via l\'API ne font pas référence à votre page de traces. Les horodatages des points de trace ne sont pas disponibles via l\'API GPS publique et les points de trace ne sont pas classés par ordre chronologique.</string>
-    <string name="profile_type_osmand_string">Profil OsmAnd</string>
+    <string name="profile_type_osmand_string">Profil MineNAV</string>
     <string name="profile_type_user_string">Profil utilisateur</string>
     <string name="reverse_all_points">Inverser tous les points</string>
     <string name="profile_by_default_description">Sélectionner le profil utilisé au démarrage de l\'application.</string>
@@ -2857,12 +2857,12 @@
     <string name="routing_attr_driving_style_description">Sélectionner un mode de conduite pour calculer l\'itinéraire le plus court, le plus rapide ou le plus sûr</string>
     <string name="snap_to_road_descr">L’icône de position sera déplacée sur l’itinéraire en cours</string>
     <string name="select_another_colorization">Veuillez sélectionner un autre type de coloration.</string>
-    <string name="trip_recording_logging_interval_info">L\'intervalle d’enregistrement définit la fréquence à laquelle OsmAnd interrogera les données de localisation.</string>
+    <string name="trip_recording_logging_interval_info">L\'intervalle d’enregistrement définit la fréquence à laquelle MineNAV interrogera les données de localisation.</string>
     <string name="trip_recording_save_and_continue">Enregistrer et continuer</string>
     <string name="lost_data_warning">Toutes les données non enregistrées seront perdues.</string>
     <string name="show_start_dialog">Afficher la boîte de dialogue de démarrage</string>
     <string name="trip_recording_show_start_dialog_setting">Si désactivé, l\'enregistrement débutera dès appui sur le widget ou dans le menu (sans demande de confirmation).</string>
-    <string name="release_4_0_beta">- Ajout d\'une option pour télécharger les Courbes de niveau en pieds \n \n- Planification d\'itinéraires en paysage : ajout d’onglets pour basculer entre Points et Graphs \n \n- Les mises à jour d\'OsmAnd Live ont été déplacées vers « Téléchargements &gt; Mises à jour » \n \n- Les traces peuvent maintenant être colorées par altitude, vitesse ou pente \n \n- Ajout d\'une option pour modifier l\'apparence de la ligne d\'itinéraire en navigation \n \n- Mise à jour de la fenêtre « Enregistrement de trajet »</string>
+    <string name="release_4_0_beta">- Ajout d\'une option pour télécharger les Courbes de niveau en pieds \n \n- Planification d\'itinéraires en paysage : ajout d’onglets pour basculer entre Points et Graphs \n \n- Les mises à jour d\'Live ont été déplacées vers « Téléchargements &gt; Mises à jour » \n \n- Les traces peuvent maintenant être colorées par altitude, vitesse ou pente \n \n- Ajout d\'une option pour modifier l\'apparence de la ligne d\'itinéraire en navigation \n \n- Mise à jour de la fenêtre « Enregistrement de trajet »</string>
     <string name="customize_route_line">Personnaliser la ligne d\'itinéraire</string>
     <string name="shared_string_route_line">Ligne d\'itinéraire</string>
     <string name="contact_support_description">Si vous avez des questions, veuillez nous contacter sur %1$s.</string>
@@ -2873,7 +2873,7 @@
     <string name="no_purchases">Vous n\'avez fait aucun achat</string>
     <string name="new_device_account">Nouvel appareil / nouveau compte</string>
     <string name="contact_support">Contacter le support</string>
-    <string name="osmand_live">OsmAnd Live</string>
+    <string name="osmand_live">Live</string>
     <string name="annual_subscription">Abonnement annuel</string>
     <string name="monthly_subscription">Abonnement mensuel</string>
     <string name="three_months_subscription">Abonnement de trois mois</string>
@@ -2886,7 +2886,7 @@
     <string name="exit_number">Numéro de sortie</string>
     <string name="announce_when_exceeded">Annoncer en cas de dépassement</string>
     <string name="output">Sortie</string>
-    <string name="srtm_download_list_help_message">OsmAnd fournit des données de courbes de niveau en mètres et en pieds. Vous devrez télécharger à nouveau le fichier pour modifier l\'unité.</string>
+    <string name="srtm_download_list_help_message">MineNAV fournit des données de courbes de niveau en mètres et en pieds. Vous devrez télécharger à nouveau le fichier pour modifier l\'unité.</string>
     <string name="srtm_download_single_help_message">Veuillez sélectionner (pour modifier le format, vous devrez re-télécharger le fichier).</string>
     <string name="srtm_unit_format">Unité des courbes de niveau</string>
     <string name="shared_string_feet">Pieds</string>
@@ -2909,7 +2909,7 @@
     <string name="backup_and_restore">Sauvegarder &amp; Restaurer</string>
     <string name="last_backup">Dernière sauvegarde</string>
     <string name="duration_ago">il y a %1$s</string>
-    <string name="osmand_cloud">OsmAnd Cloud</string>
+    <string name="osmand_cloud">Cloud</string>
     <string name="local_backup">Sauvegarde locale</string>
     <string name="restore_from_file">Restaurer à partir d\'un fichier</string>
     <string name="osmand_cloud_help_descr">Besoin d\'aide ? Contactez-nous %1$s</string>
@@ -2922,7 +2922,7 @@
     <string name="osmand_cloud_create_account_descr">Veuillez saisir votre adresse email, un code de vérification vous sera envoyé à cette adresse,
 \net toutes vos données y seront associées.</string>
     <string name="osmand_cloud_login_descr">Veuillez saisir l\'adresse email utilisée pour vous inscrire. Vous recevrez à cette adresse un mot de passe à usage unique.</string>
-    <string name="cloud_email_not_registered">Cet email n\'est pas enregistré sur OsmAnd Cloud</string>
+    <string name="cloud_email_not_registered">Cet email n\'est pas enregistré sur Cloud</string>
     <string name="backup_into_file">Sauvegarder dans un fichier</string>
     <string name="verification_code_missing_description">Le délai d\'envoi du code est de 10 minutes maximum, vérifiez votre dossier spam. Vous pouvez aussi utiliser le bouton ci-dessous.</string>
     <string name="select_nav_profile_dialog_message">Le « type de navigation » détermine la façon dont les itinéraires sont calculés, avec un moteur de routage soit hors ligne soit en ligne.</string>
@@ -2946,13 +2946,13 @@
     <string name="osmand_online_routing_promo">Utiliser des modèles prédéfinis ou ajouter OSRM, GraphHopper, openrouteservice, ou un moteur de routage GPX en ligne.</string>
     <string name="failed_loading_predefined_engines">Impossible d\'actualiser la liste des modèles prédéfinis.
 \nVeuillez vérifier votre connexion Internet.</string>
-    <string name="backup_delete_all_data_warning">Vous êtes sur le point de supprimer toutes les données envoyées précédemment sur OsmAnd Cloud, y compris l\'historique des versions.
+    <string name="backup_delete_all_data_warning">Vous êtes sur le point de supprimer toutes les données envoyées précédemment sur Cloud, y compris l\'historique des versions.
 \n
 \nVous ne serez plus en mesure de récupérer les données supprimées.</string>
     <string name="backup_delete_old_data_warning">Vous êtes sur le point de supprimer l\'historique des modifications.
 \n
 \nLa version actuelle des données va être sauvegardée sur le serveur mais vous ne pourrez pas revenir aux modifications supprimées.</string>
-    <string name="restore_from_osmand_cloud">Restaurer à partir d’OsmAnd Cloud</string>
+    <string name="restore_from_osmand_cloud">Restaurer à partir d’Cloud</string>
     <string name="backup_storage_taken">Espace utilisé</string>
     <string name="backup_version_history">Historique des versions</string>
     <string name="delete_version_history">Supprimer l\'historique des versions</string>
@@ -2965,7 +2965,7 @@
     <string name="purchases_feature_desc_wikipedia">Donne accès à tous les articles Wikipédia associés aux points d\'intérêts de la carte, permettant d\'en savoir plus sur un lieu en quelques clics. Pensez à télécharger les articles Wikipédia des régions de votre choix pour les consulter hors ligne.</string>
     <string name="purchases_feature_desc_combined_wiki">Consultez les articles Wikipédia sans connexion Internet. Les données hors ligne sont découpées par pays et disponibles dans toutes les langues.</string>
     <string name="purchases_feature_desc_hourly_map_updates">Bénéficiez de mises à jour cartographiques plus fréquentes. Mises à jour toutes les heures, tous les jours ou toutes les semaines. Les mises à jour sont téléchargées de manière incrémentielle, uniquement pour la zone modifiée.</string>
-    <string name="purchases_feature_desc_osmand_cloud">Utilisez OsmAnd Cloud pour sauvegarder toutes les données d\'OsmAnd en ligne. Plus aucun risque de perdre vos données après une réinstallation. Sauvegardez et restaurez toutes vos informations sans difficulté.</string>
+    <string name="purchases_feature_desc_osmand_cloud">Utilisez Cloud pour sauvegarder toutes les données d\'MineNAV en ligne. Plus aucun risque de perdre vos données après une réinstallation. Sauvegardez et restaurez toutes vos informations sans difficulté.</string>
     <string name="nautical_depth">Profondeur nautique</string>
     <string name="purchases_feature_desc_unlimited_map_download">Téléchargez en illimité des cartes hors ligne pour tous les continents et toutes les régions.</string>
     <string name="purchases_feature_desc_terrain">Courbes de niveau, ombrage du relief, pentes colorées mettant en valeur sommets et plaines.</string>
@@ -2988,8 +2988,8 @@
     <string name="cancel_anytime_in_gplay">Annulez-le à tout moment dans Google Play.</string>
     <string name="shared_string_not_included">Non inclus</string>
     <string name="regular_price">Prix habituel</string>
-    <string name="backup_delete_types_descr">Supprimer du Cloud OsmAnd les données obsolètes \?</string>
-    <string name="backup_version_history_delete_descr">Supprimer du Cloud OsmAnd le journal des modifications pour les données obsolètes \?</string>
+    <string name="backup_delete_types_descr">Supprimer du Cloud MineNAV les données obsolètes \?</string>
+    <string name="backup_version_history_delete_descr">Supprimer du Cloud MineNAV le journal des modifications pour les données obsolètes \?</string>
     <string name="backup_delete_types">Supprimer les types de données désactivés</string>
     <string name="shared_string_discussion">Discussion</string>
     <string name="shared_string_view_all">Voir tout</string>
@@ -3004,16 +3004,16 @@
     <string name="backup_error_gzip_only_supported_upload">Le fichier doit être envoyé au format .gzip</string>
     <string name="duration_moment_ago">il y a un instant</string>
     <string name="you_can_get_feature_as_part_of_pattern">Obtenez « %1$s » provenant du pack %2$s. Comparaison :</string>
-    <string name="backup_error_size_is_exceeded">Taille maximale du Cloud OsmAnd dépassée %1$s</string>
+    <string name="backup_error_size_is_exceeded">Taille maximale du Cloud MineNAV dépassée %1$s</string>
     <string name="backup_error_token_is_not_valid">Une erreur s\'est produite avec l\'ID d\'appareil ou le jeton fournit</string>
-    <string name="logout_from_osmand_cloud">Se déconnecter de OsmAnd Cloud</string>
+    <string name="logout_from_osmand_cloud">Se déconnecter de Cloud</string>
     <string name="logout_from_osmand_cloud_decsr">Êtes-vous certain de vouloir vous déconnecter \?
 \nVous devrez vous reconnecter pour sauvegarder ou restaurer vos données.</string>
-    <string name="backup_welcome_back_descr">Restaurer des données sur cet appareil en utilisant OsmAnd Cloud.</string>
-    <string name="backup_error_subscription_was_expired_descr">Votre abonnement OsmAnd Pro a expiré, renouvelez-le pour utiliser la sauvegarde. Vous pouvez toujours restaurer des données à partir du Cloud.</string>
+    <string name="backup_welcome_back_descr">Restaurer des données sur cet appareil en utilisant Cloud.</string>
+    <string name="backup_error_subscription_was_expired_descr">Votre abonnement Pro a expiré, renouvelez-le pour utiliser la sauvegarde. Vous pouvez toujours restaurer des données à partir du Cloud.</string>
     <string name="contour_lines_hillshade_slope">Courbes de niveau, ombres, pentes</string>
-    <string name="backup_deleting_all_data_descr">Veuillez patienter pendant qu\'OsmAnd supprime toutes vos données du Cloud. Les données sur l\'appareil restent, elles, inchangées.</string>
-    <string name="backup_deleted_all_data_descr">Toutes vos données ont été supprimées avec succès de OsmAnd Cloud.</string>
+    <string name="backup_deleting_all_data_descr">Veuillez patienter pendant qu\'MineNAV supprime toutes vos données du Cloud. Les données sur l\'appareil restent, elles, inchangées.</string>
+    <string name="backup_deleted_all_data_descr">Toutes vos données ont été supprimées avec succès de Cloud.</string>
     <string name="backup_version_history_removed">L’historique de toutes les versions a été supprimé.</string>
     <string name="backup_data_removed">Toutes les données ont été supprimées.</string>
     <string name="shared_string_progress">Avancement</string>
@@ -3039,16 +3039,16 @@
     <string name="shared_string_contributions">Contributions</string>
     <string name="map_updates_are_unavailable_yet">Les mises à jour de cartes ne sont pas disponibles pour l\'instant . :-(</string>
     <string name="rendering_value_walkingRoutesOSMC_description">Colorer les itinéraires selon leur couleur locale (si elle est connue d’OpenStreetMap) et du marquage des chemins de randonnée.</string>
-    <string name="option_available_only_in_osmand_pro">Disponible avec un abonnement OsmAnd Pro.</string>
-    <string name="purchases_feature_desc_pro_widgets">Accédez aux fonctionnalités d\'OsmAnd Pro comme les itinéraires colorés et bien plus encore.</string>
-    <string name="explore_osmnad_plans_to_find_suitable">Explorez les offres OsmAnd et trouvez celle qui vous convient.</string>
+    <string name="option_available_only_in_osmand_pro">Disponible avec un abonnement Pro.</string>
+    <string name="purchases_feature_desc_pro_widgets">Accédez aux fonctionnalités d\'Pro comme les itinéraires colorés et bien plus encore.</string>
+    <string name="explore_osmnad_plans_to_find_suitable">Explorez les offres MineNAV et trouvez celle qui vous convient.</string>
     <string name="rendering_value_walkingRoutesOSMCNodes_description">Colorer les itinéraires selon le type de réseau (international, régional, local).</string>
     <string name="walking_route_osmc_description">Colorer les itinéraires selon leur définition locale (si elle est connue d’OpenStreetMap) et du type d\'itinéraire (international, régional, local).</string>
     <string name="backup_error_no_subscription">Aucun abonnement en cours</string>
     <string name="map_updates_for_mappers">Mises à jour des cartes pour les contributeurs OSM</string>
     <string name="benefits_for_contributors_primary_descr">Les contributeurs actifs d\'OpenStreetMap bénéficient des mises à jour horaires et illimitées des cartes.</string>
     <string name="benefits_for_contributors_secondary_descr">Connectez-vous à OpenStreetMap pour vérifiez si vous êtes éligible aux mises à jour illimitées.</string>
-    <string name="enough_contributions_descr">Félicitations, vous avez suffisamment contribué à OpenStreetMap pour profiter de mises à jour illimitées des cartes OsmAnd !</string>
+    <string name="enough_contributions_descr">Félicitations, vous avez suffisamment contribué à OpenStreetMap pour profiter de mises à jour illimitées des cartes MineNAV !</string>
     <string name="contributions_may_calculate_with_delay">Le calcul des contributions peut durer plusieurs heures.</string>
     <string name="pro_features">Fonctionnalités Pro</string>
     <string name="purchases_restored">Achats restaurés</string>
@@ -3066,7 +3066,7 @@
     <string name="routeInfo_smoothness_description">Classification des caractéristiques physiques des voies pour les véhicules à roues, notamment la nature et la régularité de leurs surfaces.</string>
     <string name="routeInfo_surface_description">Fournit des informations sur la surface des routes/chemins.</string>
     <string name="no_items_of_type_message">Vous n’avez aucun élément de ce type</string>
-    <string name="release_4_0">• Sauvegarde dans le cloud \n \n• Ajout du mode nuit pour le style de carte « Topo » \n \n• Ajout d’une option pour télécharger les lignes de contour en pieds \n \n• Les pistes peuvent désormais être colorées par altitude, vitesse ou pente \n \n• Mise à jour de la boîte de dialogue « Enregistrement de trajet » \n \n• Distance par appui déplacé de la règle de rayon dans une option séparée \n \n• Planifier l’itinéraire : Vous pouvez maintenant modifier les options de navigation, accéder à la configuration de la carte et effectuer une recherche sans quitter la planification de l’itinéraire \n \n• Nouvel écran « Achat » avec des informations d’achat détaillées \n \n• Ajout d’une option pour modifier l’apparence de la ligne d’itinéraire \n \n• Les mises à jour OsmAnd Live ont été déplacées vers « Téléchargements &gt; Mises à jour »</string>
+    <string name="release_4_0">• Sauvegarde dans le cloud \n \n• Ajout du mode nuit pour le style de carte « Topo » \n \n• Ajout d’une option pour télécharger les lignes de contour en pieds \n \n• Les pistes peuvent désormais être colorées par altitude, vitesse ou pente \n \n• Mise à jour de la boîte de dialogue « Enregistrement de trajet » \n \n• Distance par appui déplacé de la règle de rayon dans une option séparée \n \n• Planifier l’itinéraire : Vous pouvez maintenant modifier les options de navigation, accéder à la configuration de la carte et effectuer une recherche sans quitter la planification de l’itinéraire \n \n• Nouvel écran « Achat » avec des informations d’achat détaillées \n \n• Ajout d’une option pour modifier l’apparence de la ligne d’itinéraire \n \n• Les mises à jour Live ont été déplacées vers « Téléchargements &gt; Mises à jour »</string>
     <string name="add_group_to_markers">Ajouter un groupe à la liste des marques</string>
     <string name="remove_group_from_markers">Supprimer le groupe de la liste des marques</string>
     <string name="start_point">Départ</string>
@@ -3091,18 +3091,18 @@
     <string name="exit_pan_mode_descr">Appuyez sur Sélectionner pour quitter le mode panoramique</string>
     <string name="icon_group_nautical">Nautisme</string>
     <string name="shared_app_storage_description">La mémoire partagée n\'est plus disponible depuis l\'évolution des règles Android sur l\'accès au stockage.</string>
-    <string name="internal_app_storage_description">Stockage interne, masqué à l\'utilisateur et aux autres applications ; seul OsmAnd peut accéder à vos données.</string>
-    <string name="purchases_feature_desc_android_auto">Les cartes et la navigation hors ligne OsmAnd s\'affichent sur l\'écran de votre véhicule et répondent aux commandes de votre véhicule.</string>
+    <string name="internal_app_storage_description">Stockage interne, masqué à l\'utilisateur et aux autres applications ; seul MineNAV peut accéder à vos données.</string>
+    <string name="purchases_feature_desc_android_auto">Les cartes et la navigation hors ligne MineNAV s\'affichent sur l\'écran de votre véhicule et répondent aux commandes de votre véhicule.</string>
     <string name="shared_string_details">Détails</string>
     <string name="rendering_attr_natureReserves_name">Réserve naturelle et Aires protégées</string>
     <string name="shared_string_articles">Articles</string>
     <string name="included_categories">Catégories incluses</string>
     <string name="android_auto_map_placeholder_title">La carte s\'affiche sur l\'écran du véhicule.</string>
     <string name="android_auto_map_placeholder_descr">Déconnectez votre appareil d\'Android Auto pour afficher la carte dans l\'application.</string>
-    <string name="android_auto_purchase_request_title">Achetez OsmAnd Pro ou Maps+ pour utiliser OsmAnd avec Android Auto</string>
+    <string name="android_auto_purchase_request_title">Achetez Pro ou Maps+ pour utiliser MineNAV avec Android Auto</string>
     <string name="continue_on_phone">Continuer sur l\'appareil mobile</string>
     <string name="location_access_request_action">Accorder l\'accès</string>
-    <string name="location_access_request_title">OsmAnd doit connaitre votre position pour vous guider.</string>
+    <string name="location_access_request_title">MineNAV doit connaitre votre position pour vous guider.</string>
     <string name="markers_history_is_disabled_descr">Activer l\'historique pour mémoriser les marques visitées.</string>
     <string name="is_disabled">%1$s est désactivé</string>
     <string name="shortcut_navigate_to">Naviguer vers…</string>
@@ -3135,11 +3135,11 @@
     <string name="storage_copying_files_size">Copie de %1$s fichiers pour %2$s</string>
     <string name="storage_found_files_size">%1$s fichiers trouvés pour %2$s</string>
     <string name="storage_found_files_descr">Appuyez sur « %1$s » pour copier %2$s fichiers de « %3$s » vers « %4$s ». Cette opération peut prendre un peu de temps.</string>
-    <string name="shared_string_skip_warning">Souhaitez-vous ignorer la migration \? OsmAnd ne peut plus accéder à vos fichiers dans le stockage partagé.
+    <string name="shared_string_skip_warning">Souhaitez-vous ignorer la migration \? MineNAV ne peut plus accéder à vos fichiers dans le stockage partagé.
 \n
 \nL\'application démarrera en utilisant un nouveau dossier de données.</string>
     <string name="shared_storage_last_step">Vous pourrez indiquer un nouveau dossier de données par la suite.</string>
-    <string name="shared_storage_third_step">Accordez l’accès au dossier. Sans cette autorisation, OsmAnd ne peut pas copier les fichiers.</string>
+    <string name="shared_storage_third_step">Accordez l’accès au dossier. Sans cette autorisation, MineNAV ne peut pas copier les fichiers.</string>
     <string name="shared_string_copy_to">Copier vers</string>
     <string name="start_copying">Démarrer la copie</string>
     <string name="skip_confirmation">Oui, ignorer</string>
@@ -3147,7 +3147,7 @@
     <string name="shared_storage_migration">Migration du stockage partagé</string>
     <string name="shared_string_migration">Migration</string>
     <string name="icon_group_industrial">Industrie</string>
-    <string name="shared_storage_migration_descr">En raison de la modification des règles d\'accès au stockage par Android, OsmAnd ne peut plus utiliser %1$s.
+    <string name="shared_storage_migration_descr">En raison de la modification des règles d\'accès au stockage par Android, MineNAV ne peut plus utiliser %1$s.
 \n
 \nCopiez toutes vos données vers un nouvel emplacement de stockage.</string>
     <string name="copying_file">Copie du fichier %1$s…</string>
@@ -3189,8 +3189,8 @@
     <string name="distance_between_points">Distance entre les points</string>
     <string name="shared_string_precision">Précision</string>
     <string name="gps_filter_speed_altitude_desc">Seuls les points correspondant à l\'intervalle défini apparaîtront sur la carte et le graphique, les autres points de la trace seront masqués.</string>
-    <string name="gps_filter_actions_description">OsmAnd modifiera uniquement l\'affichage de la trace. Si vous le souhaitez, vous pouvez enregistrer manuellement les modifications dans le fichier.</string>
-    <string name="storage_migration_wrong_folder_warning">Aucune donnée OsmAnd n\'est présente dans le dossier sélectionné. Veuillez réessayer.</string>
+    <string name="gps_filter_actions_description">MineNAV modifiera uniquement l\'affichage de la trace. Si vous le souhaitez, vous pouvez enregistrer manuellement les modifications dans le fichier.</string>
+    <string name="storage_migration_wrong_folder_warning">Aucune donnée MineNAV n\'est présente dans le dossier sélectionné. Veuillez réessayer.</string>
     <string name="gps_filter_smoothing_desc">Définir la distance entre points. \nLes points de la trace en dessous de cette distance du dernier point visible seront masqués. \nAttention : plus cette distance est élevée, plus la forme de la trace sera simplifiée.</string>
     <string name="use_routing_fallback_description">Utiliser la navigation hors ligne lorsque la navigation en ligne n\'est pas disponible.</string>
     <string name="use_routing_fallback">Routage de secours hors ligne</string>
@@ -3240,7 +3240,7 @@
     <string name="import_tracks_descr">%1$s contient %2$s traces. Choisissez les traces à importer.</string>
     <string name="select_suggested_points">Sélectionner les points suggérés</string>
     <string name="location_source">Source de localisation</string>
-    <string name="location_source_descr">Lorsqu\'OsmAnd est installé depuis Google Play, la localisation utilisée par défaut est %1$s .\n\nSi votre localisation est imprécise ou si vous utilisez un appareil sans %2$s, essayez de basculer vers « %3$s »</string>
+    <string name="location_source_descr">Lorsqu\'MineNAV est installé depuis Google Play, la localisation utilisée par défaut est %1$s .\n\nSi votre localisation est imprécise ou si vous utilisez un appareil sans %2$s, essayez de basculer vers « %3$s »</string>
     <string name="shared_string_shape">Forme</string>
     <string name="edit_category">Modifier la catégorie</string>
     <string name="default_appearance">Apparence par défaut</string>
@@ -3395,7 +3395,7 @@
     <string name="co2_mission">Émissions de CO₂</string>
     <string name="live_update_frequency_day_variant">Les mises à jour de carte sont vérifiées chaque jour.</string>
     <string name="live_update_frequency_week_variant">Les mises à jour de la carte sont vérifiées chaque semaine.</string>
-    <string name="calculate_online_altitude_descr">Calcule l\'altitude en ligne grâce aux serveurs OsmAnd qui se basent sur les photos satellites et des modèles numériques d\'altitude. Si cette altitude est différente de l\'altitude fournie par l\'appareil, l\'altitude pourra être corrigée.</string>
+    <string name="calculate_online_altitude_descr">Calcule l\'altitude en ligne grâce aux serveurs MineNAV qui se basent sur les photos satellites et des modèles numériques d\'altitude. Si cette altitude est différente de l\'altitude fournie par l\'appareil, l\'altitude pourra être corrigée.</string>
     <string name="live_update_frequency_hour_variant">Les mises à jour de la carte sont vérifiées chaque heure.</string>
     <string name="altitude_correction">Correction de l\'altitude</string>
     <string name="updated_map_time">Mise à jour : %1$s.</string>
@@ -3426,8 +3426,8 @@
     <string name="av_notes_photo_widget_desc">Appuyez sur le widget pour prendre une photo.</string>
     <string name="av_notes_video_widget_desc">Appuyez sur le widget pour enregistrer une vidéo.</string>
     <string name="av_notes_audio_widget_desc">Appuyez sur le widget pour prendre une note audio.</string>
-    <string name="auto_backup_preference_desc">Par défaut, Android sauvegarde les favoris, noms des cartes et paramètres OsmAnd afin de pouvoir les restaurer sur d\'autres appareils ou après une réinitialisation. Cette sauvegarde est limitée à 25 Mo.
-\nL\'utilisation d\'OsmAnd Cloud et de ce type de sauvegarde peut entraîner des conflits après restauration.</string>
+    <string name="auto_backup_preference_desc">Par défaut, Android sauvegarde les favoris, noms des cartes et paramètres MineNAV afin de pouvoir les restaurer sur d\'autres appareils ou après une réinitialisation. Cette sauvegarde est limitée à 25 Mo.
+\nL\'utilisation d\'Cloud et de ce type de sauvegarde peut entraîner des conflits après restauration.</string>
     <string name="auto_25_chars_route_tl_kl">Tournez à gauche puis restez à gauche</string>
     <string name="auto_25_chars_route_tl_kr">Tournez à gauche puis restez à droite</string>
     <string name="auto_25_chars_route_tr_kl">Tournez à droite puis restez à gauche</string>
@@ -3518,7 +3518,7 @@
     <string name="map_widget_altitude_current_location">Altitude : position actuelle</string>
     <string name="map_widget_altitude_map_center">Altitude : centre de la carte</string>
     <string name="map_widget_rendering_fps">IPS du rendu de carte</string>
-    <string name="send_uuid_preference_desc">Un UUID aléatoire est utilisé pour télécharger les cartes hors ligne à partir des serveurs OsmAnd ; ce qui permet de garantir une utilisation équitable des ressources du serveur, de prévoir le trafic et de générer des rapports d\'utilisation mensuelle et anonyme des cartes.</string>
+    <string name="send_uuid_preference_desc">Un UUID aléatoire est utilisé pour télécharger les cartes hors ligne à partir des serveurs MineNAV ; ce qui permet de garantir une utilisation équitable des ressources du serveur, de prévoir le trafic et de générer des rapports d\'utilisation mensuelle et anonyme des cartes.</string>
     <string name="map_widget_ant_bicycle_power">Puissance développée sur le vélo</string>
     <string name="external_sensors_plugin_description">Accède aux capteurs externes pour récupérer, par exemple, votre fréquence cardiaque, la vitesse du vélo, la puissance ou la cadence. Nécessite que votre appareil soit connecté aux capteurs via le protocole ANT+.</string>
     <string name="map_widget_rendering_fps_desc">Indique la vitesse d’affichage et de rafraîchissement de la carte et de ses éléments, exprimée en images par seconde (IPS).</string>
@@ -3595,7 +3595,7 @@
     <string name="map_rendering_engine_v2">Version 2 (OpenGL)</string>
     <string name="map_rendering_engine">Moteur de rendu de carte</string>
     <string name="show_borders_of_downloaded_maps">Afficher les bordures des cartes téléchargées</string>
-    <string name="rendering_engine_failed">Le rendu de carte OsmAnd a planté récemment.</string>
+    <string name="rendering_engine_failed">Le rendu de carte MineNAV a planté récemment.</string>
     <string name="share_crash_log">Partager le journal des erreurs</string>
     <string name="dismiss_changes_descr">Toutes les modifications seront annulées.</string>
     <string name="restart_now">Redémarrer maintenant</string>
@@ -3615,9 +3615,9 @@
     <string name="open_weather_action_description">Permet d\'ouvrir un écran avec des informations météorologiques détaillées.</string>
     <string name="rendering_attr_weatherPrecipitationContours_name">Contour des précipitations</string>
     <string name="rendering_attr_weatherCloudContours_name">Contour des nuages</string>
-    <string name="map_rendering_engine_descr">La version 1 était la version par défaut avant OsmAnd 4.3 et convient aux appareils plus anciens.\n\nLa version 2 (OpenGL) est plus avancée et propose des fonctionnalités supplémentaires comme la vue 3D.</string>
+    <string name="map_rendering_engine_descr">La version 1 était la version par défaut avant MineNAV 4.3 et convient aux appareils plus anciens.\n\nLa version 2 (OpenGL) est plus avancée et propose des fonctionnalités supplémentaires comme la vue 3D.</string>
     <string name="rendering_attr_weatherWindSpeedContours_name">Isolignes de vitesse de vent</string>
-    <string name="rendering_engine_failed_descr">OsmAnd est repassé au mode de rendu de carte « Version 1 ». Vous pouvez tenter de réactiver le nouveau moteur « Version 2 (OpenGL) » dans les paramètres.\n\nMerci de contribuer aux améliorations en transmettant votre journal d’erreurs.</string>
+    <string name="rendering_engine_failed_descr">MineNAV est repassé au mode de rendu de carte « Version 1 ». Vous pouvez tenter de réactiver le nouveau moteur « Version 2 (OpenGL) » dans les paramètres.\n\nMerci de contribuer aux améliorations en transmettant votre journal d’erreurs.</string>
     <string name="mtb_imba">IMBA</string>
     <string name="mtb_imba_full">Association Internationale de VTT</string>
     <string name="purchases_feature_desc_external_sensors">Affiche et enregistre les données des capteurs externes : vitesse du vélo, puissance du vélo, cadence et fréquence cardiaque.</string>
@@ -3656,7 +3656,7 @@
     <string name="backup_error_failed_to_fetch_remote_items">Impossible de récupérer la liste des fichiers sur le serveur.</string>
     <string name="cloud_changes_will_be_dismissed">Les modifications cloud seront ignorées</string>
     <string name="cloud_no_conflicts">Il n\'y a aucun conflit.</string>
-    <string name="cloud_all_changes_uploaded_descr">Toutes les modifications effectuées sur cet appareil sont synchronisées avec OsmAnd Cloud.</string>
+    <string name="cloud_all_changes_uploaded_descr">Toutes les modifications effectuées sur cet appareil sont synchronisées avec Cloud.</string>
     <string name="changes">Modifications %1$s</string>
     <string name="si_nm_ft">Milles nautiques/pieds</string>
     <string name="si_nm_mt">Milles nautiques/mètres</string>
@@ -3674,7 +3674,7 @@
     <string name="shared_string_apply_changes">Appliquer les modifications</string>
     <string name="no_visible_tracks_description">Sélectionner les traces à afficher sur la carte.</string>
     <string name="no_visible_tracks">Aucune trace sur la carte</string>
-    <string name="empty_tracks_description">Vous pouvez importer, créer ou enregistrer des fichiers trace grâce à OsmAnd.</string>
+    <string name="empty_tracks_description">Vous pouvez importer, créer ou enregistrer des fichiers trace grâce à MineNAV.</string>
     <string name="empty_tracks">Aucun fichier de trace.</string>
     <string name="change_appearance">Modifier l’apparence</string>
     <string name="switch_folder">Changer de dossier</string>
@@ -3685,7 +3685,7 @@
     <string name="shared_string_kilograms">kilogrammes</string>
     <string name="shared_string_yards">yards</string>
     <string name="inch">in</string>
-    <string name="cloud_version_confirm_delete">Supprimer « %1$s » du cloud OsmAnd ?</string>
+    <string name="cloud_version_confirm_delete">Supprimer « %1$s » du cloud MineNAV ?</string>
     <string name="shared_string_in_progress">En cours</string>
     <string name="shared_string_original">Original</string>
     <string name="movement_speed">Vitesse de déplacement</string>
@@ -3749,12 +3749,12 @@
     <string name="external_device_ble">BLE</string>
     <string name="ant_plus_nothing_found_text">Aucun capteur trouvé</string>
     <string name="ant_plus_searching_text">Recherche de capteurs en cours</string>
-    <string name="ant_plus_searching_text_description">Veuillez rapprocher l\'appareil et le capteur. Vous devez activer le capteur afin qu\'il soit détecté par OsmAnd.</string>
+    <string name="ant_plus_searching_text_description">Veuillez rapprocher l\'appareil et le capteur. Vous devez activer le capteur afin qu\'il soit détecté par MineNAV.</string>
     <string name="ant_plus_help_title">Je ne connais pas le type de capteur</string>
     <string name="ant_plus_searching">Recherche</string>
     <string name="ant_plus_pair_new_sensor">Appairer un nouveau capteur</string>
     <string name="ant_plus_pair_new_sensor_ble">Appairer un capteur BLE</string>
-    <string name="ant_plus_pair_bluetooth_prompt">Vous pouvez appairer des capteurs BLE et ANT+ avec OsmAnd.</string>
+    <string name="ant_plus_pair_bluetooth_prompt">Vous pouvez appairer des capteurs BLE et ANT+ avec MineNAV.</string>
     <string name="ant_plus_open_settings">Ouvrir les paramètres</string>
     <string name="ant_plus_pair_new_sensor_ant_plus">Appairer un capteur ANT+</string>
     <string name="learn_more_about_sensors_link">En savoir plus sur les capteurs.</string>
@@ -3832,18 +3832,18 @@
     <string name="relief_3d_description">Explorez le modèle réduit de votre quartier ou de tout un continent.</string>
     <string name="terrain_category_description">Courbes de niveaux, ombrage du relief par des tons foncés et cartes de pentes colorées pour mettre en valeur les sommets et les plaines.</string>
     <string name="slope_legend_description">La pente est colorée selon l\'inclinaison du terrain. Vous pouvez en apprendre davantage sur les pentes sur %1$s.</string>
-    <string name="osmand_cloud_deleting_account_descr">Dans quelques instants, toutes vos données et votre compte seront supprimés du cloud OsmAnd.
+    <string name="osmand_cloud_deleting_account_descr">Dans quelques instants, toutes vos données et votre compte seront supprimés du cloud MineNAV.
 \n
 \nLes données de l\'appareil ne seront pas affectées.</string>
-    <string name="osmand_cloud_delete_account_confirmation_descr">Supprimer votre compte OsmAnd Cloud ?
+    <string name="osmand_cloud_delete_account_confirmation_descr">Supprimer votre compte Cloud ?
 \n
 \nCette action est irréversible.</string>
     <string name="osmand_cloud_delete_account_confirmation">Supprimer le compte \?</string>
     <string name="action_cannot_be_undone">Cette action ne peut être annulée.</string>
-    <string name="osmand_cloud_deletion_secondary_devices_warning">Les autres appareils seront déconnectés du cloud OsmAnd et perdront accès aux fonctionnalités payantes.</string>
+    <string name="osmand_cloud_deletion_secondary_devices_warning">Les autres appareils seront déconnectés du cloud MineNAV et perdront accès aux fonctionnalités payantes.</string>
     <string name="osmand_cloud_deletion_account_warning">Votre compte et tous ses détails seront %1$s</string>
-    <string name="osmand_cloud_deletion_all_data_warning">Toutes les données du cloud OsmAnd seront %1$s. Les données de l\'appareil ne seront pas affectées.</string>
-    <string name="osmand_cloud_deletion_subscriptions_warning">Cela n\'annulera pas votre abonnement OsmAnd Pro.</string>
+    <string name="osmand_cloud_deletion_all_data_warning">Toutes les données du cloud MineNAV seront %1$s. Les données de l\'appareil ne seront pas affectées.</string>
+    <string name="osmand_cloud_deletion_subscriptions_warning">Cela n\'annulera pas votre abonnement Pro.</string>
     <string name="manage_subscriptions">Gérer les abonnements.</string>
     <string name="delete_account_warning">Supprimer le compte %1$s ?</string>
     <string name="shared_string_deleting">Suppression</string>
@@ -3851,16 +3851,16 @@
     <string name="delete_account">Supprimer le compte</string>
     <string name="backup_error_delete_account_email_match">L\'e-mail ne correspond pas à l\'utilisateur</string>
     <string name="verify_account">Vérifier votre compte</string>
-    <string name="osmand_cloud_deleted_account_descr">Le compte et toutes les données ont été supprimées du cloud OsmAnd.</string>
+    <string name="osmand_cloud_deleted_account_descr">Le compte et toutes les données ont été supprimées du cloud MineNAV.</string>
     <string name="verify_account_deletion_descr">Nous devons vérifier votre compte avant de le supprimer.
 \n
 \nVeuillez saisir l\'e-mail avec lequel vous vous êtes inscrit. Un mot de passe unique vous sera envoyé pour réaliser l\'étape suivante.</string>
-    <string name="free_favorites_backup_description">S\'inscrire au cloud OsmAnd pour obtenir une sauvegarde gratuite de vos favoris et de vos paramètres.</string>
+    <string name="free_favorites_backup_description">S\'inscrire au cloud MineNAV pour obtenir une sauvegarde gratuite de vos favoris et de vos paramètres.</string>
     <string name="free_favorites_backup">Sauvegarde gratuite des favoris</string>
-    <string name="get_osmand_cloud">Obtenir OsmAnd Cloud</string>
+    <string name="get_osmand_cloud">Obtenir Cloud</string>
     <string name="free_account">Compte gratuit</string>
     <string name="folder_export_empty_error">Rien à exporter, le dossier est vide</string>
-    <string name="release_4_5">• Capteurs BLE/ANT+ : connexion retravaillée, écriture et lecture des données reçues au format GPX \n \n• Sauvegarde gratuite des favoris et des paramètres dans OsmAnd Cloud \n \n• Nouveau format pour les cartes de reliefs avec support du relief 3D \n \n• Gestion des traces : interface améliorée, possibilité de trier, support des sous-dossiers \n \n• Android Auto : nouveau menu pour accéder aux favoris, traces et catégories de POI \n \n• Liste de widgets pour les panneaux du haut et du bas \n \n• Nouveau profil « Train » permettant de calculer des itinéraires ferroviaires \n \n• Les courbes de niveau fonctionnent désormais avec toutes les « sources de cartes » \n \n• Liste des actions par défaut améliorée pour les claviers externes \n \n• Possibilité de supprimer ou d\'écraser des fichiers de navigation personnalisés \n \n• Ajout d\'une option pour « Annoncer une déviation de l\'itinéraire » \n \n• Menu de démarrage : possibilité de restaurer le statut de l\'application à partir d\'un fichier \n \n• Ajout des catégories de « Matériaux dangereux » pour la navigation de camions en Amérique du Nord \n \n• Ajout des « Via ferrata » pour la navigation à pied \n \n• Ajout de l\'échelle CAI pour la classification de difficulté des chemins \n \n• Correction du bug de sélection de la langue \n \n• Ajout du support des icônes thématiques \n \n• OsmAnd Cloud : possibilité de supprimer le compte \n \n• Accessibilité : taille des boutons augmentée à 48 dp, correction de bugs concernant les cartes et les lecteurs d\'écran \n \n• Navigation vocale japonaise retravaillée \n \n• Évaluation des altitudes et des pentes retravaillée</string>
+    <string name="release_4_5">• Capteurs BLE/ANT+ : connexion retravaillée, écriture et lecture des données reçues au format GPX \n \n• Sauvegarde gratuite des favoris et des paramètres dans Cloud \n \n• Nouveau format pour les cartes de reliefs avec support du relief 3D \n \n• Gestion des traces : interface améliorée, possibilité de trier, support des sous-dossiers \n \n• Android Auto : nouveau menu pour accéder aux favoris, traces et catégories de POI \n \n• Liste de widgets pour les panneaux du haut et du bas \n \n• Nouveau profil « Train » permettant de calculer des itinéraires ferroviaires \n \n• Les courbes de niveau fonctionnent désormais avec toutes les « sources de cartes » \n \n• Liste des actions par défaut améliorée pour les claviers externes \n \n• Possibilité de supprimer ou d\'écraser des fichiers de navigation personnalisés \n \n• Ajout d\'une option pour « Annoncer une déviation de l\'itinéraire » \n \n• Menu de démarrage : possibilité de restaurer le statut de l\'application à partir d\'un fichier \n \n• Ajout des catégories de « Matériaux dangereux » pour la navigation de camions en Amérique du Nord \n \n• Ajout des « Via ferrata » pour la navigation à pied \n \n• Ajout de l\'échelle CAI pour la classification de difficulté des chemins \n \n• Correction du bug de sélection de la langue \n \n• Ajout du support des icônes thématiques \n \n• Cloud : possibilité de supprimer le compte \n \n• Accessibilité : taille des boutons augmentée à 48 dp, correction de bugs concernant les cartes et les lecteurs d\'écran \n \n• Navigation vocale japonaise retravaillée \n \n• Évaluation des altitudes et des pentes retravaillée</string>
     <string name="routing_attr_allow_via_ferrata_description">Itinéraire de montagne équipé de câbles fixes, de marche pieds, d\'échelles et de passerelles.</string>
     <string name="cache_size">Taille du cache</string>
     <string name="shared_string_avoid">Éviter</string>
@@ -3910,7 +3910,7 @@
     <string name="help_article_navigation_auto_car_name">Android Auto</string>
     <string name="help_article_navigation_routing_brouter_name">BRouter</string>
     <string name="help_article_map_legend_nautical_map_name">Style de carte nautique</string>
-    <string name="help_article_map_legend_osmand_name">Style de carte OsmAnd</string>
+    <string name="help_article_map_legend_osmand_name">Style de carte MineNAV</string>
     <string name="help_article_navigation_car_play_name">CarPlay</string>
     <string name="help_article_navigation_routing_name">Paramètres de l\'itinéraire</string>
     <string name="help_article_navigation_routing_straight_line_routing_name">Ligne droite (à vol d\'oiseau)</string>
@@ -3935,7 +3935,7 @@
     <string name="help_article_navigation_routing_horse_routing_name">Navigation à cheval</string>
     <string name="help_article_navigation_routing_moped_routing_name">Navigation en cyclomoteur</string>
     <string name="help_article_navigation_routing_online_routing_name">Guidage en ligne</string>
-    <string name="help_article_navigation_routing_osmand_routing_name">À propos des guidages OsmAnd</string>
+    <string name="help_article_navigation_routing_osmand_routing_name">À propos des guidages MineNAV</string>
     <string name="help_article_navigation_routing_pedestrian_routing_name">Navigation à pied</string>
     <string name="help_article_navigation_routing_public_transport_navigation_name">Navigation en transports publics</string>
     <string name="help_article_navigation_routing_train_routing_name">Navigation en train</string>
@@ -3946,15 +3946,15 @@
     <string name="help_article_purchases_android_name">Achats Android</string>
     <string name="help_article_search_search_coordinates_name">Rechercher par coordonnées</string>
     <string name="help_article_search_search_poi_name">Rechercher des POI</string>
-    <string name="help_article_start_with_name">Débuter avec OsmAnd</string>
+    <string name="help_article_start_with_name">Débuter avec MineNAV</string>
     <string name="help_article_start_with_first_steps_name">Premiers pas</string>
     <string name="help_article_widgets_radius_ruler_name">Règle de rayon et Règle</string>
     <string name="shared_string_setup">Configuration</string>
     <string name="telegram_chats">Chats Telegram</string>
     <string name="github_discussion">Discussions GitHub</string>
-    <string name="free_versions_descr">Télécharger et installer la version gratuite d\'OsmAnd</string>
+    <string name="free_versions_descr">Télécharger et installer la version gratuite d\'MineNAV</string>
     <string name="free_versions">Versions gratuites</string>
-    <string name="about_osmand">À propos d\'OsmAnd</string>
+    <string name="about_osmand">À propos d\'MineNAV</string>
     <string name="send_logcat_log_descr">Fichier d\'historique détaillé</string>
     <string name="send_crash_log_descr">Contient uniquement les information concernant les plantages</string>
     <string name="report_an_issues">Signaler un problème</string>
@@ -3983,7 +3983,7 @@
     <string name="live_monitoring_adress_descr">Indiquer l\'adresse web avec la syntaxe : lat={0}, lon={1}, timestamp={2}, hdop={3}, altitude={4}, speed={5}, bearing={6}, eta={7}, etfa={8}, eda={9}, edfa={10}, batproc={11}.</string>
     <string name="shared_string_temperature">Température</string>
     <string name="sensor_temperature_desc">Affiche la température fournie par le capteur</string>
-    <string name="release_4_6">• Android Auto : ajout du mode 3D \n \n• Traces : Introduction de filtres et de dossiers intelligents, optimisation de la mémoire pour les fichiers plus volumineux \n \n• Amélioration des panneaux de widgets supérieur et inférieur pour accueillir tous les widgets \n \n• Amélioration de la gestion des ressources locales \n \n• Assignation des boutons personnalisable pour les contrôleurs externes \n \n• Nouveaux widgets : « Finesse » et « Position du soleil » \n \n• OsmAnd Cloud : Accès aux fichiers supprimés \n \n• Amélioration de la coloration des pistes en mode Pente avec un nouveau dégradé symétrique \n \n• Résolution des problèmes concernant la barre d\'état transparente \n \n• Ajout de la prise en charge du widget de température ANT+ \n \n• Introduction du widget \"RAM disponible\"</string>
+    <string name="release_4_6">• Android Auto : ajout du mode 3D \n \n• Traces : Introduction de filtres et de dossiers intelligents, optimisation de la mémoire pour les fichiers plus volumineux \n \n• Amélioration des panneaux de widgets supérieur et inférieur pour accueillir tous les widgets \n \n• Amélioration de la gestion des ressources locales \n \n• Assignation des boutons personnalisable pour les contrôleurs externes \n \n• Nouveaux widgets : « Finesse » et « Position du soleil » \n \n• Cloud : Accès aux fichiers supprimés \n \n• Amélioration de la coloration des pistes en mode Pente avec un nouveau dégradé symétrique \n \n• Résolution des problèmes concernant la barre d\'état transparente \n \n• Ajout de la prise en charge du widget de température ANT+ \n \n• Introduction du widget \"RAM disponible\"</string>
     <string name="app_mode_baby_transport">Transport de bébés</string>
     <string name="app_mode_paragliding">Parapente</string>
     <string name="app_mode_hang_gliding">Deltaplane</string>
@@ -4033,7 +4033,7 @@
     <string name="cloud_trash_clear_confirmation">Supprimer définitivement tous les éléments présents dans la corbeille ?</string>
     <string name="restore_from_trash">Restaurer depuis la poubelle</string>
     <string name="delete_all_items">Supprimer tous les éléments</string>
-    <string name="trash_is_empty_banner_desc">Les fichiers supprimés d\'OsmAnd Cloud seront disponibles ici pendant %1$s jours.</string>
+    <string name="trash_is_empty_banner_desc">Les fichiers supprimés d\'Cloud seront disponibles ici pendant %1$s jours.</string>
     <string name="delete_trash_item_confirmation_desc">Supprimer « %1$s » de manière définitive ?</string>
     <string name="shared_string_empty_trash">Vider la corbeille</string>
     <string name="shared_string_delete_immediately">Supprimer immédiatement</string>
@@ -4065,7 +4065,7 @@
     <string name="not_specified">Non spécifié</string>
     <string name="key_event_category_map_interactions">Interactions avec la carte</string>
     <string name="key_event_action_move_down">Descendre</string>
-    <string name="enable_to_use_external_input_device">Activer pour utiliser le périphérique d\'entrée externe avec OsmAnd</string>
+    <string name="enable_to_use_external_input_device">Activer pour utiliser le périphérique d\'entrée externe avec MineNAV</string>
     <string name="key_event_action_previous_app_profile">Profil d\'application précédent</string>
     <string name="press_button_to_link_with_action">Appuyez sur le bouton de votre appareil pour l’associer à l\'action %1$s</string>
     <string name="deletion_error">Erreur de suppression</string>
@@ -4179,7 +4179,7 @@
     <string name="vertical_exaggeration_description">En modifiant la valeur de l\'échelle, vous pouvez accentuer le relief 3D.</string>
     <string name="relief_3d_download_description">Des cartes supplémentaires sont nécessaires pour visualiser le relief sur la carte.</string>
     <string name="vertical_exaggeration">Accentuation verticale</string>
-    <string name="retrieve_elevation_data_summary">OsmAnd peut obtenir les données d\'altitude à partir des routes voisines ou des cartes de terrain.</string>
+    <string name="retrieve_elevation_data_summary">MineNAV peut obtenir les données d\'altitude à partir des routes voisines ou des cartes de terrain.</string>
     <string name="use_terrain_maps">Utiliser les cartes de relief</string>
     <string name="use_nearby_roads">Utiliser les routes à proximité</string>
     <string name="use_terrain_maps_summary">Utilise les cartes de relief pour les données d\'altitude. La géométrie de la trace demeure inchangée.</string>
@@ -4205,7 +4205,7 @@
     <string name="wall_color">Couleur du mur</string>
     <string name="route_line_use_coloring_speed">La ligne d\'itinéraire est colorée selon la vitesse de déplacement.</string>
     <string name="delete_actions_button">Supprimer le bouton</string>
-    <string name="required_maps_calculate_online_summary">La liste des cartes manquantes se base sur l’itinéraire le plus direct. Pour obtenir cette liste de cartes, OsmAnd peut pré-calculer votre itinéraire en ligne.</string>
+    <string name="required_maps_calculate_online_summary">La liste des cartes manquantes se base sur l’itinéraire le plus direct. Pour obtenir cette liste de cartes, MineNAV peut pré-calculer votre itinéraire en ligne.</string>
     <string name="routing_attr_avoid_cobblestone_name">Éviter les pavés</string>
     <string name="routing_attr_avoid_cobblestone_description">Éviter les routes pavées</string>
     <string name="map_text">Rendu de carte</string>
@@ -4251,7 +4251,7 @@
     <string name="tomorrow">Demain</string>
     <string name="shared_string_modify">Modifier</string>
     <string name="data_source">Source des données</string>
-    <string name="weather_data_sources_prompt">OsmAnd fournit des données météorologiques à partir de deux sources :</string>
+    <string name="weather_data_sources_prompt">MineNAV fournit des données météorologiques à partir de deux sources :</string>
     <string name="weather_source_ecmwf_description">Centre Européen pour les Prévisions Météorologiques à Moyen Terme</string>
     <string name="weather_source_GFS_description">Système de prévision global des Centres Nationaux pour la Prédiction Environnementale</string>
     <string name="weather_source_ecmwf_title">CEPMMT</string>
@@ -4329,7 +4329,7 @@
     <string name="shared_string_automatically">Automatiquement</string>
     <string name="ask_every_time">Demander à chaque fois</string>
     <string name="detailed_track_guidance">Guidage détaillé de la trace</string>
-    <string name="detailed_track_guidance_description">OsmAnd associe votre itinéraire aux routes voisines pour un meilleur guidage virage par virage.</string>
+    <string name="detailed_track_guidance_description">MineNAV associe votre itinéraire aux routes voisines pour un meilleur guidage virage par virage.</string>
     <string name="quick_action_routes_summary">Un interrupteur pour afficher ou masquer %1$s sur la carte.</string>
     <string name="compass_click_north_is_up">Pour modifier le mode d\'orientation, faites un appui long</string>
     <string name="route_roundabout_exit">Prendre la sortie %1$d</string>
@@ -4439,7 +4439,7 @@
     <string name="quick_action_start_pause_recording">Bouton pour démarrer, suspendre ou reprendre l\'enregistrement de la trace GPX.</string>
     <string name="third_links">Liens tiers</string>
     <string name="quick_action_save_recorded_trip_and_continue_summary">Bouton pour sauvegarder la trace en cours dans un fichier GPX et démarrer l’enregistrement d’une nouvelle trace sans interruption.</string>
-    <string name="tracker_item">Suivi de position par OsmAnd</string>
+    <string name="tracker_item">Suivi de position par MineNAV</string>
     <string name="lock_screen_description">Active ou désactive l\'écran tactile pour éviter les appuis involontaires</string>
     <string name="lock_screen">Verrouiller l’écran</string>
     <string name="help_article_personal_color_palette_schemes_name">Jeux de couleurs</string>
@@ -4453,7 +4453,7 @@
     <string name="obd_vehicle_info">Informations sur le véhicule</string>
     <string name="shared_string_bluetooth">Bluetooth</string>
     <string name="connect_obd_instructions_step2">Allumez le moteur de votre véhicule</string>
-    <string name="connect_obd_instructions_title">OsmAnd prend en charge les connexions Bluetooth aux scanners OBD-II.</string>
+    <string name="connect_obd_instructions_title">MineNAV prend en charge les connexions Bluetooth aux scanners OBD-II.</string>
     <string name="obd_how_to_connect">Comment se connecter :</string>
     <string name="connect_obd_instructions_step1">Connectez le scanneur au port OBD-II de votre véhicule.</string>
     <string name="connect_obd_instructions_step3">Activez le Bluetooth sur votre appareil</string>
@@ -4588,7 +4588,7 @@
     <string name="poi_source">Source des POI</string>
     <string name="wikidata">Wikidata</string>
     <string name="wiki_around">Lieux populaires à proximité</string>
-    <string name="prediction_time_description">L\'icône de position dans OsmAnd s\'anime à chaque mise à jour GPS (une fois par seconde). Un léger retard peut se produire, en particulier lors de mouvements rapides ou lorsque le signal GPS est instable.</string>
+    <string name="prediction_time_description">L\'icône de position dans MineNAV s\'anime à chaque mise à jour GPS (une fois par seconde). Un léger retard peut se produire, en particulier lors de mouvements rapides ou lorsque le signal GPS est instable.</string>
     <string name="prediction_time_advanced_description">Ajustez le temps de prédiction pour minimiser le retard.</string>
     <string name="prediction_time">Temps de prédiction</string>
     <string name="shared_string_no_animation">Aucune animation</string>
@@ -4731,7 +4731,7 @@
     <string name="backup_delete_data_warning_extended">Cette action supprimera définitivement toutes les données sélectionnées du cloud. Il ne sera pas possible de les restaurer ultérieurement.</string>
     <string name="amount_of_total_used">%1$s de %2$s utilisés</string>
     <string name="delete_data">Supprimer les données</string>
-    <string name="manage_storage_delete_data_dialog_summary">Êtes-vous certain de vouloir supprimer %1$s de OsmAnd Cloud?\n\nUne restauration sera possible depuis la corbeille durant les 30 prochains jours.</string>
+    <string name="manage_storage_delete_data_dialog_summary">Êtes-vous certain de vouloir supprimer %1$s de Cloud?\n\nUne restauration sera possible depuis la corbeille durant les 30 prochains jours.</string>
     <string name="manage_storage">Gérer le stockage</string>
     <string name="copy_as_new_folder">Copier dans un nouveau dossier</string>
     <string name="add_to_a_folder">Ajouter à un dossier</string>
@@ -5072,11 +5072,11 @@
     <string name="gallery_sort_oldest_first">De la plus ancienne à la plus récente</string>
     <string name="gallery_sort_duration_long_short">Par ordre décroissant de durée</string>
     <string name="gallery_sort_duration_short_long">Par ordre croissant de durée</string>
-    <string name="tracks_backup_promo_button">Obtenir OsmAnd Pro</string>
+    <string name="tracks_backup_promo_button">Obtenir Pro</string>
     <string name="free_download_limit_reached">Limite atteinte pour le nombre de téléchargements gratuits</string>
     <string name="free_download_limit_reached_description">Débloquer le téléchargement illimité de cartes et de mises à jour</string>
     <string name="get_unlimited_downloads">Téléchargez sans limite</string>
-    <string name="tracks_backup_promo_description">Synchronisez vos traces entre vos appareils et sur le web avec OsmAnd Pro.</string>
+    <string name="tracks_backup_promo_description">Synchronisez vos traces entre vos appareils et sur le web avec Pro.</string>
     <string name="tracks_backup_promo_title">Synchronisez et restaurez vos traces</string>
     <string name="show_discount_bottom_sheet">Afficher la feuille inférieure de réduction</string>
     <string name="show_discount_bottom_sheet_description">Afficher la fiche de fond relative à la remise avec une réponse de développement personnalisée.</string>
@@ -5087,7 +5087,7 @@
     <string name="media_storage_main_storage_descr">Les fichiers sont enregistrés dans la mémoire interne de l\'application. Ils ne sont pas visibles dans la Galerie ni dans les autres applications.</string>
     <string name="media_storage_shared_storage_descr">Les fichiers sont enregistrés dans des dossiers publics (« Images », « Vidéos », « Musique »). Ils sont visibles dans la Galerie et sur Google Photos.</string>
     <string name="shared_string_note">Note</string>
-    <string name="media_storage_camera_folder_note_descr">Les fichiers audio sont stockés dans le dossier « Music/OsmAnd ».</string>
+    <string name="media_storage_camera_folder_note_descr">Les fichiers audio sont stockés dans le dossier « Music/MineNAV ».</string>
     <string name="media_storage_camera_folder_descr">Les fichiers sont stockés dans le dossier pellicule. %1$s</string>
     <string name="media_storage_manually_specified_descr">Les fichiers sont enregistrés dans un dossier personnalisé et classés par type (audio, photo, vidéo).</string>
     <string name="change_media_storage_question">Modifier l\'emplacement du stockage ?</string>
@@ -5100,7 +5100,7 @@
     <string name="route_calculation_method_standard_only_desc">Utilise toujours l\'itinéraire standard. C\'est plus lent, mais cela permet de naviguer avec des cartes datant de différentes périodes.</string>
     <string name="route_calculation_method_fast_only">Rapide uniquement</string>
     <string name="route_calculation_method_fast_only_desc">Utilise toujours l\'itinéraire le plus rapide. Le calcul s\'interrompt et demande des mises à jour si les dates de la carte ne correspondent pas.</string>
-    <string name="ais_receive_in_background">Recevoir les données AIS même lorsque OsmAnd est en pause.</string>
+    <string name="ais_receive_in_background">Recevoir les données AIS même lorsque MineNAV est en pause.</string>
     <string name="shared_string_recent">Récentes</string>
     <string name="sort_by_nearest_to_map_center">Proximité du centre de la carte</string>
     <string name="last_week">Semaine dernière</string>
@@ -5305,7 +5305,7 @@
     <string name="panoramax_no_internet_desc">Les photos Panoramax sont disponibles en ligne uniquement.</string>
     <string name="quick_action_showhide_panoramax_descr">Afficher ou masquer la sur-couche Panoramax sur la carte.</string>
     <string name="panoramax_menu_filter_description_new">Filtrer les images par contributeur, date ou type.</string>
-    <string name="ais_set_your_mmsi_desc">Votre propre navire peut constamment déclencher des alertes. Paramétrez votre MMSI afin qu\'OsmAnd puisse le différencier des autres navires.</string>
+    <string name="ais_set_your_mmsi_desc">Votre propre navire peut constamment déclencher des alertes. Paramétrez votre MMSI afin qu\'MineNAV puisse le différencier des autres navires.</string>
     <string name="plugin_panoramax_descr">Afficher les images de rue Panoramax, une plate-forme de cartographie photo ouverte, comme sur-couche de la carte. Utile pour vérifier la couverture actuelle et planifier ce qui peut encore être ajouté.</string>
     <string name="ais_my_vessel_footer">Paramétrez le MMSI de votre navire pour éviter de fausses alertes de collision et afficher, en option, son marqueur AIS sur la carte.</string>
     <string name="ais_mark_as_outdated_off_desc">Le symbole du navire ne sera pas modifié. Les objets sont toujours retirés après %1$s.</string>
@@ -5363,8 +5363,8 @@
     <string name="aidl_group_system_descr">Fichiers, journaux, simulation de position</string>
     <string name="multimedia_notes_view_descr">Vos notes audio et vidéo sont stockées dans %1$s.</string>
     <string name="latest_builds">Dernières builds</string>
-    <string name="aidl_permissions_request_title">Autoriser %1$s à utiliser OsmAnd ?</string>
-    <string name="aidl_app_disabled_descr">OsmAnd ignore toutes les demandes de cette application.</string>
+    <string name="aidl_permissions_request_title">Autoriser %1$s à utiliser MineNAV ?</string>
+    <string name="aidl_app_disabled_descr">MineNAV ignore toutes les demandes de cette application.</string>
     <string name="aidl_group_map_descr">Déplacer la carte, afficher les points</string>
     <string name="aidl_group_favorites_descr">Favoris et marqueurs sur la carte</string>
     <string name="aidl_group_tracks_view">Traces : afficher</string>
@@ -5380,9 +5380,9 @@
     <string name="media_library_empty_descr">Prenez une photo, une vidéo ou une note audio sur la carte ou liez des fichiers à un favori. Tout ce que vous enregistrez ou liez apparaît ici.</string>
     <string name="osmand_api_permission_missing">%1$s : autoriser \"%2$s\" dans Menu › Extensions</string>
     <string name="osmand_api_unknown_app">\"%1$s\" bloqué depuis une application inconnue</string>
-    <string name="aidl_permissions_descr">Ce que %1$s (%2$s) peut faire dans OsmAnd.</string>
+    <string name="aidl_permissions_descr">Ce que %1$s (%2$s) peut faire dans MineNAV.</string>
     <string name="aidl_permissions_request_descr">%1$s\nModifiable plus tard depuis les Extensions.</string>
-    <string name="aidl_group_system_footer">Laissez l\'application copier des fichiers dans OsmAnd, remplacer votre position, lire les journaux et modifier l\'apparence d\'OsmAnd. N\'activez que pour les applications auxquelles vous faites entièrement confiance !</string>
+    <string name="aidl_group_system_footer">Laissez l\'application copier des fichiers dans MineNAV, remplacer votre position, lire les journaux et modifier l\'apparence d\'MineNAV. N\'activez que pour les applications auxquelles vous faites entièrement confiance !</string>
     <string name="aidl_group_location_descr">Valeurs pour votre position, itinéraire et widget</string>
     <string name="map_source_saved_as">Source de la carte enregistrée sous \'%1$s\'.</string>
     <string name="map_source_folder_not_created">Impossible de créer le dossier pour la source de la carte. Essayez avec un autre nom.</string>

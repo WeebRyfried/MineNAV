@@ -56,6 +56,6 @@ public class NavigationMenuButton extends MapButton {
 
 	@Override
 	protected boolean shouldShow() {
-		return showBottomButtons && !isWhereToCardVisible();
+		return showBottomButtons && !isMineNavSheetVisible();
 	}
 }

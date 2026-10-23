@@ -67,6 +67,16 @@
 
 		</LinearLayout>
 
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/mn_chevron"
+			android:layout_width="@dimen/standard_icon_size"
+			android:layout_height="@dimen/standard_icon_size"
+			android:layout_gravity="center_vertical"
+			android:layout_marginEnd="@dimen/content_padding"
+			android:importantForAccessibility="no"
+			android:visibility="gone"
+			app:srcCompat="@drawable/ic_action_arrow_forward_16" />
+
 	</LinearLayout>
 
 </LinearLayout>

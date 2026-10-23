@@ -70,8 +70,8 @@
     <string name="unknown_location">Positionen är ännu inte känd.</string>
     <string name="confirm_interrupt_download">Avbryt hämtningen\?</string>
     <string name="shared_string_online_maps">Online-kartor</string>
-    <string name="osmand_accessibility_description">Gör enhetens tillgänglighetsfunktioner direkt åtkomliga i OsmAnd. Detta underlättar t.ex. justering av talhastigheten för text-till-tal-röster, konfigurering av D-pad-navigering, användning av styrkula för zoomkontroll eller uppläsning med text-till-tal, t.ex. för att meddela din position automatiskt.</string>
-    <string name="debugging_and_development">Utveckling av OsmAnd</string>
+    <string name="osmand_accessibility_description">Gör enhetens tillgänglighetsfunktioner direkt åtkomliga i MineNAV. Detta underlättar t.ex. justering av talhastigheten för text-till-tal-röster, konfigurering av D-pad-navigering, användning av styrkula för zoomkontroll eller uppläsning med text-till-tal, t.ex. för att meddela din position automatiskt.</string>
+    <string name="debugging_and_development">Utveckling av MineNAV</string>
     <string name="gpx_visibility_txt">Synlighet</string>
     <string name="gpx_tags_txt">Taggar</string>
     <string name="shared_string_description">Beskrivning</string>
@@ -132,8 +132,8 @@
     <string name="poi_search_desc">Sök efter intressepunkter (POI)</string>
     <string name="map_online_plugin_is_not_installed">Aktivera modulen \'Online-kartor\' för att välja andra kartkällor</string>
     <string name="map_online_data">Online-kartor och kartrutor</string>
-    <string name="osmand_rastermaps_plugin_description">Ger tillgång till många typer av onlinekartor (rasterkartor), till exempel förrenderade OSM-kartor, satellitbilder och speciallager för väder, klimat, geologi och terrängskuggning.\n\nKartorna kan användas som huvudkarta (baskarta) eller som överlägg/underlägg till en annan baskarta, exempelvis OsmAnds vanliga offlinekartor. För att göra ett underlägg tydligare kan du dölja vissa delar av OsmAnds vektorkarta via menyn \'Konfigurera karta\'.\n\nLadda ned rasterkartor direkt via internet eller kopiera dem manuellt som en SQLite-databas till OsmAnds datamapp med hjälp av ett kartverktyg från tredje part.</string>
-    <string name="osmand_development_plugin_description">Möjliggör funktionalitet för testning, utveckling och felsökning av OsmAnd: simulering av navigation, övervaka skärmrendering och prestanda etc. Behövs inte för normal användning av appen.</string>
+    <string name="osmand_rastermaps_plugin_description">Ger tillgång till många typer av onlinekartor (rasterkartor), till exempel förrenderade OSM-kartor, satellitbilder och speciallager för väder, klimat, geologi och terrängskuggning.\n\nKartorna kan användas som huvudkarta (baskarta) eller som överlägg/underlägg till en annan baskarta, exempelvis MineNAVs vanliga offlinekartor. För att göra ett underlägg tydligare kan du dölja vissa delar av MineNAVs vektorkarta via menyn \'Konfigurera karta\'.\n\nLadda ned rasterkartor direkt via internet eller kopiera dem manuellt som en SQLite-databas till MineNAVs datamapp med hjälp av ett kartverktyg från tredje part.</string>
+    <string name="osmand_development_plugin_description">Möjliggör funktionalitet för testning, utveckling och felsökning av MineNAV: simulering av navigation, övervaka skärmrendering och prestanda etc. Behövs inte för normal användning av appen.</string>
     <string name="plugins_screen">Hantera insticksmoduler</string>
     <string name="osmand_parking_time_limit">Tidsbegränsad parkering</string>
     <string name="osmand_parking_position_description">Positionen för ditt parkerade fordon. %1$s</string>
@@ -143,7 +143,7 @@
 \nVägledning för hur du kan redigera kartan finns på vår webbplats %1$s.</string>
     <string name="play_commands_of_currently_selected_voice">Välj en röst och testa genom att spela meddelanden:</string>
     <string name="test_voice_prompts">Test av röstmeddelanden</string>
-    <string name="osmand_long_description_1000_chars">OsmAnd (OSM Automated Navigation Directions)\n\nOsmAnd är en kart- och navigeringsapp med öppen källkod som ger tillgång till omfattande globala data från OpenStreetMap (OSM). Vektor- och rasterkartor kan lagras på enheten för användning offline. Appen erbjuder navigering både offline och online, inklusive stegvisa röstinstruktioner.\n\nNågra viktiga funktioner:\n- Fullständig offlinefunktionalitet med lokalt lagrade vektor- och rasterkartor\n- Kompakta offlinevektorkartor för hela världen\n- Ladda ned kartor över länder och regioner direkt i appen\n- Kombinera GPX-spår, navigeringsspår, intressepunkter, favoriter, kollektivtrafikhållplatser och ytterligare kartlager med justerbar genomskinlighet\n- Sök efter adresser och intressepunkter offline\n- Navigering offline för medellånga sträckor\n- Profiler för bil, cykel och gång\n- Automatisk växling mellan dag- och nattläge\n- Hastighetsanpassad kartzoomning\n- Kartorientering efter kompass eller färdriktning\n- Körfältsvägledning, hastighetsgränser och text-till-tal\n\nGratisversionen har ett begränsat antal kartnedladdningar och saknar offlineåtkomst till Wikipedia-artiklar om intressepunkter.\n\nOsmAnd utvecklas aktivt och är beroende av ekonomiska bidrag för utveckling och testning. Du kan stödja projektet genom att köpa OsmAnd+, finansiera en funktion eller donera via https://osmand.net.</string>
+    <string name="osmand_long_description_1000_chars">MineNAV (OSM Automated Navigation Directions)\n\nMineNAV är en kart- och navigeringsapp med öppen källkod som ger tillgång till omfattande globala data från OpenStreetMap (OSM). Vektor- och rasterkartor kan lagras på enheten för användning offline. Appen erbjuder navigering både offline och online, inklusive stegvisa röstinstruktioner.\n\nNågra viktiga funktioner:\n- Fullständig offlinefunktionalitet med lokalt lagrade vektor- och rasterkartor\n- Kompakta offlinevektorkartor för hela världen\n- Ladda ned kartor över länder och regioner direkt i appen\n- Kombinera GPX-spår, navigeringsspår, intressepunkter, favoriter, kollektivtrafikhållplatser och ytterligare kartlager med justerbar genomskinlighet\n- Sök efter adresser och intressepunkter offline\n- Navigering offline för medellånga sträckor\n- Profiler för bil, cykel och gång\n- Automatisk växling mellan dag- och nattläge\n- Hastighetsanpassad kartzoomning\n- Kartorientering efter kompass eller färdriktning\n- Körfältsvägledning, hastighetsgränser och text-till-tal\n\nGratisversionen har ett begränsat antal kartnedladdningar och saknar offlineåtkomst till Wikipedia-artiklar om intressepunkter.\n\nMineNAV utvecklas aktivt och är beroende av ekonomiska bidrag för utveckling och testning. Du kan stödja projektet genom att köpa MineNAV, finansiera en funktion eller donera via https://osmand.net.</string>
     <string name="info_button">Info</string>
     <string name="back_to_location">Återgå till position</string>
     <string name="oclock">klockan</string>
@@ -190,7 +190,7 @@
     <string name="user_name">Ditt OSM-användarnamn</string>
     <string name="user_password">Lösenord</string>
     <string name="osmand_service">Bakgrundsläge</string>
-    <string name="osmand_service_descr">OsmAnd körs i bakgrunden medan skärmen är avstängd.</string>
+    <string name="osmand_service_descr">MineNAV körs i bakgrunden medan skärmen är avstängd.</string>
     <string name="download_files_not_enough_space">Det finns inte tillräckligt med ledigt utrymme för att hämta %1$s MB (ledigt: %2$s).</string>
     <string name="download_files_question_space">Hämta {0} fil(er)\?
 \n{1} MB (av {2} MB) kommer att användas.</string>
@@ -211,7 +211,7 @@
     <string name="file_with_name_already_exists">En fil med det namnet finns redan.</string>
     <string name="poi_query_by_name_matches_categories">Flera relaterade POI-kategorier hittades.</string>
     <string name="poi_filter_by_name">Sök efter namn</string>
-    <string name="button_upgrade_osmandplus">Uppgradera OsmAnd+</string>
+    <string name="button_upgrade_osmandplus">Uppgradera MineNAV</string>
     <string name="map_version_changed_info">Hämta den nya versionen av appen för att kunna använda de nya kartfilerna.</string>
     <string name="shared_string_undefined">Odefinierad</string>
     <string name="context_menu_item_search">Sök i närheten</string>
@@ -324,10 +324,10 @@
     <string name="osmand_net_previously_installed">Alla offline-data från den tidigare installationen stöds av den nya appen. Men favoritpunkter måste exporteras från den gamla appen och sedan importeras i den nya.</string>
     <string name="build_installed">Version {0} har installerats ({1}).</string>
     <string name="downloading_build">Laddar ner kompilering …</string>
-    <string name="install_selected_build">Installera OsmAnd - {0} av {1}{2} MB\?</string>
-    <string name="loading_builds_failed">Kunde inte hämta listan över OsmAnd-versioner</string>
-    <string name="loading_builds">Läser in OsmAnd-kompileringar…</string>
-    <string name="select_build_to_install">Välj OsmAnd-version att installera</string>
+    <string name="install_selected_build">Installera MineNAV - {0} av {1}{2} MB\?</string>
+    <string name="loading_builds_failed">Kunde inte hämta listan över MineNAV-versioner</string>
+    <string name="loading_builds">Läser in MineNAV-kompileringar…</string>
+    <string name="select_build_to_install">Välj MineNAV-version att installera</string>
     <string name="contribution_activity">Särskild aktivitet för bidragsversionen</string>
     <string name="gps_status_app_not_found">Ingen app för GPS-status är installerad. Vill du söka i appbutik\?</string>
     <string name="daynight_mode_day">Dag</string>
@@ -369,7 +369,7 @@
     <string name="layer_map">Kartkälla …</string>
     <string name="use_trackball_descr">Använd en styrkuleenhet för att flytta kartan.</string>
     <string name="use_trackball">Använd styrkula</string>
-    <string name="process_navigation_service">OsmAnd navigeringstjänst</string>
+    <string name="process_navigation_service">MineNAV navigeringstjänst</string>
     <string name="int_seconds">sekunder</string>
     <string name="search_poi_filter">Filter</string>
     <string name="voice_provider">Röstvägledning</string>
@@ -393,7 +393,7 @@
     <string name="transport_stops">hållplatser</string>
     <string name="transport">Transporter</string>
     <string name="shared_string_ok">OK</string>
-    <string name="hello">Navigationsappen OsmAnd</string>
+    <string name="hello">Navigationsappen MineNAV</string>
     <string name="favorite">Favorit</string>
     <string name="uploading_data">Laddar upp data …</string>
     <string name="uploading">Laddar upp …</string>
@@ -486,7 +486,7 @@
     <string name="error_calculating_route">Det gick inte att beräkna rutten.</string>
     <string name="empty_route_calculated">Den beräknade rutten är tom.</string>
     <string name="invalid_locations">Ogiltiga koordinater</string>
-    <string name="previous_run_crashed">Den senaste körningen av OsmAnd kraschade. Loggen finns i {0}. Rapportera felet och bifoga gärna loggfilen.</string>
+    <string name="previous_run_crashed">Den senaste körningen av MineNAV kraschade. Loggen finns i {0}. Rapportera felet och bifoga gärna loggfilen.</string>
     <string name="saving_gpx_tracks">Sparar GPX-fil…</string>
     <string name="finished_task">Slutförd</string>
     <string name="data_settings">Data</string>
@@ -523,8 +523,8 @@
     <string name="enable_plugin_monitoring_services">Aktivera insticksmodulen \"Inspelning av resa\" för att använda positionsloggningstjänster (GPX-loggning, online-spårning)</string>
     <string name="access_arrival_time">Ankomsttid</string>
     <string name="map_widget_gps_info">GPS-info</string>
-    <string name="osmand_play_title_30_chars">OsmAnd kartor &amp; navigering</string>
-    <string name="osmand_plus_play_title_30_chars">OsmAnd+ kartor &amp; navigering</string>
+    <string name="osmand_play_title_30_chars">MineNAV kartor &amp; navigering</string>
+    <string name="osmand_plus_play_title_30_chars">MineNAV kartor &amp; navigering</string>
     <string name="opening_changeset">Öppnar changeset …</string>
     <string name="closing_changeset">Stänger changeset …</string>
     <string name="use_magnetic_sensor">Använd magnetisk sensor (kompass)</string>
@@ -603,11 +603,11 @@
     <string name="speech_rate_descr">Ange talhastighet för text-till-tal.</string>
     <string name="speech_rate">Talhastighet</string>
     <string name="complex_route_calculation_failed">Snabbberäkning av rutt misslyckades (%s), går tillbaka till långsam beräkning.</string>
-    <string name="android_19_location_disabled">Från och med Android 4.4 (KitKat) är den gamla lagringsmappen (%s) föråldrad. Kopiera alla OsmAnd-filer till den nya lagringsplatsen\?
+    <string name="android_19_location_disabled">Från och med Android 4.4 (KitKat) är den gamla lagringsmappen (%s) föråldrad. Kopiera alla MineNAV-filer till den nya lagringsplatsen\?
 \n Anmärkning 1: Dina gamla filer kommer att förbli orörda (men kan tas bort manuellt).
-\n Anmärkning 2: På den nya lagringsplatsen kommer det inte att vara möjligt att dela filer mellan OsmAnd och OsmAnd+.</string>
-    <string name="copying_osmand_files">Kopierar OsmAnd-datafiler …</string>
-    <string name="calculate_osmand_route_gpx">Ruttberäkning offline med OsmAnd</string>
+\n Anmärkning 2: På den nya lagringsplatsen kommer det inte att vara möjligt att dela filer mellan MineNAV och MineNAV.</string>
+    <string name="copying_osmand_files">Kopierar MineNAV-datafiler …</string>
+    <string name="calculate_osmand_route_gpx">Ruttberäkning offline med MineNAV</string>
     <string name="app_mode_truck">Lastbil</string>
     <string name="routing_attr_prefer_motorway_name">Föredra motorvägar</string>
     <string name="routing_attr_prefer_motorway_description">Föredra motorvägar</string>
@@ -624,8 +624,8 @@
     <string name="route_descr_select_destination">Ställ in destination</string>
     <string name="route_info">Ruttinformation</string>
     <string name="keep_and_add_destination_point">Lägg till som en följande destination</string>
-    <string name="calculate_osmand_route_without_internet">Offlineberäkning av OsmAnd-ruttsegment</string>
-    <string name="gpx_option_calculate_first_last_segment">Beräkna OsmAnd-rutt för första och sista ruttsegmentet</string>
+    <string name="calculate_osmand_route_without_internet">Offlineberäkning av MineNAV-ruttsegment</string>
+    <string name="gpx_option_calculate_first_last_segment">Beräkna MineNAV-rutt för första och sista ruttsegmentet</string>
     <string name="lang_ca">Katalanska</string>
     <string name="lang_en">Engelska</string>
     <string name="lang_hy">Armeniska</string>
@@ -678,7 +678,7 @@
     <string name="interrupt_music_descr">Röstmeddelanden pausar musikuppspelning.</string>
     <string name="interrupt_music">Pausa musiken</string>
     <string name="share_route_as_gpx">Dela rutt som GPX-fil</string>
-    <string name="share_route_subject">Utdelad rutt via OsmAnd</string>
+    <string name="share_route_subject">Utdelad rutt via MineNAV</string>
     <string name="keep_informing_never">Endast manuellt (tryck på pilen)</string>
     <string name="keep_informing">Upprepa navigationsinstruktioner</string>
     <string name="osmo_connect_menu">Anslut</string>
@@ -711,7 +711,7 @@
     <string name="show_zoom_buttons_navigation">Visa zoom-knappar</string>
     <string name="sort_by_distance">Sortera efter avstånd</string>
     <string name="sort_by_name">Sortera efter namn</string>
-    <string name="share_fav_subject">Favoriter utdelade via OsmAnd</string>
+    <string name="share_fav_subject">Favoriter utdelade via MineNAV</string>
     <string name="commiting_node">Skickar nod…</string>
     <string name="no_index_file_to_download">Inga nedladdningar hittades. Kontrollera internetanslutningen.</string>
     <string name="stop_navigation_service">Stoppa</string>
@@ -991,7 +991,7 @@
     <string name="shared_string_wikipedia">Wikipedia</string>
     <string name="shared_string_show_details">Visa detaljer</string>
     <string name="download_wikipedia_maps">Wikipedia</string>
-    <string name="shared_string_import2osmand">Importera till OsmAnd</string>
+    <string name="shared_string_import2osmand">Importera till MineNAV</string>
     <string name="gps_network_not_enabled">Platstjänsten är av. Vill du slå på den\?</string>
     <string name="lang_vo">Volapük</string>
     <string name="lang_th">Thai</string>
@@ -1045,7 +1045,7 @@
     <string name="rendering_value_yellow_name">Gul</string>
     <string name="rendering_value_default13_name">Standard (13)</string>
     <string name="rendering_value_defaultTranslucentCyan_name">Standard (genomskinlig turkos)</string>
-    <string name="do_you_like_osmand">Tycker du om OsmAnd?</string>
+    <string name="do_you_like_osmand">Tycker du om MineNAV?</string>
     <string name="user_hates_app_get_feedback">Berätta för oss varför.</string>
     <string name="user_hates_app_get_feedback_long">Låt oss gärna ta del av dina förslag.</string>
     <string name="download_live_updates">Direkt-uppdateringar</string>
@@ -1059,7 +1059,7 @@
     <string name="shared_string_card_was_hidden">Kortet har dolts</string>
     <string name="shared_string_undo">Ångra</string>
     <string name="shared_string_skip">Hoppa över</string>
-    <string name="app_name_osmand">OsmAnd</string>
+    <string name="app_name_osmand">MineNAV</string>
     <string name="routing_attr_avoid_shuttle_train_name">Inget pendeltåg</string>
     <string name="routing_attr_avoid_shuttle_train_description">Undviker att använda pendeltåg</string>
     <string name="plugin_settings">Insticksprogram</string>
@@ -1144,7 +1144,7 @@
     <string name="lang_mk">Makedonska</string>
     <string name="lang_fy">Frisiska</string>
     <string name="lang_als">Albanska (Toskiska)</string>
-    <string name="share_osm_edits_subject">OSM-redigeringar delade via OsmAnd</string>
+    <string name="share_osm_edits_subject">OSM-redigeringar delade via MineNAV</string>
     <string name="save_poi_without_poi_type_message">Spara denna POI utan att ange typ\?</string>
     <string name="shared_string_location">Plats</string>
     <string name="poi_context_menu_modify_osm_change">Modifiera OSM-ändring</string>
@@ -1201,7 +1201,7 @@
     <string name="only_download_over_wifi">Hämta endast via Wi-Fi</string>
     <string name="live_update">Direktuppdatering</string>
     <string name="update_now">Uppdatera nu</string>
-    <string name="missing_write_external_storage_permission">OsmAnd saknar tillåtelse att använda minneskortet</string>
+    <string name="missing_write_external_storage_permission">MineNAV saknar tillåtelse att använda minneskortet</string>
     <string name="no_location_permission">Ge platsåtkomst.</string>
     <string name="no_camera_permission">Ge åtkomst till kameran.</string>
     <string name="no_microphone_permission">Ge mikrofonåtkomst.</string>
@@ -1267,7 +1267,7 @@
     <string name="osm_live_subscribe_btn">Prenumerera</string>
     <string name="osm_live_active">Aktiv</string>
     <string name="osm_live_enter_email">Ange en giltig e-postadress</string>
-    <string name="osm_live_ask_for_purchase">Köp först en prenumeration på OsmAnd Live</string>
+    <string name="osm_live_ask_for_purchase">Köp först en prenumeration på Live</string>
     <string name="show_transparency_seekbar">Visa transparent sökfält</string>
     <string name="recalculate_route">Beräkna om rutten</string>
     <string name="shared_string_topbar">Toppfält</string>
@@ -1302,7 +1302,7 @@
     <string name="change_markers_position">Ändra markörens position</string>
     <string name="app_mode_bus">Buss</string>
     <string name="app_mode_train">Tåg</string>
-    <string name="use_osm_live_routing_description">Aktivera navigering för OsmAnd Live-förändringar.</string>
+    <string name="use_osm_live_routing_description">Aktivera navigering för Live-förändringar.</string>
     <string name="lang_kn">Kannada</string>
     <string name="lang_en_gb">Engelska (Storbritannien)</string>
     <string name="lang_be_by">Belarusiska (translittererat)</string>
@@ -1319,7 +1319,7 @@
     <string name="map_widget_search">Sök</string>
     <string name="shared_string_is_open_24_7">Öppet 24/7</string>
     <string name="coords_format">Koordinatformat</string>
-    <string name="share_history_subject">delad via OsmAnd</string>
+    <string name="share_history_subject">delad via MineNAV</string>
     <string name="search_categories">Kategorier</string>
     <string name="postcode">Postnummer</string>
     <string name="route_stops_before">%1$s stopp innan</string>
@@ -1342,7 +1342,7 @@
     <string name="new_filter_desc">Ange ett namn på det nya filtret. Det kommer att läggas till på fliken ’Kategorier’.</string>
     <string name="search_another_country">Välj en annan region</string>
     <string name="si_mi_meters">Engelska mil/meter</string>
-    <string name="first_usage_wizard_desc">Låt OsmAnd avgöra din plats och föreslå kartor att hämta för den regionen.</string>
+    <string name="first_usage_wizard_desc">Låt MineNAV avgöra din plats och föreslå kartor att hämta för den regionen.</string>
     <string name="location_not_found">Platsen hittades inte</string>
     <string name="no_inet_connection">Ingen Internetanslutning</string>
     <string name="search_location">Söker efter plats…</string>
@@ -1455,7 +1455,7 @@
     <string name="rendering_attr_depthContours_description">Visa djupkurvor och -punkter.</string>
     <string name="shared_string_slope">Lutning</string>
     <string name="altitude_range">Höjdområde</string>
-    <string name="full_version_thanks">Tack för att du köpt betalversionen av OsmAnd.</string>
+    <string name="full_version_thanks">Tack för att du köpt betalversionen av MineNAV.</string>
     <string name="routing_attr_relief_smoothness_factor_hills_name">Kuperat</string>
     <string name="routing_attr_relief_smoothness_factor_plains_name">Mindre kuperat</string>
     <string name="routing_attr_relief_smoothness_factor_more_plains_name">Slätt</string>
@@ -1494,7 +1494,7 @@
     <string name="mapillary">Mapillary</string>
     <string name="shared_string_install">Installera</string>
     <string name="shared_string_permissions">Tillstånd</string>
-    <string name="import_gpx_failed_descr">Kan inte importera filen. Kolla om OsmAnd har tillåtelse att läsa filen.</string>
+    <string name="import_gpx_failed_descr">Kan inte importera filen. Kolla om MineNAV har tillåtelse att läsa filen.</string>
     <string name="distance_moving">Distansen korrigerad</string>
     <string name="enter_new_name">Ange nytt namn</string>
     <string name="shared_string_back">Tillbaka</string>
@@ -1725,11 +1725,11 @@
     <string name="max_min">Max/Min</string>
     <string name="min_max">Min/Max</string>
     <string name="route_is_too_long_v2">Avstånden är för långa. Lägg till mellanliggande destinationer om ingen rutt hittas inom 10 minuter.</string>
-    <string name="osmand_extended_description_part1">OsmAnd (OSM Automated Navigation Directions) är en kart- och navigeringsapp med kostnadsfria, världsomspännande OpenStreetMap-data (OSM) av hög kvalitet.\n\nAppen erbjuder visuell navigering och röstnavigering, intressepunkter (POI), skapande och hantering av GPX-spår, höjdkurvor och topografisk information via insticksmoduler, profiler för bil, cykel och gång, redigering av OSM-data och mycket mer.</string>
+    <string name="osmand_extended_description_part1">MineNAV (OSM Automated Navigation Directions) är en kart- och navigeringsapp med kostnadsfria, världsomspännande OpenStreetMap-data (OSM) av hög kvalitet.\n\nAppen erbjuder visuell navigering och röstnavigering, intressepunkter (POI), skapande och hantering av GPX-spår, höjdkurvor och topografisk information via insticksmoduler, profiler för bil, cykel och gång, redigering av OSM-data och mycket mer.</string>
     <string name="osmand_extended_description_part2">GPS-navigering\n• Välj mellan offlineläge utan roamingkostnader och snabbare onlineläge\n• Stegvisa röstinstruktioner med inspelade eller syntetiserade röster\n• Rutten beräknas om automatiskt när du avviker från den\n• Körfältsvägledning, gatunamn och beräknad ankomsttid hjälper dig längs vägen\n• Automatisk växling mellan dag- och nattläge\n• Visa hastighetsgränser och få varningar när du kör för fort\n• Kartzoomen anpassas efter hastigheten\n• Sök efter destinationer via adress, typ eller geografiska koordinater\n• Lägg till mellanliggande mål längs rutten\n• Spela in egna GPX-spår eller importera och följ ett befintligt spår</string>
     <string name="osmand_extended_description_part3">Karta\n• Visa intressepunkter (POI) i närheten\n• Orientera kartan efter färdriktning eller kompass\n• Visa din plats och riktning\n• Dela din plats så att vänner kan hitta dig\n• Spara viktiga platser som favoriter\n• Välj om ortnamn ska visas på svenska, lokalt språk eller med fonetisk translitterering\n• Visa specialiserade onlinekartor, satellitbilder från Bing, GPX-spår och ytterligare lager med justerbar genomskinlighet</string>
     <string name="osmand_extended_description_part4">Skidåkning
-\nOsmAnd skidkartor plugin gör att du kan se skidspår svårighetsgrad och en del kompletterande information, som plats för liftar och andra faciliteter.</string>
+\nMineNAV skidkartor plugin gör att du kan se skidspår svårighetsgrad och en del kompletterande information, som plats för liftar och andra faciliteter.</string>
     <string name="osmand_extended_description_part5">Cykling
 \n• Hitta cykelvägar på kartan
 \n• GPS-navigering i cykelläget planerar din rutt med cykelvägar
@@ -1740,7 +1740,7 @@
     <string name="osmand_extended_description_part7">Bidra till OSM \n • Rapportera datafel \n • Ladda upp GPX-spår till OSM direkt från appen \n • Lägg till POI och ladda upp dem direkt till OSM (eller senare om du är frånkopplad)</string>
     <string name="clear_all_intermediates">Rensa alla mellanliggande destinationer</string>
     <string name="rendering_attr_whiteWaterSports_name">Strömsporter</string>
-    <string name="osmand_extended_description_part8">OsmAnd är aktivt utvecklad programvara med öppen källkod. Alla kan bidra till appen genom att rapportera fel, förbättra översättningar eller koda nya funktioner. Dessutom bygger projektet på ekonomiska bidrag för att finansiera kodning och testning av nya funktioner.
+    <string name="osmand_extended_description_part8">MineNAV är aktivt utvecklad programvara med öppen källkod. Alla kan bidra till appen genom att rapportera fel, förbättra översättningar eller koda nya funktioner. Dessutom bygger projektet på ekonomiska bidrag för att finansiera kodning och testning av nya funktioner.
 \nUngefärlig karttäckning och kvalitet:
 \n• Västeuropa: ****
 \n• Östeuropa: ***
@@ -1754,14 +1754,14 @@
 \n• Antarktis: *
 \nDe flesta länder runt om i världen är tillgängliga för nedladdning!
 \nFå en pålitlig navigatör i ditt land - vare sig det är Frankrike, Tyskland, Mexiko, Storbritannien, Spanien, Nederländerna, USA, Ryssland, Brasilien eller något annat.</string>
-    <string name="osmand_plus_long_description_1000_chars">OsmAnd+ (OSM Automated Navigation Directions)\n\nOsmAnd+ är en kart- och navigeringsapp med öppen källkod och tillgång till omfattande globala OSM-data. Vektor- och rasterkartor kan lagras på enheten för användning offline. Appen erbjuder navigering både offline och online, inklusive stegvisa röstinstruktioner.\n\nOsmAnd+ är betalversionen. Genom köpet stöder du projektet, finansierar utvecklingen av nya funktioner och får de senaste uppdateringarna.\n\nViktiga funktioner:\n- Fullständig offlinefunktionalitet\n- Kompakta offlinevektorkartor för hela världen\n- Obegränsad nedladdning av kartor över länder och regioner\n- Wikipedia-artiklar om intressepunkter offline\n- Flera samtidiga kartlager, exempelvis GPX-spår, intressepunkter, favoriter, kollektivtrafikhållplatser och topografiska lager\n- Sök efter adresser och intressepunkter offline\n- Navigering offline för medellånga sträckor\n- Profiler för bil, cykel och gång\n- Automatisk växling mellan dag- och nattläge\n- Hastighetsanpassad zoomning\n- Kartorientering efter kompass eller färdriktning\n- Körfältsvägledning, hastighetsgränser och text-till-tal</string>
+    <string name="osmand_plus_long_description_1000_chars">MineNAV (OSM Automated Navigation Directions)\n\nMineNAV är en kart- och navigeringsapp med öppen källkod och tillgång till omfattande globala OSM-data. Vektor- och rasterkartor kan lagras på enheten för användning offline. Appen erbjuder navigering både offline och online, inklusive stegvisa röstinstruktioner.\n\nMineNAV är betalversionen. Genom köpet stöder du projektet, finansierar utvecklingen av nya funktioner och får de senaste uppdateringarna.\n\nViktiga funktioner:\n- Fullständig offlinefunktionalitet\n- Kompakta offlinevektorkartor för hela världen\n- Obegränsad nedladdning av kartor över länder och regioner\n- Wikipedia-artiklar om intressepunkter offline\n- Flera samtidiga kartlager, exempelvis GPX-spår, intressepunkter, favoriter, kollektivtrafikhållplatser och topografiska lager\n- Sök efter adresser och intressepunkter offline\n- Navigering offline för medellånga sträckor\n- Profiler för bil, cykel och gång\n- Automatisk växling mellan dag- och nattläge\n- Hastighetsanpassad zoomning\n- Kartorientering efter kompass eller färdriktning\n- Körfältsvägledning, hastighetsgränser och text-till-tal</string>
     <string name="nothing_found_in_radius">Kunde inte hitta något inom:</string>
     <string name="select_waypoints_category_description">Lägg till alla spårens vägpunkter, eller välj separata kategorier.</string>
     <string name="shared_string_total">Totalt</string>
-    <string name="osmand_plus_extended_description_part1">OsmAnd+ (OSM Automated Navigation Directions) är en kart- och navigationsapp med tillgång till gratis världsomfattande och högkvalitativa OSM-data.
+    <string name="osmand_plus_extended_description_part1">MineNAV (OSM Automated Navigation Directions) är en kart- och navigationsapp med tillgång till gratis världsomfattande och högkvalitativa OSM-data.
 \nNjut av röst- och visuell navigation, visning av POI (points of interest - intressepunkter), att skapa och hantera GPX-spår, se visualisering av höjdkurvor och topografi, välja mellan bil-cykel- och fotgängarlägen, OSM-redigering och mycket mer.
 \n
-\nOsmAnd+ är betalversionen av appen. Genom att köpa den stöttar du projektet, finansierar utveckling av nya funktioner och får de senaste uppdateringarna.
+\nMineNAV är betalversionen av appen. Genom att köpa den stöttar du projektet, finansierar utveckling av nya funktioner och får de senaste uppdateringarna.
 \n
 \nNågra av de viktigaste funktionerna:</string>
     <string name="osmand_plus_extended_description_part2">Navigering\n• Fungerar online eller offline utan roamingkostnader\n• Stegvisa röstinstruktioner med inspelade eller syntetiserade röster\n• Körfältsvägledning, gatunamn och beräknad ankomsttid\n• Stöd för mellanliggande mål längs rutten\n• Automatisk omberäkning när du avviker från rutten\n• Sök efter platser via adress, typ eller geografiska koordinater</string>
@@ -1797,16 +1797,16 @@
     <string name="ski_map_render_descr">För skidåkning. Innehåller pister, skidliftar, längdspår osv. Dämpar sekundära kartobjekt.</string>
     <string name="light_rs_render_descr">Förenklad stil för bilkörning. Skonsamt nattläge, kontrasterande orangefärgade vägar, nedtonade sekundära kartobjekt, och topografiska element som tex höjdkurvor.</string>
     <string name="topo_render_descr">För utflykter, vandring och cykling i naturen. God läsbarhet utomhus. Kontrasterande vägar och naturobjekt, olika ledtyper, avancerade alternativ för höjdkurvor, mer detaljrik. Inställning för att visa vägbanans kvalitet. Inget nattläge.</string>
-    <string name="touring_view_render_descr">Turiststil med hög kontrast och maximal detaljrikedom. Innehåller alla alternativ i OsmAnd:s standardstil, samtidigt som den visar så mycket detaljer som möjligt, särskilt vägar, stigar, och andra sätt att resa. Tydlig distinktion mellan olika vägtyper som i en turistatlas. Lämplig för användning på dag, natt, och utomhus.</string>
+    <string name="touring_view_render_descr">Turiststil med hög kontrast och maximal detaljrikedom. Innehåller alla alternativ i MineNAV:s standardstil, samtidigt som den visar så mycket detaljer som möjligt, särskilt vägar, stigar, och andra sätt att resa. Tydlig distinktion mellan olika vägtyper som i en turistatlas. Lämplig för användning på dag, natt, och utomhus.</string>
     <string name="default_render_descr">Allmän stil. Tydlig återgivning i tät bebyggelse. Visar leder, vägbanekvalitet, åtkomstbegränsningar, vägnummer, stigar enligt SAC-skalan, vattensportobjekt, topografi som tex höjdkurvor.</string>
-    <string name="read_wikipedia_offline_description">Skaffa en OsmAnd Live-prenumeration för att läsa Wikipedia- och Wikivoyage-artiklar offline.</string>
+    <string name="read_wikipedia_offline_description">Skaffa en Live-prenumeration för att läsa Wikipedia- och Wikivoyage-artiklar offline.</string>
     <string name="how_to_open_link">Hur öppnar man länken?</string>
     <string name="read_wikipedia_offline">Läs Wikipedia offline</string>
     <string name="download_all">Hämta alla</string>
     <string name="shared_string_restart">Starta om</string>
     <string name="maps_you_need_descr">Baserat på de artiklar som du bokmärkt, följande kartor rekommenderas för dig att hämta:</string>
     <string name="maps_you_need">Kartor du behöver</string>
-    <string name="osmand_team">OsmAnd team</string>
+    <string name="osmand_team">MineNAV team</string>
     <string name="popular_destinations">Populära resmål</string>
     <string name="travel_card_update_descr">Nya Wikivoyage-data tillgängliga, uppdatera för att njuta.</string>
     <string name="travel_card_download_descr">Hämta dessa Wikivoyage-reseguider för att visa artiklar om platser runt om i världen utan en internetanslutning.</string>
@@ -1819,7 +1819,7 @@
     <string name="get_unlimited_access">Få obegränsad tillgång</string>
     <string name="welcome_to_open_beta">Välkommen till öppen beta</string>
     <string name="wikivoyage_travel_guide">Reseguider</string>
-    <string name="wikivoyage_travel_guide_descr">Guider till de mest intressanta platserna i världen, inuti OsmAnd, utan en internetanslutning.</string>
+    <string name="wikivoyage_travel_guide_descr">Guider till de mest intressanta platserna i världen, inuti MineNAV, utan en internetanslutning.</string>
     <string name="monthly_map_updates">Månatliga kartuppdateringar</string>
     <string name="daily_map_updates">Uppdatering av kartan varje timme</string>
     <string name="in_app_purchase_desc">Engångsbetalning</string>
@@ -1848,7 +1848,7 @@
 \n• GPS-spårinspelning till lokal GPX-fil eller onlinetjänst
 \n• Valbar visning av hastighet och höjd
 \n• Visa höjdkurvor och terrängskuggning (via särskild insticksmodul)</string>
-    <string name="osmand_plus_extended_description_part7">Bidra direkt till OSM\n• Rapportera fel i kartdata\n• Ladda upp GPX-spår till OSM direkt från appen\n• Lägg till intressepunkter och ladda upp dem direkt eller senare när du är online\n• Spela in resor i bakgrunden även när enheten använder strömsparläge\n\nOsmAnd är ett aktivt projekt med öppen källkod. Alla kan bidra genom att rapportera fel, förbättra översättningar eller utveckla nya funktioner. Projektet är samtidigt beroende av ekonomiska bidrag för utveckling och testning.</string>
+    <string name="osmand_plus_extended_description_part7">Bidra direkt till OSM\n• Rapportera fel i kartdata\n• Ladda upp GPX-spår till OSM direkt från appen\n• Lägg till intressepunkter och ladda upp dem direkt eller senare när du är online\n• Spela in resor i bakgrunden även när enheten använder strömsparläge\n\nMineNAV är ett aktivt projekt med öppen källkod. Alla kan bidra genom att rapportera fel, förbättra översättningar eller utveckla nya funktioner. Projektet är samtidigt beroende av ekonomiska bidrag för utveckling och testning.</string>
     <string name="osmand_plus_extended_description_part8">Ungefärlig karttäckning och kvalitet: \n • Västeuropa: **** \n • Östeuropa: *** \n • Ryssland: *** \n • Nordamerika: *** \n • Sydamerika: ** \n • Asien: ** \n • Japan och Korea: *** \n • Mellanöstern: ** \n • Afrika: ** \n • Antarktis: * \nDe flesta länder runt om i världen finns som nedladdningar \nFrån Afghanistan till Zimbabwe, från Australien till USA. Argentina, Brasilien, Kanada, Frankrike, Tyskland, Mexiko, Storbritannien, Spanien, …</string>
     <string name="quick_action_bug_descr">Detta meddelande ingår i kommentarsfältet.</string>
     <string name="quick_action_category_descr">Kategori för att spara favoriten i:</string>
@@ -1895,7 +1895,7 @@
     <string name="thank_you_for_feedback">Tack för din återkoppling</string>
     <string name="send_search_query">Skicka sökfråga\?</string>
     <string name="shared_string_world">Värld</string>
-    <string name="ask_for_location_permission">Ge OsmAnd platsåtkomst för att fortsätta.</string>
+    <string name="ask_for_location_permission">Ge MineNAV platsåtkomst för att fortsätta.</string>
     <string name="send_search_query_description">Vi skickar din sökfråga: \"%1$s\", såväl som din plats.\n
         \n Vi samlar inte in personlig information, vi behöver bara sökdata för att förbättra sökalgoritmen.</string>
     <string name="third_party_application">Tredjepartsapp</string>
@@ -1942,15 +1942,15 @@
     <string name="arrive_at_time">Ankomst klockan %1$s</string>
     <string name="rate_dialog_descr">Dela gärna din återkoppling och betygsätt vårt arbete på Google Play.</string>
     <string name="shared_string_privacy_policy">Sekretesspolicy</string>
-    <string name="help_us_make_osmand_better">Hjälp oss att göra OsmAnd bättre</string>
-    <string name="make_osmand_better_descr">Tillåt OsmAnd att samla in och bearbeta data för anonym appanvändning. Inga data om din position eller dina platser du visar på kartan samlas in.
+    <string name="help_us_make_osmand_better">Hjälp oss att göra MineNAV bättre</string>
+    <string name="make_osmand_better_descr">Tillåt MineNAV att samla in och bearbeta data för anonym appanvändning. Inga data om din position eller dina platser du visar på kartan samlas in.
 \n
 \nKonfigurera när som helst i \"Inställningar\" → \"Sekretess och Säkerhet\".</string>
     <string name="choose_data_to_share">Välj vilken typ av data du vill dela:</string>
     <string name="downloaded_maps">Kartor nedladdade</string>
     <string name="visited_screens">Besökta skärmar</string>
     <string name="downloaded_maps_collect_descr">Hjälper oss att förstå land och region karta popularitet.</string>
-    <string name="visited_screens_collect_descr">Hjälper oss att förstå OsmAnd-funktioners popularitet.</string>
+    <string name="visited_screens_collect_descr">Hjälper oss att förstå MineNAV-funktioners popularitet.</string>
     <string name="privacy_and_security_change_descr">Trycka på \"Tillåt\" om du godkänner våra %1$s</string>
     <string name="settings_privacy_and_security">Sekretess och säkerhet</string>
     <string name="settings_privacy_and_security_desc">Välj vilka data du delar</string>
@@ -1971,11 +1971,11 @@
     <string name="profile_alert_need_profile_name_title">Ange profilnamn</string>
     <string name="profile_alert_need_profile_name_msg">Du måste ange ett profilnamn först.</string>
     <string name="profile_alert_duplicate_name_msg">Det finns redan en profil med det namnet</string>
-    <string name="profile_alert_cant_delete_base">Du kan inte ta bort OsmAnd-basprofiler</string>
+    <string name="profile_alert_cant_delete_base">Du kan inte ta bort MineNAV-basprofiler</string>
     <string name="profile_alert_delete_title">Ta bort profil</string>
     <string name="profile_alert_delete_msg">Radera profilen \"%s\"</string>
     <string name="select_base_profile_dialog_title">Välj en basprofil att starta med</string>
-    <string name="process_downloading_service">OsmAnd-hämtningstjänst</string>
+    <string name="process_downloading_service">MineNAV-hämtningstjänst</string>
     <string name="shared_string_icon">Ikon</string>
     <string name="press_again_to_change_the_map_orientation">Tryck igen för att ändra kartorientering</string>
     <string name="app_mode_camper">Husbil</string>
@@ -2041,7 +2041,7 @@
     <string name="switch_profile">Byt profil</string>
     <string name="reset_to_default">Återställ till standard</string>
     <string name="osmand_settings_descr">Effektivt för hela appen</string>
-    <string name="osmand_settings">Inställningar för OsmAnd</string>
+    <string name="osmand_settings">Inställningar för MineNAV</string>
     <string name="copy_from_other_profile">Kopiera från en annan profil</string>
     <string name="turn_screen_on">Aktivera skärm</string>
     <string name="map_during_navigation_info">Karta under navigering</string>
@@ -2063,7 +2063,7 @@
     <string name="replace_point_descr">Ersätt en annan punkt med den här.</string>
     <string name="app_mode_ski_touring">Turskidor/Randonee</string>
     <string name="app_mode_ski_snowmobile">Snöskoter</string>
-    <string name="custom_osmand_plugin">Anpassad OsmAnd-plugin</string>
+    <string name="custom_osmand_plugin">Anpassad MineNAV-plugin</string>
     <string name="shared_string_items">Objekt</string>
     <string name="changes_applied_to_profile">Ändringar tillämpas på %1$s profilen.</string>
     <string name="settings_item_read_error">Kunde inte läsa från %1$s.</string>
@@ -2107,7 +2107,7 @@
     <string name="plan_route_split_before">Dela innan</string>
     <string name="plan_route_split_after">Dela efter</string>
     <string name="plan_route_add_new_segment">Lägg till ett nytt segment</string>
-    <string name="profile_type_osmand_string">OsmAnd-profil</string>
+    <string name="profile_type_osmand_string">MineNAV-profil</string>
     <string name="profile_type_user_string">Användarprofil</string>
     <string name="clear_confirmation_msg">Rensa %1$s\?</string>
     <string name="new_plugin_added">Nytt insticksprogram tillagd</string>
@@ -2116,7 +2116,7 @@
     <string name="added_profiles">Tillagda profiler</string>
     <string name="suggested_maps_descr">Dessa kartor krävs för insticksmodulen.</string>
     <string name="suggested_maps">Föreslagna kartor</string>
-    <string name="dialogs_and_notifications_descr">Kontrollera vilka popups, dialoger och notifieringar som OsmAnd visar under användning.</string>
+    <string name="dialogs_and_notifications_descr">Kontrollera vilka popups, dialoger och notifieringar som MineNAV visar under användning.</string>
     <string name="dialogs_and_notifications_title">Dialoger och notifieringar</string>
     <string name="download_map_dialog">Kartnedladdningsdialog</string>
     <string name="join_segments">Slå ihop segment</string>
@@ -2129,8 +2129,8 @@
     <string name="gpx_monitoring_stop">Pausa inspelning av resa</string>
     <string name="gpx_monitoring_start">Återuppta inspelning av resa</string>
     <string name="development">Utveckling</string>
-    <string name="use_live_public_transport">OsmAnd Live data</string>
-    <string name="use_live_routing">OsmAnd Live data</string>
+    <string name="use_live_public_transport">Live data</string>
+    <string name="use_live_routing">Live data</string>
     <string name="osm_edit_logout_success">Utloggad</string>
     <string name="shared_string_graph">Graf</string>
     <string name="message_graph_will_be_available_after_recalculation">Vänta.\nDiagrammet blir tillgängligt när rutten har beräknats om.</string>
@@ -2233,7 +2233,7 @@
     <string name="navigate_to_track_descr">Navigera från min position till spåret</string>
     <string name="pass_whole_track_descr">Punkt på spåret för att navigera</string>
     <string name="attach_to_the_roads">Fäst på vägarna</string>
-    <string name="disable_recording_once_app_killed_descrp">Spårloggning pausar när appen dödas (via senaste appar). (OsmAnd-bakgrundsindikationen försvinner från Android-meddelandefältet.)</string>
+    <string name="disable_recording_once_app_killed_descrp">Spårloggning pausar när appen dödas (via senaste appar). (MineNAV-bakgrundsindikationen försvinner från Android-meddelandefältet.)</string>
     <string name="save_global_track_interval_descr">Ange loggningsintervallet för den allmänna spårinspelningen (aktiverad via widgeten \'Trip recording\' på kartan).</string>
     <string name="release_3_8">• Uppdaterad Planera en ruttfunktion: gör det möjligt att använda olika navigeringstyper per segment och inkludera spår \n \n • Ny utseendemeny för spår: välj färg, tjocklek, visningspilar, start- och målikoner \n \n • Förbättrad synlighet för cykelnoder. \n \n • Spår kan nu tappas, har snabbmeny med grundläggande information. \n \n • Förbättrade sökalgoritmer \n \n • Förbättrade alternativ för följespår i Navigation \n \n • Fixade problem med import / export av profilinställningar</string>
     <string name="contour_lines_thanks">Tack för att du köpte \'Topografi\'</string>
@@ -2352,7 +2352,7 @@
     <string name="track_has_no_speed">Spåret innehåller inte hastighetsdata.</string>
     <string name="select_another_colorization">Välj en annan typ av färgläggning.</string>
     <string name="app_mode_go_cart">Go-cart</string>
-    <string name="trip_recording_logging_interval_info">Loggningsintervallet styr under vilken tidsperiod OsmAnd kommer att be om aktuell positionsdata.</string>
+    <string name="trip_recording_logging_interval_info">Loggningsintervallet styr under vilken tidsperiod MineNAV kommer att be om aktuell positionsdata.</string>
     <string name="trip_recording_save_and_continue">Spara och fortsätt</string>
     <string name="lost_data_warning">All osparad data kommer att försvinna.</string>
     <string name="no_purchases">Du har inga inköp</string>
@@ -2361,7 +2361,7 @@
     <string name="empty_purchases_description">Om dina inköp inte visas här, tryck på \"%1$s\" eller kontakta vår support.</string>
     <string name="contact_support">Kontakta supporten</string>
     <string name="troubleshooting">Felsökning</string>
-    <string name="osmand_live">OsmAnd Live</string>
+    <string name="osmand_live">Live</string>
     <string name="annual_subscription">Årlig prenumeration</string>
     <string name="monthly_subscription">Månadspernumeration</string>
     <string name="three_months_subscription">Tre månaders prenumeration</string>
@@ -2400,7 +2400,7 @@
     <string name="customize_route_line">Anpassa ruttlinjen</string>
     <string name="shared_string_route_line">Ruttlinje</string>
     <string name="expired">Upphörd</string>
-    <string name="release_4_0_beta">• Möjlighet att ladda ned höjdkurvor i fot \n \n• Planera rutt-vyn: lagt till flikar för att växla mellan punkter och grafer \n \n• OsmAnd Live-uppdateringar flyttade till \"Hämta kartor &gt; Uppdateringar\" \n \n• Spår kan nu färgläggas efter höjd, hastighet eller lutning. \n \n• Lagt till alternativ för att ändra utseendet på navigeringslinjen \n \n• Uppdaterad \"Inspelning av resa\"-dialog</string>
+    <string name="release_4_0_beta">• Möjlighet att ladda ned höjdkurvor i fot \n \n• Planera rutt-vyn: lagt till flikar för att växla mellan punkter och grafer \n \n• Live-uppdateringar flyttade till \"Hämta kartor &gt; Uppdateringar\" \n \n• Spår kan nu färgläggas efter höjd, hastighet eller lutning. \n \n• Lagt till alternativ för att ändra utseendet på navigeringslinjen \n \n• Uppdaterad \"Inspelning av resa\"-dialog</string>
     <string name="update_all_maps_added">Uppdatera alla kartor som lagts till i %1$s\?</string>
     <string name="exit_number">Avfartsnummer</string>
     <string name="announce_when_exceeded">Meddela när den överskrids</string>
@@ -2426,13 +2426,13 @@
     <string name="backup_error_user_is_not_registered">Ingen användare med den e-postadressen registrerad</string>
     <string name="logout_from_osmand_cloud_decsr">Logga ut\?
 \nDu kommer att behöva logga in igen för att säkerhetskopiera eller återställa data.</string>
-    <string name="backup_deleting_all_data_descr">Vänta medan OsmAnd tar bort dina data från molnet. Alla data på enheten lämnas orörda.</string>
-    <string name="backup_deleted_all_data_descr">All din data har framgångsrikt raderats från OsmAnd Cloud.</string>
+    <string name="backup_deleting_all_data_descr">Vänta medan MineNAV tar bort dina data från molnet. Alla data på enheten lämnas orörda.</string>
+    <string name="backup_deleted_all_data_descr">All din data har framgångsrikt raderats från Cloud.</string>
     <string name="backup_version_history_removed">All versionshistorik har tagits bort.</string>
     <string name="backup_data_removed">All data har tagits bort.</string>
     <string name="backup_dont_have_any_descr">Ställ in automatisk säkerhetskopiering så du inte behöver oroa dig för att förlora data.</string>
     <string name="backup_welcome_back">Välkommen tillbaka!</string>
-    <string name="backup_welcome_back_descr">Återställ data på denna enhet med hjälp av OsmAnd Cloud.</string>
+    <string name="backup_welcome_back_descr">Återställ data på denna enhet med hjälp av Cloud.</string>
     <string name="some_articles_may_not_available_in_lang">Vissa Wikipedia-artiklar finns kanske inte tillgängliga på ditt språk.</string>
     <string name="lang_zhminnan">Minnan</string>
     <string name="lang_yo">Yoruba</string>
@@ -2481,7 +2481,7 @@
     <string name="on_hold_since">Pausad sedan %1$s</string>
     <string name="active_till">Aktiv till %1$s</string>
     <string name="track_has_no_needed_data">Spåret saknar relevant data.</string>
-    <string name="option_available_only_in_osmand_pro">Tillgängligt som del av en OsmAnd Pro-prenumeration.</string>
+    <string name="option_available_only_in_osmand_pro">Tillgängligt som del av en Pro-prenumeration.</string>
     <string name="routes_color_by_type">Färglägg rutter efter…</string>
     <string name="rendering_value_walkingRoutesScopeOSMC_description">Färglägg efter nätverkstillhörighet.</string>
     <string name="rendering_attr_highway_class_footway_name">Gångväg</string>
@@ -2535,7 +2535,7 @@
     <string name="show_compass_ruler">Visa kompasslinjal</string>
     <string name="button_rate">Ge betyg</string>
     <string name="shared_string_color_magenta">Magenta</string>
-    <string name="last_launch_crashed">OsmAnd kraschade vid den senaste körningen. Hjälp oss gärna att förbättra appen genom att dela felrapporten.</string>
+    <string name="last_launch_crashed">MineNAV kraschade vid den senaste körningen. Hjälp oss gärna att förbättra appen genom att dela felrapporten.</string>
     <string name="shared_string_crash">Krasch</string>
     <string name="new_profile">Ny profil</string>
     <string name="default_speed_setting_descr">Ändra standardhastighetsinställningar</string>
@@ -2551,7 +2551,7 @@
     <string name="route_start_point">Startpunkt</string>
     <string name="empty_filename">Tomt filnamn</string>
     <string name="edit_profiles">Redigera profiler</string>
-    <string name="edit_profiles_descr">OsmAnds standardprofiler kan inte raderas, men kan inaktiveras (på föregående sida), eller sorteras till botten av listan.</string>
+    <string name="edit_profiles_descr">MineNAVs standardprofiler kan inte raderas, men kan inaktiveras (på föregående sida), eller sorteras till botten av listan.</string>
     <string name="select_color">Välj färg</string>
     <string name="reset_all_profile_settings">Återställ alla profilinställningar\?</string>
     <string name="osm_editing">OSM-redigering</string>
@@ -2602,7 +2602,7 @@
     <string name="failed_loading_predefined_engines">Kunde inte ladda listan av fördefinierade mallar.
 \nVänligen kontrollera din internetuppkoppling.</string>
     <string name="upload_local_version">Ladda upp lokal version</string>
-    <string name="restore_from_osmand_cloud">Återställ från OsmAnd Cloud</string>
+    <string name="restore_from_osmand_cloud">Återställ från Cloud</string>
     <string name="delete_version_history">Radera versionshistorik</string>
     <string name="routing_attr_avoid_tunnels_description">Undvik tunnlar</string>
     <string name="routing_attr_avoid_tunnels_name">Undvik tunnlar</string>
@@ -2630,7 +2630,7 @@
     <string name="screen_control">Skärmkontroll</string>
     <string name="turn_screen_on_navigation_instructions_descr">Varje navigeringsinstruktioner kommer att slå på skärmen.</string>
     <string name="turn_screen_on_navigation_instructions">Navigeringsinstruktioner</string>
-    <string name="turn_screen_on_power_button_descr">Ett tryck på enhetens strömknapp kommer att slå på skärmen med OsmAnd ovanpå låsskärmen.</string>
+    <string name="turn_screen_on_power_button_descr">Ett tryck på enhetens strömknapp kommer att slå på skärmen med MineNAV ovanpå låsskärmen.</string>
     <string name="turn_screen_on_proximity_sensor">Närhetssensor</string>
     <string name="sqlite_db_file">SQLiteDB-fil</string>
     <string name="mercator_projection">Mercator-projektion</string>
@@ -2640,18 +2640,18 @@
     <string name="shared_string_meters">meter</string>
     <string name="details_dialog_decr">Visa eller dölj ytterligare kartdetaljer</string>
     <string name="use_system_language">Använd systemspråk</string>
-    <string name="backup_delete_all_data_warning">Du är på väg att radera all data som tidigare laddats upp till OsmAnd Cloud, inklusive versionshistorik.
+    <string name="backup_delete_all_data_warning">Du är på väg att radera all data som tidigare laddats upp till Cloud, inklusive versionshistorik.
 \n
 \nDu kommer inte att kunna återställa raderad data.</string>
     <string name="cancel_anytime_in_gplay">Avsluta när som helst på Google Play.</string>
     <string name="cancel_anytime_in_huawei_appgallery">Avsluta när som helst i Huawei AppGallery</string>
-    <string name="backup_error_subscription_was_expired_descr">Din OsmAnd Pro-prenumeration har gått ut, förnya den för att använda säkerhetskopering. Du kan fortfarande återställa data från Cloud.</string>
-    <string name="backup_error_size_is_exceeded">Maximal storlek för OsmAnd Cloud överskriden %1$s</string>
-    <string name="logout_from_osmand_cloud">Logga ut från OsmAnd Cloud</string>
+    <string name="backup_error_subscription_was_expired_descr">Din Pro-prenumeration har gått ut, förnya den för att använda säkerhetskopering. Du kan fortfarande återställa data från Cloud.</string>
+    <string name="backup_error_size_is_exceeded">Maximal storlek för Cloud överskriden %1$s</string>
+    <string name="logout_from_osmand_cloud">Logga ut från Cloud</string>
     <string name="backup_do_not_have_any">Du har inte någon online-säkerhetskopia ännu</string>
     <string name="explore_wikipedia_offline">Utforska Wikipedia offline.</string>
-    <string name="purchases_feature_desc_pro_widgets">Få tillgång till OsmAnd Pro-finesser: Färgläggning av rutter med mera.</string>
-    <string name="explore_osmnad_plans_to_find_suitable">Utforska OsmAnd-abonnemangen och välj det som passar dig.</string>
+    <string name="purchases_feature_desc_pro_widgets">Få tillgång till Pro-finesser: Färgläggning av rutter med mera.</string>
+    <string name="explore_osmnad_plans_to_find_suitable">Utforska MineNAV-abonnemangen och välj det som passar dig.</string>
     <string name="reset_to_original">Återställ till original</string>
     <string name="map_updates_for_mappers">Kartuppdateringar för karterare</string>
     <string name="benefits_for_contributors_primary_descr">Engagerade karterare som aktivt bidrar till OpenStreetMap kan vara berättigade till obegränsade kartuppdateringar varje timme.</string>
@@ -2682,7 +2682,7 @@
     <string name="routing_attr_avoid_sett_name">Ingen gatsten</string>
     <string name="benefits_for_contributors">Fördelar för dem som bidrar aktivt till OSM</string>
     <string name="available_until">Tillgänglig till %1$s</string>
-    <string name="enough_contributions_descr">Grattis, du har bidragit tillräckligt mycket till OpenStreetMap och kan nu dra nytta av obegränsade kartuppdateringar i OsmAnd!</string>
+    <string name="enough_contributions_descr">Grattis, du har bidragit tillräckligt mycket till OpenStreetMap och kan nu dra nytta av obegränsade kartuppdateringar i MineNAV!</string>
     <string name="map_updates_are_unavailable_yet">Kartuppdateringar är ännu inte tillgängliga. :-(</string>
     <string name="shared_string_min_height">Min. höjd</string>
     <string name="shared_string_max_height">Max höjd</string>
@@ -2729,7 +2729,7 @@
     <string name="history_is_disabled_descr">Aktivera historik för snabbare tillgång till de senast använda resultaten.</string>
     <string name="shared_string_details">Detaljer</string>
     <string name="is_disabled">%1$s är inaktiverad</string>
-    <string name="srtm_download_list_help_message">OsmAnd tillhandahåller konturlinjedata i meter och fot. Du kommer behöva ladda ned filen igen för att ändra formatet.</string>
+    <string name="srtm_download_list_help_message">MineNAV tillhandahåller konturlinjedata i meter och fot. Du kommer behöva ladda ned filen igen för att ändra formatet.</string>
     <string name="rendering_attr_surface_unpaved_name">Obelagd</string>
     <string name="step_by_step">Steg-för-steg</string>
     <string name="rendering_attr_surface_salt_name">Salt</string>
@@ -2746,10 +2746,10 @@
     <string name="purchases_feature_desc_terrain">Höjdkurvor, terrängskuggning i gråskala och sluttningskartor i färg, för att visa toppar och dalar.</string>
     <string name="hidden_items_descr">Dessa objekt döljs från menyn, men de innehållande valen, funktionerna eller insticksprogrammen fortsätter att fungera.</string>
     <string name="test_voice_desrc">Tryck på en knapp och lyssna på motsvarande röstinspelning för att höra om den saknas eller är felaktig.</string>
-    <string name="purchases_feature_desc_android_auto">Ger dig OsmAnds offline-kartor och navigering på skärmen i din bil, och interagerar med bilens kontroller.</string>
+    <string name="purchases_feature_desc_android_auto">Ger dig MineNAVs offline-kartor och navigering på skärmen i din bil, och interagerar med bilens kontroller.</string>
     <string name="routeInfo_smoothness_description">Klassificering av vägar och gångvägar för hjulfordon, särskilt med avseende på ytans jämnhet/planhet.</string>
     <string name="recalc_angle_dialog_descr">En rak linje mellan min position och den beräknade rutten visas, tills rutten har beräknats om</string>
-    <string name="turn_screen_on_descr">Välj alternativ för skärmväckning (se till att OsmAnd är i förgrunden när enheten låses):</string>
+    <string name="turn_screen_on_descr">Välj alternativ för skärmväckning (se till att MineNAV är i förgrunden när enheten låses):</string>
     <string name="search_poi_types_descr">Kombinera POI-typer från olika kategorier. Tryck på knappen för att välja alla, tryck på vänster sida för att välja kategori.</string>
     <string name="rendering_attr_piste_difficulty_intermediate_name">Medel</string>
     <string name="no_plugins_enabled">Du har inga aktiverade insticksmoduler. Du hittar en lista över tillgängliga moduler under \'Meny\' → \'Insticksmoduler\'.</string>
@@ -2776,7 +2776,7 @@
     <string name="sett_wunderlinq_ext_input">WunderLINQ</string>
     <string name="upload_gpx_description_hint">Lämna tomt, spårnamnen används som beskrivning. Inmatad beskrivning kommer appliceras på varje spår.</string>
     <string name="quick_action_contour_lines_descr">Knapp som visar eller döljer höjdkurvor i kartan.</string>
-    <string name="release_4_0">- Säkerhetskopiering i molnet \n \n - Nattläge för Topo-kartstilen har lagts till\n \n - Höjdkurvor i fot möjliga att ladda ned\n \n - Spår kan nu färgläggas efter höjd, hastighet eller lutning\n \n - Uppdaterad dialogruta \"Inspelning av resa\"\n \n - Avståndsmätning genom tryck flyttas från Radielinjal till ett separat alternativ\n \n - Planera rutt: Du kan nu ändra navigeringsalternativ, komma åt kartkonfigurationen och söka utan att lämna ruttplaneringen\n \n - Ny skärmvy för köp med mer detaljerad information\n \n - Möjlighet att ändra utseendet på navigeringslinjen\n \n - OsmAnd Live-uppdateringar har flyttats till \"Hämta kartor &gt; Uppdateringar\"</string>
+    <string name="release_4_0">- Säkerhetskopiering i molnet \n \n - Nattläge för Topo-kartstilen har lagts till\n \n - Höjdkurvor i fot möjliga att ladda ned\n \n - Spår kan nu färgläggas efter höjd, hastighet eller lutning\n \n - Uppdaterad dialogruta \"Inspelning av resa\"\n \n - Avståndsmätning genom tryck flyttas från Radielinjal till ett separat alternativ\n \n - Planera rutt: Du kan nu ändra navigeringsalternativ, komma åt kartkonfigurationen och söka utan att lämna ruttplaneringen\n \n - Ny skärmvy för köp med mer detaljerad information\n \n - Möjlighet att ändra utseendet på navigeringslinjen\n \n - Live-uppdateringar har flyttats till \"Hämta kartor &gt; Uppdateringar\"</string>
     <string name="display_route_tracks">Visa spår</string>
     <string name="location_access_request_action">Bevilja åtkomst</string>
     <string name="included_categories">Inkluderade kategorier</string>
@@ -2821,12 +2821,12 @@
 \nSpårpunkter som ligger inom detta avstånd från den senast synliga punkten döljs.
 \nVar uppmärksam på att stora tröskelavstånd kan förenkla spårgeometrin för mycket.</string>
     <string name="save_changes_into_file">Spara ändringar till fil</string>
-    <string name="gps_filter_actions_description">OsmAnd kommer tillämpa ändringar på spåret utan att uppdatera själva filen. Du kan spara ändringarna manuellt.</string>
-    <string name="storage_migration_wrong_folder_warning">Inga OsmAnd-data hittades i den valda mappen. Försök igen.</string>
+    <string name="gps_filter_actions_description">MineNAV kommer tillämpa ändringar på spåret utan att uppdatera själva filen. Du kan spara ändringarna manuellt.</string>
+    <string name="storage_migration_wrong_folder_warning">Inga MineNAV-data hittades i den valda mappen. Försök igen.</string>
     <string name="files_remaining">Återstående filer: %1$s %2$s</string>
     <string name="progress_complete">%1$s klar</string>
     <string name="storage_found_files_descr">Tryck på \"%1$s\" för att kopiera %2$s filer från \"%3$s\" till \"%4$s\". Det kan ta ett tag.</string>
-    <string name="shared_string_skip_warning">Hoppa över migreringen\? OsmAnd har inte längre tillgång till dina filer i delad lagring.
+    <string name="shared_string_skip_warning">Hoppa över migreringen\? MineNAV har inte längre tillgång till dina filer i delad lagring.
 \n
 \nAppen kommer att börja använda den nya datamappen.</string>
     <string name="turn_arrows">Svängpilar</string>
@@ -2932,7 +2932,7 @@
     <string name="routing_attr_freeride_policy_prefer_offpiste_name">Föredra offpist</string>
     <string name="rendering_attr_showTrainRoutes_name">Tågrutter</string>
     <string name="save_track_logging_accuracy">Loggningsnoggrannhet</string>
-    <string name="tracks_view_descr">Dina inspelade spår finns i %1$s, eller i OsmAnd-mappen.</string>
+    <string name="tracks_view_descr">Dina inspelade spår finns i %1$s, eller i MineNAV-mappen.</string>
     <string name="map_widget_time_to_destination">Tid till destination</string>
     <string name="rendering_attr_hideMilitaryAreas_name">Militärområden</string>
     <string name="battery_widget_desc">Visar din enhets batterinivå.</string>
@@ -2972,7 +2972,7 @@
     <string name="osmand_cloud_create_account_descr">Ange din e-postadress. En verifieringskod skickas till adressen,\noch alla dina data kopplas till den.</string>
     <string name="send_crash_log">Skicka appens kraschloggar</string>
     <string name="average_speed_widget_desc">Visar medelhastigheten för den nuvarande färden.</string>
-    <string name="purchases_feature_desc_osmand_cloud">Skaffa OsmAnd Cloud för att lagra alla dina OsmAnd-data online. Dina data finns kvar även efter en ominstallation. Säkerhetskopiera och återställ enkelt all information.</string>
+    <string name="purchases_feature_desc_osmand_cloud">Skaffa Cloud för att lagra alla dina MineNAV-data online. Dina data finns kvar även efter en ominstallation. Säkerhetskopiera och återställ enkelt all information.</string>
     <string name="delete_profiles_descr">Tryck på \'Verkställ\' raderar permanent de borttagna profilerna.</string>
     <string name="routing_attr_goods_restrictions_name">Godsleverans</string>
     <string name="current_speed_widget_desc">Visar din nuvarande hastighet enligt GPS.</string>
@@ -3055,7 +3055,7 @@
     <string name="display_position">Visningsläge för position</string>
     <string name="compass_always_visible">Alltid synlig</string>
     <string name="compass_always_hidden">Alltid dold</string>
-    <string name="cloud_all_changes_uploaded_descr">Alla ändringar gjorda på denna enhet synkroniseras med OsmAnd molnlagring.</string>
+    <string name="cloud_all_changes_uploaded_descr">Alla ändringar gjorda på denna enhet synkroniseras med MineNAV molnlagring.</string>
     <string name="cloud_no_conflicts">Inga konflikter hittades.</string>
     <string name="download_cloud_version">Ladda ned moln-versionen</string>
     <string name="shared_string_do_not_exist">Finns inte</string>
@@ -3138,7 +3138,7 @@
     <string name="speak_route_recalculation">Meddela omberäkning av rutt</string>
     <string name="send_uuid_preference">Skicka unik användaridentifierare (UUID)</string>
     <string name="location_simulation_speedup">Snabbare simulering</string>
-    <string name="send_uuid_preference_desc">Ett slumpmässigt UUID används för att ladda ned offlinekartor från OsmAnd-servrar för att övervaka rättvis användning av serverresurser, förutsäga trafikmönster och generera anonyma månatliga kartrapporter.</string>
+    <string name="send_uuid_preference_desc">Ett slumpmässigt UUID används för att ladda ned offlinekartor från MineNAV-servrar för att övervaka rättvis användning av serverresurser, förutsäga trafikmönster och generera anonyma månatliga kartrapporter.</string>
     <string name="rendering_attr_showMtbScaleIMBATrails_name">Visa IMBA mtb-leder</string>
     <string name="empty_screen_weather_contours">Slå på för att visa väderkonturer på kartan.</string>
     <string name="weather_precip_in">tum</string>
@@ -3182,8 +3182,8 @@
     <string name="empty_screen_weather_precipitation_layer">Slå på för att visa nederbördslager på kartan.</string>
     <string name="air_pressure_widget_desc">Visar lufttrycket för aktuellt centrum i kartan.</string>
     <string name="temperature_widget_desc">Visar temperatur för aktuellt centrum i kartan.</string>
-    <string name="rendering_engine_failed">OsmAnds kartrendering har nyligen kraschat.</string>
-    <string name="map_rendering_engine_descr">Version 1 var standard före OsmAnd 4.3 och är lämpligt för äldre enheter.\n\nVersion 2 (OpenGL) är mer avancerad och har även ytterligare funktioner, såsom 3D-visning.</string>
+    <string name="rendering_engine_failed">MineNAVs kartrendering har nyligen kraschat.</string>
+    <string name="map_rendering_engine_descr">Version 1 var standard före MineNAV 4.3 och är lämpligt för äldre enheter.\n\nVersion 2 (OpenGL) är mer avancerad och har även ytterligare funktioner, såsom 3D-visning.</string>
     <string name="favorites_backup">Säkerhetskopiering av favoriter</string>
     <string name="ant_go_to_store">Gå till butik</string>
     <string name="map_widget_ant_bicycle_dist_desc">Visar längden på tillryggalagd sträcka</string>
@@ -3255,7 +3255,7 @@
     <string name="shared_string_apply_changes">Tillämpa ändringar</string>
     <string name="no_visible_tracks_description">Välj spår att visa på kartan.</string>
     <string name="recently_visible">Senast synliga %1$s</string>
-    <string name="empty_tracks_description">Du kan importera, skapa och spela in spårfiler med OsmAnd.</string>
+    <string name="empty_tracks_description">Du kan importera, skapa och spela in spårfiler med MineNAV.</string>
     <string name="shared_string_select_recent">Välj senaste</string>
     <string name="change_appearance">Ändra utseende</string>
     <string name="show_all_tracks">Visa alla spår</string>
@@ -3277,7 +3277,7 @@
     <string name="what_is_new">Nyheter</string>
     <string name="empty_tracks">Du har inga spårfiler än.</string>
     <string name="delete_cloud_version">Radera moln-version</string>
-    <string name="cloud_version_confirm_delete">Radera \"%1$s\" från OsmAnd Cloud\?</string>
+    <string name="cloud_version_confirm_delete">Radera \"%1$s\" från Cloud\?</string>
     <string name="shared_string_delete_file">Radera fil</string>
     <string name="local_version_do_not_exist">Det finns ingen lokal version.</string>
     <string name="movement_speed">Rörelsehastighet</string>
@@ -3310,7 +3310,7 @@
 \n- temperatur och lufttryck med isolinjer
 \n
 \nVäderdatat tillhandahålls av Global Forecast System (GFS, %1$s).</string>
-    <string name="rendering_engine_failed_descr">OsmAnd har återgått till \"version 1\" för kartrendering. Du kan försöka byta tillbaka till den nya \"Version 2 (OpenGL)\"-renderingsmotorn i inställningarna.
+    <string name="rendering_engine_failed_descr">MineNAV har återgått till \"version 1\" för kartrendering. Du kan försöka byta tillbaka till den nya \"Version 2 (OpenGL)\"-renderingsmotorn i inställningarna.
 \n
 \nUnderlätta gärna förbättringar genom att tillhandahålla din fellogg.</string>
     <string name="marker_1st">Första markören</string>
@@ -3356,7 +3356,7 @@
     <string name="map_widget_trip_recording_duration">Varaktighet</string>
     <string name="no_altitude_data">Ingen höjddata</string>
     <string name="track_attach_to_the_roads_descr">Spåret kommer att kopplas till vägarna med hjälp av offline-kartor. Spårets geometri kommer att ändras.</string>
-    <string name="calculate_online_altitude_descr">Beräkna höjden online på OsmAnds servrar, baserat på satellitbilder och digitala höjdmodeller. Skillnader jämfört med enhetens registrerade höjd kan användas som höjdkorrigering.</string>
+    <string name="calculate_online_altitude_descr">Beräkna höjden online på MineNAVs servrar, baserat på satellitbilder och digitala höjdmodeller. Skillnader jämfört med enhetens registrerade höjd kan användas som höjdkorrigering.</string>
     <string name="map_widget_trip_recording_downhill">Nedför</string>
     <string name="get_altitude_information">Hämta höjdinformation</string>
     <string name="navigation_points_desc">Navigationswidgetar aktiveras under navigering för att visa information som avstånd, ankomsttid, kommande svängar, bäring, aktuellt gatunamn, körfält, maxhastighet, ankommande varningar, ruttpunkter och intressepunkter.</string>
@@ -3450,8 +3450,8 @@
     <string name="rendering_value_sectors_name">Sektorer</string>
     <string name="shared_string_duplicate">Duplicera</string>
     <string name="rendering_value_caiScale_name">CAI</string>
-    <string name="use_osm_live_public_transport_description">Aktivera kollektivtrafik för OsmAnd Live-ändringar.</string>
-    <string name="quick_action_switch_day_night_descr">En knapp för att växla mellan dag- och nattläge i OsmAnd.</string>
+    <string name="use_osm_live_public_transport_description">Aktivera kollektivtrafik för Live-ändringar.</string>
+    <string name="quick_action_switch_day_night_descr">En knapp för att växla mellan dag- och nattläge i MineNAV.</string>
     <string name="shared_string_avoid">Undvik</string>
     <string name="external_device_characteristic_systolic">Systoliskt</string>
     <string name="rendering_attr_horse_scale_critical_name">Kritisk</string>
@@ -3466,7 +3466,7 @@
     <string name="extra_maps_menu_group">Extra kartor</string>
     <string name="items_added">Poster tillagda</string>
     <string name="shared_string_nothing_selected">Ingenting valt</string>
-    <string name="shared_string_osmand_usage">OsmAnd användning</string>
+    <string name="shared_string_osmand_usage">MineNAV användning</string>
     <string name="shared_string_memory_gb_desc">%1$s GB</string>
     <string name="shared_string_memory_kb_desc">%1$s kB</string>
     <string name="ltr_or_rtl_combine_via_comma">%1$s, %2$s</string>
@@ -3490,22 +3490,22 @@
     <string name="shared_string_memory_mb_desc">%1$s MB</string>
     <string name="routing_attr_piste_type_downhill_name">Alpin skidåkning, utförsåkning</string>
     <string name="routing_attr_avoid_share_taxi_name">Ingen delad taxi</string>
-    <string name="osmand_cloud_deletion_subscriptions_warning">Detta kommer inte avsluta din OsmAnd Pro prenumeration.</string>
+    <string name="osmand_cloud_deletion_subscriptions_warning">Detta kommer inte avsluta din Pro prenumeration.</string>
     <string name="add_start_and_end_points">Lägg till avgång och ankomst</string>
     <string name="application_profiles">App-profiler</string>
-    <string name="osmand_cloud">OsmAnd molntjänst</string>
+    <string name="osmand_cloud">MineNAV molntjänst</string>
     <string name="routing_profile_broutrer">BRouter (offline)</string>
     <string name="sit_on_the_stop">Kliv på vid hållplats</string>
     <string name="base_profile_descr_public_transport">Kollektivtrafik; tåg, buss, tunnelbana etc</string>
     <string name="routing_attr_piste_type_skitour_description">Leder för turskidåkning, randonee, telemark.</string>
     <string name="route_descr_select_start_point">Välj startpunkt</string>
-    <string name="osmand_cloud_deletion_all_data_warning">All data på OsmAnds molntjänst kommer att %1$s. Data på din enhet kommer inte påverkas.</string>
-    <string name="free_favorites_backup_description">Registrera dig för OsmAnd molntjänst för gratis säkerhetskopiering av favoriter och inställningar.</string>
-    <string name="get_osmand_cloud">Skaffa OsmAnd molntjänst</string>
+    <string name="osmand_cloud_deletion_all_data_warning">All data på MineNAVs molntjänst kommer att %1$s. Data på din enhet kommer inte påverkas.</string>
+    <string name="free_favorites_backup_description">Registrera dig för MineNAV molntjänst för gratis säkerhetskopiering av favoriter och inställningar.</string>
+    <string name="get_osmand_cloud">Skaffa MineNAV molntjänst</string>
     <string name="osmand_cloud_delete_account_confirmation">Radera konto?</string>
     <string name="routing_attr_piste_type_nordic_description">Leder och skidspår för längdskidåkning.</string>
     <string name="contact_us">Kontakta oss</string>
-    <string name="osmand_cloud_deleted_account_descr">Konto och all data har raderats från OsmAnd molntjänst.</string>
+    <string name="osmand_cloud_deleted_account_descr">Konto och all data har raderats från MineNAV molntjänst.</string>
     <string name="routing_attr_avoid_subway_description">Undviker tunnelbana, spårvagn, rälsbuss etc</string>
     <string name="routing_attr_piste_type_nordic_name">Längdskidor</string>
     <string name="route_add_start_point">Lägg till startpunkt</string>
@@ -3513,8 +3513,8 @@
     <string name="special_routing_type">Särskild ruttberäkning</string>
     <string name="third_party_routing_type">Tredjeparts ruttberäkning</string>
     <string name="routing_attr_piste_type_sled_description">Backar för pulka, släde, bob, rodel mm.</string>
-    <string name="cloud_email_not_registered">Den här mejladressen finns inte registrerad for OsmAnd molntjänst</string>
-    <string name="public_transport_warning_descr_blog">Läs mer om OsmAnds navigering och vägbeskrivning på vår blogg.</string>
+    <string name="cloud_email_not_registered">Den här mejladressen finns inte registrerad for MineNAV molntjänst</string>
+    <string name="public_transport_warning_descr_blog">Läs mer om MineNAVs navigering och vägbeskrivning på vår blogg.</string>
     <string name="save_poi_value_exceed_length">Korta ner taggen \"%s\" till mindre än 255 tecken.</string>
     <string name="quick_action_day_night_mode">%s-läge</string>
     <string name="rendering_attr_highway_class_state_road_name">Riksväg</string>
@@ -3525,7 +3525,7 @@
     <string name="reset_all_profile_settings_descr">Återställ alla profilinställningar till standardvärden.</string>
     <string name="routing_attr_driving_style_prefer_unpaved_name">Föredra obelagda vägar</string>
     <string name="data_storage_space_description">%1$s GB ledigt (av %2$s GB)</string>
-    <string name="listed_exist">Angivna %1$s, finns redan i OsmAnd.</string>
+    <string name="listed_exist">Angivna %1$s, finns redan i MineNAV.</string>
     <string name="replace_all_desc">Nuvarande objekt kommer att ersättas med objekt från filen</string>
     <string name="live_monitoring">Online-spårning</string>
     <string name="rendering_attr_highway_class_track_grade4_name">Grad 4</string>
@@ -3540,13 +3540,13 @@
 \nBeräkning: %3$.1f sek, %4$d vägar, %5$d kartrutor)</string>
     <string name="shared_string_memory_used_mb_desc">%1$s MB använt</string>
     <string name="recalc_angle_dialog_title">Minsta vinkel mellan min position och rutten</string>
-    <string name="change_data_storage_full_description">Flytta OsmAnd-datafiler till den nya platsen\?
+    <string name="change_data_storage_full_description">Flytta MineNAV-datafiler till den nya platsen\?
 \n%1$s &gt; %2$s</string>
-    <string name="internal_app_storage_description">Intern lagring, dold för användare och andra appar, så enbart OsmAnd har tillgång till dina data.</string>
+    <string name="internal_app_storage_description">Intern lagring, dold för användare och andra appar, så enbart MineNAV har tillgång till dina data.</string>
     <string name="shared_string_memory_used_kb_desc">%1$s kB använt</string>
     <string name="multimedia_notes_prefs_descr">Bildstorlek, ljud- och videokvalitet</string>
     <string name="move_maps_to_new_destination">Flytta till den nya målmappen</string>
-    <string name="change_osmand_data_folder_question">Byt mapp för OsmAnd-data\?</string>
+    <string name="change_osmand_data_folder_question">Byt mapp för MineNAV-data\?</string>
     <string name="change_data_storage_folder">Byt lagringsmapp</string>
     <string name="clear_recorded_data_warning">Ta bort inspelad data\?</string>
     <string name="ltr_or_rtl_triple_combine_via_dash">%1$s — %2$s — %3$s</string>
@@ -3572,7 +3572,7 @@
     <string name="precision_hdop_and_vdop">Horisontell precision: %1$s, vertikal: %2$s</string>
     <string name="shared_string_include_data">Inkludera ytterligare data</string>
     <string name="data_storage_preference_summary">%1$s • %2$s</string>
-    <string name="paste_Osmand_data_folder_path">Klistra in sökvägen till mappen med OsmAnd-data</string>
+    <string name="paste_Osmand_data_folder_path">Klistra in sökvägen till mappen med MineNAV-data</string>
     <string name="rendering_attr_highway_class_track_grade2_name">Grad 2</string>
     <string name="routing_attr_allow_skating_only_name">Tillåt spår endast för skejt</string>
     <string name="rendering_attr_highway_class_track_grade1_name">Grad 1</string>
@@ -3585,7 +3585,7 @@
     <string name="multimedia_rec_split_title">Automatisk uppdelning</string>
     <string name="ltr_or_rtl_combine_via_colon_with_space">%1$s : %2$s</string>
     <string name="help_article_map_legend_nautical_map_name">Nautisk kartstil</string>
-    <string name="help_article_map_legend_osmand_name">OsmAnd-kartstil</string>
+    <string name="help_article_map_legend_osmand_name">MineNAV-kartstil</string>
     <string name="help_article_personal_name">Min data</string>
     <string name="help_article_personal_profiles_name">Profiler (Inställningar)</string>
     <string name="help_article_personal_storage_name">Lagring</string>
@@ -3610,7 +3610,7 @@
     <string name="help_article_navigation_setup_gpx_navigation_name">Navigera efter spår</string>
     <string name="help_article_navigation_setup_route_details_name">Ruttdetaljer</string>
     <string name="help_article_personal_import_export_name">Importera / Exportera</string>
-    <string name="help_article_start_with_name">Börja med OsmAnd</string>
+    <string name="help_article_start_with_name">Börja med MineNAV</string>
     <string name="help_article_start_with_first_steps_name">Första stegen</string>
     <string name="help_article_start_with_main_menu_name">Huvudmeny</string>
     <string name="help_article_troubleshooting_crash_logs_name">Kraschloggar</string>
@@ -3643,7 +3643,7 @@
     <string name="average_glide_time_interval_desc">Ange tidsintervallet för genomsnittligt glidtal.</string>
     <string name="gpx_parse_error">Problem hittades med en GPX-fil.
 \n
-\nDu kan kontakta OsmAnd support för hjälp att undersöka felet.</string>
+\nDu kan kontakta MineNAV support för hjälp att undersöka felet.</string>
     <string name="create_custom_categories_list_promo">Ändra listans sortering och dölja kategorier. Importera eller exportera alla ändringar som profiler.</string>
     <string name="with_waypoints">Med vägpunkter</string>
     <string name="profile_prefs_reset_successful">Alla profilinställningar återställda till standardförval.</string>
@@ -3652,7 +3652,7 @@
     <string name="track_filter_range_selected_format">%1$s - %2$s, %3$s</string>
     <string name="track_filter_date_selected_format">%1$s - %2$s</string>
     <string name="average_glide_ratio">Genomsnittligt glidtal</string>
-    <string name="release_4_6">• Android Auto: Lade till 3D-läge\n\n• Spår: Introducerade filter och smarta mappar, optimerat minne för större filer\n\n• Förbättrade widgetpaneler uppe och nedre för att hantera alla widgetar\n\n• Förbättrad lokal resurshantering\n\n• Anpassningsbar knappmappning för externa styrenheter\n\n• Nya widgetar: \"Glidförhållande\" och \"Solposition\"\n\n• OsmAnd Cloud: Nu åtkomst till raderade filer\n\n• Förbättrad spårfärgning i lutningsläge med ny symmetrisk gradient\n\n• Åtgärdade problem med transparent statusfält\n\n• Lade till stöd för ANT+ temperaturwidget\n\n• Introducerade widgeten \"Tillgängligt RAM\"</string>
+    <string name="release_4_6">• Android Auto: Lade till 3D-läge\n\n• Spår: Introducerade filter och smarta mappar, optimerat minne för större filer\n\n• Förbättrade widgetpaneler uppe och nedre för att hantera alla widgetar\n\n• Förbättrad lokal resurshantering\n\n• Anpassningsbar knappmappning för externa styrenheter\n\n• Nya widgetar: \"Glidförhållande\" och \"Solposition\"\n\n• Cloud: Nu åtkomst till raderade filer\n\n• Förbättrad spårfärgning i lutningsläge med ny symmetrisk gradient\n\n• Åtgärdade problem med transparent statusfält\n\n• Lade till stöd för ANT+ temperaturwidget\n\n• Introducerade widgeten \"Tillgängligt RAM\"</string>
     <string name="help_article_navigation_guidance_map_during_navigation_name">Kartvy under navigering</string>
     <string name="filter_by_name">Filtrera efter namn</string>
     <string name="shared_string_reset_all">Återställ allt</string>
@@ -3686,9 +3686,9 @@
     <string name="help_article_map_interact_with_map_name">Interagera med kartan</string>
     <string name="help_article_search_search_all_name">Sök alla</string>
     <string name="help_article_map_legend_ski_map_name">Vinter och skidor-kartstil</string>
-    <string name="help_article_navigation_routing_osmand_routing_name">Om OsmAnds ruttberäkning</string>
+    <string name="help_article_navigation_routing_osmand_routing_name">Om MineNAVs ruttberäkning</string>
     <string name="terrain_category_description">Höjdkurvor, terrängskuggning i gråskala och lutningskartor i färg, för att visa toppar och dalar.</string>
-    <string name="location_source_descr">Som standard använder OsmAnd installerad från Google Play %1$s för att fastställa plats. \n \nOm du ges felaktig platsinformation, eller om enheten saknar %2$s, pröva att byta till \"%3$s\"</string>
+    <string name="location_source_descr">Som standard använder MineNAV installerad från Google Play %1$s för att fastställa plats. \n \nOm du ges felaktig platsinformation, eller om enheten saknar %2$s, pröva att byta till \"%3$s\"</string>
     <string name="rendering_value_sector2_name">Sektor 2</string>
     <string name="ant_plus_help_title">Jag vet inte vilken typ av sensor jag har</string>
     <string name="time_to_intermediate_widget_desc">Visar \"Ankomsttid\" eller \"Återstående restid\" till första mellanliggande punkt. Tiden uppdateras kontinuerligt under navigeringen, och så fort en punkt passeras uppdateras den till nästa mellanliggande punkt.</string>
@@ -3727,14 +3727,14 @@
     <string name="av_audio_format_bottom_sheet_descr">Välj ett ljudformat. Filformat-behållaren för ljud är 3GPP (.3gp).</string>
     <string name="relief_3d">3D relief</string>
     <string name="average_speed_time_interval_desc">Ange tidsintervall för medelhastighet.</string>
-    <string name="ant_plus_pair_bluetooth_prompt">Du kan ansluta till Bluetooth LE och ANT+ sensorer med OsmAnd.</string>
+    <string name="ant_plus_pair_bluetooth_prompt">Du kan ansluta till Bluetooth LE och ANT+ sensorer med MineNAV.</string>
     <string name="rendering_value_sector1_name">Sektor 1</string>
     <string name="write_data_from_sensor_to_track">Skriv data från externa sensorer till GPX vis spårinspelning.</string>
     <string name="ant_plus_pair_new_sensor_ant_plus">Anslut ANT+-sensor</string>
     <string name="first_marker_widget_desc">Du kan ställa in widgeten att visa avstånd eller uppskattad restid kvar till den första kartmarkören.</string>
     <string name="manage_subscriptions">Hantera prenumerationer.</string>
     <string name="rendering_attr_seabedDetail_name">Havsbotten detaljer</string>
-    <string name="osmand_cloud_deletion_secondary_devices_warning">Sekundära enheter kommer att loggas ut från OsmAnd Cloud och förlorar tillgång till betalda funktioner.</string>
+    <string name="osmand_cloud_deletion_secondary_devices_warning">Sekundära enheter kommer att loggas ut från Cloud och förlorar tillgång till betalda funktioner.</string>
     <string name="import_as_one_track">Importera som ett spår</string>
     <string name="compass_visible_if_map_rotated_desc">Dold när norr är uppåt</string>
     <string name="one_image_per_tile">En bildfil per kartruta</string>
@@ -3778,7 +3778,7 @@
     <string name="next_turn_widget_desc">Visar information om nästa sväng med en illustration av manövern och avståndet kvar dit.</string>
     <string name="compass_click_desc">Dubbeltryck på kompassen för att växla kartorientering.</string>
     <string name="default_appearance_desc">Förinställd färg, ikon och form appliceras på nya favoriter i gruppen.</string>
-    <string name="shared_storage_migration_descr">På grund av ändringar i Androids lagringsåtkomst kan OsmAnd inte längre använda %1$s.
+    <string name="shared_storage_migration_descr">På grund av ändringar i Androids lagringsåtkomst kan MineNAV inte längre använda %1$s.
 \n
 \nKopiera alla dina data till den nya mappen.</string>
     <string name="av_notes_video_widget_desc">Med knapptryck på widgeten kan du spela in video.</string>
@@ -3800,7 +3800,7 @@
     <string name="shared_string_loading">Laddar</string>
     <string name="may_be_used_if_there_is_shortcut">Kan användas om det finns en genväg</string>
     <string name="goods_delivery_desc">Vissa vägar kan ha restriktioner för varubilar.</string>
-    <string name="release_4_5">• BLE/ANT+ sensorer: omarbetad anslutning och skrivning till GPX \n \n • Gratis säkerhetskopiering för favoriter och inställningar till \"OsmAnd Cloud\" \n \n • Nytt format för terrängkartor med stöd för 3D Relief \n \n • Spårhantering: uppdaterat UI, sortering, stöd för mappstrukturer \n \n • Android Auto: ny start meny för tillgång till favoriter, spår och intressepunktskategorier \n \n • En lista med widgetar för övre och nedre panelen \n \n • Ny \"Tåg\"-profil, möjliggör rutter via järnväg \n \n • Höjdkurvor fungerar nu oavsett kartkälla \n \n • Utökad lista med standardgenvägar för externa tangentbord \n \n • Anpassningsbara ruttberäkningsfiler, nya val för att radera eller skriva över \n \n • Ny funktion \"Meddela avvikelse från rutt\" \n \n • Startskärm: Möjlighet att återställa app-tillstånd från fil \n \n • Lagt till klassificering för \"Farligt gods\" för lastbil i Nordamerika \n \n • Stöd för \"Via ferrata\" vid rutter för fotgängare \n \n • Lagt till \"CAI\"-skala för klassificering av svårighetsgrad för leder \n \n • Fixat per-app språkval \n \n • Stöd för ikonteman \n \n • OsmAnd Cloud: nytt val att radera konto \n \n • Tillgänglighet: knappstorlek ändrad till 48 dp; löser problem med skärmläsare i kartvyn \n \n • Röstprompter för japanska omarbetad \n \n • Höjdskillnad och lutningsberäkning omarbetad</string>
+    <string name="release_4_5">• BLE/ANT+ sensorer: omarbetad anslutning och skrivning till GPX \n \n • Gratis säkerhetskopiering för favoriter och inställningar till \"Cloud\" \n \n • Nytt format för terrängkartor med stöd för 3D Relief \n \n • Spårhantering: uppdaterat UI, sortering, stöd för mappstrukturer \n \n • Android Auto: ny start meny för tillgång till favoriter, spår och intressepunktskategorier \n \n • En lista med widgetar för övre och nedre panelen \n \n • Ny \"Tåg\"-profil, möjliggör rutter via järnväg \n \n • Höjdkurvor fungerar nu oavsett kartkälla \n \n • Utökad lista med standardgenvägar för externa tangentbord \n \n • Anpassningsbara ruttberäkningsfiler, nya val för att radera eller skriva över \n \n • Ny funktion \"Meddela avvikelse från rutt\" \n \n • Startskärm: Möjlighet att återställa app-tillstånd från fil \n \n • Lagt till klassificering för \"Farligt gods\" för lastbil i Nordamerika \n \n • Stöd för \"Via ferrata\" vid rutter för fotgängare \n \n • Lagt till \"CAI\"-skala för klassificering av svårighetsgrad för leder \n \n • Fixat per-app språkval \n \n • Stöd för ikonteman \n \n • Cloud: nytt val att radera konto \n \n • Tillgänglighet: knappstorlek ändrad till 48 dp; löser problem med skärmläsare i kartvyn \n \n • Röstprompter för japanska omarbetad \n \n • Höjdskillnad och lutningsberäkning omarbetad</string>
     <string name="ble_search_again">Sök igen</string>
     <string name="time_to_navigation_point_widget_settings_desc">Tryck på widgeten för att växla läge.</string>
     <string name="map_3d_mode_description">Rör vid kartan med två fingrar och justera kartans lutning genom att flytta dem uppåt och nedåt.</string>
@@ -3821,12 +3821,12 @@
     <string name="true_bearing_wdiget_desc">Vinkeln mellan norr och målpunkten observerad från din position.</string>
     <string name="waypoint_template">Mall för ruttpunkt</string>
     <string name="rendering_attr_weatherPressureContours_name">Lufttryck-isolinjer</string>
-    <string name="osmand_cloud_delete_account_confirmation_descr">Radera kontot på OsmAnd Cloud?
+    <string name="osmand_cloud_delete_account_confirmation_descr">Radera kontot på Cloud?
 \n
 \nDenna åtgärd kan inte ångras.</string>
     <string name="free_account">Gratiskonto</string>
     <string name="trip_recording_duration_widget_desc">Visar körtiden för pågående spårinspelning.</string>
-    <string name="ant_plus_searching_text_description">Håll enheten nära sensorn. Du behöver aktivera sensorn så att OsmAnd kan hitta den.</string>
+    <string name="ant_plus_searching_text_description">Håll enheten nära sensorn. Du behöver aktivera sensorn så att MineNAV kan hitta den.</string>
     <string name="external_device_characteristic_gear_ratio">Kuggutväxling</string>
     <string name="shared_string_new_track">Nytt spår</string>
     <string name="routing_attr_allow_via_ferrata_name">Vajersäkrad klätterstig (Via ferrata)</string>
@@ -3841,13 +3841,13 @@
 \n– Enheten och sensorn är nära varandra</string>
     <string name="next_live_update_time">Nästa uppdatering vid %1$s.</string>
     <string name="routing_attr_goods_restrictions_description">Ta hänsyn till åtkomstbegränsningar för lätt lastbil (varubil)</string>
-    <string name="osmand_cloud_deleting_account_descr">Om några ögonblick kommer all din data och ditt konto raderas från OsmAnd Cloud.
+    <string name="osmand_cloud_deleting_account_descr">Om några ögonblick kommer all din data och ditt konto raderas från Cloud.
 \n
 \nData på din enhet berörs inte av detta.</string>
     <string name="quick_action_add_route_descr">En knapp för att starta en rutt från mitten av skärmen.</string>
     <string name="time_to_destination_widget_desc">Visar \"Ankomsttid\" eller \"Återstående restid\" till sista målpunkten. Tiden uppdateras kontinuerligt under navigeringen, och är samma som rutt-tiden från nuvarande position.</string>
     <string name="dangerous_goods">Farligt gods</string>
-    <string name="shared_storage_third_step">Ge åtkomst för att få tillgång till mappen. Utan det kan OsmAnd inte kopiera filer.</string>
+    <string name="shared_storage_third_step">Ge åtkomst för att få tillgång till mappen. Utan det kan MineNAV inte kopiera filer.</string>
     <string name="routing_attr_carriage_restrictions_name">Begränsningar för hästvagn</string>
     <string name="delete_account_warning">Radera kontot %1$s ?</string>
     <string name="searching_matching_tracks">Sök alla matchande spår</string>
@@ -3855,11 +3855,11 @@
     <string name="write_heading">Logga kurs</string>
     <string name="wheel_circumference">Hjulets omkrets</string>
     <string name="open_issue_on_github">Öppna ärende på GitHub</string>
-    <string name="about_osmand">Om OsmAnd</string>
+    <string name="about_osmand">Om MineNAV</string>
     <string name="send_logcat_log_descr">Detaljerad loggfil</string>
     <string name="send_crash_log_descr">Innehåller endast information om krascher</string>
     <string name="write_bearing">Logga bäring</string>
-    <string name="free_versions_descr">Ladda ned och installera OsmAnd gratisversion</string>
+    <string name="free_versions_descr">Ladda ned och installera MineNAV gratisversion</string>
     <string name="free_versions">Gratisversioner</string>
     <string name="open_issue_on_github_descr">Ställ frågor, föreslå nya funktioner</string>
     <string name="feature_available_as_part_of_plan">%1$s tillgänglig som del av abonnemanget %2$s</string>
@@ -3893,7 +3893,7 @@
     <string name="dont_move_maps">Flytta inte</string>
     <string name="key_is_already_assigned_error">\"%1$s\"-knappen har redan kopplats till åtgärden: \"%2$s\"</string>
     <string name="snowmobile_render_descr">För snöskoter, med särskilt avsedda vägar och skoterleder.</string>
-    <string name="osmand_default_routing">OsmAnds ruttberäkning</string>
+    <string name="osmand_default_routing">MineNAVs ruttberäkning</string>
     <string name="public_transport_calc_pedestrian">Beräkna rutt till fots</string>
     <string name="monitoring_prefs_descr">Navigering, loggningsnoggrannhet</string>
     <string name="navigate_point_format_swiss_grid_plus">Schweiz nationella rutnät plus (CH1903+)</string>
@@ -3911,7 +3911,7 @@
 \n
 \nVälj %1$s så kan du få information och varningar om fartkameror.
 \n
-\nVälj %2$s så kommer all data om fartkameror raderas (varningar, objekt i kartan etc) tills OsmAnd ominstalleras helt.</string>
+\nVälj %2$s så kommer all data om fartkameror raderas (varningar, objekt i kartan etc) tills MineNAV ominstalleras helt.</string>
     <string name="add_new_custom_category_button_promo">Lägg till en ny anpassad kategori genom att välja en eller fler kategorier.</string>
     <string name="quick_action_switch_profile_descr">Åtgärdsknappen växlar mellan valda profiler.</string>
     <string name="osm_live_payment_subscription_management">Betalningen dras från ditt Google Play-konto när köpet bekräftas.
@@ -3931,14 +3931,14 @@
     <string name="main_actions">Primära åtgärder</string>
     <string name="import_complete_description">Importerade alla data från %1$s. Använd knapparna nedan för att öppna någon del av appen för att hantera den.</string>
     <string name="download_unsupported_action">Åtgärden %1$s stöds inte</string>
-    <string name="checking_for_duplicate_description">OsmAnd skannar %1$s för dubbletter med befintliga objekt i appen.
+    <string name="checking_for_duplicate_description">MineNAV skannar %1$s för dubbletter med befintliga objekt i appen.
 \n
 \nDet kan ta lite tid.</string>
     <string name="additional_actions_descr">Öppna dessa åtgärder genom att klicka på \"%1$s\"-knappen.</string>
     <string name="divider_descr">Objekt nedanför denna punkt åtskiljs med en avgränsare.</string>
     <string name="context_menu_actions">Åtgärder i kontextmenyn</string>
     <string name="expire_time">Förfallotid</string>
-    <string name="import_duplicates_description">OsmAnd har redan objekt med samma namn som några av de som importeras.
+    <string name="import_duplicates_description">MineNAV har redan objekt med samma namn som några av de som importeras.
 \n
 \nVälj en åtgärd.</string>
     <string name="clear_recorded_data">Rensa inspelad data</string>
@@ -3988,8 +3988,8 @@
 \nAktuell version av datat bevaras på servern, men du kommer inte kunna återgå till tidigare ändringar.</string>
     <string name="send_logcat_log">Skicka loggarna för nuvarande session</string>
     <string name="backup_storage_taken">Lagringsplats använd</string>
-    <string name="backup_version_history_delete_descr">Radera ändringsloggen för föråldrade datatyper från OsmAnd Cloud\?</string>
-    <string name="backup_delete_types_descr">Radera alla data för föråldrade datatyper från OsmAnd Cloud\?</string>
+    <string name="backup_version_history_delete_descr">Radera ändringsloggen för föråldrade datatyper från Cloud\?</string>
+    <string name="backup_delete_types_descr">Radera alla data för föråldrade datatyper från Cloud\?</string>
     <string name="provided_by">Tillhandahålls av %1$s</string>
     <string name="topography_maps">Topografiska kartor</string>
     <string name="key_assignments">Kortkommandon</string>
@@ -4015,7 +4015,7 @@
     <string name="key_event_action_zoom_in">Zooma in</string>
     <string name="empty_smart_folder_title">Inget matchande spår</string>
     <string name="change_button">Ändra knapp</string>
-    <string name="enable_to_use_external_input_device">Aktivera användning av externa inmatningsenheter med OsmAnd</string>
+    <string name="enable_to_use_external_input_device">Aktivera användning av externa inmatningsenheter med MineNAV</string>
     <string name="key_event_action_change_map_orientation">Ändra kartans orientering</string>
     <string name="smart_folder_name_present">Den smarta mappen finns redan</string>
     <string name="help_article_navigation_routing_straight_line_routing_name">Rak linje-vägvisning (flyg)</string>
@@ -4050,7 +4050,7 @@
     <string name="help_article_navigation_routing_direct_to_point_routing_name">Rakt till punkt-vägvisning (Båt)</string>
     <string name="key_event_action_emit_navigation_hint">Skicka navigeringshint</string>
     <string name="remove_type_q">Radera typen \'%1$s\'?</string>
-    <string name="trash_is_empty_banner_desc">Filer borttagna från OsmAnd Cloud kommer finnas tillgängliga här i %1$s dagar.</string>
+    <string name="trash_is_empty_banner_desc">Filer borttagna från Cloud kommer finnas tillgängliga här i %1$s dagar.</string>
     <string name="tracks_empty_folder">Tom mapp</string>
     <string name="add_new_type">Lägg till ny typ</string>
     <string name="wikipedia_and_travel_maps">Wikipedia och resekartor</string>
@@ -4098,7 +4098,7 @@
     <string name="delete_folder_question">Radera mapp?</string>
     <string name="quick_action_toggle_preference">Knapp för att växla preferens.</string>
     <string name="no_items_of_type_message">Du har inga objekt av den typen</string>
-    <string name="android_auto_purchase_request_title">Köp OsmAnd Pro eller Maps+ för att använda appen med Android Auto</string>
+    <string name="android_auto_purchase_request_title">Köp Pro eller Maps+ för att använda appen med Android Auto</string>
     <string name="backup_error_token_is_not_valid">Någonting är fel med angivet enhets-id eller token</string>
     <string name="promo_subscription">Kampanj-prenumeration</string>
     <string name="android_auto_map_placeholder_title">Kartan visas på fordonets skärm.</string>
@@ -4114,7 +4114,7 @@
     <string name="delete_history_items_descr">Valda poster tas bort från listan.</string>
     <string name="setting_supported_by_style">Inställningen tillhandahålls av kartstilen \'%1$s\'</string>
     <string name="use_routing_fallback">Offline-alternativ för ruttberäkning</string>
-    <string name="location_access_request_title">OsmAnd behöver Platsåtkomst för navigering.</string>
+    <string name="location_access_request_title">MineNAV behöver Platsåtkomst för navigering.</string>
     <string name="use_external_timestamps_description">Använd onlinetjänstens tidsstämplar för att justera förväntad restid och genomsnittshastighet</string>
     <string name="android_auto_map_placeholder_descr">Koppla ifrån enheten från Android Auto för att visa kartan i appen.</string>
     <string name="complex_widget_alert">%1$s widgeten kan bara placeras på sin egen rad.</string>
@@ -4201,8 +4201,8 @@
     <string name="route_line_use_coloring_speed">Ruttlinje färgläggs efter rörelsens hastighet.</string>
     <string name="title_3d_track">3D-spår</string>
     <string name="explore_3d_track_description">Utforska spåret i interaktiv 3D! Visualisera höjd, hastighet med mera direkt på kartan.</string>
-    <string name="required_maps_calculate_online_summary">Listan över saknade kartor baseras på en rak linje mellan ruttpunkterna. För en korrekt lista kan OsmAnd beräkna rutten online i förväg.</string>
-    <string name="retrieve_elevation_data_summary">OsmAnd kan hämta höjddata från närliggande vägar eller terrängkartor.</string>
+    <string name="required_maps_calculate_online_summary">Listan över saknade kartor baseras på en rak linje mellan ruttpunkterna. För en korrekt lista kan MineNAV beräkna rutten online i förväg.</string>
+    <string name="retrieve_elevation_data_summary">MineNAV kan hämta höjddata från närliggande vägar eller terrängkartor.</string>
     <string name="change_default_tracks_appearance_confirmation">Vill du tillämpa ändringarna på befintliga spår i mappen eller endast på nya?</string>
     <string name="shared_string_all_colors">Alla färger</string>
     <string name="release_4_8">• Nytt alternativ för terrängfärgning \"Altitude\" (Höjd)\n\n• Anpassade färgpaletter för terräng, spår och rutter\n\n• 3D-variant för platspositionsikoner\n\n• Snabbåtgärder kan nu tilldelas externa tangentbord\n\n• Väder: UI-uppdatering, vindanimering tillagd\n\n• 3D-spårförbättringar: nya visualiserings- och färgalternativ\n\n• Utökat urval av turistrutter på kartan\n\n• Lade till apptemaalternativ för att följa kartläge\n\n• Åtgärdade spårstatistik, sortering och sökning\n\n• OSM-redigering: borttagen inloggnings-/lösenordsautentiseringsmetod\n\n• Byte till systemdelningsblad från och med Android 14</string>
@@ -4326,7 +4326,7 @@
     <string name="location_radius_description">Visar ett cirkulärt område som representerar noggrannhet och felmarginal för nuvarande plats</string>
     <string name="quick_action_location_by_gpx">Plats enligt GPX</string>
     <string name="quick_action_terrain_color_scheme">Färgschema för terrängen</string>
-    <string name="detailed_track_guidance_description">OsmAnd matchar ditt spår mot närliggande vägar för bättre sväng-för-sväng-vägledning.</string>
+    <string name="detailed_track_guidance_description">MineNAV matchar ditt spår mot närliggande vägar för bättre sväng-för-sväng-vägledning.</string>
     <string name="quick_action_routes_summary">Knapp för att visa/dölja %1$s på kartan.</string>
     <string name="driving_region_uk">Storbritannien och liknande</string>
     <string name="driving_region_india">Indien</string>
@@ -4353,7 +4353,7 @@
     <string name="daynight_mode_sensor_summary">Använder enhetens ljussensor för att växla mellan ljust och mörkt läge utifrån omgivande ljusnivå.</string>
     <string name="import_export">Import/export</string>
     <string name="user_palette">Användarpalett</string>
-    <string name="weather_data_sources_prompt">OsmAnd förmedlar väderdata från två källor:</string>
+    <string name="weather_data_sources_prompt">MineNAV förmedlar väderdata från två källor:</string>
     <string name="travel_topics">Ämnen för resor</string>
     <string name="weather_source_ecmwf_title">ECMWF</string>
     <string name="weather_source_GFS_title">GFS</string>
@@ -4382,7 +4382,7 @@
     <string name="maps_that_also_be_used">Kartor som också kommer användas: %1$s</string>
     <string name="battery_saving_mode">Batterisparläge</string>
     <string name="shared_string_bluetooth">Bluetooth</string>
-    <string name="connect_obd_instructions_title">OsmAnd stödjer Bluetooth-anslutning till OBD-II skannrar.</string>
+    <string name="connect_obd_instructions_title">MineNAV stödjer Bluetooth-anslutning till OBD-II skannrar.</string>
     <string name="obd_how_to_connect">Så ansluter du:</string>
     <string name="obd_vehicle_info">Fordonsinformation</string>
     <string name="route_guidance">Vägledning</string>
@@ -4547,7 +4547,7 @@
     <string name="routing_attr_allow_ferries_description">Tillåt färjerutter vid ruttplanering</string>
     <string name="route_members">Medlemmar</string>
     <string name="multipoligon_related">Relaterad</string>
-    <string name="prediction_time_description">Positionsikonen i OsmAnd animeras vid varje GPS-uppdatering (en gång per sekund). En liten fördröjning kan uppstå, särskilt vid snabba rörelser eller när GPS-signalen är instabil.</string>
+    <string name="prediction_time_description">Positionsikonen i MineNAV animeras vid varje GPS-uppdatering (en gång per sekund). En liten fördröjning kan uppstå, särskilt vid snabba rörelser eller när GPS-signalen är instabil.</string>
     <string name="position_animation">Positionsanimering</string>
     <string name="poi_source">POI-källa</string>
     <string name="add_widget">Lägg till widget</string>
@@ -4634,7 +4634,7 @@
     <string name="record_obd_data">Registrera fordonsstatistik</string>
     <string name="obd_plugin_name">Fordonsmetri</string>
     <string name="dynamic_icon_type_summary">Ikonen ändras baserat på åtgärdsstatus.</string>
-    <string name="tracker_item">OsmAnd Tracker</string>
+    <string name="tracker_item">MineNAV Tracker</string>
     <string name="release_4_9">•• Tillagd en helskärm galleri tittare för Wikimedia bilder\n\n• Införde ett nytt plugin \"Vehicle Metrics\" för att övervaka fordonets prestanda med OBD-II-protokollet\n\n• Lägg till möjligheten att tilldela aktiviteter för att spåra och filtrera dem därefter\n\n• Implementerade nya snabba åtgärder för reseinspelning och pekskärmslås\n\n• Introducerad anpassningsbar kartknapp utseende och ett exakt nät\n\n• Lägg till en kontextmeny och en \"Reset medelhastighet\" -åtgärd till widgets\n\nTillagt nytt ruttskikt \"Dirt Bike Trails\"\n\n• Fast \"Auto-record spår under navigering\"\n\n• Fasta problem med flippade koordinater i RTL\n\n• Fast missad sensordata för närvarande inspelningsspår\n\n• Lägg till information om omgivande områden för den valda punkten\n\n• Tillagd snabb åtgärd för att kontrollera OSM Edits synlighet\n\n• Separerade synlighetsparametrar för Terrain-färgningsalternativ\n\n• Lägg till en knappbar ikon för att visa åtkomst eller andra väg- eller vägattribut</string>
     <string name="quick_action_save_recorded_trip_and_continue">Inspelad resa &amp; fortsätt</string>
     <string name="obd_vin_desc">VIN-kod över OBD</string>
@@ -4689,7 +4689,7 @@
     <string name="any_connected">Alla anslutna</string>
     <string name="any_connected_with_device">Alla anslutna: %s</string>
     <string name="shared_string_checked">markerad</string>
-    <string name="auto_backup_preference_desc">Som standard sparar Android säkerhetskopior av favoriter, karttokens och OsmAnd-inställningar för att återställa dem på nya enheter eller efter ominstallation. Denna backup är begränsad till 25 MB.\nNär du använder OsmAnd Cloud kan detta leda till missförstånd efter ominstallation.</string>
+    <string name="auto_backup_preference_desc">Som standard sparar Android säkerhetskopior av favoriter, karttokens och MineNAV-inställningar för att återställa dem på nya enheter eller efter ominstallation. Denna backup är begränsad till 25 MB.\nNär du använder Cloud kan detta leda till missförstånd efter ominstallation.</string>
     <string name="shared_string_split_by">Dela upp efter</string>
     <string name="shared_string_flat">Slätt</string>
     <string name="imperial_gallons">Imperial gallons</string>
@@ -4725,7 +4725,7 @@
     <string name="backup_delete_data_warning_extended">Denna åtgärd kommer permanent att ta bort alla valda data från molnet. Det är inte möjligt att återställa det senare.</string>
     <string name="amount_of_total_used">%1$s av %2$s använt</string>
     <string name="delete_data">Radera data</string>
-    <string name="manage_storage_delete_data_dialog_summary">Är du säker på att du vill ta bort %1$s från OsmAnd Cloud?\n\nDu kan återställa dem från papperskorgen inom 30 dagar.</string>
+    <string name="manage_storage_delete_data_dialog_summary">Är du säker på att du vill ta bort %1$s från Cloud?\n\nDu kan återställa dem från papperskorgen inom 30 dagar.</string>
     <string name="manage_storage">Hantera lagring</string>
     <string name="copy_as_new_folder">Kopiera som ny mapp</string>
     <string name="shared_string_last_downhill">Sista nedförsbacken</string>
@@ -5024,8 +5024,8 @@
     <string name="choose_from_files">Välj från Filer</string>
     <string name="shared_string_media">Media</string>
     <string name="no_media_descr">Du kan lägga till foton, videor, eller ljudanteckningar från din kamera eller ditt bibliotek.</string>
-    <string name="tracks_backup_promo_button">Skaffa OsmAnd Pro</string>
-    <string name="tracks_backup_promo_description">Synkronisera dina spår mellan enheter och webben med OsmAnd Pro.</string>
+    <string name="tracks_backup_promo_button">Skaffa Pro</string>
+    <string name="tracks_backup_promo_description">Synkronisera dina spår mellan enheter och webben med Pro.</string>
     <string name="tracks_backup_promo_title">Säkerhetskopiera och synkronisera dina spår</string>
     <string name="free_download_limit_reached">Gränsen för fri nedladdning uppnådd</string>
     <string name="free_download_limit_reached_description">Få tillgång till obegränsade nedladdningar och uppdateringar av kartor</string>
@@ -5151,7 +5151,7 @@
     <string name="routing_attr_motor_type_ethanol_name">Etanol</string>
     <string name="rendering_attr_surface_clay_name">Lera</string>
     <string name="shared_string_trip_average">Genomsnitt för turen</string>
-    <string name="media_storage_camera_folder_note_descr">Ljudfiler spara i Musik/OsmAnd.</string>
+    <string name="media_storage_camera_folder_note_descr">Ljudfiler spara i Musik/MineNAV.</string>
     <string name="astro_lunar_eclipse_simple_status">%1$s • Månens höjd: %2$.1f°</string>
     <string name="astro_lunar_eclipse_below_horizon">%1$s • Månen under horisonten (%2$.1f°)</string>
     <string name="astro_map_center_location">Mitten av kartan: %1$s</string>
@@ -5250,7 +5250,7 @@
     <string name="media_storage_shared_storage_descr">Filer sparas i offentliga mappar (Bilder, Filmer, Musik). De syns i Galleri och Google Foto.</string>
     <string name="media_storage_camera_folder_descr">Filer sparas i kamerarullen. %1$s</string>
     <string name="media_storage_manually_specified_descr">Filer sparas i en anpassad mapp och sorteras efter typ (Ljud, Foto, Video).</string>
-    <string name="ais_receive_in_background">Ta emot AIS-data även när OsmAnd är pausat.</string>
+    <string name="ais_receive_in_background">Ta emot AIS-data även när MineNAV är pausat.</string>
     <string name="search_around_map_center_description">%1$s från din plats</string>
     <string name="route_calculation_missing_maps_estimate_desc">Möjliga saknade kartor har upptäckts utifrån en uppskattning i fågelväg.\nOm din rutt undviker dessa områden använder du befintliga kartor.</string>
     <string name="route_calculation_review_maps">Granska kartor</string>
@@ -5307,8 +5307,8 @@
     <string name="shared_string_grid">Rutnät</string>
     <string name="shared_string_group">Grupp</string>
     <string name="gallery_sort_size_large_small">Störst storlek först</string>
-    <string name="aidl_permissions_request_title">Tillåt %1$s att använda OsmAnd?</string>
-    <string name="aidl_app_disabled_descr">OsmAnd ignorerar alla förfrågningar från denna app.</string>
+    <string name="aidl_permissions_request_title">Tillåt %1$s att använda MineNAV?</string>
+    <string name="aidl_app_disabled_descr">MineNAV ignorerar alla förfrågningar från denna app.</string>
     <string name="aidl_permissions_deny">Tillåt inte</string>
     <string name="aidl_group_favorites_descr">Favoriter och kartmarkeringar</string>
     <string name="aidl_group_tracks_edit_descr">Importera, visa och radera</string>

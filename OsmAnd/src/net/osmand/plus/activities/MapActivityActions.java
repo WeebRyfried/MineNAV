@@ -636,6 +636,9 @@ public class MapActivityActions extends MapActions {
 					updateDrawerMenu();
 					return false;
 				}));
+		if (!listExpanded) {
+			return;
+		}
 		optionsMenuHelper.addItem(new ContextMenuItem(DRAWER_CONFIGURE_PROFILE_ID)
 				.setLayout(R.layout.main_menu_drawer_btn_configure_profile)
 				.setColor(currentMode.getProfileColor(nightMode))

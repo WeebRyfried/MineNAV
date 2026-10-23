@@ -56,7 +56,9 @@ import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.base.BaseFullScreenDialogFragment;
 import net.osmand.plus.download.DownloadIndexesThread.DownloadEvents;
 import net.osmand.plus.exploreplaces.ExplorePlacesFragment;
+import net.osmand.plus.helpers.AndroidUiHelper;
 import net.osmand.plus.mapcontextmenu.MapContextMenu;
+import net.osmand.plus.minenav.MineNavSearchHome;
 import net.osmand.plus.myplaces.favorites.FavoriteGroup;
 import net.osmand.plus.plugins.PluginsHelper;
 import net.osmand.plus.plugins.accessibility.AccessibilityAssistant;
@@ -149,6 +151,7 @@ public class QuickSearchDialogFragment extends BaseFullScreenDialogFragment impl
 	private Toolbar toolbar;
 	private LockableViewPager viewPager;
 	private View tabToolbarView;
+	private MineNavSearchHome mineNavSearchHome;
 	private View tabsView;
 	private View searchView;
 	private View buttonToolbarView;
@@ -564,6 +567,7 @@ public class QuickSearchDialogFragment extends BaseFullScreenDialogFragment impl
 			}
 		});
 		updateFab();
+		mineNavSearchHome = MineNavSearchHome.install(this, view, nightMode);
 
 		return view;
 	}
@@ -717,6 +721,10 @@ public class QuickSearchDialogFragment extends BaseFullScreenDialogFragment impl
 				onBackButtonPressed();
 			}
 		};
+	}
+
+	public void onMineNavBackPressed() {
+		onBackButtonPressed();
 	}
 
 	private void onBackButtonPressed() {
@@ -1791,8 +1799,22 @@ public class QuickSearchDialogFragment extends BaseFullScreenDialogFragment impl
 	}
 
 	@Override
+	protected int getStatusBarColorId() {
+		// MineNAV: the bar continues the search bar's surface
+		return nightMode ? R.color.mn_row_bg_dark : R.color.mn_row_bg_light;
+	}
+
+	@Override
 	public void onResume() {
 		super.onResume();
+		if (mineNavSearchHome != null) {
+			mineNavSearchHome.refresh();
+		}
+		Dialog dialog = getDialog();
+		if (dialog != null && dialog.getWindow() != null) {
+			// MineNAV: dark icons on the light search surface, light ones on the dark
+			AndroidUiHelper.setStatusBarContentColor(dialog.getWindow().getDecorView(), nightMode);
+		}
 		if (!useMapCenter) {
 			startLocationUpdate();
 		}
@@ -1883,16 +1905,13 @@ public class QuickSearchDialogFragment extends BaseFullScreenDialogFragment impl
 	private void updateClearButtonAndHint() {
 		searchEditText.setEnabled(true);
 		if ((useMapCenter || useSpatialSearchLocation) && location != null && searchEditText.length() == 0) {
-			LatLon latLon = searchUICore.getSearchSettings().getOriginalLocation();
-			double d = MapUtils.getDistance(latLon, location.getLatitude(), location.getLongitude());
-			String dist = OsmAndFormatter.getFormattedDistance((float) d, app);
-			searchEditText.setHint(getString(R.string.dist_away_from_my_location, dist));
+			searchEditText.setHint(R.string.where_to_hint);
 			clearButton.setImageDrawable(getIcon(R.drawable.ic_action_get_my_location, R.color.color_myloc_distance));
 		} else {
 			if (addressSearch) {
 				searchEditText.setHint(R.string.type_address);
 			} else {
-				searchEditText.setHint(R.string.search_poi_category_hint);
+				searchEditText.setHint(R.string.where_to_hint);
 			}
 			clearButton.setImageDrawable(getContentIcon(R.drawable.ic_action_remove_dark));
 		}
@@ -1911,7 +1930,7 @@ public class QuickSearchDialogFragment extends BaseFullScreenDialogFragment impl
 	private void updateTabBarVisibility(boolean show) {
 		tabBarHidden = !show;
 		if (show) {
-			tabToolbarView.setVisibility(View.VISIBLE);
+			tabToolbarView.setVisibility(View.GONE);
 			setButtonToolbarVisible(false);
 			tabsView.setVisibility(View.VISIBLE);
 			searchView.setVisibility(View.GONE);
@@ -3123,7 +3142,7 @@ public class QuickSearchDialogFragment extends BaseFullScreenDialogFragment impl
 
 	public void enableSelectionMode(boolean selectionMode, int position) {
 		historySearchFragment.setSelectionMode(selectionMode, position);
-		tabToolbarView.setVisibility(selectionMode ? View.GONE : View.VISIBLE);
+		tabToolbarView.setVisibility(View.GONE);
 		setButtonToolbarVisible(false);
 		toolbar.setVisibility(selectionMode ? View.GONE : View.VISIBLE);
 		toolbarEdit.setVisibility(selectionMode ? View.VISIBLE : View.GONE);

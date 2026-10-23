@@ -213,7 +213,8 @@ public class SpeedometerWidget {
 		speedValueTextColor = previousSpeedValueTextColor;
 		speedUnitTextColor = previousSpeedUnitTextColor;
 
-		animationDrawable = new SpeedometerAnimationDrawable(dpToPx(8));
+		// Waze-like round bubble
+		animationDrawable = new SpeedometerAnimationDrawable(dpToPx(SPEEDOMETER_WIDTH_L));
 		if (speedometerContainer != null) {
 			speedometerContainer.setBackground(animationDrawable);
 		}
@@ -348,7 +349,7 @@ public class SpeedometerWidget {
 			boolean isChanged = false;
 			if (lastNightMode != nightMode) {
 				lastNightMode = nightMode;
-				int themeBg = ColorUtilities.getWidgetBackgroundColor(app, nightMode);
+				int themeBg = app.getColor(R.color.mn_speed_bg);
 				updateBackgroundColorsForState(currentState, themeBg);
 				isChanged = true;
 			}
@@ -545,7 +546,7 @@ public class SpeedometerWidget {
 				animationDrawable.setAnimationCenter(relativeCenterX, speedometerContainer.getHeight() / 2f);
 			}
 		}
-		int themeBg = ColorUtilities.getWidgetBackgroundColor(app, nightMode);
+		int themeBg = app.getColor(R.color.mn_speed_bg);
 		if (targetState != currentState) {
 			updateBackgroundColorsForState(targetState, themeBg);
 		} else if (!drawBitmap && !speedAlertAnimator.isRunning()) {

@@ -273,10 +273,9 @@ private fun ChipsLayoutContent(
 ) {
 	val activityBackground = colorAttr(R.attr.activity_background_color)
 	val listBackground = colorAttr(R.attr.list_background_color)
-	val chipBackground = colorResource(if (nightMode) R.color.chip_bg_dark else R.color.chip_bg_light)
-	val chipOutlineColor = colorResource(
-		if (nightMode) R.color.btn_outline_secondary_dark else R.color.btn_outline_secondary_light
-	)
+	// MineNAV: filled pills without an outline, like the other MineNAV buttons
+	val chipBackground = colorResource(if (nightMode) R.color.mn_field_bg_dark else R.color.mn_field_bg_light)
+	val chipOutlineColor = Color.Transparent
 	val dividerColor = colorAttr(R.attr.divider_color_basic)
 	val activeColor = colorAttr(R.attr.active_color_primary)
 	val inActiveColor = colorAttr(R.attr.secondary_icon_color)
@@ -498,7 +497,7 @@ private fun OsmandFilterChip(
 		} else {
 			null
 		},
-		shape = RoundedCornerShape(8.dp),
+		shape = RoundedCornerShape(50),
 		colors = FilterChipDefaults.filterChipColors(
 			containerColor = chipBackground,
 			labelColor = labelColor,

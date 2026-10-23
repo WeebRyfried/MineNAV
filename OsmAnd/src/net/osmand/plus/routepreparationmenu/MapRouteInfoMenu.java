@@ -79,6 +79,7 @@ import net.osmand.plus.mapcontextmenu.other.TrackDetailsMenuFragment;
 import net.osmand.plus.mapmarkers.MapMarker;
 import net.osmand.plus.mapmarkers.MapMarkerSelectionFragment;
 import net.osmand.plus.measurementtool.MeasurementToolFragment;
+import net.osmand.plus.minenav.MineNavRoutePlannerFragment;
 import net.osmand.plus.myplaces.favorites.FavoritesListener;
 import net.osmand.plus.poi.PoiUIFilter;
 import net.osmand.plus.profiles.ConfigureAppModesBottomSheetDialogFragment;
@@ -2522,10 +2523,15 @@ public class MapRouteInfoMenu implements IRouteInformationListener, CardListener
 	}
 
 	private void showInternal(int menuState) {
+		MapActivity mapActivity = getMapActivity();
+		// MineNAV: the Waze-style "Plan a drive" page replaces this planner wherever it would open
+		if (mapActivity != null) {
+			MineNavRoutePlannerFragment.showInstance(mapActivity.getSupportFragmentManager());
+			return;
+		}
 		if (menuState == DEFAULT_MENU_STATE) {
 			menuState = getInitialMenuState();
 		}
-		MapActivity mapActivity = getMapActivity();
 		if (!isVisible() && mapActivity != null) {
 			int initialMenuState = menuState;
 			switched = mapActivity.getMapLayers().getMapControlsLayer().switchToRoutePlanningLayout();
@@ -2560,6 +2566,11 @@ public class MapRouteInfoMenu implements IRouteInformationListener, CardListener
 	public void setShowMenu(int menuState) {
 		showMenu = true;
 		showMenuState = menuState;
+	}
+
+	public void clearShowMenu() {
+		showMenu = false;
+		showMenuState = DEFAULT_MENU_STATE;
 	}
 
 	@DrawableRes

@@ -22,6 +22,7 @@ import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.base.BaseFullScreenFragment;
 import net.osmand.plus.dashboard.DashboardOnMap;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.inapp.InAppPurchaseHelper.InAppPurchaseListener;
 import net.osmand.plus.settings.backend.ApplicationMode;
 import net.osmand.plus.settings.backend.preferences.ListStringPreference;
@@ -181,6 +182,7 @@ public class ConfigureMapFragment extends BaseFullScreenFragment implements OnDa
 		View existedView = views.get(standardId);
 
 		View view = viewCreator.getView(category, existedView);
+		MineNavStyle.styleMenuCategory(view, nightMode);
 		LinearLayout container = view.findViewById(R.id.items_container);
 		view.setClickable(true);
 		view.setFocusable(true);
@@ -211,6 +213,10 @@ public class ConfigureMapFragment extends BaseFullScreenFragment implements OnDa
 		View existedView = views.get(standardId);
 		View view = viewCreator.getView(item, existedView);
 		view.setTag(R.id.item_as_tag, item);
+		MineNavStyle.styleMenuRow(view, nightMode);
+		if (item.getSecondaryIcon() == R.drawable.ic_action_additional_option) {
+			MineNavStyle.styleOptionsMark(view.findViewById(R.id.secondary_icon), nightMode);
+		}
 
 		boolean clickable = item.isClickable();
 		if (clickable) {
@@ -238,6 +244,7 @@ public class ConfigureMapFragment extends BaseFullScreenFragment implements OnDa
 			AndroidUiHelper.updateVisibility(view.findViewById(R.id.description), isCollapsed && hasDescription);
 			AndroidUiHelper.updateVisibility(view.findViewById(R.id.items_container), !isCollapsed);
 			AndroidUiHelper.updateVisibility(view.findViewById(R.id.divider), !isCollapsed);
+			MineNavStyle.styleMenuCategory(view, nightMode);
 		}
 	}
 

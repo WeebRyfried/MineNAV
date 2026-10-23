@@ -33,7 +33,12 @@ public class SpeedometerAnimationDrawable extends Drawable {
 
 	@Override
 	public void getOutline(@NonNull android.graphics.Outline outline) {
-		outline.setRoundRect(getBounds(), cornerRadius);
+		outline.setRoundRect(getBounds(), getEffectiveRadius(getBounds().width(), getBounds().height()));
+	}
+
+	// A radius larger than half the size turns a square bubble into a circle
+	private float getEffectiveRadius(float width, float height) {
+		return Math.min(cornerRadius, Math.min(width, height) / 2f);
 	}
 
 	public int getBackgroundColor() {
@@ -70,7 +75,8 @@ public class SpeedometerAnimationDrawable extends Drawable {
 		float cy = centerY > 0 ? centerY : height / 2;
 
 		clipPath.reset();
-		clipPath.addRoundRect(0, 0, width, height, cornerRadius, cornerRadius, android.graphics.Path.Direction.CW);
+		float radius = getEffectiveRadius(width, height);
+		clipPath.addRoundRect(0, 0, width, height, radius, radius, android.graphics.Path.Direction.CW);
 
 		canvas.save();
 		canvas.clipPath(clipPath);

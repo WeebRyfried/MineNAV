@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Color;
 
 import net.osmand.plus.R;
-import net.osmand.plus.utils.ColorUtilities;
 
 public enum SpeedState {
 	SAFE(R.color.color_transparent, R.color.color_transparent),
@@ -27,7 +26,7 @@ public enum SpeedState {
 	public int getSpeedTextColor(Context context, boolean nightMode) {
 		int color = 0;
 		switch (this) {
-			case SAFE -> color = ColorUtilities.getPrimaryTextColor(context, nightMode);
+			case SAFE -> color = context.getColor(R.color.mn_speed_text);
 			case WARNING -> color = context.getColor(R.color.speed_limit_tolerance_value);
 			case EXCEED -> color = context.getColor(R.color.speeding_value);
 		}
@@ -37,7 +36,7 @@ public enum SpeedState {
 	public int getSpeedUnitTextColor(Context context, boolean nightMode) {
 		int color = 0;
 		switch (this) {
-			case SAFE -> color = context.getColor(nightMode ? R.color.widget_units_color_dark : R.color.widget_units_color_light);
+			case SAFE -> color = context.getColor(R.color.mn_speed_units);
 			case WARNING -> color = context.getColor(nightMode ? R.color.speedometer_tolerance_units_color_dark : R.color.speedometer_tolerance_units_color_light);
 			case EXCEED -> color = context.getColor(nightMode ? R.color.speedometer_limit_units_color_dark : R.color.speedometer_limit_units_color_light);
 		}

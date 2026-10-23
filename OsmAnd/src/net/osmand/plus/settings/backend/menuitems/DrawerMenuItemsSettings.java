@@ -122,6 +122,16 @@ public class DrawerMenuItemsSettings extends ContextMenuItemsSettings {
 		hiddenByDefault.add(DRAWER_OSMAND_VERSION_ID);
 		hiddenByDefault.add(DRAWER_ANT_PLUS_ID);
 		hiddenByDefault.add(DRAWER_VEHICLE_METRICS_ID);
+		// MineNAV keeps the menu short; these can be turned back on in the main menu settings
+		hiddenByDefault.add(DRAWER_SALE_ID);
+		hiddenByDefault.add(DRAWER_MAP_MARKERS_ID);
+		hiddenByDefault.add(DRAWER_SEARCH_ID);
+		hiddenByDefault.add(DRAWER_TRAVEL_GUIDES_ID);
+		hiddenByDefault.add(DRAWER_MEASURE_DISTANCE_ID);
+		hiddenByDefault.add(DRAWER_WEATHER_FORECAST_ID);
+		hiddenByDefault.add(DRAWER_CONFIGURE_SCREEN_ID);
+		hiddenByDefault.add(DRAWER_PLUGINS_ID);
+		hiddenByDefault.add(DRAWER_BUILDS_ID);
 		return hiddenByDefault;
 	}
 }

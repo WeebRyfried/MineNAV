@@ -155,12 +155,6 @@ public class HelpMainFragment extends BaseFullScreenFragment implements OnItemCl
 
 		HelpActivity activity = (HelpActivity) requireActivity();
 
-		if (app.getFeedbackHelper().hasCrashLogs()) {
-			items.add(new PopUpMenuItem.Builder(activity)
-					.setTitleId(R.string.send_crash_log)
-					.setIcon(getContentIcon(R.drawable.ic_action_bug_outlined_send))
-					.setOnClickListener(v -> app.getFeedbackHelper().sendCrashLog()).create());
-		}
 		items.add(new PopUpMenuItem.Builder(activity)
 				.setTitleId(R.string.send_logcat_log)
 				.setIcon(getContentIcon(R.drawable.ic_action_file_report_outlined_send))
@@ -204,34 +198,10 @@ public class HelpMainFragment extends BaseFullScreenFragment implements OnItemCl
 	private List<ContextMenuItem> createItems() {
 		List<ContextMenuItem> items = new ArrayList<>();
 
-		createPopularArticlesCategory(items);
 		createDocsCategories(items);
-		createContactUsCategory(items);
-		createReportIssuesCategory(items);
 		createAboutCategory(items);
 
 		return items;
-	}
-
-	private void createPopularArticlesCategory(@NonNull List<ContextMenuItem> items) {
-		Map<String, String> popularArticles = articlesHelper.getPopularArticles();
-		if (!Algorithms.isEmpty(popularArticles)) {
-			items.add(createCategory(app.getString(R.string.most_viewed)));
-
-			int counter = 0;
-			for (Map.Entry<String, String> entry : popularArticles.entrySet()) {
-				String url = entry.getValue();
-				String title = HelpArticleUtils.getArticleName(app, url, entry.getKey());
-
-				items.add(createMenuItem(title, null, R.drawable.ic_action_file_info,
-						getArticleItemClickListener(title, url)));
-
-				counter++;
-				if (counter >= MAX_VISIBLE_POPULAR_ARTICLES) {
-					break;
-				}
-			}
-		}
 	}
 
 	private void createDocsCategories(@NonNull List<ContextMenuItem> items) {
@@ -269,81 +239,21 @@ public class HelpMainFragment extends BaseFullScreenFragment implements OnItemCl
 		}
 	}
 
-	private void createContactUsCategory(@NonNull List<ContextMenuItem> items) {
-		items.add(createCategory(app.getString(R.string.contact_us)));
-
-		String email = app.getString(R.string.support_email);
-		items.add(createMenuItem(app.getString(R.string.contact_support), email,
-				R.drawable.ic_action_at_mail, (uiAdapter, view, item, isChecked) -> {
-					callActivity(activity -> {
-						Intent intent = new Intent(Intent.ACTION_SENDTO);
-						intent.setData(Uri.parse("mailto:"));
-						intent.putExtra(Intent.EXTRA_EMAIL, new String[] {email});
-						intent.putExtra(Intent.EXTRA_TEXT, app.getFeedbackHelper().getDeviceInfo());
-						AndroidUtils.startActivityIfSafe(activity, intent);
-					});
-					return false;
-				}));
-
-		items.add(createMenuItem(app.getString(R.string.github_discussion), app.getString(R.string.open_issue_on_github_descr),
-				R.drawable.ic_action_social_github, getUrlItemClickListener(app.getString(R.string.discussion_github))));
-
-		items.add(createMenuItem(app.getString(R.string.telegram_chats), null,
-				R.drawable.ic_action_social_telegram, (uiAdapter, view, item, isChecked) -> {
-					callActivity(activity -> {
-						FragmentManager manager = activity.getSupportFragmentManager();
-						Map<String, String> telegramChats = articlesHelper.getTelegramChats();
-						TelegramChatsFragment.showInstance(manager, telegramChats);
-					});
-					return false;
-				}));
-
-		for (SocialNetwork network : SocialNetwork.values()) {
-			String url = app.getString(network.urlId);
-			items.add(createMenuItem(app.getString(network.titleId), url, network.iconId, getUrlItemClickListener(url)));
-		}
-	}
-
-	private void createReportIssuesCategory(@NonNull List<ContextMenuItem> items) {
-		items.add(createCategory(app.getString(R.string.report_an_issues)));
-
-		items.add(createMenuItem(app.getString(R.string.open_issue_on_github), app.getString(R.string.open_issue_on_github_descr),
-				R.drawable.ic_action_social_github, getUrlItemClickListener(app.getString(R.string.issues_github))));
-
-		if (app.getFeedbackHelper().hasCrashLogs()) {
-			items.add(createMenuItem(app.getString(R.string.send_crash_log), app.getString(R.string.send_crash_log_descr),
-					R.drawable.ic_action_bug_outlined_send, (uiAdapter, view, item, isChecked) -> {
-						app.getFeedbackHelper().sendCrashLog();
-						return false;
-					}));
-		}
-		items.add(createMenuItem(app.getString(R.string.send_logcat_log), app.getString(R.string.send_logcat_log_descr),
-				R.drawable.ic_action_file_report_outlined_send, (uiAdapter, view, item, isChecked) -> {
-					callActivity(HelpActivity.class, activity -> activity.readAndSaveLogs());
-					return false;
-				}));
-	}
-
 	private void createAboutCategory(@NonNull List<ContextMenuItem> items) {
 		items.add(createCategory(app.getString(R.string.about_osmand)));
 		boolean nightMode = app.getDaynightHelper().isNightMode(ThemeUsageContext.APP);
 
-		items.add(createMenuItem(app.getString(R.string.about_osmand), null, R.drawable.ic_action_osmand_logo,
-				getArticleItemClickListener(app.getString(R.string.about_osmand), app.getString(R.string.osmand_about)))
+		String version = Version.getFullVersionWithReleaseDate(app);
+		items.add(createMenuItem(app.getString(R.string.about_osmand), version, R.drawable.ic_action_osmand_logo,
+				(uiAdapter, view, item, isChecked) -> {
+					ShareMenu.copyToClipboardWithToast(view.getContext(), version, false);
+					return false;
+				})
 				.setUseNaturalIconColor(true)
 				.setColor(ColorUtilities.getOsmandIconColor(app, nightMode)));
 
-		String version = Version.getFullVersionWithReleaseDate(app);
-		items.add(createMenuItem(app.getString(R.string.what_is_new), version, R.drawable.ic_action_clipboard_notes,
-				getArticleItemClickListener(app.getString(R.string.what_is_new), app.getString(R.string.docs_latest_version)))
-				.setLongClickListener((adapter, itemId, position, isChecked, viewCoordinates) -> {
-					ShareMenu.copyToClipboardWithToast(adapter.getContext(), version, false);
-					return false;
-				}));
-
-		String freeVersions = app.getString(R.string.free_versions);
-		items.add(createMenuItem(freeVersions, app.getString(R.string.free_versions_descr),
-				R.drawable.ic_action_gsave_dark, getArticleItemClickListener(freeVersions, app.getString(R.string.docs_free_versions))));
+		items.add(createMenuItem(app.getString(R.string.about_minenav_credits_title),
+				app.getString(R.string.about_minenav_credits), R.drawable.ic_action_info_outlined, null));
 	}
 
 	@NonNull

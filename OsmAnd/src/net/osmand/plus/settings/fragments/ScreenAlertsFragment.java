@@ -18,6 +18,7 @@ import androidx.preference.SwitchPreferenceCompat;
 
 import net.osmand.plus.R;
 import net.osmand.plus.dialogs.SpeedCamerasBottomSheet;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.settings.backend.ApplicationMode;
 import net.osmand.plus.settings.enums.DrivingRegion;
 import net.osmand.plus.utils.AndroidUtils;
@@ -45,6 +46,11 @@ public class ScreenAlertsFragment extends BaseSettingsFragment {
 		showSpeedLimitWarnings.setIcon(speedLimitIcon);
 		showPedestrian.setIcon(getIcon(R.drawable.list_warnings_pedestrian));
 		showTunnels.setIcon(getIcon(R.drawable.list_warnings_tunnel));
+		// MineNAV: road sign icons keep their own colors
+		MineNavStyle.keepIconColors(showTrafficWarnings);
+		MineNavStyle.keepIconColors(showSpeedLimitWarnings);
+		MineNavStyle.keepIconColors(showPedestrian);
+		MineNavStyle.keepIconColors(showTunnels);
 
 		setupShowCamerasPref();
 		setupSpeedCamerasAlert();
@@ -175,6 +181,7 @@ public class ScreenAlertsFragment extends BaseSettingsFragment {
 	private void setupShowCamerasPref() {
 		SwitchPreferenceCompat showCameras = findPreference(settings.SHOW_CAMERAS.getId());
 		showCameras.setIcon(getIcon(R.drawable.list_warnings_speed_camera));
+		MineNavStyle.keepIconColors(showCameras);
 		showCameras.setVisible(!settings.SPEED_CAMERAS_UNINSTALLED.get());
 	}
 

@@ -18,6 +18,7 @@ import androidx.core.content.ContextCompat;
 
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.R;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.settings.backend.ApplicationMode;
 import net.osmand.plus.settings.backend.OsmandSettings;
 import net.osmand.plus.settings.enums.ThemeUsageContext;
@@ -111,6 +112,7 @@ public class AppModeDialog {
 				iv.setContentDescription(String.format("%s %s", mode.toHumanString(), app.getString(R.string.item_unchecked)));
 				selection.setVisibility(View.INVISIBLE);
 			}
+			MineNavStyle.styleModeToggle(tb, iv, selection, checked, nightMode);
 			tb.setOnClickListener(v -> {
 				boolean isChecked = !checked;
 				if (singleChoice) {

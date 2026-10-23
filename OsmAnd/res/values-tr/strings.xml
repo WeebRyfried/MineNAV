@@ -100,9 +100,9 @@
     <string name="rendering_attr_showRoadMaps_description">Yalnızca yol haritalarının ne zaman görüntüleneceğini seçin:</string>
     <string name="rendering_attr_showRoadMaps_name">Yollar-sadece haritalar</string>
     <string name="snap_to_road">Yola tuttur</string>
-    <string name="osmand_long_description_1000_chars">OsmAnd (OSM Automated Navigation Directions) 
+    <string name="osmand_long_description_1000_chars">MineNAV (OSM Automated Navigation Directions) 
 \n 
-\n OsmAnd, çok geniş ölçekte küresel OpenStreetMap (OSM) verilerine erişim sağlayan açık kaynaklı bir yazılımsal navigasyon uygulamasıdır. Tüm harita verileri (vektör veya döşeme haritaları) çevrim dışı kullanım için telefonun hafıza kartında saklanabilir. Adım adım sesli rehberlik de dahil olmak üzere çevrim dışı ve çevrim içi yönlendirme işlevi de sunulmaktadır. 
+\n MineNAV, çok geniş ölçekte küresel OpenStreetMap (OSM) verilerine erişim sağlayan açık kaynaklı bir yazılımsal navigasyon uygulamasıdır. Tüm harita verileri (vektör veya döşeme haritaları) çevrim dışı kullanım için telefonun hafıza kartında saklanabilir. Adım adım sesli rehberlik de dahil olmak üzere çevrim dışı ve çevrim içi yönlendirme işlevi de sunulmaktadır. 
 \n 
 \n Temel özelliklerden bazıları: 
 \n - Eksiksiz çevrim dışı işlevsellik (indirilen vektör veya döşeme haritalarını cihazda saklayın) 
@@ -117,17 +117,17 @@
 \n - Pusulaya veya hareket yönüne göre harita hizalama 
 \n - Şerit yönlendirme, hız sınırı göstergesi, kaydedilmiş ve metinden konuşmaya sesler 
 \n 
-\n OsmAnd\'ın bu ücretsiz sürümünün sınırlamaları: 
+\n MineNAV\'ın bu ücretsiz sürümünün sınırlamaları: 
 \n - Harita indirme sayısı sınırlıdır 
 \n - Wikipedia POI\'lerine çevrim dışı erişim bulunmamaktadır 
 \n 
-\n OsmAnd aktif olarak geliştirilmektedir ve projemiz ve devam eden ilerlemesi, yeni işlevsellik geliştirmek ve test etmek için finansal katkılara dayanmaktadır. Lütfen OsmAnd+ ürününü satın almayı ya da belirli yeni özellikleri finanse etmeyi veya https://osmand.net adresinden genel bağışta bulunmayı düşünün.</string>
+\n MineNAV aktif olarak geliştirilmektedir ve projemiz ve devam eden ilerlemesi, yeni işlevsellik geliştirmek ve test etmek için finansal katkılara dayanmaktadır. Lütfen MineNAV ürününü satın almayı ya da belirli yeni özellikleri finanse etmeyi veya https://osmand.net adresinden genel bağışta bulunmayı düşünün.</string>
     <string name="osmand_plus_short_description_80_chars">Küresel Mobil Harita Görüntüleme &amp; Yolbul için Çevrim Dışı ve Çevrim İçi OSM Haritaları</string>
-    <string name="osmand_plus_long_description_1000_chars">OsmAnd+ (OSM Automated Navigation Directions) 
+    <string name="osmand_plus_long_description_1000_chars">MineNAV (OSM Automated Navigation Directions) 
 \n 
-\n OsmAnd+, çok geniş ölçekte küresel OpenStreetMap (OSM) verilerine erişim sağlayan açık kaynaklı bir yazılımsal navigasyon uygulamasıdır. Tüm harita verileri (vektör veya döşeme haritaları) çevrim dışı kullanım için telefonun hafıza kartında saklanabilir. Adım adım sesli rehberlik de dahil olmak üzere çevrim dışı ve çevrim içi yönlendirme işlevi de sunulmaktadır. 
+\n MineNAV, çok geniş ölçekte küresel OpenStreetMap (OSM) verilerine erişim sağlayan açık kaynaklı bir yazılımsal navigasyon uygulamasıdır. Tüm harita verileri (vektör veya döşeme haritaları) çevrim dışı kullanım için telefonun hafıza kartında saklanabilir. Adım adım sesli rehberlik de dahil olmak üzere çevrim dışı ve çevrim içi yönlendirme işlevi de sunulmaktadır. 
 \n 
-\n OsmAnd+, uygulamanın ücretli sürümüdür, onu satın alarak projeyi desteklemekte, yeni özelliklerin gelişimine kaynak sağlamakta ve en son güncellemeleri almaktasınız 
+\n MineNAV, uygulamanın ücretli sürümüdür, onu satın alarak projeyi desteklemekte, yeni özelliklerin gelişimine kaynak sağlamakta ve en son güncellemeleri almaktasınız 
 \n. 
 \n Temel özelliklerden bazıları: 
 \n - Eksiksiz çevrim dışı işlevsellik (indirilen vektör veya döşeme haritalarını cihazda saklayın) 
@@ -235,7 +235,7 @@
     <string name="layer_route">Rota</string>
     <string name="shared_string_favorites">Favoriler</string>
     <string name="layer_map">Harita kaynağı…</string>
-    <string name="process_navigation_service">OsmAnd yolbul hizmeti</string>
+    <string name="process_navigation_service">MineNAV yolbul hizmeti</string>
     <string name="int_seconds">saniyeler</string>
     <string name="int_min">dk.</string>
     <string name="route_tr">Sağa dönün ve ilerleyin</string>
@@ -330,15 +330,15 @@
     <string name="map_online_data">Çevrim içi ve döşeme haritalar</string>
     <string name="osmand_rastermaps_plugin_description">Önceden tanımlanmış OSM döşemelerinden (Mapnik gibi) uydu görüntülerine ve hava durumu haritaları, iklim haritaları, jeolojik haritalar, yamaç katmanları vb. gibi özel amaçlı katmanlara kadar birçok çevrim içi (döşeme veya raster) haritaya erişin. 
 \n 
-\n Bu haritalardan herhangi biri, görüntülenecek ana (temel) harita olarak veya başka bir temel haritaya (OsmAnd\'ın standart çevrim dışı haritaları gibi) üst veya alt katman olarak kullanılabilir. OsmAnd vektör haritalarının belirli ögeleri, herhangi bir alt haritayı daha görünür hale getirmek için \'Haritayı yapılandır\' menüsü aracılığıyla gizlenebilir. 
+\n Bu haritalardan herhangi biri, görüntülenecek ana (temel) harita olarak veya başka bir temel haritaya (MineNAV\'ın standart çevrim dışı haritaları gibi) üst veya alt katman olarak kullanılabilir. MineNAV vektör haritalarının belirli ögeleri, herhangi bir alt haritayı daha görünür hale getirmek için \'Haritayı yapılandır\' menüsü aracılığıyla gizlenebilir. 
 \n 
-\n Döşeme haritalarını doğrudan çevrim içi olarak indirin veya çeşitli üçüncü taraf harita hazırlama araçları tarafından üretilebilen bir SQLite veri tabanı olarak çevrim dışı kullanım için (OsmAnd\'ın veri klasörüne elle kopyalayarak) hazırlayın.</string>
-    <string name="osmand_accessibility_description">Aygıtın erişilebilirlik özelliklerini doğrudan OsmAnd\'da kullanılabilir hale getirir. Örneğin; metinden konuşmaya sesleri için konuşma hızını ayarlama, D-pad navigasyonunu yapılandırma, yakınlaştırma denetimi için bir izleme topu kullanma veya örneğin konumunuzu otomatik olarak duyurmak için metinden konuşmaya geri bildirimi.</string>
+\n Döşeme haritalarını doğrudan çevrim içi olarak indirin veya çeşitli üçüncü taraf harita hazırlama araçları tarafından üretilebilen bir SQLite veri tabanı olarak çevrim dışı kullanım için (MineNAV\'ın veri klasörüne elle kopyalayarak) hazırlayın.</string>
+    <string name="osmand_accessibility_description">Aygıtın erişilebilirlik özelliklerini doğrudan MineNAV\'da kullanılabilir hale getirir. Örneğin; metinden konuşmaya sesleri için konuşma hızını ayarlama, D-pad navigasyonunu yapılandırma, yakınlaştırma denetimi için bir izleme topu kullanma veya örneğin konumunuzu otomatik olarak duyurmak için metinden konuşmaya geri bildirimi.</string>
     <string name="osmand_development_plugin_description">Navigasyon simülasyonu, görselleştirme performansı veya sesli komutlar gibi geliştirme ve hata ayıklama özellikleri için ayarlar. Geliştiriciler için tasarlanmıştır, normal uygulama kullanımı için gerekli değildir.</string>
     <string name="plugins_screen">Eklentiler</string>
     <string name="prefs_plugins">Eklentiler</string>
     <string name="play_commands_of_currently_selected_voice">Bir ses seçin ve duyuruları oynayarak test edin:</string>
-    <string name="debugging_and_development">OsmAnd gelişimi</string>
+    <string name="debugging_and_development">MineNAV gelişimi</string>
     <string name="test_voice_prompts">Sesli uyarıları test et</string>
     <string name="gpx_visibility_txt">Görünürlük</string>
     <string name="gpx_tags_txt">Etiketler</string>
@@ -409,7 +409,7 @@
     <string name="general_settings">Genel</string>
     <string name="user_name">OSM kullanıcı adınız</string>
     <string name="osmand_service">Arka plan modu</string>
-    <string name="osmand_service_descr">OsmAnd, ekran kapalıyken arka planda çalışır.</string>
+    <string name="osmand_service_descr">MineNAV, ekran kapalıyken arka planda çalışır.</string>
     <string name="download_files_question_space">{0} dosya indirilsin mi\?
 \n ({2} MB\'tan) {1} MB kullanılacak.</string>
     <string name="native_library_not_supported">Yerel kütüphane bu aygıtta desteklenmiyor.</string>
@@ -432,10 +432,10 @@
     <string name="prefer_motorways">Otoyolları tercih et</string>
     <string name="prefer_in_routing_title">Tercih et…</string>
     <string name="max_speed_none">hiçbiri</string>
-    <string name="osmand_play_title_30_chars">OsmAnd Haritalar &amp; Navigasyon</string>
-    <string name="osmand_plus_play_title_30_chars">OsmAnd+ Haritalar &amp; Yolbul</string>
+    <string name="osmand_play_title_30_chars">MineNAV Haritalar &amp; Navigasyon</string>
+    <string name="osmand_plus_play_title_30_chars">MineNAV Haritalar &amp; Yolbul</string>
     <string name="poi_query_by_name_matches_categories">Birkaç ilgili POI kategorisi bulundu.</string>
-    <string name="button_upgrade_osmandplus">OsmAnd+\'a Yükselt</string>
+    <string name="button_upgrade_osmandplus">MineNAV\'a Yükselt</string>
     <string name="map_version_changed_info">Yeni harita dosyalarını kullanabilmek için uygulamanın yeni sürümünü indirin.</string>
     <string name="shared_string_undefined">Tanımlanmamış</string>
     <string name="context_menu_item_search">Yakınlarda ara</string>
@@ -539,9 +539,9 @@
     <string name="osmand_net_previously_installed">Eski yüklü uygulamadaki tüm çevrim dışı veriler yenisi tarafından desteklenecektir, ancak Sık Kullanılan noktalar eski uygulamadan dışa aktarılmalı ve ardından yenisinde içe aktarılmalıdır.</string>
     <string name="build_installed">{0} derlemesi başarıyla yüklendi ({1}).</string>
     <string name="downloading_build">Yapı indiriliyor…</string>
-    <string name="loading_builds_failed">OsmAnd derlemelerinin listesi alınamadı</string>
-    <string name="loading_builds">OsmAnd yapıları yükleniyor…</string>
-    <string name="select_build_to_install">Yüklenecek OsmAnd yapısını seçin</string>
+    <string name="loading_builds_failed">MineNAV derlemelerinin listesi alınamadı</string>
+    <string name="loading_builds">MineNAV yapıları yükleniyor…</string>
+    <string name="select_build_to_install">Yüklenecek MineNAV yapısını seçin</string>
     <string name="daynight_mode_sensor">Işık algılayıcısı</string>
     <string name="fast_route_mode_descr">En hızlı rotayı hesaplamayı etkinleştirin veya yakıt tasarrufu rotası için devre dışı bırakın.</string>
     <string name="rendering_exception">Seçilen alan çizilemedi.</string>
@@ -571,7 +571,7 @@
     <string name="transport_Stop">Durak</string>
     <string name="transport_stops">durak</string>
     <string name="transport">Ulaşım</string>
-    <string name="hello">OsmAnd yolbul uygulaması</string>
+    <string name="hello">MineNAV yolbul uygulaması</string>
     <string name="shared_string_history">Geçmiş</string>
     <string name="uploading_data">Veri yükleniyor…</string>
     <string name="uploading">Yükleniyor…</string>
@@ -634,7 +634,7 @@
     <string name="routing_attr_weight_name">Ağırlık</string>
     <string name="routing_attr_weight_description">Yollarda izin verilen araç ağırlık sınırını belirtin.</string>
     <string name="copying_osmand_files">Kopyalama Osmand veri dosyaları …</string>
-    <string name="calculate_osmand_route_gpx">Çevrim dışı OsmAnd rota hesaplama</string>
+    <string name="calculate_osmand_route_gpx">Çevrim dışı MineNAV rota hesaplama</string>
     <string name="app_mode_truck">Kamyon</string>
     <string name="speech_rate_descr">Metinden konuşmaya konuşma hızını belirtin.</string>
     <string name="speech_rate">Hoparlör yerleşimi</string>
@@ -781,7 +781,7 @@
     <string name="traffic_warning">Trafik uyarısı</string>
     <string name="way_alarms">Trafik uyarıları</string>
     <string name="confirm_every_run">Her zaman sor</string>
-    <string name="shared_string_import2osmand">OsmAnd\'a aktar</string>
+    <string name="shared_string_import2osmand">MineNAV\'a aktar</string>
     <string name="read_full_article">Tüm metni oku (çevrim içi)</string>
     <string name="rendering_value_walkingRoutesOSMC_name">OSMC</string>
     <string name="plugin_nautical_name">Deniz haritası görünümü</string>
@@ -985,12 +985,12 @@
     <string name="navigation_intent_invalid">Geçersiz biçim: %s</string>
     <string name="plugin_install_needs_network">Bu eklentiyi yüklemek için çevrim içi olmanız gerekmektedir.</string>
     <string name="shared_string_get">Al</string>
-    <string name="do_you_like_osmand">OsmAnd\'ı Sevdinizmi?</string>
+    <string name="do_you_like_osmand">MineNAV\'ı Sevdinizmi?</string>
     <string name="dahboard_options_dialog_title">Pano Yapılandırma</string>
     <string name="shared_string_card_was_hidden">Kart gizlidir</string>
     <string name="shared_string_undo">Geri al</string>
     <string name="shared_string_skip">Atla</string>
-    <string name="app_name_osmand">OsmAnd</string>
+    <string name="app_name_osmand">MineNAV</string>
     <string name="show_view_angle">Ekran görüntüleme yönü</string>
     <string name="navigate_point_format_D">DDD.DDDDD</string>
     <string name="navigate_point_format_DM">DDD MM.MMM</string>
@@ -1008,9 +1008,9 @@
     <string name="opening_changeset">Değişiklik listesi açılıyor…</string>
     <string name="closing_changeset">Değişiklik listesi kapatılıyor…</string>
     <string name="commiting_node">Düğüm işleniyor …</string>
-    <string name="previous_run_crashed">Son OsmAnd çalıştırması çöktü. Günlük kaydı dosyası {0} konumunda. Lütfen sorunu bildirin ve günlük kaydı dosyasını ekleyin.</string>
+    <string name="previous_run_crashed">Son MineNAV çalıştırması çöktü. Günlük kaydı dosyası {0} konumunda. Lütfen sorunu bildirin ve günlük kaydı dosyasını ekleyin.</string>
     <string name="fav_imported_sucessfully">Sık Kullanılanlar içe aktarıldı</string>
-    <string name="share_fav_subject">OsmAnd aracılığıyla paylaşılan Favoriler</string>
+    <string name="share_fav_subject">MineNAV aracılığıyla paylaşılan Favoriler</string>
     <string name="layer_osm_bugs">OSM notları (çevrim içi)</string>
     <string name="use_trackball_descr">Haritayı hareket ettirmek için bir izleme topu aygıtı kullanın.</string>
     <string name="use_trackball">İzleme topu kullan</string>
@@ -1020,7 +1020,7 @@
     <string name="voices">Sesli uyarılar</string>
     <string name="rotate_map_to">Harita yönlendirme</string>
     <string name="version_index_is_not_supported">\'\'{0}\'\' indeks sürümü desteklenmemektedir</string>
-    <string name="install_selected_build">OsmAnd Yükle - {1} {2} üzerinden {0} MB \?</string>
+    <string name="install_selected_build">MineNAV Yükle - {1} {2} üzerinden {0} MB \?</string>
     <string name="renderers">Vektör görselleştirici</string>
     <string name="indexing_map">Dizin Oluşturma haritası …</string>
     <string name="poi_filter_namefinder">Çevrim içi NameFinder</string>
@@ -1042,7 +1042,7 @@
     <string name="shared_string_release">Çıkış</string>
     <string name="local_index_action_do">Siz %1$s %2$s kalem (ler) üzeresiniz. Devam?</string>
     <string name="share_route_as_gpx">Rotayı GPX dosyası olarak paylaş</string>
-    <string name="share_route_subject">OsmAnd aracılığıyla paylaşılan rota</string>
+    <string name="share_route_subject">MineNAV aracılığıyla paylaşılan rota</string>
     <string name="arrival_distance_factor_early">Erken</string>
     <string name="arrival_distance_factor_normally">Normal</string>
     <string name="arrival_distance_factor_late">Geç</string>
@@ -1102,8 +1102,8 @@
     <string name="lang_uk">Ukraynaca</string>
     <string name="lang_vi">Vietnamca</string>
     <string name="lang_cy">Galce</string>
-    <string name="calculate_osmand_route_without_internet">OsmAnd rota segmentinin çevrim dışı hesaplanması</string>
-    <string name="gpx_option_calculate_first_last_segment">Rotanın ilk ve son bölümleri için OsmAnd rotası hesapla</string>
+    <string name="calculate_osmand_route_without_internet">MineNAV rota segmentinin çevrim dışı hesaplanması</string>
+    <string name="gpx_option_calculate_first_last_segment">Rotanın ilk ve son bölümleri için MineNAV rotası hesapla</string>
     <string name="index_item_world_bitcoin_payments">Ödemeler Bitcoin Dünya</string>
     <string name="index_item_world_basemap">Dünya genel bakış haritası</string>
     <string name="index_item_world_ski">Dünya kayak haritası</string>
@@ -1148,9 +1148,9 @@
     <string name="no_index_file_to_download">İndirme bulunamadı, lütfen internet bağlantınızı gözden geçirin.</string>
     <string name="gpx_split_interval">Bölme aralığı</string>
     <string name="show_zoom_buttons_navigation">Yakınlaştırma düğmelerini göster</string>
-    <string name="android_19_location_disabled">Android 4.4\'ten (KitKat) sonra, eski depolama klasörü (%s) kullanımdan kaldırıldı. Tüm OsmAnd dosyaları yeni depolama konumuna kopyalansın mı\? 
+    <string name="android_19_location_disabled">Android 4.4\'ten (KitKat) sonra, eski depolama klasörü (%s) kullanımdan kaldırıldı. Tüm MineNAV dosyaları yeni depolama konumuna kopyalansın mı\? 
 \n Not 1: Eski dosyalarınız dokunulmadan kalacaktır (ancak elle silinebilir). 
-\n Not 2: Yeni depolama konumunda OsmAnd ve OsmAnd+ arasında dosya paylaşımı mümkün olmayacaktır.</string>
+\n Not 2: Yeni depolama konumunda MineNAV ve MineNAV arasında dosya paylaşımı mümkün olmayacaktır.</string>
     <string name="share_geo">Yer:</string>
     <string name="region_maps">Bölge çapında haritalar</string>
     <string name="world_maps">Dünya Haritaları</string>
@@ -1181,7 +1181,7 @@
 \nÖzel bir harita indirme işlemi gerekli değildir, görünüm standart haritalarımızdan oluşturulmuştur. 
 \n 
 \nBu görünüm, burada tekrar devre dışı bırakılarak ya da \'Harita yapılandır\' altındaki \'Harita tarzını\' istediğiniz gibi değiştirerek geri döndürülebilir.</string>
-    <string name="plugin_ski_descr">OsmAnd için bu eklenti, küresel yokuş aşağı kayak pistlerinin, kros kayağı pistlerinin, Alp kayak pistlerinin, teleferiklerin ve telesiyejlerin ayrıntılarını parmaklarınızın ucuna getirir. Yollar ve pistler, zorluk derecesine göre renk kodlu olarak gösterilir ve kar renginde bir kış manzarasına benzeyen özel bir \'Kış\' harita tarzında gösterilir. \n \nBu görünümü etkinleştirmek, kış koşullarında tüm peyzaj özelliklerini gösteren harita tarzını \'Kış ve kayak\' olarak değiştirir. Bu görünüm, burada tekrar devre dışı bırakılarak veya \'Harita yapılandır\' altındaki \'Harita tarzını\' istediğiniz gibi değiştirerek geri döndürülebilir.</string>
+    <string name="plugin_ski_descr">MineNAV için bu eklenti, küresel yokuş aşağı kayak pistlerinin, kros kayağı pistlerinin, Alp kayak pistlerinin, teleferiklerin ve telesiyejlerin ayrıntılarını parmaklarınızın ucuna getirir. Yollar ve pistler, zorluk derecesine göre renk kodlu olarak gösterilir ve kar renginde bir kış manzarasına benzeyen özel bir \'Kış\' harita tarzında gösterilir. \n \nBu görünümü etkinleştirmek, kış koşullarında tüm peyzaj özelliklerini gösteren harita tarzını \'Kış ve kayak\' olarak değiştirir. Bu görünüm, burada tekrar devre dışı bırakılarak veya \'Harita yapılandır\' altındaki \'Harita tarzını\' istediğiniz gibi değiştirerek geri döndürülebilir.</string>
     <string name="rename_failed">Yeniden adlandırma başarısız oldu.</string>
     <string name="free">%1$s boş</string>
     <string name="rendering_attr_pisteGrooming_name">Pist tımar</string>
@@ -1264,7 +1264,7 @@
     <string name="only_download_over_wifi">Sadece Wi-Fi üzerinden indir</string>
     <string name="live_update">Canlı güncelleştirme</string>
     <string name="update_now">Şimdi güncelle</string>
-    <string name="missing_write_external_storage_permission">OsmAnd hafıza kartını kullanma iznine sahip değil</string>
+    <string name="missing_write_external_storage_permission">MineNAV hafıza kartını kullanma iznine sahip değil</string>
     <string name="select_voice_provider">Sesli yönlendirme seç</string>
     <string name="select_voice_provider_descr">Diliniz için sesli yönlendirme seçin veya indirin.</string>
     <string name="shared_string_sound">Ses</string>
@@ -1326,7 +1326,7 @@
     <string name="osm_live_subscribe_btn">Abone ol</string>
     <string name="osm_live_active">Aktif</string>
     <string name="osm_live_enter_email">Lütfen geçerli bir e-posta adresi girin</string>
-    <string name="osm_live_ask_for_purchase">Lütfen önce OsmAnd Live aboneliği satın alın</string>
+    <string name="osm_live_ask_for_purchase">Lütfen önce Live aboneliği satın alın</string>
     <string name="select_map_marker">Harita işaretçisi seç</string>
     <string name="upload_anonymously">Anonim olarak yükle</string>
     <string name="show_transparency_seekbar">Şeffaflık seekbar göster</string>
@@ -1363,7 +1363,7 @@
     <string name="change_markers_position">İşaretleyici konumunu değiştir</string>
     <string name="map_widget_bearing">Nispi yön</string>
     <string name="search_location">Konum aranıyor…</string>
-    <string name="first_usage_wizard_desc">OsmAnd\'ın konumunuzu bulmasına ve o bölge için harita indirmeyi önermesine izin verin.</string>
+    <string name="first_usage_wizard_desc">MineNAV\'ın konumunuzu bulmasına ve o bölge için harita indirmeyi önermesine izin verin.</string>
     <string name="search_another_country">Başka bölge seç</string>
     <string name="shared_string_change">Değiştir</string>
     <string name="get_it">Al</string>
@@ -1526,7 +1526,7 @@
     <string name="mapillary_menu_date_from">Buradan</string>
     <string name="mapillary_menu_title_username">Kullanıcı adı</string>
     <string name="shared_string_permissions">İzinler</string>
-    <string name="import_gpx_failed_descr">Dosya içe aktarılamadı. Lütfen OsmAnd\'ın okuma iznine sahip olduğundan emin olun.</string>
+    <string name="import_gpx_failed_descr">Dosya içe aktarılamadı. Lütfen MineNAV\'ın okuma iznine sahip olduğundan emin olun.</string>
     <string name="improve_coverage_mapillary">Mapillary ile fotoğraf kapsama alanını geliştir</string>
     <string name="improve_coverage_install_mapillary_desc">Bu harita konumuna fotoğraf eklemek için Mapillary yükleyin.</string>
     <string name="online_photos">Çevrim içi fotoğraflar</string>
@@ -1563,7 +1563,7 @@
     <string name="back_to_search">Aramaya geri dön</string>
     <string name="confirmation_to_delete_history_items">Seçilen ögeler \'Geçmiş’ten kaldırılsın mı\?</string>
     <string name="show_something_on_map">%1$s \'ı haritada göster</string>
-    <string name="share_history_subject">OsmAnd üzerinden paylaşıldı</string>
+    <string name="share_history_subject">MineNAV üzerinden paylaşıldı</string>
     <string name="postcode">Posta-kodu</string>
     <string name="shared_string_from">-dan</string>
     <string name="map_widget_search">Ara</string>
@@ -1574,7 +1574,7 @@
     <string name="tap_on_map_to_hide_interface_descr">Harita üzerine dokunmak denetim düğmeleri ve widget\'lara geçiş yapmayı sağlar.</string>
     <string name="marker_save_as_track_descr">İşaretleyicilerinizi şu GPX dosyasına aktarın:</string>
     <string name="show_arrows_on_the_map">Haritada yön gösterici okları göster</string>
-    <string name="measurement_tool_snap_to_road_descr">OsmAnd seçilmiş profil için rotalı noktalara bağlanacak.</string>
+    <string name="measurement_tool_snap_to_road_descr">MineNAV seçilmiş profil için rotalı noktalara bağlanacak.</string>
     <string name="none_point_error">Lütfen en az bir nokta ekleyin.</string>
     <string name="store_tracks_in_monthly_directories">Kaydedilmiş izlenen yolları aylık klasörlerde depola</string>
     <string name="distance_moving">Düzeltilmiş uzaklık</string>
@@ -1809,15 +1809,15 @@
     <string name="line">Çizgi</string>
     <string name="edit_line">Çizgiyi düzenle</string>
     <string name="mapillary_menu_title_pano">Sadece 360° resimleri göster</string>
-    <string name="full_version_thanks">OsmAnd Premium satın aldığınız için teşekkür ederiz.</string>
+    <string name="full_version_thanks">MineNAV Premium satın aldığınız için teşekkür ederiz.</string>
     <string name="routing_attr_avoid_sett_description">Parke ve kaldırım taşından kaçınır</string>
     <string name="rate_dialog_descr">Lütfen geri bildirimlerinizi paylaşın ve çalışmalarımızı Google Play\'de değerlendirin.</string>
     <string name="shared_string_privacy_policy">Gizlilik Politikası</string>
-    <string name="help_us_make_osmand_better">OsmAnd\'ı daha iyi hale getirmemize yardımcı olun</string>
+    <string name="help_us_make_osmand_better">MineNAV\'ı daha iyi hale getirmemize yardımcı olun</string>
     <string name="choose_data_to_share">Paylaşmak istediğiniz veri türünü seçin:</string>
     <string name="downloaded_maps">İndirilen haritalar</string>
     <string name="visited_screens">Ziyaret edilen ekranlar</string>
-    <string name="visited_screens_collect_descr">OsmAnd özellik popülerliğini anlamamıza yardımcı olur.</string>
+    <string name="visited_screens_collect_descr">MineNAV özellik popülerliğini anlamamıza yardımcı olur.</string>
     <string name="settings_privacy_and_security">Gizlilik ve güvenlik</string>
     <string name="settings_privacy_and_security_desc">Hangi verileri paylaştığınızı seçin</string>
     <string name="shared_string_no_thank_you">Hayır, teşekkürler</string>
@@ -1834,7 +1834,7 @@
     <string name="profile_type_descr_string">Tür: %s</string>
     <string name="profile_alert_need_profile_name_title">Profil adı girin</string>
     <string name="profile_alert_need_profile_name_msg">Önce bir profil adı belirtmelisiniz.</string>
-    <string name="profile_alert_cant_delete_base">OsmAnd\'ın temel profillerini silemezsiniz</string>
+    <string name="profile_alert_cant_delete_base">MineNAV\'ın temel profillerini silemezsiniz</string>
     <string name="profile_alert_delete_title">Profili sil</string>
     <string name="profile_alert_delete_msg">\"%s\" profilini sil</string>
     <string name="select_base_profile_dialog_title">Başlanacak profili seç</string>
@@ -1847,7 +1847,7 @@
     <string name="routing_profile_geocoding">Coğrafi Kodlama</string>
     <string name="routing_profile_straightline">Düz çizgi</string>
     <string name="application_profiles">Uygulama profilleri</string>
-    <string name="process_downloading_service">OsmAnd indirme hizmeti</string>
+    <string name="process_downloading_service">MineNAV indirme hizmeti</string>
     <string name="shared_string_color_magenta">Eflatun</string>
     <string name="shared_string_icon">Simge</string>
     <string name="press_again_to_change_the_map_orientation">Harita yönünü değiştirmek için tekrar dokunun</string>
@@ -1888,13 +1888,13 @@
     <string name="application_profile_changed">Uygulama profili \"%s\" olarak değiştirildi</string>
     <string name="logcat_buffer">Logcat tamponu</string>
     <string name="plugins_settings">Eklenti ayarları</string>
-    <string name="osmand_plus_extended_description_part1">OsmAnd+ (OSM Automated Navigation Directions), özgür, dünya çapında ve yüksek kaliteli OSM verilerine erişim sağlayan bir harita ve navigasyon uygulamasıdır. 
+    <string name="osmand_plus_extended_description_part1">MineNAV (OSM Automated Navigation Directions), özgür, dünya çapında ve yüksek kaliteli OSM verilerine erişim sağlayan bir harita ve navigasyon uygulamasıdır. 
 \n Sesli ve görüntülü navigasyonun, POI\'leri (points of interest) görüntülemenin, GPX yolları oluşturma ve yönetmenin, eş yükselti eğrileri görselleştirmenin ve irtifa bilgilerini kullanmanın, araç, bisiklet, yaya modları arasında tercih yapmanın, OSM düzenleme ve daha fazlasının keyfini çıkarın. 
 \n 
-\n OsmAnd+ uygulamanın ücretli sürümüdür. Satın alarak, projeyi desteklemekte, yeni özelliklerin geliştirilmesini finanse etmekte ve en son güncellemeleri almaktasınız. 
+\n MineNAV uygulamanın ücretli sürümüdür. Satın alarak, projeyi desteklemekte, yeni özelliklerin geliştirilmesini finanse etmekte ve en son güncellemeleri almaktasınız. 
 \n 
 \n Ana özelliklerden bazıları:</string>
-    <string name="make_osmand_better_descr">OsmAnd\'ın anonim uygulama kullanım verilerini toplamasına ve işlemesine izin ver. Konumunuz veya haritada görüntülediğiniz yerler hakkında veri toplanmaz.
+    <string name="make_osmand_better_descr">MineNAV\'ın anonim uygulama kullanım verilerini toplamasına ve işlemesine izin ver. Konumunuz veya haritada görüntülediğiniz yerler hakkında veri toplanmaz.
 \n
 \n\'Ayarlar\' → \'Gizlilik ve Güvenlik\' bölümünde istediğiniz zaman yapılandırın.</string>
     <string name="downloaded_maps_collect_descr">Ülke ve bölge haritası popülaritesini anlamamıza yardımcı olur.</string>
@@ -1903,7 +1903,7 @@
     <string name="osmand_routing_promo">routing.xml dosyasının değiştirilmiş halini ..osmand/routing dizinine ekleyin</string>
     <string name="show_compass_ruler">Pusula cetvelini göster</string>
     <string name="profile_alert_duplicate_name_msg">Bu ada sahip bir profil zaten var</string>
-    <string name="last_launch_crashed">OsmAnd\'ın son çalıştırması çöktü. Lütfen hata mesajını paylaşarak OsmAnd\'ı geliştirmemize yardımcı olun.</string>
+    <string name="last_launch_crashed">MineNAV\'ın son çalıştırması çöktü. Lütfen hata mesajını paylaşarak MineNAV\'ı geliştirmemize yardımcı olun.</string>
     <string name="app_mode_ufo">UFO</string>
     <string name="release_3_4">• Uygulama profilleri: Özel bir simge ve renk ile kendi ihtiyaçlarınız için özel bir profil oluşturun
 \n
@@ -1965,7 +1965,7 @@
     <string name="get_discount_second_part">Sonra %1$s</string>
     <string name="cancel_subscription">Aboneliği iptal et</string>
     <string name="osmand_settings_descr">Tüm uygulama için etkili</string>
-    <string name="osmand_settings">OsmAnd ayarları</string>
+    <string name="osmand_settings">MineNAV ayarları</string>
     <string name="copy_from_other_profile">Başka bir profilden kopyala</string>
     <string name="turn_screen_on">Ekranı aç</string>
     <string name="map_during_navigation_info">Navigasyon sırasında harita</string>
@@ -1984,7 +1984,7 @@
     <string name="access_shared_string_navigate_up">Yukarı git</string>
     <string name="access_smart_autoannounce">Akıllı otomatik duyuru</string>
     <string name="map_widget_magnetic_bearing">Manyetik hareket</string>
-    <string name="use_osm_live_routing_description">OsmAnd Live değişiklikleri için navigasyonu etkinleştirin.</string>
+    <string name="use_osm_live_routing_description">Live değişiklikleri için navigasyonu etkinleştirin.</string>
     <string name="lang_hu_formal">Macarca (resmi)</string>
     <string name="lang_kn">Kannada dili</string>
     <string name="lang_en_gb">İngilizce (Birleşik Krallık)</string>
@@ -2097,12 +2097,12 @@
     <string name="start_editing">Düzenlemeye başla</string>
     <string name="welcome_to_open_beta">Açık betaya hoş geldiniz</string>
     <string name="popular_destinations">Popüler yerler</string>
-    <string name="osmand_team">OsmAnd ekibi</string>
+    <string name="osmand_team">MineNAV ekibi</string>
     <string name="maps_you_need_descr">İşaretlediğiniz makaleleri dayanarak, aşağıdaki haritaları indirmeniz tavsiye edilmektedir:</string>
     <string name="maps_you_need">İhtiyacınız olan haritalar</string>
     <string name="shared_string_restart">Uygulamayı yeniden başlatma</string>
     <string name="download_all">Hepsini indir</string>
-    <string name="read_wikipedia_offline_description">Wikipedia ve Wikivoyage makalelerini çevrim dışı olarak okumak için OsmAnd Live üyeliği alın.</string>
+    <string name="read_wikipedia_offline_description">Wikipedia ve Wikivoyage makalelerini çevrim dışı olarak okumak için Live üyeliği alın.</string>
     <string name="how_to_open_link">Link nasıl açılır\?</string>
     <string name="read_wikipedia_offline">Wikipedia\'yı çevrim dışı olarak oku</string>
     <string name="nautical_render_descr">Deniz navigasyonu için. Şamandıralar, deniz fenerleri, nehir yolları, deniz şeritleri ve işaretleri, limanlar, deniz kenarı hizmetleri ve eş derinlik eğrilerini içermektedir.</string>
@@ -2110,13 +2110,13 @@
     <string name="light_rs_render_descr">Basit sürüş tarzı. Yumuşak gece modu, eş yükselti eğrileri, turuncu tarzdaki zıtlaştırılmış yollar, ikincil harita nesnelerini karartma.</string>
     <string name="topo_render_descr">Yürüyüş, doğa yürüyüşü ve doğa bisikleti için. Dış mekanda okunabilir. Zıtlaştırılmış yollar ve doğal nesneler, farklı rota türleri, gelişmiş eş yükselti eğrisi seçenekleri, ilave ayrıntılar. Yüzey bütünlüğünün ayarlanması yol kalitesini ayırt eder. Gece modu yok.</string>
     <string name="default_render_descr">Genel amaçlı tarz. Yoğun şehirler temiz bir şekilde gösterilmiştir. Eş yükselti eğrileri, rotalar, yüzey kalitesi, erişim kısıtlamaları, yol levhaları, SAC ölçeğine göre yol görselleştirme, akarsu sporları ögeleri içermektedir.</string>
-    <string name="touring_view_render_descr">Yüksek zıtlık ve en fazla ayrıntı ile gezi tarzı. OsmAnd varsayılan tarzının tüm seçenekleri ile birlikte, mümkün olduğu kadar çok ayrıntıyı, özellikle de yolları, patikaları ve seyahat etmenin diğer yollarını gösterir. Yol türleri arasındaki \"touring atlas\" ayrımını kaldırın. Gündüz, gece ve dış mekan kullanımı için uygundur.</string>
+    <string name="touring_view_render_descr">Yüksek zıtlık ve en fazla ayrıntı ile gezi tarzı. MineNAV varsayılan tarzının tüm seçenekleri ile birlikte, mümkün olduğu kadar çok ayrıntıyı, özellikle de yolları, patikaları ve seyahat etmenin diğer yollarını gösterir. Yol türleri arasındaki \"touring atlas\" ayrımını kaldırın. Gündüz, gece ve dış mekan kullanımı için uygundur.</string>
     <string name="off_road_render_descr">\'Topo\' tarzına dayalı arazi sürüşleri ve yeşil uydu görüntüleriyle alt tabaka olarak kullanım için. Ana yol kalınlığı azaltılmış, izlenen yollar, patikalar, bisiklet ve diğer rotaların kalınlığı arttırılmıştır.</string>
     <string name="unirs_render_descr">Yaya ve bisiklet yollarının zıtlığını artırmak için varsayılan tarzın değiştirilmesi. Eski Mapnik renklerini kullanır.</string>
     <string name="shared_string_gpx_file">GPX dosyası</string>
     <string name="shared_string_gpx_waypoints">İzlenen yol ara noktaları</string>
     <string name="wikivoyage_travel_guide">Seyahat Rehberleri</string>
-    <string name="wikivoyage_travel_guide_descr">İnternete bağlantısı olmadan, OsmAnd\'ın içinde, gezegendeki en ilgi çekici yerlere ait rehberler.</string>
+    <string name="wikivoyage_travel_guide_descr">İnternete bağlantısı olmadan, MineNAV\'ın içinde, gezegendeki en ilgi çekici yerlere ait rehberler.</string>
     <string name="quick_action_edit_actions">Eylemleri düzenle</string>
     <string name="coord_input_save_as_track">İzlenen yol olarak kaydet</string>
     <string name="coord_input_save_as_track_descr">%1$s nokta eklediniz. Bir dosya adı yazın ve \"Kaydet\"e dokunun.</string>
@@ -2124,7 +2124,7 @@
 \n
 \n Kişisel bilgiler toplanmamakta, yalnızca aramayı geliştirmek için gereken arama verileri gönderilmektedir.</string>
     <string name="increase_search_radius_to">Arama yarıçapını %1$s’ye genişlet</string>
-    <string name="ask_for_location_permission">Lütfen devam etmek için OsmAnd\'a konum erişim izni verin.</string>
+    <string name="ask_for_location_permission">Lütfen devam etmek için MineNAV\'a konum erişim izni verin.</string>
     <string name="rendering_value_black_name">Siyah</string>
     <string name="more_transport_on_stop_hint">Bu duraktan daha fazla ulaşım aracı mevcut.</string>
     <string name="keep_passed_markers_descr">Geçti olarak işaretlenmiş, bir Sık Kullanılanlar grubu ya da GPX ara noktaları olarak eklenen işaretleyiciler haritada kalacaktır. Grup aktif değilse, işaretleyiciler haritadan kaybolacaktır.</string>
@@ -2151,7 +2151,7 @@
     <string name="exit_at">Burada çık</string>
     <string name="sit_on_the_stop">Durakta bin</string>
     <string name="quick_action_show_hide_gpx_tracks_descr">Seçilen yolları haritada göstermek veya gizlemek için bir düğme.</string>
-    <string name="use_osm_live_public_transport_description">OsmAnd Live değişiklikleri için toplu taşıma araçlarını etkinleştirin.</string>
+    <string name="use_osm_live_public_transport_description">Live değişiklikleri için toplu taşıma araçlarını etkinleştirin.</string>
     <string name="transfers_size">%1$d transfer</string>
     <string name="rendering_attr_surface_grass_paver_name">Çim kaldırım</string>
     <string name="rendering_attr_surface_dirt_name">Toprak</string>
@@ -2160,19 +2160,19 @@
     <string name="rendering_attr_highway_class_bridleway_name">Gezinti yolu</string>
     <string name="rendering_attr_highway_class_steps_name">Basamak</string>
     <string name="rendering_attr_highway_class_path_name">Patika</string>
-    <string name="public_transport_warning_descr_blog">OsmAnd\'ın rotaları hakkında blogumuzda daha fazla bilgi edinin.</string>
+    <string name="public_transport_warning_descr_blog">MineNAV\'ın rotaları hakkında blogumuzda daha fazla bilgi edinin.</string>
     <string name="save_poi_value_exceed_length">\"%s\" etiketinin uzunluğunu 255 karakterden az olacak şekilde kısaltın.</string>
     <string name="save_poi_value_exceed_length_title">\"%s\" değerinin uzunluğu</string>
     <string name="shared_string_milliradians">Miliradyan</string>
     <string name="angular_measeurement">Açısal birim</string>
     <string name="public_transport_ped_route_title">Yürüme rotası yaklaşık %1$s, ve toplu taşıma araçlarına göre daha hızlı olabilir</string>
-    <string name="public_transport_no_route_title">Ne yazık ki, OsmAnd ayarlarınıza uygun bir rota bulamadı.</string>
+    <string name="public_transport_no_route_title">Ne yazık ki, MineNAV ayarlarınıza uygun bir rota bulamadı.</string>
     <string name="searching_gps">GPS aranıyor</string>
     <string name="coordinates_widget">Koordinatlar widget\'ı</string>
     <string name="select_base_profile_dialog_message">Özel profilinizi varsayılan uygulama profillerinden birine dayandırın, bu widget\'ların varsayılan görünürlüğü ile hız ve mesafe birimleri gibi temel ayarları tanımlar. Bunlar, genişletilebilecekleri özel profillerin örnekleri ile birlikte varsayılan uygulama profilleridir:</string>
     <string name="base_profile_descr_public_transport">Toplu taşıma türleri</string>
     <string name="routing_profile_broutrer">BRouter (çevrim dışı)</string>
-    <string name="osmand_default_routing">OsmAnd yönlendirme</string>
+    <string name="osmand_default_routing">MineNAV yönlendirme</string>
     <string name="special_routing_type">Özel yönlendirme</string>
     <string name="third_party_routing_type">Üçüncü taraf yönlendirmesi</string>
     <string name="rendering_attr_highway_class_track_grade1_name">1. sınıf</string>
@@ -2219,7 +2219,7 @@
     <string name="quick_action_map_overlay_switch">Harita üst katmanı \"%s\" olarak değiştirildi.</string>
     <string name="quick_action_map_underlay_switch">Harita alt katmanı \"%s\" olarak değiştirildi.</string>
     <string name="quick_action_page_list_descr">Aşağıdaki listede gezinmek için bir düğme.</string>
-    <string name="osmand_extended_description_part1">OsmAnd (OSM Automated Navigation Directions) özgür, dünya çapında ve yüksek kaliteli OSM verilerine erişim sağlayan bir harita ve navigasyon uygulamasıdır. 
+    <string name="osmand_extended_description_part1">MineNAV (OSM Automated Navigation Directions) özgür, dünya çapında ve yüksek kaliteli OSM verilerine erişim sağlayan bir harita ve navigasyon uygulamasıdır. 
 \n 
 \n Sesli ve optik yönlendiricinin, POI\'leri (ilgi çekici noktaları) görüntülemenin, GPX yolları oluşturma ve yönetmenin, eş yükselti eğrileri görselleştirme ve irtifa bilgilerinin (eklenti aracılığıyla), sürüş, bisiklet, yaya modları arasında seçim yapmanın, OSM düzenleme ve daha pek çok seçeneğin tadını çıkarın.</string>
     <string name="osmand_extended_description_part3">Harita 
@@ -2232,7 +2232,7 @@
 \n • Özel çevrim içi döşemeleri, uydu görüntüsünü (Bing\'den), tur/navigasyon GPX yolları gibi farklı üst katmanları ve ayarlanabilir şeffaflığı olan ek katmanları görüntüler
 \n</string>
     <string name="osmand_extended_description_part4">Kayak yapma
-\n OsmAnd kayak haritaları eklentisi, kayak pistlerini karmaşıklık seviyesi ve asansörlerin ve diğer tesislerin konumu gibi bazı ek bilgileri ile birlikte görmenizi sağlar.</string>
+\n MineNAV kayak haritaları eklentisi, kayak pistlerini karmaşıklık seviyesi ve asansörlerin ve diğer tesislerin konumu gibi bazı ek bilgileri ile birlikte görmenizi sağlar.</string>
     <string name="osmand_extended_description_part6">Yürüyüş, doğa yürüyüşü, şehir turu
 \n • Harita size yürüyüş ve doğa yürüyüşü yollarını gösterir.
 \n • Tercih ettiğiniz dilde Wikipedia, şehir gezisi sırasında size çok şey söyleyebilir
@@ -2245,7 +2245,7 @@
 \n • Doğrudan uygulamadan GPX yollarını OSM\'ye yükleyin 
 \n • POI ekleyin ve onları doğrudan (veya çevrim dışıysanız daha sonra) OSM’ye yükleyin
 \n</string>
-    <string name="osmand_extended_description_part8">OsmAnd aktif olarak geliştirilen açık kaynaklı bir yazılımdır. Herkes hataları bildirerek, çevirileri iyileştirerek veya yeni özellikler kodlayarak uygulamaya katkıda bulunabilir. Ek olarak proje, kodlama ve yeni işlevselliklerin test edilmesine fon sağlama konusunda finansal katkılara dayanmaktadır.
+    <string name="osmand_extended_description_part8">MineNAV aktif olarak geliştirilen açık kaynaklı bir yazılımdır. Herkes hataları bildirerek, çevirileri iyileştirerek veya yeni özellikler kodlayarak uygulamaya katkıda bulunabilir. Ek olarak proje, kodlama ve yeni işlevselliklerin test edilmesine fon sağlama konusunda finansal katkılara dayanmaktadır.
 \n Yaklaşık harita kapsamı ve kalitesi:
 \n • Batı Avrupa: ****
 \n • Doğu Avrupa: ***
@@ -2301,7 +2301,7 @@
 \n • Doğrudan uygulamadan GPX yollarını OSM\'ye yükleyin 
 \n • POI ekleyin ve onları doğrudan (veya çevrim dışıysanız daha sonra) OSM’ye yükleyin
 \n • İsteğe bağlı arka plan modunda da gezi kaydı (cihaz uyku modundayken) 
-\n OsmAnd aktif olarak geliştirilen açık kaynaklı bir yazılımdır. Herkes hataları bildirerek, çevirileri iyileştirerek veya yeni özellikler kodlayarak uygulamaya katkıda bulunabilir. Ek olarak, proje kodlama ve yeni işlevselliklerin test edilmesine fon sağlama konusunda finansal katkılara dayanmaktadır.
+\n MineNAV aktif olarak geliştirilen açık kaynaklı bir yazılımdır. Herkes hataları bildirerek, çevirileri iyileştirerek veya yeni özellikler kodlayarak uygulamaya katkıda bulunabilir. Ek olarak, proje kodlama ve yeni işlevselliklerin test edilmesine fon sağlama konusunda finansal katkılara dayanmaktadır.
 \n</string>
     <string name="osmand_plus_extended_description_part8">Yaklaşık harita kapsamı ve kalitesi:
 \n • Batı Avrupa: ****
@@ -2381,12 +2381,12 @@
     <string name="routeInfo_smoothness_name">Pürüzsüzlük</string>
     <string name="routeInfo_steepness_name">Diklik</string>
     <string name="new_route_calculated_dist_dbg">Rota: mesafe %1$s, yönlendirici zamanı %2$s \nHesaplama: %3$.1f sn, %4$d yol, %5$d döşeme)</string>
-    <string name="change_data_storage_full_description">OsmAnd veri dosyaları yeni hedefe taşınsın mı\?
+    <string name="change_data_storage_full_description">MineNAV veri dosyaları yeni hedefe taşınsın mı\?
 \n%1$s &gt; %2$s</string>
     <string name="enter_path_to_folder">Klasörün yolunu girin</string>
     <string name="shared_string_select_folder">Klasör…</string>
-    <string name="paste_Osmand_data_folder_path">OsmAnd verilerinin bulunduğu klasörün yolunu yapıştırın</string>
-    <string name="change_osmand_data_folder_question">OsmAnd veri klasörü değiştirilsin mi\?</string>
+    <string name="paste_Osmand_data_folder_path">MineNAV verilerinin bulunduğu klasörün yolunu yapıştırın</string>
+    <string name="change_osmand_data_folder_question">MineNAV veri klasörü değiştirilsin mi\?</string>
     <string name="move_maps_to_new_destination">Yeni hedefe taşı</string>
     <string name="change_data_storage_folder">Depolama klasörünü değiştir</string>
     <string name="rendering_attr_piste_type_snow_park_name">Arazi parkı</string>
@@ -2414,7 +2414,7 @@
     <string name="rendering_attr_piste_difficulty_aerialway_name">Hava yolu</string>
     <string name="rendering_attr_piste_difficulty_connection_name">Bağlantı</string>
     <string name="shared_string_calculate">Hesapla</string>
-    <string name="shared_string_osmand_usage">OsmAnd kullanımı</string>
+    <string name="shared_string_osmand_usage">MineNAV kullanımı</string>
     <string name="shared_string_tiles">Döşemeler</string>
     <string name="shared_string_maps">Haritalar</string>
     <string name="shared_string_memory_tb_desc">%1$s TB</string>
@@ -2490,7 +2490,7 @@
     <string name="desert_render_descr">Çöller ve diğer seyrek nüfuslu alanlar için. Daha ayrıntılı.</string>
     <string name="delete_profiles_descr">\'Uygula\'ya dokunmak, kaldırılan profilleri kalıcı olarak siler.</string>
     <string name="select_color">Renk seç</string>
-    <string name="edit_profiles_descr">Varsayılan OsmAnd profilleri silinemez ancak (önceki ekranda) devre dışı bırakabilir veya listenin en altına sürükleyebilirsiniz.</string>
+    <string name="edit_profiles_descr">Varsayılan MineNAV profilleri silinemez ancak (önceki ekranda) devre dışı bırakabilir veya listenin en altına sürükleyebilirsiniz.</string>
     <string name="edit_profiles">Profilleri düzenle</string>
     <string name="profile_appearance">Profil görünümü</string>
     <string name="choose_icon_color_name">Simge, renk ve ad</string>
@@ -2521,7 +2521,7 @@
     <string name="osm_edits_view_descr">Henüz karşıya yüklenmemiş tüm düzenlemelerinizi veya OSM hatalarınızı %1$s\'de görüntüleyin. Zaten yüklenen değişiklikler artık gösterilmeyecek.</string>
     <string name="app_mode_osm">OSM</string>
     <string name="logcat_buffer_descr">Uygulamanın ayrıntılı günlük kayıtlarına göz atın ve paylaşın</string>
-    <string name="tracks_view_descr">Kayıtlı yollarınız %1$s veya OsmAnd klasöründe.</string>
+    <string name="tracks_view_descr">Kayıtlı yollarınız %1$s veya MineNAV klasöründe.</string>
     <string name="permission_is_required">Bu seçeneği kullanmak için izin gereklidir.</string>
     <string name="monitoring_min_speed_descr">Bu, belirli bir hızın altındaki noktaları kaydetmemek için bir düşük hızda kesme filtresidir. Bu, harita üzerinde görüntülendiğinde kaydedilen yolların daha düzgün görünmesini sağlayabilir.</string>
     <string name="monitoring_min_speed_descr_side_effect">Yan etki: Kaydedilen yolunuzda en düşük hız kriterinin karşılanmadığı tüm bölümler eksik olacaktır (örn. bisikletinizi dik bir tepeye doğru ittiğiniz yer). Ayrıca, molalar gibi dinlenme süreleri hakkında hiçbir bilgi olmayacaktır. Bunun, seyahatinizin toplam uzunluğunu, hareket zamanını veya ortalama hızınızı belirlemeye çalışırken olduğu gibi herhangi bir inceleme veya sonrasındaki işlemler üzerinde etkileri vardır.</string>
@@ -2608,12 +2608,12 @@
     <string name="shared_string_nothing_selected">Hiçbir şey seçilmedi</string>
     <string name="shared_string_quick_actions">Hızlı eylemler</string>
     <string name="shared_string_profiles">Profiller</string>
-    <string name="listed_exist">Listelenen %1$s, OsmAnd\'da zaten var.</string>
+    <string name="listed_exist">Listelenen %1$s, MineNAV\'da zaten var.</string>
     <string name="replace_all_desc">Geçerli ögeler, dosyadaki ögelerle değiştirilecek</string>
     <string name="replace_all">Hepsini değiştir</string>
     <string name="keep_both">Her ikisini de sakla</string>
     <string name="keep_both_desc">İçe aktarılan ögelere ön ek eklenecek</string>
-    <string name="import_duplicates_description">OsmAnd\'da içe aktarılanlarla aynı ada sahip ögeler zaten var.
+    <string name="import_duplicates_description">MineNAV\'da içe aktarılanlarla aynı ada sahip ögeler zaten var.
 \n
 \nBir eylem seçin.</string>
     <string name="import_duplicates_title">Bazı ögeler zaten var</string>
@@ -2632,7 +2632,7 @@
     <string name="import_complete_description">%1$s\'deki tüm veriler içe aktarıldı. Yönetmek üzere uygulamanın gerekli bölümünü açmak için aşağıdaki düğmeleri kullanabilirsiniz.</string>
     <string name="shared_string_import_complete">İçe aktarma tamamlandı</string>
     <string name="items_added">Eklenen ögeler</string>
-    <string name="checking_for_duplicate_description">OsmAnd, uygulamadaki mevcut ögelerle yinelenme durumu için %1$s\'i denetliyor. 
+    <string name="checking_for_duplicate_description">MineNAV, uygulamadaki mevcut ögelerle yinelenme durumu için %1$s\'i denetliyor. 
 \n 
 \nBu biraz zaman alabilir.</string>
     <string name="shared_string_importing">İçe aktarılıyor</string>
@@ -2659,7 +2659,7 @@
     <string name="replace_point_descr">Başka bir noktayı bununla değiştirin.</string>
     <string name="app_mode_ski_touring">Kayak turu</string>
     <string name="app_mode_ski_snowmobile">Kar arabası</string>
-    <string name="custom_osmand_plugin">Özel OsmAnd eklentisi</string>
+    <string name="custom_osmand_plugin">Özel MineNAV eklentisi</string>
     <string name="changes_applied_to_profile">\'%1$s\' profiline değişiklikler uygulandı.</string>
     <string name="settings_item_read_error">\'%1$s\'den okunamadı.</string>
     <string name="settings_item_write_error">\'%1$s\'e yazılamadı.</string>
@@ -2725,7 +2725,7 @@
 \nAboneliklerinizi istediğiniz zaman Google Play ayarlarınızdan yönetin veya iptal edin.</string>
     <string name="search_poi_types">POI türleri ara</string>
     <string name="search_poi_types_descr">Farklı kategorilerdeki POI türlerini birleştirin. Tümünü seçmek için düğmeye, kategori seçimi için sol tarafa dokunun.</string>
-    <string name="tracker_item">OsmAnd izleyici</string>
+    <string name="tracker_item">MineNAV izleyici</string>
     <string name="quick_action_item">Hızlı eylem</string>
     <string name="map_markers_item">Harita işaretleyicileri</string>
     <string name="favorites_item">Sık kullanılanlar</string>
@@ -2744,15 +2744,15 @@
     <string name="unsupported_type_error">Desteklenmeyen tür</string>
     <string name="gpx_parse_error">GPX dosyası ile ilgili sorunlar bulundu.
 \n
-\nİncelemek için OsmAnd destek ile iletişime geçebilirsiniz.</string>
+\nİncelemek için MineNAV destek ile iletişime geçebilirsiniz.</string>
     <string name="shared_string_always">Her zaman</string>
     <string name="screen_control">Ekran denetimi</string>
     <string name="system_screen_timeout_descr">Sistemin ekran zaman aşımına göre ekranı kapatır.</string>
     <string name="system_screen_timeout">Sistemin ekran zaman aşımını kullan</string>
-    <string name="turn_screen_on_descr">Ekran uyandırma seçeneklerini seçin (aygıt kilitlenirken OsmAnd\'ın ön planda olduğundan emin olun):</string>
+    <string name="turn_screen_on_descr">Ekran uyandırma seçeneklerini seçin (aygıt kilitlenirken MineNAV\'ın ön planda olduğundan emin olun):</string>
     <string name="turn_screen_on_navigation_instructions_descr">Her navigasyon talimatı ekranı açacaktır.</string>
     <string name="turn_screen_on_navigation_instructions">Navigasyon talimatları</string>
-    <string name="turn_screen_on_power_button_descr">Aygıtın güç düğmesine basmak, OsmAnd kilit ekranının üstünde olacak şekilde ekranı açacaktır.</string>
+    <string name="turn_screen_on_power_button_descr">Aygıtın güç düğmesine basmak, MineNAV kilit ekranının üstünde olacak şekilde ekranı açacaktır.</string>
     <string name="turn_screen_on_power_button">Güç düğmesi</string>
     <string name="turn_screen_on_proximity_sensor">Yakınlık sensörü</string>
     <string name="turn_screen_on_wake_time_descr">Uyandıktan sonra ekran zaman aşımını seçin. (\"%1$s\" zaman aşımı uygulamaz.)</string>
@@ -2807,7 +2807,7 @@
 \n
 \n%1$s seçeneğini seçtiğinizde hız kameraları hakkında ikaz ve uyarıları alırsınız.
 \n
-\n%2$s seçeneğini seçtiğinizde hız kameraları ile ilgili tüm veriler: uyarılar, bildirimler, POI\'ler OsmAnd tamamen yeniden kurulana kadar silinecektir.</string>
+\n%2$s seçeneğini seçtiğinizde hız kameraları ile ilgili tüm veriler: uyarılar, bildirimler, POI\'ler MineNAV tamamen yeniden kurulana kadar silinecektir.</string>
     <string name="keep_active">Etkin tut</string>
     <string name="speed_cameras_alert">Hız kamerası uyarıları bazı ülkelerde yasalarca yasaklanmıştır.</string>
     <string name="shared_string_uninstall">Kaldır</string>
@@ -2875,7 +2875,7 @@
     <string name="map_widget_monitoring">Seyahat kaydetme</string>
     <string name="marker_save_as_track">Yol dosyası olarak kaydet</string>
     <string name="number_of_gpx_files_selected_pattern">%s yol dosyası seçildi</string>
-    <string name="disable_recording_once_app_killed_descrp">Yol kaydı, uygulama (son uygulamalar aracılığıyla) kapatıldığında duraklatılacaktır. (OsmAnd arka plan göstergesi Android bildirim çubuğundan kaybolur.)</string>
+    <string name="disable_recording_once_app_killed_descrp">Yol kaydı, uygulama (son uygulamalar aracılığıyla) kapatıldığında duraklatılacaktır. (MineNAV arka plan göstergesi Android bildirim çubuğundan kaybolur.)</string>
     <string name="save_global_track_interval_descr">Genel yol kaydı için kayıt aralığını belirtin (haritadaki \'Seyahat kaydetme\' widget\'ı aracılığıyla açıldı).</string>
     <string name="gpx_monitoring_stop">Seyahat kaydetmeyi duraklat</string>
     <string name="gpx_monitoring_start">Seyahat kaydetmeyi devam ettir</string>
@@ -2933,8 +2933,8 @@
     <string name="routing_attr_avoid_footways_description">Yaya yollarından kaçın</string>
     <string name="routing_attr_avoid_footways_name">Yaya yollarından kaçın</string>
     <string name="development">Geliştirme</string>
-    <string name="use_live_public_transport">OsmAnd Live verileri</string>
-    <string name="use_live_routing">OsmAnd Live verileri</string>
+    <string name="use_live_public_transport">Live verileri</string>
+    <string name="use_live_routing">Live verileri</string>
     <string name="use_native_pt">Yerel Toplu Taşıma geliştirme</string>
     <string name="use_native_pt_desc">Java (güvenli) Toplu Taşıma rota hesaplamasına geçin</string>
     <string name="what_is_new">Yenilikler</string>
@@ -3004,7 +3004,7 @@
 \n • Sık kullanılanlar ve yol ara noktaları için özel renk desteği
 \n
 \n</string>
-    <string name="profile_type_osmand_string">OsmAnd profili</string>
+    <string name="profile_type_osmand_string">MineNAV profili</string>
     <string name="profile_type_user_string">Kullanıcı profili</string>
     <string name="reverse_all_points">Tüm noktaları tersine çevir</string>
     <string name="profile_by_default_description">Uygulama başlangıcında kullanılacak profili seçin.</string>
@@ -3117,7 +3117,7 @@
     <string name="track_has_no_altitude">Yol, yükseklik verileri içermiyor.</string>
     <string name="track_has_no_speed">Yol, hız verileri içermiyor.</string>
     <string name="select_another_colorization">Lütfen başka bir renklendirme türü seçin.</string>
-    <string name="trip_recording_logging_interval_info">Kayıt aralığı, OsmAnd\'ın geçerli konum verilerini isteyeceği zaman aralığını ayarlar.</string>
+    <string name="trip_recording_logging_interval_info">Kayıt aralığı, MineNAV\'ın geçerli konum verilerini isteyeceği zaman aralığını ayarlar.</string>
     <string name="trip_recording_save_and_continue">Kaydet ve devam et</string>
     <string name="lost_data_warning">Kaydedilmemiş tüm veriler kaybolacak.</string>
     <string name="show_start_dialog">Başlat iletişim kutusunu göster</string>
@@ -3130,7 +3130,7 @@
     <string name="empty_purchases_description">Satın alımlarınız burada görünmezse, “%1$s” seçeneğine dokunun veya destek ekibimizle iletişime geçin.</string>
     <string name="contact_support">Destek hattına başvurun</string>
     <string name="troubleshooting">Sorun giderme</string>
-    <string name="osmand_live">OsmAnd Live</string>
+    <string name="osmand_live">Live</string>
     <string name="annual_subscription">Yıllık abonelik</string>
     <string name="monthly_subscription">Aylık abonelik</string>
     <string name="three_months_subscription">Üç aylık abonelik</string>
@@ -3144,7 +3144,7 @@
 \n
 \n • Rota Planla görünümü: noktalar veya grafikler arasında geçiş yapmak için sekmeler eklendi
 \n
-\n • OsmAnd Live güncellemeleri \"İndirmeler &gt; Güncellemeler\" bölümüne taşındı
+\n • Live güncellemeleri \"İndirmeler &gt; Güncellemeler\" bölümüne taşındı
 \n
 \n • Yollar artık rakım, hız veya eğime göre renklendirilebilir
 \n
@@ -3160,7 +3160,7 @@
     <string name="output">Çıkış</string>
     <string name="shared_string_feet">fit</string>
     <string name="srtm_unit_format">Eş yükselti eğrileri birimi çeşidi</string>
-    <string name="srtm_download_list_help_message">OsmAnd, metre ve fit cinsinden eş yükselti eğrileri verileri sağlar. Biçimi değiştirmek için dosyayı yeniden indirmeniz gerekecek.</string>
+    <string name="srtm_download_list_help_message">MineNAV, metre ve fit cinsinden eş yükselti eğrileri verileri sağlar. Biçimi değiştirmek için dosyayı yeniden indirmeniz gerekecek.</string>
     <string name="srtm_download_single_help_message">Lütfen çeşidi seçin. Biçimi değiştirmek için dosyayı yeniden indirmeniz gerekecek.</string>
     <string name="route_line_use_gradient_coloring">Rota hattı yükseklik eğimi ile renklendirilir.</string>
     <string name="shared_string_min_height">Asgari yükseklik</string>
@@ -3181,7 +3181,7 @@
     <string name="backup_and_restore">Yedekle &amp; Geri Yükle</string>
     <string name="last_backup">Son yedekleme</string>
     <string name="duration_ago">%1$s önce</string>
-    <string name="osmand_cloud">OsmAnd Cloud</string>
+    <string name="osmand_cloud">Cloud</string>
     <string name="osmand_cloud_authorize_descr">Verilerinizi asla kaybetmeyin. Tüm bilgileri kolayca yedekleyin ve geri yükleyin.</string>
     <string name="local_backup">Yerel yedekleme</string>
     <string name="backup_into_file">Dosya olarak yedekle</string>
@@ -3192,7 +3192,7 @@
     <string name="osmand_cloud_login_descr">Lütfen kayıt olduğunuz e-posta adresini girin. Bu adrese tek seferlik bir parola gönderilecek.</string>
     <string name="verify_email_address">E-posta adresini doğrula</string>
     <string name="verify_email_address_descr">Doğrulama kodu %1$s adresine gönderildi. Lütfen onu aşağıdaki alana girin.</string>
-    <string name="cloud_email_not_registered">Bu e-posta adresi OsmAnd Cloud için kayıtlı değil</string>
+    <string name="cloud_email_not_registered">Bu e-posta adresi Cloud için kayıtlı değil</string>
     <string name="cloud_email_already_registered">Bu e-posta adresi zaten kayıtlı.</string>
     <string name="resend_verification_code">Yeniden gönder</string>
     <string name="verification_code_missing">Doğrulama kodunu almadım</string>
@@ -3213,7 +3213,7 @@
     <string name="upload_local_version">Yerel sürümü karşıya yükle</string>
     <string name="shared_string_logout">Oturumu kapat</string>
     <string name="backup_delete_all_data">Tüm verilerimi sil</string>
-    <string name="backup_delete_all_data_warning">Sürüm geçmişi de dahil olmak üzere daha önce OsmAnd Cloud\'a yüklenen tüm verileri silmek üzeresiniz.
+    <string name="backup_delete_all_data_warning">Sürüm geçmişi de dahil olmak üzere daha önce Cloud\'a yüklenen tüm verileri silmek üzeresiniz.
 \n
 \nSilinen verileri kurtaramazsınız.</string>
     <string name="backup_danger_zone">Tehlike bölgesi</string>
@@ -3224,7 +3224,7 @@
 \nVerilerin geçerli sürümü sunucuya kaydedilecek, ancak daha önce yapılan değişikliklere geri dönemeyeceksiniz.</string>
     <string name="backup_data">Verileri yedekle</string>
     <string name="select_backup_data_descr">Yedeklenecek verileri ve klasörleri seçin.</string>
-    <string name="restore_from_osmand_cloud">OsmAnd Cloud\'dan geri yükle</string>
+    <string name="restore_from_osmand_cloud">Cloud\'dan geri yükle</string>
     <string name="backup_storage_taken">Alınan depolama</string>
     <string name="you_can_get_feature_as_part_of_pattern">“%1$s” edinin (%2$s planının bir parçası olarak). Karşılaştırma:</string>
     <string name="osmand_maps_plus_tagline">Genişletilmiş özellikleri edinin</string>
@@ -3238,7 +3238,7 @@
     <string name="track_has_no_needed_data">Yolda ilgili veriler eksik.</string>
     <string name="enter_verification_code">Tek seferlik parolayı girin</string>
     <string name="backup_version_history">Sürüm geçmişi</string>
-    <string name="backup_version_history_delete_descr">Kullanımdan kaldırılan veri türleri için değişiklik günlüğü OsmAnd Cloud\'dan silinsin mi\?</string>
+    <string name="backup_version_history_delete_descr">Kullanımdan kaldırılan veri türleri için değişiklik günlüğü Cloud\'dan silinsin mi\?</string>
     <string name="delete_version_history">Sürüm geçmişini sil</string>
     <string name="routing_attr_avoid_tunnels_description">Tünellerden kaçının</string>
     <string name="routing_attr_avoid_tunnels_name">Tünellerden kaçın</string>
@@ -3253,7 +3253,7 @@
     <string name="purchases_feature_desc_unlimited_map_download">Tüm kıtalar ve bölgelerin çevrim dışı haritaları için sınırsız indirme elde edin.</string>
     <string name="purchases_feature_desc_monthly_map_updates">Çevrim dışı haritalar için düzenli aylık güncellemelere erişin.</string>
     <string name="purchases_feature_desc_hourly_map_updates">Daha sık harita güncellemelerine erişin. Saatlik, günlük veya haftalık güncellemeler. Güncellemeler, yalnızca değiştirilen alan için aşamalı olarak indirilir.</string>
-    <string name="purchases_feature_desc_osmand_cloud">Tüm OsmAnd verilerini çevrim içi depolamak için OsmAnd Cloud edinin. Yeniden kurduktan sonra veri kaybı yaşamayın. Tüm bilgileri kolayca yedekleyin ve geri yükleyin.</string>
+    <string name="purchases_feature_desc_osmand_cloud">Tüm MineNAV verilerini çevrim içi depolamak için Cloud edinin. Yeniden kurduktan sonra veri kaybı yaşamayın. Tüm bilgileri kolayca yedekleyin ve geri yükleyin.</string>
     <string name="unlimited_map_downloads">Sınırsız harita indirme</string>
     <string name="wikipedia_and_wikivoyage_offline">Çevrim dışı Wikipedia ve Wikivoyage</string>
     <string name="offline_wikipeadia">Çevrim dışı Wikipedia</string>
@@ -3267,15 +3267,15 @@
     <string name="cancel_anytime_in_huawei_appgallery">Huawei AppGallery\'de istediğiniz zaman iptal edin</string>
     <string name="cancel_anytime_in_gplay">Google Play\'de istediğiniz zaman iptal edin.</string>
     <string name="regular_price">Normal fiyat</string>
-    <string name="backup_delete_types_descr">Kullanımdan kaldırılan veri türleri için tüm veriler OsmAnd Cloud\'dan silinsin mi\?</string>
+    <string name="backup_delete_types_descr">Kullanımdan kaldırılan veri türleri için tüm veriler Cloud\'dan silinsin mi\?</string>
     <string name="backup_delete_types">Devre dışı bırakılan veri türlerini sil</string>
     <string name="shared_string_discussion">Tartışma</string>
     <string name="shared_string_view_all">Tümünü görüntüle</string>
     <string name="backup_error_user_is_already_registered">Bu e-posta adresi başka bir hesapta kullanılıyor</string>
     <string name="backup_error_subscription_was_expired">Süresi dolmuş abonelik</string>
-    <string name="backup_error_subscription_was_expired_descr">OsmAnd Pro aboneliğinizin süresi doldu, yedeklemeyi kullanmak için yenileyin. Buluttan verileri hala geri yükleyebilirsiniz.</string>
+    <string name="backup_error_subscription_was_expired_descr">Pro aboneliğinizin süresi doldu, yedeklemeyi kullanmak için yenileyin. Buluttan verileri hala geri yükleyebilirsiniz.</string>
     <string name="backup_error_subscription_was_used">Abonelik veya tanıtım başka bir hesap tarafından kullanıldı %1$s</string>
-    <string name="backup_error_size_is_exceeded">OsmAnd Cloud\'un azami boyutu aşıldı %1$s</string>
+    <string name="backup_error_size_is_exceeded">Cloud\'un azami boyutu aşıldı %1$s</string>
     <string name="backup_error_gzip_only_supported_upload">Dosya .gzip biçiminde gönderilmelidir</string>
     <string name="backup_error_file_not_available">Dosya kullanılamıyor</string>
     <string name="backup_error_token_is_not_valid">Sağlanan aygıt kimliği veya belirteçle ilgili bir sorun var</string>
@@ -3301,29 +3301,29 @@
 \n
 \n • Rota çizgisi görünümünü değiştirme seçeneği eklendi
 \n
-\n • OsmAnd Live güncellemeleri \"İndirmeler &gt; Güncellemeler\" bölümüne taşındı
+\n • Live güncellemeleri \"İndirmeler &gt; Güncellemeler\" bölümüne taşındı
 \n
 \n</string>
     <string name="duration_moment_ago">az önce</string>
-    <string name="logout_from_osmand_cloud">OsmAnd Cloud oturumunu kapat</string>
+    <string name="logout_from_osmand_cloud">Cloud oturumunu kapat</string>
     <string name="logout_from_osmand_cloud_decsr">Oturum kapatılsın mı\?
 \nVerileri yedeklemek veya geri yüklemek için tekrar oturum açmanız gerekecek.</string>
-    <string name="backup_deleting_all_data_descr">Lütfen OsmAnd verilerinizi buluttan silene kadar bekleyin. Aygıttaki tüm veriler dokunulmadan kalacak.</string>
-    <string name="backup_deleted_all_data_descr">Tüm verileriniz OsmAnd Cloud\'dan başarıyla silindi.</string>
+    <string name="backup_deleting_all_data_descr">Lütfen MineNAV verilerinizi buluttan silene kadar bekleyin. Aygıttaki tüm veriler dokunulmadan kalacak.</string>
+    <string name="backup_deleted_all_data_descr">Tüm verileriniz Cloud\'dan başarıyla silindi.</string>
     <string name="backup_version_history_removed">Tüm sürüm geçmişi kaldırıldı.</string>
     <string name="backup_data_removed">Tüm veriler kaldırıldı.</string>
     <string name="backup_do_not_have_any">Henüz çevrim içi yedeklemeniz yok</string>
     <string name="backup_dont_have_any_descr">Otomatik bir yedekleme ayarlayın, böylece kaybolan veriler hakkında endişelenmenize gerek kalmaz.</string>
     <string name="backup_welcome_back">Tekrar hoş geldiniz!</string>
-    <string name="backup_welcome_back_descr">OsmAnd Bulut kullanarak verileri bu aygıta geri yükleyin.</string>
+    <string name="backup_welcome_back_descr">MineNAV Bulut kullanarak verileri bu aygıta geri yükleyin.</string>
     <string name="explore_wikipedia_offline">Wikipedia\'yı çevrim dışı keşfedin.</string>
     <string name="on_hold_since">%1$s tarihinden beri beklemede</string>
     <string name="active_till">%1$s tarihine kadar etkin</string>
     <string name="promo_subscription">Tanıtım aboneliği</string>
-    <string name="option_available_only_in_osmand_pro">OsmAnd Pro aboneliğinin bir parçası olarak kullanılabilir.</string>
+    <string name="option_available_only_in_osmand_pro">Pro aboneliğinin bir parçası olarak kullanılabilir.</string>
     <string name="pro_features">Pro özellikleri</string>
-    <string name="purchases_feature_desc_pro_widgets">OsmAnd Pro özelliklerine erişin: Rota renklendirme ve daha fazlası.</string>
-    <string name="explore_osmnad_plans_to_find_suitable">Size uygun olanı bulmak için OsmAnd Planlarını keşfedin.</string>
+    <string name="purchases_feature_desc_pro_widgets">Pro özelliklerine erişin: Rota renklendirme ve daha fazlası.</string>
+    <string name="explore_osmnad_plans_to_find_suitable">Size uygun olanı bulmak için MineNAV Planlarını keşfedin.</string>
     <string name="routes_color_by_type">Rota renklendirme ölçütü…</string>
     <string name="shared_string_relation">İlişki</string>
     <string name="rendering_value_walkingRoutesOSMC_description">Rotaları kendi yerel renklerine (OpenStreetMap\'te varsa) ve yürüyüş levhası sembolüne göre renklendir.</string>
@@ -3339,7 +3339,7 @@
     <string name="benefits_for_contributors_primary_descr">OpenStreetMap.org\'a etkin olarak katkıda bulunanlar, sınırsız saatlik harita güncellemelerine hak kazanabilir.</string>
     <string name="benefits_for_contributors_secondary_descr">Sınırsız aylık ve saatlik harita güncellemelerine uygun olup olmadığınızı denetlemek için OpenStreetMap\'te oturum açın.</string>
     <string name="available_until">%1$s tarihine kadar kullanılabilir</string>
-    <string name="enough_contributions_descr">Tebrikler, OpenStreetMap\'e yeterince katkı sağladınız ve artık sınırsız OsmAnd harita güncellemesinin keyfini çıkarabilirsiniz!</string>
+    <string name="enough_contributions_descr">Tebrikler, OpenStreetMap\'e yeterince katkı sağladınız ve artık sınırsız MineNAV harita güncellemesinin keyfini çıkarabilirsiniz!</string>
     <string name="shared_string_contributions">Katkıda bulunmalar</string>
     <string name="contributions_may_calculate_with_delay">Katkıda bulunmaların hesaplanması birkaç saat sürebilir.</string>
     <string name="map_updates_are_unavailable_yet">Henüz harita güncellemeleri yok. :-(</string>
@@ -3371,7 +3371,7 @@
     <string name="shared_string_precision">Hassasiyet</string>
     <string name="shared_string_statistics">İstatistikler</string>
     <string name="save_changes_into_file">Değişiklikleri dosyaya kaydet</string>
-    <string name="gps_filter_actions_description">OsmAnd, değişiklikleri dosyayı güncellemeden yola uygulayacaktır. Değişiklikleri el ile kaydedebilirsiniz.</string>
+    <string name="gps_filter_actions_description">MineNAV, değişiklikleri dosyayı güncellemeden yola uygulayacaktır. Değişiklikleri el ile kaydedebilirsiniz.</string>
     <string name="gps_filter_smoothing_desc">Noktalar arasındaki eşik mesafesini ayarlayın.
 \nSon görünür noktadan en az bu uzaklıkta olmayan yol noktaları gizlenecektir.
 \nYüksek eşiklerin yol geometrisini aşırı basitleştirebileceğini unutmayın.</string>
@@ -3390,7 +3390,7 @@
     <string name="navigation_history">Gezinti geçmişi</string>
     <string name="history_preferences_descr">Geçmiş kaydını her bir geçmiş türü için ayrı ayrı devre dışı bırakabilirsiniz.</string>
     <string name="shortcut_start_recording">Kaydı Başlat</string>
-    <string name="purchases_feature_desc_android_auto">OsmAnd çevrim dışı haritalarını ve navigasyonunu aracınızın ekranına getirir ve aracınızın denetimleriyle bütünleşir.</string>
+    <string name="purchases_feature_desc_android_auto">MineNAV çevrim dışı haritalarını ve navigasyonunu aracınızın ekranına getirir ve aracınızın denetimleriyle bütünleşir.</string>
     <string name="icon_group_nautical">Deniz</string>
     <string name="transparent_status_bar_descr">Durum çubuğunun altında haritayı göster</string>
     <string name="transparent_status_bar">Saydam durum çubuğu</string>
@@ -3401,7 +3401,7 @@
     <string name="gps_filter_speed_altitude_desc">Yalnızca belirlenen aralığa uyan yol noktaları grafikte ve haritada görünecek, geri kalanı gizlenecektir.</string>
     <string name="gps_filter_hdop_desc">HDOP için kabul edilen azami değeri ayarlayın.
 \nDaha yüksek değere sahip noktalar gizlenecektir.</string>
-    <string name="storage_migration_wrong_folder_warning">Seçilen klasörde OsmAnd verileri bulunamadı. Lütfen tekrar deneyin.</string>
+    <string name="storage_migration_wrong_folder_warning">Seçilen klasörde MineNAV verileri bulunamadı. Lütfen tekrar deneyin.</string>
     <string name="storage_found_files_size">%1$s dosya bulundu %2$s</string>
     <string name="history_actions_descr">Geçmişi bir dosyaya aktarabilirsiniz.</string>
     <string name="no_plugins_enabled">Etkinleştirilmiş eklentiniz yok. Kullanılabilir eklentilerin bir listesini \'Menü\' → \'Eklentiler\' altında bulabilirsiniz.</string>
@@ -3429,14 +3429,14 @@
     <string name="start_copying">Kopyalamaya başla</string>
     <string name="display_route_tracks">İzlenen yolları göster</string>
     <string name="shared_string_travelbooks">Seyahat kitapları</string>
-    <string name="internal_app_storage_description">Tüm kullanıcılardan ve diğer uygulamalardan gizlenen dahili depolama, böylece yalnızca OsmAnd verilerinize erişebilir.</string>
+    <string name="internal_app_storage_description">Tüm kullanıcılardan ve diğer uygulamalardan gizlenen dahili depolama, böylece yalnızca MineNAV verilerinize erişebilir.</string>
     <string name="memory_allocated_for_routing">Yönlendirme için ayrılan bellek</string>
-    <string name="shared_string_skip_warning">Taşıma işlemi atlansın mı\? OsmAnd artık paylaşılan depolama alanındaki dosyalarınıza erişemez.
+    <string name="shared_string_skip_warning">Taşıma işlemi atlansın mı\? MineNAV artık paylaşılan depolama alanındaki dosyalarınıza erişemez.
 \n
 \nUygulama, yeni veri klasörünüzü kullanmaya başlayacaktır.</string>
     <string name="shared_storage_last_step">Daha sonra yeni bir veri klasörü belirtebilirsiniz.</string>
-    <string name="shared_storage_third_step">Klasöre erişim izni verin. Bu izin olmadan OsmAnd dosyaları kopyalayamaz.</string>
-    <string name="shared_storage_migration_descr">Android depolama erişimindeki değişiklikler nedeniyle OsmAnd artık %1$s kullanamaz.
+    <string name="shared_storage_third_step">Klasöre erişim izni verin. Bu izin olmadan MineNAV dosyaları kopyalayamaz.</string>
+    <string name="shared_storage_migration_descr">Android depolama erişimindeki değişiklikler nedeniyle MineNAV artık %1$s kullanamaz.
 \n
 \nTüm verilerinizi yeni klasöre kopyalayın.</string>
     <string name="folder_access_denied">Seçilen klasöre erişmek için izin gerekiyor.</string>
@@ -3465,9 +3465,9 @@
     <string name="android_auto_map_placeholder_title">Harita, araç ekranında görüntülenir.</string>
     <string name="android_auto_map_placeholder_descr">Haritayı uygulamada görüntülemek için aygıtınızın Android Auto bağlantısını kesin.</string>
     <string name="shortcut_navigate_to_home">\'Ev\' Konumuna Git</string>
-    <string name="android_auto_purchase_request_title">OsmAnd\'ı Android Auto ile kullanmak için OsmAnd Pro veya Maps+ satın alın</string>
+    <string name="android_auto_purchase_request_title">MineNAV\'ı Android Auto ile kullanmak için Pro veya Maps+ satın alın</string>
     <string name="continue_on_phone">Mobil aygıtta devam et</string>
-    <string name="location_access_request_title">OsmAnd\'ın gezinmek için konum iznine ihtiyacı var.</string>
+    <string name="location_access_request_title">MineNAV\'ın gezinmek için konum iznine ihtiyacı var.</string>
     <string name="location_access_request_action">Erişim izni ver</string>
     <string name="shared_string_articles">Makaleler</string>
     <string name="included_categories">Dahil edilen kategoriler</string>
@@ -3560,7 +3560,7 @@
     <string name="select_suggested_points">Önerilen noktaları seç</string>
     <string name="exit_import_descr">Değişiklikleri kaydetmeden çıkılsın mı\?</string>
     <string name="location_source">Konum kaynağı</string>
-    <string name="location_source_descr">OsmAnd\'ı Google Play\'den kurduğunuzda, konumu belirlemek için varsayılan olarak %1$s kullanılır. \n \nHatalı konum bilgisi alıyor veya cihazınızı %2$s olmadan kullanıyorsanız, \"%3$s\" kullanmayı deneyin.</string>
+    <string name="location_source_descr">MineNAV\'ı Google Play\'den kurduğunuzda, konumu belirlemek için varsayılan olarak %1$s kullanılır. \n \nHatalı konum bilgisi alıyor veya cihazınızı %2$s olmadan kullanıyorsanız, \"%3$s\" kullanmayı deneyin.</string>
     <string name="default_appearance_desc">Varsayılan renk, simge ve şekil, gruba eklenen favori noktalara uygulanacaktır.</string>
     <string name="default_appearance">Varsayılan görünüm</string>
     <string name="edit_category">Kategoriyi düzenle</string>
@@ -3732,7 +3732,7 @@
     <string name="lang_ckb">Orta Kürtçe</string>
     <string name="live_update_frequency_hour_variant">Harita güncellemeleri saatlik olarak denetlenir.</string>
     <string name="live_update_frequency_week_variant">Harita güncellemeleri haftalık olarak denetlenir.</string>
-    <string name="calculate_online_altitude_descr">Uydu görüntüleri ve sayısal yükseklik modellerine dayalı olarak OsmAnd sunucularında çevrim içi yükseklik hesaplayın. Aygıtın kaydettiği rakımdan farklı olabilir ve yükseklik düzeltmesi olarak kullanılabilir.</string>
+    <string name="calculate_online_altitude_descr">Uydu görüntüleri ve sayısal yükseklik modellerine dayalı olarak MineNAV sunucularında çevrim içi yükseklik hesaplayın. Aygıtın kaydettiği rakımdan farklı olabilir ve yükseklik düzeltmesi olarak kullanılabilir.</string>
     <string name="next_live_update_date_and_time">Sonraki güncelleme: %1$s, %2$s.</string>
     <string name="live_update_frequency_day_variant">Harita güncellemeleri günlük olarak denetlenir.</string>
     <string name="altitude_correction">Yükseklik düzeltmesi</string>
@@ -3763,8 +3763,8 @@
     <string name="auto_25_chars_route_tu_kr">U dönüşü yapın ve sağdan devam edin</string>
     <string name="auto_25_chars_route_roundabout_kl">%1$d çıkıştan çıkın ve soldan devam edin</string>
     <string name="auto_25_chars_route_roundabout_kr">%1$d çıkıştan çıkın ve sağdan devam edin</string>
-    <string name="auto_backup_preference_desc">Varsayılan olarak Android, yeni cihaz veya yeniden kurulumda geri kurtarabilmek için favoriler, harita belirteçleri ve OsmAnd ayarları yedeklerini kaydeder. Bu yedekleme 25 MB ile sınırlıdır.
-\nOsmAnd Cloud kullandığınızda bu, yeniden kurulumdan sonra yanlış anlaşılmalara sebep olabilir.</string>
+    <string name="auto_backup_preference_desc">Varsayılan olarak Android, yeni cihaz veya yeniden kurulumda geri kurtarabilmek için favoriler, harita belirteçleri ve MineNAV ayarları yedeklerini kaydeder. Bu yedekleme 25 MB ile sınırlıdır.
+\nCloud kullandığınızda bu, yeniden kurulumdan sonra yanlış anlaşılmalara sebep olabilir.</string>
     <string name="duplacate_widget_added_snackbar">Listeye bir kopyalanan widget ekleniyor.</string>
     <string name="auto_backup_title">Otomatik yedekleme</string>
     <string name="shared_string_duplicate">Çoğalt</string>
@@ -3881,16 +3881,16 @@
     <string name="pressure_layer">Basınç katmanı</string>
     <string name="wind_layer">Rüzgar katmanı</string>
     <string name="cloud_layer">Bulut katmanı</string>
-    <string name="rendering_engine_failed_descr">OsmAnd, \'Sürüm 1\' harita görselleştirmeye geri döndü. Ayarlar\'dan yeni \'Sürüm 2 (OpenGL)\' görselleştirme motoruna geri dönmeyi deneyebilirsiniz.
+    <string name="rendering_engine_failed_descr">MineNAV, \'Sürüm 1\' harita görselleştirmeye geri döndü. Ayarlar\'dan yeni \'Sürüm 2 (OpenGL)\' görselleştirme motoruna geri dönmeyi deneyebilirsiniz.
 \n
 \nLütfen hata günlüğünüzü sağlayarak iyileştirmeleri destekleyin.</string>
-    <string name="rendering_engine_failed">OsmAnd harita görselleştirme özelliği yakın zamanda çöktü.</string>
+    <string name="rendering_engine_failed">MineNAV harita görselleştirme özelliği yakın zamanda çöktü.</string>
     <string name="share_crash_log">Çökme günlüğünü paylaş</string>
     <string name="dismiss_changes_descr">Tüm değişiklikler iptal edilecek.</string>
     <string name="restart_now">Şimdi yeniden başlat</string>
     <string name="map_rendering_engine_v1">Sürüm 1</string>
     <string name="map_rendering_engine_v2">Sürüm 2 (OpenGL)</string>
-    <string name="map_rendering_engine_descr">Sürüm 1 görselleştirme OsmAnd 4.3\'ten önce öntanımlıydı ve eski aygıtlar için hala tercih edilir.\nSürüm 2 (OpenGL) daha hızlı bir harita görselleştirme motorudur ve 2.5D görünüm özelliğine de sahiptir.</string>
+    <string name="map_rendering_engine_descr">Sürüm 1 görselleştirme MineNAV 4.3\'ten önce öntanımlıydı ve eski aygıtlar için hala tercih edilir.\nSürüm 2 (OpenGL) daha hızlı bir harita görselleştirme motorudur ve 2.5D görünüm özelliğine de sahiptir.</string>
     <string name="map_rendering_engine">Harita görselleştirme motoru</string>
     <string name="show_borders_of_downloaded_maps">İndirilen haritaların sınırlarını göster</string>
     <string name="show_map_symbols">Harita sembollerini göster</string>
@@ -3984,7 +3984,7 @@
     <string name="key_is_already_assigned_error">\"%1$s\" tuşu zaten eyleme atanmış durumda: \"%2$s\"</string>
     <string name="key_event_action_next_app_profile">Sonraki uygulama profili</string>
     <string name="key_event_action_open_search_view">Arama görünümünü aç</string>
-    <string name="enable_to_use_external_input_device">OsmAnd ile harici giriş aygıtı kullanmayı etkinleştir</string>
+    <string name="enable_to_use_external_input_device">MineNAV ile harici giriş aygıtı kullanmayı etkinleştir</string>
     <string name="trash_is_empty">Çöp kutusu boş</string>
     <string name="shared_string_temperature">Sıcaklık</string>
     <string name="restore_from_trash">Çöp kutusundan geri yükle</string>
@@ -3992,7 +3992,7 @@
     <string name="save_as_smart_folder">Akıllı klasör olarak kaydet</string>
     <string name="shared_string_reset_all">Tümünü sıfırla</string>
     <string name="date_of_creation">Oluşturulma tarihi</string>
-    <string name="help_article_map_legend_osmand_name">OsmAnd harita tarzı</string>
+    <string name="help_article_map_legend_osmand_name">MineNAV harita tarzı</string>
     <string name="cloud_trash_clear_confirmation">Çöp kutusundaki tüm ögeler kalıcı olarak silinsin mi?</string>
     <string name="discard_filter_changes_prompt">Tüm süzgeçler sıfırlansın mı?</string>
     <string name="change_button">Düğmeyi değiştir</string>
@@ -4038,7 +4038,7 @@
     <string name="help_article_troubleshooting_crash_logs_name">Çökme günlükleri</string>
     <string name="not_specified">Belirtilmedi</string>
     <string name="help_article_map_legend_nautical_map_name">Deniz haritası tarzı</string>
-    <string name="trash_is_empty_banner_desc">OsmAnd Bulut\'tan kaldırılan dosyalar %1$s gün sonra burada bulunabilecektir.</string>
+    <string name="trash_is_empty_banner_desc">MineNAV Bulut\'tan kaldırılan dosyalar %1$s gün sonra burada bulunabilecektir.</string>
     <string name="root_folder">Kök klasör</string>
     <string name="map_is_up_to_date">%1$s haritası güncel.</string>
     <string name="maps_and_resources">Haritalar &amp; Kaynaklar</string>
@@ -4054,14 +4054,14 @@
     <string name="max_sensor_temperature">Sıcaklık, en yüksek</string>
     <string name="avg_sensor_speed">Sensör hızı, ortalama</string>
     <string name="help_article_navigation_guidance_map_during_navigation_name">Navigasyon sırasında harita ekranı</string>
-    <string name="free_versions_descr">Ücretsiz OsmAnd sürümünü indirin ve kurun</string>
+    <string name="free_versions_descr">Ücretsiz MineNAV sürümünü indirin ve kurun</string>
     <string name="free_versions">Ücretsiz sürümler</string>
     <string name="open_issue_on_github">GitHub\'da sorun açın</string>
     <string name="report_an_issues">Hata bildir</string>
     <string name="copy_build_version">Derleme sürümünü kopyala</string>
     <string name="routing_attr_hazmat_category_usa_8_name">Aşındırıcı Maddeler</string>
     <string name="may_be_used_if_there_is_shortcut">Bir kısayol varsa kullanılabilir</string>
-    <string name="osmand_cloud_delete_account_confirmation_descr">OsmAnd Cloud hesabı silinsin mi?
+    <string name="osmand_cloud_delete_account_confirmation_descr">Cloud hesabı silinsin mi?
 \n
 \nBu işlem geri alınamaz.</string>
     <string name="manage_subscriptions">Abonelikleri yönet.</string>
@@ -4072,7 +4072,7 @@
     <string name="shared_string_activity">Etkinlik</string>
     <string name="avg_sensor_heartrate">Kalp atış hızı, ortalama</string>
     <string name="avg_sensor_temperature">Sıcaklık, ortalama</string>
-    <string name="about_osmand">OsmAnd hakkında</string>
+    <string name="about_osmand">MineNAV hakkında</string>
     <string name="routing_attr_hazmat_category_usa_6_name">Zehirli ve Bulaşıcı Maddeler</string>
     <string name="help_article_widgets_radius_ruler_name">Yarıçap cetveli ve Cetvel</string>
     <string name="routing_attr_hazmat_category_usa_7_name">Radyoaktif Maddeler</string>
@@ -4081,17 +4081,17 @@
     <string name="github_discussion">GitHub Tartışmaları</string>
     <string name="cache_size">Önbellek boyutu</string>
     <string name="shared_string_avoid">Kaçın</string>
-    <string name="osmand_cloud_deletion_subscriptions_warning">Bu işlem OsmAnd Pro aboneliğinizi iptal etmeyecektir.</string>
+    <string name="osmand_cloud_deletion_subscriptions_warning">Bu işlem Pro aboneliğinizi iptal etmeyecektir.</string>
     <string name="telegram_chats_descr">Yerel Telegram sohbetlerimize katılın.</string>
     <string name="telegram_chats">Telegram sohbetleri</string>
     <string name="most_viewed">En çok görüntülenen</string>
     <string name="external_sensor_name_property_description">Sensör adı</string>
     <string name="folder_export_empty_error">Dışa aktarılacak bir şey yok, klasör boş</string>
-    <string name="osmand_cloud_deleting_account_descr">Birkaç dakika içinde tüm verileriniz ve hesabınız OsmAnd Cloud\'dan silinecektir.
+    <string name="osmand_cloud_deleting_account_descr">Birkaç dakika içinde tüm verileriniz ve hesabınız Cloud\'dan silinecektir.
 \n
 \nAygıttaki tüm veriler dokunulmadan kalır.</string>
     <string name="osmand_cloud_deletion_account_warning">Hesabınız ve tüm hesap bilgileriniz %1$s</string>
-    <string name="osmand_cloud_deletion_all_data_warning">OsmAnd Cloud\'daki tüm veriler %1$s. Aygıttaki verilere dokunulmaz.</string>
+    <string name="osmand_cloud_deletion_all_data_warning">Cloud\'daki tüm veriler %1$s. Aygıttaki verilere dokunulmaz.</string>
     <string name="verify_account_deletion_descr">Hesabınızı silmeden önce doğrulamamız gerekiyor.
 \n
 \nLütfen kayıt olduğunuz e-posta adresini girin. Bir sonraki adım için tek kullanımlık bir parola gönderilecektir.</string>
@@ -4102,7 +4102,7 @@
     <string name="dangerous_goods">Tehlikeli maddeler</string>
     <string name="routing_attr_hazmat_category_usa_5_name">Oksitleyici Maddeler ve Organik Peroksitler</string>
     <string name="free_account">Ücretsiz hesap</string>
-    <string name="osmand_cloud_deleted_account_descr">Hesap ve tüm veriler OsmAnd Cloud\'dan silindi.</string>
+    <string name="osmand_cloud_deleted_account_descr">Hesap ve tüm veriler Cloud\'dan silindi.</string>
     <string name="backup_error_delete_account_email_match">E-posta adresi, oturum açma kullanıcı adıyla eşleşmiyor</string>
     <string name="send_logcat_log_descr">Ayrıntılı günlük dosyası</string>
     <string name="max_altitude">En yüksek rakım</string>
@@ -4113,7 +4113,7 @@
     <string name="routing_attr_hazmat_category_usa_4_name">Yanıcı Katılar</string>
     <string name="action_cannot_be_undone">Bu işlem geri alınamaz.</string>
     <string name="osmand_cloud_delete_account_confirmation">Hesap silinsin mi?</string>
-    <string name="osmand_cloud_deletion_secondary_devices_warning">İkincil aygıtların OsmAnd Cloud\'dan oturumu kapatılacak ve ücretli özelliklere erişimi kaybedilecektir.</string>
+    <string name="osmand_cloud_deletion_secondary_devices_warning">İkincil aygıtların Cloud\'dan oturumu kapatılacak ve ücretli özelliklere erişimi kaybedilecektir.</string>
     <string name="battery_optimization_banner_content">Android pil iyileştirmesi, kaydedilen yollarda boşluklara ve yanlışlıklara neden olabilir.</string>
     <string name="dont_ask_anymore">Bir daha sorma</string>
     <string name="battery_optimization_settings">Pil iyileştirme ayarları</string>
@@ -4140,7 +4140,7 @@
     <string name="ant_plus_bluetooth_off">Bluetooth kapalı</string>
     <string name="bluetooth_found_title">Bulundu: %d</string>
     <string name="ble_search_again">Tekrar ara</string>
-    <string name="ant_plus_searching_text_description">Lütfen aygıtı sensöre yakın tutun. OsmAnd\'ın onu bulabilmesi için sensörü etkinleştirmeniz gerekir.</string>
+    <string name="ant_plus_searching_text_description">Lütfen aygıtı sensöre yakın tutun. MineNAV\'ın onu bulabilmesi için sensörü etkinleştirmeniz gerekir.</string>
     <string name="skip_download">İndirmeyi atla</string>
     <string name="external_device_disconnected">Bağlantı kesildi</string>
     <string name="sort_subfolders">Alt klasörleri sırala</string>
@@ -4156,7 +4156,7 @@
     <string name="external_device_details_disconnect">Bağlantıyı kes</string>
     <string name="external_device_forget_sensor">Sensörü unut</string>
     <string name="delete_folder">Klasörü sil</string>
-    <string name="ant_plus_pair_bluetooth_prompt">Bluetooth LE ve ANT+ sensörlerini OsmAnd ile eşleştirebilirsiniz.</string>
+    <string name="ant_plus_pair_bluetooth_prompt">Bluetooth LE ve ANT+ sensörlerini MineNAV ile eşleştirebilirsiniz.</string>
     <string name="shared_string_wrist">Bilek</string>
     <string name="ant_plus_open_settings">Ayarları aç</string>
     <string name="ant_plus_searching_text">Sensör aranıyor</string>
@@ -4182,7 +4182,7 @@
     <string name="map_3d_mode_action">3B modu</string>
     <string name="map_3d_mode_hint">Düğmeye uzun dokunmak düğme konumunu değiştirmeyi sağlar.</string>
     <string name="bluetooth_not_supported">Bluetooth desteklenmiyor</string>
-    <string name="cloud_version_confirm_delete">\"%1$s\" OsmAnd Bulut\'tan silinsin mi?</string>
+    <string name="cloud_version_confirm_delete">\"%1$s\" MineNAV Bulut\'tan silinsin mi?</string>
     <string name="value_downloaded_of_mb">İndiriliyor: %1$.1f/%2$.1f MB</string>
     <string name="map_widget_target_distance">Kamera ile hedef arasındaki mesafe</string>
     <string name="map_marker_interval_dialog_desc">Tahmini varış zamanını hesaplamak için ortalama hızın ölçüleceği zaman aralığını belirtin.</string>
@@ -4237,7 +4237,7 @@
     <string name="offline_weather_forecast">Çevrim dışı hava durumu tahmini</string>
     <string name="check_for_updates">Güncellemeleri denetle</string>
     <string name="new_file">Yeni dosya</string>
-    <string name="cloud_all_changes_uploaded_descr">Bu aygıtta yapılan tüm değişiklikler OsmAnd Bulut ile eşzamanlandı.</string>
+    <string name="cloud_all_changes_uploaded_descr">Bu aygıtta yapılan tüm değişiklikler MineNAV Bulut ile eşzamanlandı.</string>
     <string name="external_sensors_plugin_name">Harici Sensörler</string>
     <string name="rendering_value_defaultMedium_name">Öntanımlı (orta)</string>
     <string name="help_article_navigation_car_play_name">CarPlay</string>
@@ -4285,7 +4285,7 @@
     <string name="terms_of_service_desc">Haritaları indirerek %1$s ve %2$s kabul etmiş olursunuz.</string>
     <string name="map_widget_ant_bicycle_power">Bisiklet Gücü</string>
     <string name="coordinates_widget_current_location_desc">Geçerli coğrafi konumun coğrafi koordinatlarını gösterir</string>
-    <string name="free_favorites_backup_description">Sık kullanılanlar ve ayarlar için ücretsiz yedekleme için OsmAnd Bulut\'a kaydolun.</string>
+    <string name="free_favorites_backup_description">Sık kullanılanlar ve ayarlar için ücretsiz yedekleme için MineNAV Bulut\'a kaydolun.</string>
     <string name="external_device_characteristic_temperature">Sıcaklık</string>
     <string name="external_device_details_connection">Bağlantı</string>
     <string name="shared_string_inches">inç</string>
@@ -4332,7 +4332,7 @@
     <string name="rendering_attr_weatherCloudContours_name">Bulut eş değer eğrileri</string>
     <string name="shared_string_purchased_on">Satın alındı</string>
     <string name="map_widget_camera_distance">Kamera yüksekliği</string>
-    <string name="get_osmand_cloud">OsmAnd Bulut\'u edinin</string>
+    <string name="get_osmand_cloud">MineNAV Bulut\'u edinin</string>
     <string name="set_up_backup">Yedeklemeyi ayarla</string>
     <string name="send_uuid_preference">Benzersiz Kullanıcı Tanımlayıcısı (UUID) Gönder</string>
     <string name="external_sensor_widgets">Harici sensörler</string>
@@ -4358,7 +4358,7 @@
     <string name="inch">in</string>
     <string name="delete_actions_button_confirmation">Eklenen tüm eylemlerle birlikte \"%1$s\" ögesini silmek istediğinizden emin misiniz?</string>
     <string name="use_nearby_roads">Yakındaki yolları kullan</string>
-    <string name="retrieve_elevation_data_summary">OsmAnd, yakındaki yollardan veya arazi haritalarından yükseklik verilerini alabilir.</string>
+    <string name="retrieve_elevation_data_summary">MineNAV, yakındaki yollardan veya arazi haritalarından yükseklik verilerini alabilir.</string>
     <string name="shared_string_changes">Değişiklikler</string>
     <string name="auto_zoom">Otomatik yakınlaştır</string>
     <string name="rendering_value_managerName_name">Yönetici adına göre</string>
@@ -4390,7 +4390,7 @@
 \nBunu yapmak için Play Store\'u açmak ister misiniz?</string>
     <string name="map_widget_camera_distance_desc">Kameranın yüzey seviyesinden yüksekliğini gösterir.</string>
     <string name="developer_widgets">Geliştirici widget\'ları</string>
-    <string name="send_uuid_preference_desc">Sunucu kaynaklarının adil kullanımını izlemek, trafik eğilimlerini tahmin etmek ve anonim aylık harita raporları oluşturmak için OsmAnd sunucularından çevrim dışı haritalar indirmek için rastgele bir UUID kullanılır.</string>
+    <string name="send_uuid_preference_desc">Sunucu kaynaklarının adil kullanımını izlemek, trafik eğilimlerini tahmin etmek ve anonim aylık harita raporları oluşturmak için MineNAV sunucularından çevrim dışı haritalar indirmek için rastgele bir UUID kullanılır.</string>
     <string name="rotate_map_manual_opt">Elle döndürülen</string>
     <string name="upload_all">Tümünü karşıya yükle</string>
     <string name="shared_string_unchanged">Değişmedi</string>
@@ -4433,7 +4433,7 @@
     <string name="clear_all_key_shortcuts">Tüm tuş kısayollarını temizle</string>
     <string name="user_palette">Kullanıcı paleti</string>
     <string name="data_source">Veri Kaynağı</string>
-    <string name="weather_data_sources_prompt">OsmAnd hava verisini iki kaynaktan sağlar:</string>
+    <string name="weather_data_sources_prompt">MineNAV hava verisini iki kaynaktan sağlar:</string>
     <string name="shared_string_modify">Düzelt</string>
     <string name="shared_string_key">Tuş</string>
     <string name="new_key_assignment">Yeni anahtar ataması</string>
@@ -4448,7 +4448,7 @@
     <string name="map_text">Harita metinleri</string>
     <string name="routing_attr_avoid_cobblestone_description">Parke taşlarından kaçının</string>
     <string name="release_4_8">• 4.8 için hazırlanacak</string>
-    <string name="required_maps_calculate_online_summary">Eksik haritaların listesi düz çizgi rotasına dayanmaktadır. Doğru bir harita listesi elde etmek için OsmAnd rotanızı çevrimiçi olarak önceden hesaplayabilir.</string>
+    <string name="required_maps_calculate_online_summary">Eksik haritaların listesi düz çizgi rotasına dayanmaktadır. Doğru bir harita listesi elde etmek için MineNAV rotanızı çevrimiçi olarak önceden hesaplayabilir.</string>
     <string name="route_line_use_coloring_speed">Rota çizgisi hareket hızına göre renklendirilmiştir.</string>
     <string name="track_vertical_exaggeration_description">Ölçek değerini değiştirerek 3D iz yüksekliğini değiştirebilirsiniz.</string>
     <string name="visualized_by">Görselleştiren</string>
@@ -4604,7 +4604,7 @@
     <string name="help_article_map_routes_name">Rotalar</string>
     <string name="compass_click_north_is_up">Yönlendirme modunu değiştirmek için tıklayın ve basılı tutun</string>
     <string name="quick_action_routes_summary">Haritadaki %1$s\'ı gösterip gizleme butonu.</string>
-    <string name="detailed_track_guidance_description">OsmAnd yakınlarınızdaki yolları geliştirilmiş adım adım yol rehberi için eşleştirecek.</string>
+    <string name="detailed_track_guidance_description">MineNAV yakınlarınızdaki yolları geliştirilmiş adım adım yol rehberi için eşleştirecek.</string>
     <string name="driving_region_uk">Birleşik Krallık ve benzeri</string>
     <string name="shared_string_automatically">Otomatik</string>
     <string name="delete_widget_description">Bu widget silinecek. Yapılandırma ekranından geri getirebilirsiniz.</string>
@@ -4681,7 +4681,7 @@
     <string name="help_article_navigation_routing_train_routing_name">Tren rotası</string>
     <string name="help_article_plan_route_coordinate_input_name">Koordinat girişi</string>
     <string name="help_article_plan_route_name">Rota planla</string>
-    <string name="help_article_navigation_routing_osmand_routing_name">OsmAnd rota oluşturma hakkında</string>
+    <string name="help_article_navigation_routing_osmand_routing_name">MineNAV rota oluşturma hakkında</string>
     <string name="help_article_navigation_routing_name">Rota parametreleri</string>
     <string name="help_article_navigation_setup_route_navigation_name">Rota Hazırlığı</string>
     <string name="help_article_navigation_routing_bicycle_based_routing_name">Bisiklet rotası (MTB)</string>
@@ -4723,12 +4723,12 @@
     <string name="liter_per_hour">L/sa</string>
     <string name="search_track_by_name">Ada göre yol ara</string>
     <string name="number_of_tracks">%1$s yol</string>
-    <string name="empty_tracks_description">OsmAnd ile yol dosyalarınızı içe aktarabilir, oluşturabilir veya kaydedebilirsiniz.</string>
+    <string name="empty_tracks_description">MineNAV ile yol dosyalarınızı içe aktarabilir, oluşturabilir veya kaydedebilirsiniz.</string>
     <string name="start_trip_recording_first_m">Lütfen önce seyahat kaydını başlatın.</string>
     <string name="external_device_characteristic_systolic">Büyük tansiyon</string>
     <string name="speak_route_recalculation">Yolu yeniden hesaplayınca bildir</string>
     <string name="movies_list">Film listesi</string>
-    <string name="connect_obd_instructions_title">OsmAnd OBD-II tarayıcılarının Bluetooth bağlantılarını destekler.</string>
+    <string name="connect_obd_instructions_title">MineNAV OBD-II tarayıcılarının Bluetooth bağlantılarını destekler.</string>
     <string name="tracks_empty_folder_description">Bu klasörde henüz hiç yol yok.</string>
     <string name="free_ride">Serbest sürüş</string>
     <string name="shared_string_bluetooth">Bluetooth</string>
@@ -4822,7 +4822,7 @@
     <string name="routing_attr_allow_ferries_name">Feribotlara izin ver</string>
     <string name="route_members">Üyeler</string>
     <string name="wikidata">Wikidata</string>
-    <string name="prediction_time_description">OsmAnd\'da konum simgesi, her GPS güncellemesinde (saniyede bir kez) hareket eder. Özellikle hızlı hareket sırasında veya GPS sinyali kararsız olduğunda hafif bir gecikme meydana gelebilir.</string>
+    <string name="prediction_time_description">MineNAV\'da konum simgesi, her GPS güncellemesinde (saniyede bir kez) hareket eder. Özellikle hızlı hareket sırasında veya GPS sinyali kararsız olduğunda hafif bir gecikme meydana gelebilir.</string>
     <string name="prediction_time_advanced_description">Gecikmeyi en aza indirmek için tahmin süresini ayarlayın.</string>
     <string name="prediction_time">Tahmin süresi</string>
     <string name="shared_string_no_animation">Animasyon yok</string>

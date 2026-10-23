@@ -64,7 +64,7 @@
     <string name="shared_string_select_folder">Папка…</string>
     <string name="data_storage_preference_summary">%1$s • %2$s</string>
     <string name="rendering_attr_piste_difficulty_connection_name">Бәйләнеш</string>
-    <string name="shared_string_osmand_usage">OsmAnd куллану</string>
+    <string name="shared_string_osmand_usage">MineNAV куллану</string>
     <string name="shared_string_turn_off">Сүндерү</string>
     <string name="selected_profile">Сайланган профиль</string>
     <string name="select_color">Төсне сайлау</string>
@@ -82,8 +82,8 @@
     <string name="item_deleted">%1$s бетерелде</string>
     <string name="shared_string_file_name">Файл исеме</string>
     <string name="monitoring_control_start">REC</string>
-    <string name="use_live_routing">OsmAnd Live мәгълүматы</string>
-    <string name="use_live_public_transport">OsmAnd Live мәгълүматы</string>
+    <string name="use_live_routing">Live мәгълүматы</string>
+    <string name="use_live_public_transport">Live мәгълүматы</string>
     <string name="icon_group_sport">Спорт</string>
     <string name="login_account">Хисап язмасы</string>
     <string name="user_password">Парол</string>
@@ -101,10 +101,10 @@
     <string name="routing_engine_vehicle_type_car">Машина</string>
     <string name="activity_type_car_name">Машина</string>
     <string name="shared_string_done">Булды</string>
-    <string name="osmand_live">OsmAnd Live</string>
+    <string name="osmand_live">Live</string>
     <string name="other_menu_group">Бүтәннәр</string>
     <string name="downloads">Йөкләүләр</string>
-    <string name="app_name_osmand">OsmAnd</string>
+    <string name="app_name_osmand">MineNAV</string>
     <string name="poi_dialog_poi_type">POI тибы</string>
     <string name="rendering_value_white_name">Ак</string>
     <string name="app_mode_osm">OSM</string>

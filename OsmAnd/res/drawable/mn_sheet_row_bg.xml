@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MineNAV: a widget row on the driving sheet; the sheet draws the color, the row only the touch -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+	android:color="#26888888">
+	<item android:id="@android:id/mask">
+		<shape android:shape="rectangle">
+			<solid android:color="@android:color/white" />
+		</shape>
+	</item>
+</ripple>

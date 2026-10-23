@@ -128,6 +128,7 @@ public class WidgetsVisibilityHelper {
 
 	public boolean shouldHideBottomWidgets() {
 		return shouldHideVerticalWidgets()
+				|| isMineNavSheetVisible()
 				|| isContextMenuFragmentVisible()
 				|| isInTrackMenuMode()
 				|| isInAddGpxPointMode()
@@ -273,6 +274,11 @@ public class WidgetsVisibilityHelper {
 
 	private boolean isMapRouteInfoMenuVisible() {
 		return mapActivity.getMapRouteInfoMenu().isVisible();
+	}
+
+	// MineNAV: the Where-to and Go-now sheets already show the trip, so the bottom bar would repeat it
+	private boolean isMineNavSheetVisible() {
+		return mapActivity.getMapLayers().getMapControlsLayer().isMineNavSheetVisible();
 	}
 
 	private boolean isInMovingMarkerMode() {

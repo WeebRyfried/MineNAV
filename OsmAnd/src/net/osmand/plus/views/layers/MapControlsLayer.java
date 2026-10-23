@@ -33,6 +33,7 @@ import net.osmand.plus.utils.AndroidUtils;
 import net.osmand.plus.utils.UiUtilities;
 import net.osmand.plus.views.OsmandMapTileView;
 import net.osmand.plus.views.controls.MapHudLayout;
+import net.osmand.plus.views.controls.RoutePreviewCard;
 import net.osmand.plus.views.controls.WhereToCard;
 import net.osmand.plus.views.controls.maphudbuttons.MapButton;
 import net.osmand.plus.views.layers.base.OsmandMapLayer;
@@ -56,6 +57,7 @@ public class MapControlsLayer extends OsmandMapLayer {
 	private View mapHudContainer;
 	private MapHudLayout mapHudLayout;
 	private WhereToCard whereToCard;
+	private RoutePreviewCard routePreviewCard;
 	private List<MapButton> mapButtons = new ArrayList<>();
 	private List<MapButton> customMapButtons = new ArrayList<>();
 
@@ -101,6 +103,7 @@ public class MapControlsLayer extends OsmandMapLayer {
 			mapHudLayout = null;
 			mapHudContainer = null;
 			whereToCard = null;
+			routePreviewCard = null;
 		}
 	}
 
@@ -132,7 +135,13 @@ public class MapControlsLayer extends OsmandMapLayer {
 		mapHudContainer = activity.findViewById(R.id.map_hud_container);
 		mapHudLayout = mapHudContainer.findViewById(R.id.map_hud_layout);
 		whereToCard = mapHudLayout.findViewById(R.id.where_to_card);
-		whereToCard.setMapActivity(activity);
+		if (whereToCard != null) {
+			whereToCard.setMapActivity(activity);
+		}
+		routePreviewCard = mapHudLayout.findViewById(R.id.route_preview_card);
+		if (routePreviewCard != null) {
+			routePreviewCard.setMapActivity(activity);
+		}
 
 		for (MapButton button : mapButtons) {
 			mapHudLayout.removeMapButton(button);
@@ -290,8 +299,14 @@ public class MapControlsLayer extends OsmandMapLayer {
 		set.start();
 	}
 
-	public boolean isWhereToCardVisible() {
-		return whereToCard != null && whereToCard.getVisibility() == VISIBLE;
+	// The Where-to sheet or the route preview replaces the menu, directions and search buttons
+	public boolean isMineNavSheetVisible() {
+		return whereToCard != null && whereToCard.getVisibility() == VISIBLE
+				|| routePreviewCard != null && routePreviewCard.getVisibility() == VISIBLE;
+	}
+
+	public boolean isRoutePreviewVisible() {
+		return routePreviewCard != null && routePreviewCard.getVisibility() == VISIBLE;
 	}
 
 	public boolean isMapControlsVisible() {
@@ -359,6 +374,11 @@ public class MapControlsLayer extends OsmandMapLayer {
 		boolean nightMode = isNightModeForMapControls(drawSettings);
 
 		boolean isRoutePlanningMode = isInRoutePlanningMode();
+		boolean showRoutePreview = routePreviewCard != null && isRoutePlanningMode && routePreviewCard.canReplaceRouteMenu();
+		if (showRoutePreview && mapRouteInfoMenu.needShowMenu()) {
+			// The MineNAV route preview replaces the planner, which opens from its Options button
+			mapRouteInfoMenu.clearShowMenu();
+		}
 		boolean isRouteFollowingMode = !isRoutePlanningMode && app.getRoutingHelper().isFollowingMode();
 		if (!touchPrevFolowingMode && isRouteFollowingMode) {
 			touchEvent = 0;
@@ -381,6 +401,9 @@ public class MapControlsLayer extends OsmandMapLayer {
 			boolean showWhereTo = showBottomMenuButtons && !isRoutePlanningMode && !isRouteFollowingMode
 					&& !isRouteDialogOpened && mapActivity.isDrawerAvailable();
 			whereToCard.update(showWhereTo, nightMode);
+		}
+		if (routePreviewCard != null) {
+			routePreviewCard.update(showRoutePreview && showBottomMenuButtons && !mapRouteInfoMenu.isVisible(), nightMode);
 		}
 
 		for (MapButton mapButton : getAllMapButtons()) {

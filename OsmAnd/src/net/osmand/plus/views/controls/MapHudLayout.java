@@ -17,6 +17,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
@@ -229,11 +230,14 @@ public class MapHudLayout extends FrameLayout {
 		addPosition(findViewById(R.id.recording_note_layout));
 		addPosition(findViewById(R.id.add_gpx_point_bottom_sheet));
 		addPosition(findViewById(R.id.where_to_card));
+		addPosition(findViewById(R.id.route_preview_card));
 
 		if (speedometerWidget != null) {
+			moveToHud(speedometerWidget);
 			addWidget(speedometerWidget);
 		}
 		if (alarmWidget != null) {
+			moveToHud(alarmWidget);
 			addWidget(alarmWidget);
 		}
 		if (layerParamLayout != null) {
@@ -243,6 +247,16 @@ public class MapHudLayout extends FrameLayout {
 			addWidget(mapTransparencyLayout);
 		}
 		refresh();
+	}
+
+	/**
+	 * MineNAV: the speedometer and the alarms are placed on this layout's grid, so they live in it
+	 * rather than in the bottom controls, which sit above or beside the MineNAV sheets.
+	 */
+	private void moveToHud(@NonNull View view) {
+		if (view.getParent() instanceof ViewGroup parent && parent != this) {
+			parent.removeView(view);
+		}
 	}
 
 	private void addPosition(@Nullable View view) {
@@ -451,7 +465,7 @@ public class MapHudLayout extends FrameLayout {
 			position.setPositionHorizontal(POS_FULL_WIDTH);
 			position.setNonMoveable();
 		} else if (id == R.id.add_gpx_point_bottom_sheet || id == R.id.recording_note_layout
-				|| id == R.id.where_to_card) {
+				|| id == R.id.where_to_card || id == R.id.route_preview_card) {
 			if (portrait) {
 				position.setMoveDescendantsVertical();
 			} else {
@@ -561,13 +575,29 @@ public class MapHudLayout extends FrameLayout {
 	public void updatePositionParams(@NonNull View view, @NonNull ButtonPositionSize position) {
 		LayoutParams params = (LayoutParams) view.getLayoutParams();
 
-		boolean changed = updateButtonParams(params, position);
+		boolean changed = updateButtonParams(params, position, getParentBottomOffset(view, position));
 		if (changed) {
 			view.setLayoutParams(params);
 		}
 	}
 
+	/**
+	 * MineNAV: the speedometer and the alarms live in the bottom controls, which already sit above
+	 * the Where-to sheet or the route preview, while their grid position counts from this layout's bottom.
+	 */
+	private int getParentBottomOffset(@NonNull View view, @NonNull ButtonPositionSize position) {
+		if (position.isTop() || !(view.getParent() instanceof View parent) || parent == this || parent.getHeight() <= 0) {
+			return 0;
+		}
+		return Math.max(0, AndroidUtils.getRelativeMargins(this, parent)[3] - getPaddingBottom());
+	}
+
 	public boolean updateButtonParams(@NonNull LayoutParams params, @NonNull ButtonPositionSize position) {
+		return updateButtonParams(params, position, 0);
+	}
+
+	private boolean updateButtonParams(@NonNull LayoutParams params, @NonNull ButtonPositionSize position,
+			int bottomOffset) {
 		boolean changed = false;
 
 		int gravity;
@@ -603,7 +633,7 @@ public class MapHudLayout extends FrameLayout {
 		} else {
 			gravity |= Gravity.BOTTOM;
 			topMargin = 0;
-			bottomMargin = marginY;
+			bottomMargin = Math.max(0, marginY - bottomOffset);
 		}
 		boolean verticalMarginsChanged = !shouldIgnoreVerticalMargins(position)
 				&& (topMargin != params.topMargin || bottomMargin != params.bottomMargin);

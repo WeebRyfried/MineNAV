@@ -46,7 +46,7 @@
     <string name="shared_string_change">Dəyiş</string>
     <string name="back_to_search">Axtarışa qayıt</string>
     <string name="show_something_on_map">%1$s-i xəritədə göstər</string>
-    <string name="share_history_subject">OsmAnd ilə paylaşılıb</string>
+    <string name="share_history_subject">MineNAV ilə paylaşılıb</string>
     <string name="search_categories">Kateqoriyalar</string>
     <string name="postcode">Poçt kodu</string>
     <string name="map_widget_search">Axtar</string>
@@ -317,7 +317,7 @@
     <string name="lang_cy">Uelscə</string>
     <string name="routing_attr_weight_name">Çəki limiti</string>
     <string name="routing_attr_height_name">Hündürlük limiti</string>
-    <string name="copying_osmand_files">OsmAnd məlumat faylları kopyalanır…</string>
+    <string name="copying_osmand_files">MineNAV məlumat faylları kopyalanır…</string>
     <string name="app_modes_choose">Proqram profilləri</string>
     <string name="app_mode_boat">Qayıq</string>
     <string name="app_mode_aircraft">Təyyarə</string>
@@ -424,7 +424,7 @@
     <string name="city_type_town">Şəhər</string>
     <string name="city_type_city">Şəhər</string>
     <string name="poi_filter_by_name">Adına görə axtar</string>
-    <string name="button_upgrade_osmandplus">OsmAnd+\'a yüksəlt</string>
+    <string name="button_upgrade_osmandplus">MineNAV\'a yüksəlt</string>
     <string name="context_menu_item_search">Yaxınlıqda axtar</string>
     <string name="shared_string_others">Digərləri</string>
     <string name="shared_string_name">Ad</string>
@@ -520,14 +520,14 @@
     <string name="edit_filter_create_message">“%1$s” filtri yaradıldı</string>
     <string name="email">e-poçt</string>
     <string name="shared_string_get">Əldə et</string>
-    <string name="do_you_like_osmand">OsmAnd-ı bəyəndiniz?</string>
+    <string name="do_you_like_osmand">MineNAV-ı bəyəndiniz?</string>
     <string name="failed_to_upload">Yükləmək mümkün olmadı</string>
     <string name="delete_change">Dəyişikliyi sil</string>
     <string name="successfully_uploaded_pattern">{0}/{1} yükləndi</string>
     <string name="try_again">Təkrar cəhd</string>
     <string name="error_message_pattern">Səhv: {0}</string>
     <string name="shared_string_skip">Keç</string>
-    <string name="app_name_osmand">OsmAnd</string>
+    <string name="app_name_osmand">MineNAV</string>
     <string name="next_proceed">Sonrakı</string>
     <string name="opening_at">Açılır:</string>
     <string name="closing_at">Bağlanır:</string>
@@ -647,9 +647,9 @@
     <string name="routing_attr_avoid_ferries_description">Bərələrdən yayınır</string>
     <string name="routing_attr_avoid_motorway_name">Avtomagistrallardan yayın</string>
     <string name="routing_attr_avoid_motorway_description">Avtomagistrallardan yayınır</string>
-    <string name="android_19_location_disabled">Android 4.4 (KitKat) versiyasından bu yana xəritələri köhnə saxlama qovluğuna (%s) endirə və yeniləyə bilməzsiniz. Bütün OsmAnd faylları yeni saxlama yerinə kopyalansın\?
+    <string name="android_19_location_disabled">Android 4.4 (KitKat) versiyasından bu yana xəritələri köhnə saxlama qovluğuna (%s) endirə və yeniləyə bilməzsiniz. Bütün MineNAV faylları yeni saxlama yerinə kopyalansın\?
 \n Qeyd 1: Köhnə fayllarınıza toxunulmayacaq (amma əllə silmək olar).
-\n Qeyd 2: Yeni saxlama yerində OsmAnd və OsmAnd+ arasında fayl paylaşmaq mümkün olmayacaq.</string>
+\n Qeyd 2: Yeni saxlama yerində MineNAV və MineNAV arasında fayl paylaşmaq mümkün olmayacaq.</string>
     <string name="quick_action_btn_tutorial_title">Düymənin mövqeyini dəyiş</string>
     <string name="road_blocked">Yol bağlanıb</string>
     <string name="si_kmh">Saatda kilometr</string>
@@ -661,7 +661,7 @@
     <string name="analyze_on_map">Xəritədə təhlil et</string>
     <string name="shared_string_visible">Görünən</string>
     <string name="restore_purchases">Alışları bərpa et</string>
-    <string name="full_version_thanks">OsmAnd-ın pullu versiyasını aldığınız üçün təşəkkür edirik.</string>
+    <string name="full_version_thanks">MineNAV-ın pullu versiyasını aldığınız üçün təşəkkür edirik.</string>
     <string name="shared_string_install">Quraşdır</string>
     <string name="improve_coverage_install_mapillary_desc">Bu xəritə məkanına şəkillər əlavə etmək üçün Mapillary-ni quraşdırın.</string>
     <string name="online_photos">Onlayn şəkillər</string>
@@ -799,7 +799,7 @@
     <string name="auto_zoom_map">Avtomatik miqyas</string>
     <string name="zoomIs">Miqyas</string>
     <string name="transport">Nəqliyyat</string>
-    <string name="hello">OsmAnd naviqasiya proqramı</string>
+    <string name="hello">MineNAV naviqasiya proqramı</string>
     <string name="route_general_information">Ümumi məsafə %1$s, səyahət vaxtı %2$d s %3$d dəq.</string>
     <string name="downloading_list_indexes">Mövcud regionların siyahısı endirilir…</string>
     <string name="follow">Bələdçini başlat</string>
@@ -825,16 +825,16 @@
     <string name="poi_dialog_other_tags_message">Bütün digər etiketlər qorunur</string>
     <string name="routing_settings">Naviqasiya</string>
     <string name="global_settings">Ümumi parametrlər</string>
-    <string name="osmand_service_descr">OsmAnd ekran sönülü olanda arxa fonda işləyir.</string>
+    <string name="osmand_service_descr">MineNAV ekran sönülü olanda arxa fonda işləyir.</string>
     <string name="download_files_not_enough_space">%1$s MB endirmək üçün kifayət qədər yaddaş yoxdur (boş: %2$s).</string>
     <string name="keep_informing_never">Yalnız əl ilə (oxa toxun)</string>
     <string name="city_type_hamlet">Kənd</string>
     <string name="routing_settings_2">Naviqasiya parametrləri</string>
     <string name="cancel_navigation">Naviqasiyanı dayandır</string>
     <string name="stop_routing_confirm">Naviqasiya dayandırılsın\?</string>
-    <string name="osmand_play_title_30_chars">OsmAnd Xəritələr &amp; Naviqasiya</string>
-    <string name="osmand_plus_play_title_30_chars">OsmAnd+ Xəritələr &amp; Naviqasiya</string>
-    <string name="process_navigation_service">OsmAnd naviqasiya xidməti</string>
+    <string name="osmand_play_title_30_chars">MineNAV Xəritələr &amp; Naviqasiya</string>
+    <string name="osmand_plus_play_title_30_chars">MineNAV Xəritələr &amp; Naviqasiya</string>
+    <string name="process_navigation_service">MineNAV naviqasiya xidməti</string>
     <string name="storage_directory_manual">Əllə müəyyənləşdirilmiş</string>
     <string name="general_settings_2">Əsas parametrlər</string>
     <string name="shared_string_dismiss">İmtina et</string>
@@ -924,7 +924,7 @@
     <string name="quick_action_map_source_switch">Xəritə mənbəyi “%s” olaraq dəyişdirildi.</string>
     <string name="distance_moving">Məsafə dəqiqləşdirildi</string>
     <string name="osm_live_banner_desc">Həftəlik, günlük və hətta saatlıq yeniləmələr əlavə edən limitsiz xəritə endirmələri əldə edin.</string>
-    <string name="first_usage_wizard_desc">OsmAnd-a məkanınızı müəyyənləşdirmək və həmin region üçün xəritə endirməsi təklif etmək icazəsi verin.</string>
+    <string name="first_usage_wizard_desc">MineNAV-a məkanınızı müəyyənləşdirmək və həmin region üçün xəritə endirməsi təklif etmək icazəsi verin.</string>
     <string name="give_permission">İcazə ver</string>
     <string name="recalculate_route">Marşrutu yenidən hesabla</string>
     <string name="quick_action_map_style_switch">Xəritə stili “%s” olaraq dəyişdirildi.</string>
@@ -936,8 +936,8 @@
     <string name="recording_error">Qeydetmə alınmadı</string>
     <string name="building_number">Bina nömrəsi</string>
     <string name="shared_string_permissions">İcazələr</string>
-    <string name="import_gpx_failed_descr">Faylı idxal etmək olmadı. Zəhmə olmasa, OsmAnd-ın oxumağa icazəsi olduğundan əmin olun.</string>
-    <string name="shared_string_import2osmand">OsmAnd-a idxal et</string>
+    <string name="import_gpx_failed_descr">Faylı idxal etmək olmadı. Zəhmə olmasa, MineNAV-ın oxumağa icazəsi olduğundan əmin olun.</string>
+    <string name="shared_string_import2osmand">MineNAV-a idxal et</string>
     <string name="shared_string_import">İdxal et</string>
     <string name="fav_imported_sucessfully">Favoritlər idxal edildi</string>
     <string name="shared_string_export">İxrac et</string>
@@ -965,8 +965,8 @@
     <string name="index_item_world_basemap">Dünya icmal xəritəsi</string>
     <string name="index_item_world_ski">Dünya xizək xəritəsi</string>
     <string name="lang_zh_tw">Çincə (Ənənəvi)</string>
-    <string name="calculate_osmand_route_without_internet">OsmAnd marşrut seqmentinin oflayn hesablanması</string>
-    <string name="gpx_option_calculate_first_last_segment">İlk və son marşrut seqmenti üçün OsmAnd marşrutunu hesabla</string>
+    <string name="calculate_osmand_route_without_internet">MineNAV marşrut seqmentinin oflayn hesablanması</string>
+    <string name="gpx_option_calculate_first_last_segment">İlk və son marşrut seqmenti üçün MineNAV marşrutunu hesabla</string>
     <string name="keep_and_add_destination_point">Sonrakı təyinat olaraq əlavə et</string>
     <string name="route_info">Marşrut məlumatı</string>
     <string name="routing_attr_prefer_motorway_name">Avtomagistralları üstün tut</string>
@@ -977,7 +977,7 @@
     <string name="routing_attr_avoid_borders_description">Milli sərhədləri keçməkdən yayınır</string>
     <string name="routing_attr_weight_description">Marşrutlarda icazə veriləcək nəqliyyat vasitəsinin çəki limitini təyin edin.</string>
     <string name="routing_attr_height_description">Marşrutlarda icazə veriləcək nəqliyyat vasitəsinin hündürlük limitini təyin edin.</string>
-    <string name="calculate_osmand_route_gpx">OsmAnd oflayn marşrut hesablanması</string>
+    <string name="calculate_osmand_route_gpx">MineNAV oflayn marşrut hesablanması</string>
     <string name="app_mode_truck">Yük maşını</string>
     <string name="speech_rate_descr">TTS üçün danışıq sürəti təyin edin.</string>
     <string name="speech_rate">Danışıq sürəti</string>
@@ -1076,9 +1076,9 @@
     <string name="osn_add_dialog_error">Qeyd yaradıla bilmədi.</string>
     <string name="osn_close_dialog_error">Qeyd bağlana bilmədi.</string>
     <string name="osb_comment_dialog_error">Rəy əlavə edilə bilmədi.</string>
-    <string name="share_osm_edits_subject">OSM düzəlişləri OsmAnd ilə paylaşılıb</string>
+    <string name="share_osm_edits_subject">OSM düzəlişləri MineNAV ilə paylaşılıb</string>
     <string name="rendering_attr_showProposed_name">Təklif olunan obyektlər</string>
-    <string name="osm_live_ask_for_purchase">Zəhmət olmasa əvvəlcə OsmAnd Live abunəliyini alın</string>
+    <string name="osm_live_ask_for_purchase">Zəhmət olmasa əvvəlcə Live abunəliyini alın</string>
     <string name="storage_directory_shared">Paylaşılan yaddaş</string>
     <string name="donations">İanələr</string>
     <string name="number_of_recipients">Qəbul edənlərin sayı</string>
@@ -1106,7 +1106,7 @@
     <string name="shared_string_reset">Sıfırla</string>
     <string name="app_mode_default">Xəritəyə baxış</string>
     <string name="share_route_as_gpx">Marşrutu GPX faylı olaraq paylaş</string>
-    <string name="share_route_subject">Marşrut OsmAnd ilə paylaşılıb</string>
+    <string name="share_route_subject">Marşrut MineNAV ilə paylaşılıb</string>
     <string name="rendering_attr_contourLines_name">Kontur xətlərini göstər</string>
     <string name="rendering_attr_hmRendered_name">Daha çox xəritə detalı göstər</string>
     <string name="navigate_point_format">Format</string>
@@ -1160,7 +1160,7 @@
     <string name="vector_data">Oflayn vektor xəritələr</string>
     <string name="show_route">Marşrut detalları</string>
     <string name="no_fav_to_save">Yadda saxlanacaq Favorit nöqtələr yoxdur</string>
-    <string name="share_fav_subject">Favoritlər OsmAnd ilə paylaşılıb</string>
+    <string name="share_fav_subject">Favoritlər MineNAV ilə paylaşılıb</string>
     <string name="error_occurred_loading_gpx">GPX yüklənə bilmədi.</string>
     <string name="layer_route">Marşrut</string>
     <string name="layer_osm_bugs">OSM qeydlər (onlayn)</string>
@@ -1254,7 +1254,7 @@
     <string name="shared_string_undo_all">Hamısını qaytar</string>
     <string name="shared_string_undo">Qaytar</string>
     <string name="save_poi_without_poi_type_message">POI növ olmadan yadda saxlansın\?</string>
-    <string name="missing_write_external_storage_permission">OsmAnd-ın yaddaş kartından istifadə etmək icazəsi yoxdur</string>
+    <string name="missing_write_external_storage_permission">MineNAV-ın yaddaş kartından istifadə etmək icazəsi yoxdur</string>
     <string name="quick_action_navigation_voice_off">Səsi aç</string>
     <string name="quick_action_navigation_voice_on">Səsi söndür</string>
     <string name="quick_action_new_action">Fəaliyyət əlavə et</string>
@@ -1356,7 +1356,7 @@
     <string name="add_point_after">Sonrasına nöqtə əlavə et</string>
     <string name="improve_coverage_mapillary">Mapillary ilə şəkil əhatə dairəni yaxşılaşdır</string>
     <string name="mapillary_widget">Mapillary vidceti</string>
-    <string name="install_selected_build">{1} tarixli OsmAnd - {0} quraşdırılsın ({2} MB) ?</string>
+    <string name="install_selected_build">{1} tarixli MineNAV - {0} quraşdırılsın ({2} MB) ?</string>
     <string name="navigate_point_olc">Açıq məkan kodu (OLC)</string>
     <string name="navigate_point_olc_info_invalid">Yanlış OLC
 \n</string>
@@ -1433,7 +1433,7 @@
     <string name="round_trip">Gediş-gəliş səfər</string>
     <string name="make_round_trip">Gediş-gəliş səfər et</string>
     <string name="shared_string_finish">Bitir</string>
-    <string name="measurement_tool_snap_to_road_descr">OsmAnd seçilmiş profil üçün nöqtələri marşrut ilə birləşdirəcək.</string>
+    <string name="measurement_tool_snap_to_road_descr">MineNAV seçilmiş profil üçün nöqtələri marşrut ilə birləşdirəcək.</string>
     <string name="access_smart_autoannounce_descr">Yalnız hədəf nöqtəyə istiqamət dəyişilən zaman bildir.</string>
     <string name="plugin_mapillary_descr">Hər kəs üçün küçə səviyyəsində şəkillər. Yerləri kəşf edin, əməkdaşlıq edin, dünyanı çəkin.</string>
     <string name="auto_split_recording_descr">6 dəqiqə fasilədən sonra yeni seqment, 2 saat fasilədən sonra yeni iz, ya da tarix dəyişdiyində uzun fasilədən sonra yeni fayl başlat.</string>
@@ -1442,7 +1442,7 @@
     <string name="rendering_attr_surfaceIntegrity_name">Yol səthinin keyfiyyəti</string>
     <string name="routing_attr_short_way_name">Yanacağa qənaətli yol</string>
     <string name="access_direction_haptic_feedback_descr">Hədəf nöqtənin istiqamətini titrəmə ilə göstər.</string>
-    <string name="use_osm_live_routing_description">OsmAnd Live dəyişiklikləri üçün naviqasiyanı aktivləşdir.</string>
+    <string name="use_osm_live_routing_description">Live dəyişiklikləri üçün naviqasiyanı aktivləşdir.</string>
     <string name="storage_permission_restart_is_required">İndi proqramın xarici yaddaşa yazmasına icazə verilir, lakin bunun üçün yenidən başlatmaq lazımdır.</string>
     <string name="download_files_error_not_enough_space">Kifayət qədər yer yoxdur!
 \nMüvəqqəti {3} MB, daimi {1} MB lazımdır.
@@ -1500,9 +1500,9 @@
 \n Şəxsi məlumatları toplamırıq, yalnız axtarış alqoritmini yaxşılaşdırmaq üçün axtarış məlumatlarına ehtiyacımız var.</string>
     <string name="send_search_query">Axtarış sorğusu göndərilsin?</string>
     <string name="shared_string_world">Dünya</string>
-    <string name="read_wikipedia_offline_description">Vikipediya və Vikisəyahət məqalələrini oflayn oxumaq üçün OsmAnd Live abunəliyi alın.</string>
+    <string name="read_wikipedia_offline_description">Vikipediya və Vikisəyahət məqalələrini oflayn oxumaq üçün Live abunəliyi alın.</string>
     <string name="read_wikipedia_offline">Vikipediya-nı oflayn oxu</string>
-    <string name="osmand_team">OsmAnd komandası</string>
+    <string name="osmand_team">MineNAV komandası</string>
     <string name="monthly_map_updates">Aylıq xəritə yeniləmələri</string>
     <string name="daily_map_updates">Saatlıq xəritə yeniləmələri</string>
     <string name="online_webpage_warning">Səhifə yalnız onlayn mümkündür. Veb brauzerdə açılsın?</string>
@@ -1512,8 +1512,8 @@
     <string name="plan_route_create_new_route">Yeni marşrut yarat</string>
     <string name="shared_string_done">Hazırdır</string>
     <string name="navigation_profile">Naviqasiya profili</string>
-    <string name="use_live_public_transport">OsmAnd Live məlumatları</string>
-    <string name="use_live_routing">OsmAnd Live məlumatları</string>
+    <string name="use_live_public_transport">Live məlumatları</string>
+    <string name="use_live_routing">Live məlumatları</string>
     <string name="shared_string_local_maps">Yerli xəritələr</string>
     <string name="icon_group_service">Xidmət</string>
     <string name="delete_address">Ünvanı sil</string>
@@ -1549,7 +1549,7 @@
     <string name="days_5">Gün</string>
     <string name="days_2_4">Gün</string>
     <string name="day">Gün</string>
-    <string name="osmand_settings">OsmAnd parametrləri</string>
+    <string name="osmand_settings">MineNAV parametrləri</string>
     <string name="shared_string_select_folder">Qovluq…</string>
     <string name="data_storage_space_description">%1$s GB boş (%2$s GB-dan)</string>
     <string name="shared_string_memory_kb_desc">%1$s kB</string>
@@ -1611,11 +1611,11 @@
     <string name="start_point">Başlanğıc</string>
     <string name="no_items_of_type_message">Bu növ elementləriniz yoxdur</string>
     <string name="shared_string_relation">Münasibət</string>
-    <string name="explore_osmnad_plans_to_find_suitable">Sizə uyğun olanı tapmaq üçün OsmAnd Planlarını kəşf edin.</string>
-    <string name="option_available_only_in_osmand_pro">OsmAnd Pro abunəliyinin bir hissəsi olaraq mövcuddur.</string>
+    <string name="explore_osmnad_plans_to_find_suitable">Sizə uyğun olanı tapmaq üçün MineNAV Planlarını kəşf edin.</string>
+    <string name="option_available_only_in_osmand_pro">Pro abunəliyinin bir hissəsi olaraq mövcuddur.</string>
     <string name="active_till">%1$s tarixinə qədər aktivdir</string>
     <string name="on_hold_since">%1$s tarixindən gözləmədə</string>
-    <string name="backup_welcome_back_descr">Mövcud nüsxələri istifadə edərək bu cihazdakı məlumatları bərpa edin və ya məlumatları OsmAnd Cloud-a nüsxələyin.</string>
+    <string name="backup_welcome_back_descr">Mövcud nüsxələri istifadə edərək bu cihazdakı məlumatları bərpa edin və ya məlumatları Cloud-a nüsxələyin.</string>
     <string name="backup_do_not_have_any">Hələ onlayn nüsxəniz yoxdur.</string>
     <string name="backup_data_removed">Bütün məlumatlar silindi.</string>
     <string name="shared_string_details">Detallar</string>
@@ -1623,8 +1623,8 @@
     <string name="shared_string_articles">Məqalələr</string>
     <string name="pro_features">Pro xüsusiyyətləri</string>
     <string name="shared_app_storage_description">Dəyişilən Android yaddaş girişinə görə paylaşılan yaddaş artıq mövcud deyil.</string>
-    <string name="backup_deleted_all_data_descr">Bütün məlumatlarınız OsmAnd Cloud-dan uğurla silindi.</string>
-    <string name="android_auto_purchase_request_title">OsmAnd-ı Android Auto ilə istifadə etmək üçün OsmAnd Pro və ya Maps+ alın</string>
+    <string name="backup_deleted_all_data_descr">Bütün məlumatlarınız Cloud-dan uğurla silindi.</string>
+    <string name="android_auto_purchase_request_title">MineNAV-ı Android Auto ilə istifadə etmək üçün Pro və ya Maps+ alın</string>
     <string name="included_categories">Daxil edilən kateqoriyalar</string>
     <string name="search_title">Axtarış: %1$s</string>
     <string name="no_activity_for_intent">Bu fəaliyyəti yerinə yetirə bilən proqram quraşdırın.</string>
@@ -1637,10 +1637,10 @@
     <string name="benefits_for_contributors_secondary_descr">Limitsiz aylıq və saatlıq xəritə yeniləmələrinə uyğun olub-olmadığınızı yoxlamaq üçün OpenStreetMap-a daxil olun.</string>
     <string name="backup_version_history_removed">Bütün versiya tarixçəsi silindi.</string>
     <string name="backup_error_gzip_only_supported_upload">Fayl .gzip formatında göndərilməlidir</string>
-    <string name="backup_deleting_all_data_descr">OsmAnd məlumatlarınızı buluddan silənə qədər gözləyin. Cihazdakı bütün məlumatlar toxunulmaz olaraq qalacaq.</string>
+    <string name="backup_deleting_all_data_descr">MineNAV məlumatlarınızı buluddan silənə qədər gözləyin. Cihazdakı bütün məlumatlar toxunulmaz olaraq qalacaq.</string>
     <string name="logout_from_osmand_cloud_decsr">Çıxış edilsin\?
 \nMəlumatların nüsxəsini çıxarmaq və ya bərpa etmək üçün yenidən daxil olmalısınız.</string>
-    <string name="logout_from_osmand_cloud">OsmAnd Cloud-dan çıx</string>
+    <string name="logout_from_osmand_cloud">Cloud-dan çıx</string>
     <string name="duration_moment_ago">indicə</string>
     <string name="history_actions_descr">Tarixçəni bir fayla ixrac edə bilərsiniz.</string>
     <string name="clear_all_history">Bütün tarixçəni təmizlə</string>
@@ -1691,7 +1691,7 @@
     <string name="icon_group_transport">Nəqliyyat</string>
     <string name="number_of_gpx_files_selected_pattern">%s iz faylı seçilib</string>
     <string name="upload_to_openstreetmap">OpenStreetMap-a yüklə</string>
-    <string name="restore_from_osmand_cloud">OsmAnd Cloud-dan bərpa et</string>
+    <string name="restore_from_osmand_cloud">Cloud-dan bərpa et</string>
     <string name="select_backup_data_descr">Nüsxələmək üçün məlumat və qovluqları seçin.</string>
     <string name="shared_string_poi_types">POI növləri</string>
     <string name="backup_delete_old_data">Köhnə versiyaları sil</string>
@@ -1714,19 +1714,19 @@
     <string name="profile_by_default_description">Proqramın başlanğıcında istifadə ediləcək profili seçin.</string>
     <string name="routing_engine_vehicle_type_small_truck">Kiçik yük maşını</string>
     <string name="reverse_all_points">Bütün nöqtələri tərsinə çevir</string>
-    <string name="profile_type_osmand_string">OsmAnd profili</string>
+    <string name="profile_type_osmand_string">MineNAV profili</string>
     <string name="shared_string_empty">Boş</string>
     <string name="select_folder_descr">Qovluq seçin və ya yenisini əlavə edin</string>
     <string name="select_folder">Qovluq seçin</string>
     <string name="shared_string_folders">Qovluqlar</string>
     <string name="android_auto_map_placeholder_descr">Xəritəni proqramda görmək üçün cihazınızı Android Auto-dan ayırın.</string>
-    <string name="internal_app_storage_description">Bütün istifadəçilərdən və digər proqramlardan gizli olan daxili yaddaş. Məlumatlarınıza yalnız OsmAnd daxil ola bilər.</string>
-    <string name="purchases_feature_desc_pro_widgets">OsmAnd Pro xüsusiyyətlərini əldə edin: Marşrut rəngləndirmə və daha çox.</string>
+    <string name="internal_app_storage_description">Bütün istifadəçilərdən və digər proqramlardan gizli olan daxili yaddaş. Məlumatlarınıza yalnız MineNAV daxil ola bilər.</string>
+    <string name="purchases_feature_desc_pro_widgets">Pro xüsusiyyətlərini əldə edin: Marşrut rəngləndirmə və daha çox.</string>
     <string name="shared_string_offline">Oflayn</string>
     <string name="shared_string_external">Xarici</string>
     <string name="shared_string_online">Onlayn</string>
     <string name="cloud_email_already_registered">Bu e-poçt ünvanı artıq qeydiyyatdan keçib.</string>
-    <string name="cloud_email_not_registered">Bu e-poçt ünvanı OsmAnd Cloud üçün qeydiyyatdan keçməyib</string>
+    <string name="cloud_email_not_registered">Bu e-poçt ünvanı Cloud üçün qeydiyyatdan keçməyib</string>
     <string name="on_hold">Gözləmədə</string>
     <string name="osmand_live_cancelled">Ləğv edildi</string>
     <string name="apply_to_current_profile">Yalnız “%1$s” profilinə tətbiq et</string>
@@ -1766,7 +1766,7 @@
     <string name="backup_into_file">Fayl olaraq nüsxələ</string>
     <string name="local_backup">Yerli nüsxə</string>
     <string name="osmand_cloud_authorize_descr">Məlumatlarınızı heç vaxt itirməyin. Bütün məlumatları asanlıqla nüsxələyin və bərpa edin.</string>
-    <string name="osmand_cloud">OsmAnd Cloud</string>
+    <string name="osmand_cloud">Cloud</string>
     <string name="last_backup">Son nüsxələmə</string>
     <string name="backup_and_restore">Nüsxələ &amp; Bərpa et</string>
     <string name="search_more">Daha çox axtar…</string>
@@ -1804,7 +1804,7 @@
     <string name="new_plugin_added">Yeni qoşma əlavə edildi</string>
     <string name="clear_confirmation_msg">%1$s təmizlənsin\?</string>
     <string name="apply_preference_to_all_profiles">Bu dəyişikliyi hamısına və ya seçilmiş profilə tətbiq edin.</string>
-    <string name="shared_string_osmand_usage">OsmAnd istifadəsi</string>
+    <string name="shared_string_osmand_usage">MineNAV istifadəsi</string>
     <string name="change_data_storage_folder">Saxlama qovluğunu dəyiş</string>
     <string name="change_default_settings">Parametri dəyiş</string>
     <string name="copy_from_other_profile">Başqa profildən kopyala</string>
@@ -1857,7 +1857,7 @@
     <string name="select_color">Rəng seçin</string>
     <string name="configure_profile_info">Profil üçün parametrlər:</string>
     <string name="configure_profile">Profili tənzimlə</string>
-    <string name="change_osmand_data_folder_question">OsmAnd məlumat qovluğu dəyişdirilsin\?</string>
+    <string name="change_osmand_data_folder_question">MineNAV məlumat qovluğu dəyişdirilsin\?</string>
     <string name="list_of_installed_plugins">Quraşdırılmış qoşmalar</string>
     <string name="configure_navigation">Naviqasiyanı tənzimlə</string>
     <string name="units_and_formats">Vahidlər və formatlar</string>
@@ -1876,7 +1876,7 @@
     <string name="export_profile">Profili ixrac et</string>
     <string name="export_profile_failed">Profili ixrac etmək olmadı.</string>
     <string name="plugin_disabled">Qoşma sönülüdür</string>
-    <string name="custom_osmand_plugin">Xüsusi OsmAnd qoşması</string>
+    <string name="custom_osmand_plugin">Xüsusi MineNAV qoşması</string>
     <string name="plugin_prefs_reset_successful">Bütün qoşma parametrləri standarta bərpa edildi.</string>
     <string name="accessibility_prefs_descr">İkon, rəng və ad seçin</string>
     <string name="choose_icon_color_name">İkon, rəng və ad</string>
@@ -1898,7 +1898,7 @@
     <string name="rendering_attr_piste_difficulty_easy_name">Asan</string>
     <string name="application_profile_changed">Proqram profili “%s” olaraq dəyişdirildi</string>
     <string name="update_all_maps_q">Bütün (%1$d) xəritələr yenilənsin\?</string>
-    <string name="import_duplicates_description">OsmAnd-da artıq idxal olunanlarla eyni adda elementlər var.
+    <string name="import_duplicates_description">MineNAV-da artıq idxal olunanlarla eyni adda elementlər var.
 \n
 \nFəaliyyət seçin.</string>
     <string name="rendering_value_thick_name">Qalın</string>
@@ -1941,7 +1941,7 @@
     <string name="data_storage_preference_summary">%1$s • %2$s</string>
     <string name="rendering_value_black_name">Qara</string>
     <string name="shared_string_includes">Daxil olanlar</string>
-    <string name="change_data_storage_full_description">OsmAnd məlumat faylları yeni təyinat yerinə daşınsın\?
+    <string name="change_data_storage_full_description">MineNAV məlumat faylları yeni təyinat yerinə daşınsın\?
 \n%1$s &gt; %2$s</string>
     <string name="default_speed_setting_title">Standart sürət</string>
     <string name="rendering_value_browse_map_name">Xəritəyə bax</string>
@@ -1980,10 +1980,10 @@
     <string name="shared_string_night_map">Gecə xəritəsi</string>
     <string name="shared_string_max_height">Maks. yüksəklik</string>
     <string name="privacy_and_security_change_descr">%1$smizlə razılaşırsınızsa, “İcazə ver”ə toxunun</string>
-    <string name="visited_screens_collect_descr">OsmAnd xüsusiyyətinin populyarlığını anlamağımıza kömək edir.</string>
+    <string name="visited_screens_collect_descr">MineNAV xüsusiyyətinin populyarlığını anlamağımıza kömək edir.</string>
     <string name="shared_string_resume">Davam et</string>
     <string name="tts_title">TTS</string>
-    <string name="osmand_live">OsmAnd Live</string>
+    <string name="osmand_live">Live</string>
     <string name="downloaded_maps">Endirilən xəritələr</string>
     <string name="visited_screens">Ziyarət edilən ekranlar</string>
     <string name="app_mode_subway">Metro</string>
@@ -1991,8 +1991,8 @@
     <string name="choose_data_to_share">Paylaşmaq istədiyiniz məlumat növünü seçin:</string>
     <string name="profile_alert_duplicate_name_msg">Bu adda profil artıq mövcuddur</string>
     <string name="app_mode_helicopter">Helikopter</string>
-    <string name="profile_alert_cant_delete_base">OsmAnd-ın təməl profillərini silə bilməzsiniz</string>
-    <string name="ask_for_location_permission">Davam etmək üçün OsmAnd-a məkana giriş icazəsi verin.</string>
+    <string name="profile_alert_cant_delete_base">MineNAV-ın təməl profillərini silə bilməzsiniz</string>
+    <string name="ask_for_location_permission">Davam etmək üçün MineNAV-a məkana giriş icazəsi verin.</string>
     <string name="please_specify_poi_type_only_from_list">Düzgün POI növünü göstərin və ya onu keçin.</string>
     <string name="complete_purchase">Alışı tamamla</string>
     <string name="app_mode_horse">At</string>
@@ -2012,7 +2012,7 @@
     <string name="osmand_maps_plus_tagline">Çoxaldılmış funksiyalar əldə edin</string>
     <string name="offline_wikivoyage">Oflayn Vikisəyahət</string>
     <string name="wikipedia_and_wikivoyage_offline">Vikipediya və Vikisəyahət oflayn</string>
-    <string name="tracks_view_descr">Qeyd edilmiş izləriniz %1$s-də və ya OsmAnd qovluğundadır.</string>
+    <string name="tracks_view_descr">Qeyd edilmiş izləriniz %1$s-də və ya MineNAV qovluğundadır.</string>
     <string name="reset_confirmation_descr">%1$s düyməsinə toxunmaq bütün dəyişiklikləri silir.</string>
     <string name="reset_all_profile_settings_descr">Bütün profil parametrləri quraşdırma standartlarına sıfırlanacaq.</string>
     <string name="arrive_at_time">Çatma vaxtı: %1$s</string>
@@ -2037,23 +2037,23 @@
 \n
 \n%1$s-nı seçsəniz, sürət kameraları haqqında siqnallar və xəbərdarlıqlar alacaqsınız.
 \n
-\n%2$s-i seçsəniz, sürət kameraları ilə bağlı bütün məlumatlar: xəbərdarlıqlar, bildirişlər, POI-lər OsmAnd tamamilə yenidən quraşdırılana qədər silinəcək.</string>
+\n%2$s-i seçsəniz, sürət kameraları ilə bağlı bütün məlumatlar: xəbərdarlıqlar, bildirişlər, POI-lər MineNAV tamamilə yenidən quraşdırılana qədər silinəcək.</string>
     <string name="keep_both_desc">İdxal edilmiş elementlər prefikslə əlavə olunacaq</string>
     <string name="please_provide_profile_name_message">Zəhmət olmasa, profil üçün ad daxil edin</string>
     <string name="video_notes">Video qeydləri</string>
     <string name="photo_notes">Şəkil qeydləri</string>
     <string name="move_maps_to_new_destination">Yeni təyinat yerinə daşı</string>
-    <string name="help_us_make_osmand_better">OsmAnd-ı daha yaxşı etməyimizə kömək edin</string>
+    <string name="help_us_make_osmand_better">MineNAV-ı daha yaxşı etməyimizə kömək edin</string>
     <string name="downloaded_maps_collect_descr">Ölkə və region xəritəsinin populyarlığını anlamağımıza kömək edir.</string>
     <string name="routeInfo_road_types_name">Yol növləri</string>
     <string name="delete_history_items_descr">Seçilən tarixçə elementləri silinsin?</string>
     <string name="replace_all_desc">Hazırkı elementlər fayldakı elementlərlə əvəz olunacaq</string>
     <string name="routeInfo_steepness_name">Diklik</string>
-    <string name="make_osmand_better_descr">OsmAnd-a anonim proqramdan istifadə məlumatlarını toplamaq və emal etmək icazəsi verin. Mövqeniz və ya xəritədə baxdığınız yerlər haqqında məlumat toplanmır.
+    <string name="make_osmand_better_descr">MineNAV-a anonim proqramdan istifadə məlumatlarını toplamaq və emal etmək icazəsi verin. Mövqeniz və ya xəritədə baxdığınız yerlər haqqında məlumat toplanmır.
 \n
 \n“Parametrlər” → “Gizlilik və təhlükəsizlik”də istənilən vaxt tənzimləyin.</string>
     <string name="enter_path_to_folder">Qovluğun yolunu daxil edin</string>
-    <string name="paste_Osmand_data_folder_path">OsmAnd məlumat qovluğunun yolunu əlavə edin</string>
+    <string name="paste_Osmand_data_folder_path">MineNAV məlumat qovluğunun yolunu əlavə edin</string>
     <string name="dialogs_and_notifications_descr">Açılan pəncərələri, dialoqları və bildirişləri idarə edin.</string>
     <string name="start_up_message_pref">Başlanğıc mesajı</string>
     <string name="markers_history_is_disabled_descr">Ziyarət edilən xəritə işarələrinin siyahısını xatırlamaq üçün tarixçəni aktivləşdirin.</string>
@@ -2062,7 +2062,7 @@
     <string name="osmand_cloud_help_descr">Kömək lazımdır\? %1$s ünvanından bizimlə əlaqə saxlayın</string>
     <string name="shared_string_legal">Qanuni</string>
     <string name="analytics_pref_title">Təhlil</string>
-    <string name="purchases_feature_desc_osmand_cloud">Bütün OsmAnd məlumatlarını onlayn saxlamaq üçün OsmAnd Cloud əldə edin. Yenidən quraşdırdıqda məlumatları itirməyin. Bütün məlumatları asanlıqla nüsxələyin və bərpa edin.</string>
+    <string name="purchases_feature_desc_osmand_cloud">Bütün MineNAV məlumatlarını onlayn saxlamaq üçün Cloud əldə edin. Yenidən quraşdırdıqda məlumatları itirməyin. Bütün məlumatları asanlıqla nüsxələyin və bərpa edin.</string>
     <string name="purchases_feature_desc_unlimited_map_download">Bütün qitələr və regionların oflayn xəritələri üçün limitsiz endirmələr əldə edin.</string>
     <string name="purchases_feature_desc_hourly_map_updates">Daha tez-tez xəritə yeniləmələrinə giriş əldə edin. Saatlıq, günlük və ya həftəlik. Yeniləmələr yalnız dəyişdirilmiş sahə üçün tədricən endirilir.</string>
     <string name="route_tslr">Azca sağa dönün</string>
@@ -2075,10 +2075,10 @@
     <string name="purchases_feature_desc_combined_wiki">Yolda olarkən internet bağlantısı olmadan Vikipediya məqalələrini kəşf edin. Oflayn məlumatlar ölkələr üzrə bölünür və bütün dillərdə mövcuddur.</string>
     <string name="importing_from">Məlumatlar %1$s-dan idxal edilir</string>
     <string name="import_complete_description">Bütün məlumatlar %1$s-dan idxal edildi. Aşağıdakı düymələrdən istifadə etməklə proqramın istənilən hissəsini idarə etmək üçün aça bilərsiniz.</string>
-    <string name="checking_for_duplicate_description">OsmAnd proqramdakı mövcud elementlərlə dublikatların olub-olmaması üçün %1$s-ni yoxlayır.
+    <string name="checking_for_duplicate_description">MineNAV proqramdakı mövcud elementlərlə dublikatların olub-olmaması üçün %1$s-ni yoxlayır.
 \n
 \nBir az vaxt ala bilər.</string>
-    <string name="listed_exist">Siyahıyadakı %1$s artıq OsmAnd-da mövcuddur.</string>
+    <string name="listed_exist">Siyahıyadakı %1$s artıq MineNAV-da mövcuddur.</string>
     <string name="ltr_or_rtl_combine_via_space">%1$s %2$s</string>
     <string name="ltr_or_rtl_combine_via_colon">%1$s: %2$s</string>
     <string name="ltr_or_rtl_combine_via_bold_point">%1$s • %2$s</string>
@@ -2107,7 +2107,7 @@
     <string name="si_mi_yard">Mil/yard</string>
     <string name="si_mi_feet">Mil/fut</string>
     <string name="quick_action_add_create_items">Elementlər yarat</string>
-    <string name="turn_screen_on_power_button_descr">Cihazın güc düyməsinə basmaqla ekran kilid ekranının üzərində OsmAnd ilə açılacaq.</string>
+    <string name="turn_screen_on_power_button_descr">Cihazın güc düyməsinə basmaqla ekran kilid ekranının üzərində MineNAV ilə açılacaq.</string>
     <string name="turn_screen_on_wake_time_descr">Oyandıqdan sonra ekranın yanılı qalma müddətini seçin. (“%1$s” müddət tətbiq etmir.)</string>
     <string name="turn_screen_on_power_button_disabled">Sönülüdür. “Oyandıqdan sonra müddət”in altındakı “Ekranı yanılı saxla” tələb olunur.</string>
     <string name="quick_action_item">Sürətli fəaliyyət</string>
@@ -2127,7 +2127,7 @@
     <string name="right_side_navigation">Sağ tərəfdən hərəkət</string>
     <string name="shared_string_feet">fut</string>
     <string name="wake_time">Oyandıqdan sonra müddət</string>
-    <string name="turn_screen_on_descr">Ekranın oyanması seçimlərini seçin (cihaz kilidlənərkən OsmAnd-ın ön planda olduğundan əmin olun):</string>
+    <string name="turn_screen_on_descr">Ekranın oyanması seçimlərini seçin (cihaz kilidlənərkən MineNAV-ın ön planda olduğundan əmin olun):</string>
     <string name="turn_screen_on_sensor_descr">Əlinizi ekran boyunca yelləmək ekranı yandıracaq.</string>
     <string name="no_purchases">Heç bir alışınız yoxdur</string>
     <string name="screen_control">Ekran nəzarəti</string>
@@ -2138,7 +2138,7 @@
     <string name="navigate_point_format_mgrs">MGRS</string>
     <string name="general_settings_profile_descr">Proqram teması, vahidlər, region</string>
     <string name="angular_measeurement">Bucaq vahidi</string>
-    <string name="quick_action_switch_day_night_descr">OsmAnd üçün gündüz və gecə rejimləri arasında keçid üçün düymə.</string>
+    <string name="quick_action_switch_day_night_descr">MineNAV üçün gündüz və gecə rejimləri arasında keçid üçün düymə.</string>
     <string name="external_input_device">Xarici giriş cihazları</string>
     <string name="use_volume_buttons_as_zoom">Səs düymələri ilə miqyas</string>
     <string name="av_photo_play_sound_descr">Şəkil çəkmə üçün səs və ya səssizliyi təyin edin.</string>
@@ -2201,14 +2201,14 @@
     <string name="layer_osm_edits">OSM düzəlişləri</string>
     <string name="contributions_may_calculate_with_delay">Töhfələrin hesablanması bir neçə saat çəkə bilər.</string>
     <string name="shared_string_contributions">Töhfələr</string>
-    <string name="enough_contributions_descr">Təbrik edirik, kifayət qədər OpenStreetMap töhfəsi təqdim etdiniz və indi limitsiz OsmAnd xəritə yeniləmələrindən istifadə edə bilərsiniz!</string>
+    <string name="enough_contributions_descr">Təbrik edirik, kifayət qədər OpenStreetMap töhfəsi təqdim etdiniz və indi limitsiz MineNAV xəritə yeniləmələrindən istifadə edə bilərsiniz!</string>
     <string name="not_enough_contributions_descr">Limitsiz saatlıq xəritə yeniləmələrinə giriş əldə etmək üçün son iki ay ərzində %2$s minimum %1$s dəyişiklik tələb olunur.</string>
     <string name="travel_routes">Səyahət marşrutları</string>
     <string name="reset_to_default_category_button_promo">“Standarta sıfırla” sıralama qaydasını quraşdırma standartına bərpa edəcək.</string>
     <string name="routing_attr_short_way_description">Optimallaşdırılmış qısa marşrut (enerjiyə qənaət)</string>
     <string name="map_widget_monitoring">Səfər qeydetmə</string>
     <string name="distance_between_points">Nöqtələr arasındakı məsafə</string>
-    <string name="storage_migration_wrong_folder_warning">Seçilmiş qovluqda OsmAnd məlumatları tapılmadı. Təkrar cəhd edin.</string>
+    <string name="storage_migration_wrong_folder_warning">Seçilmiş qovluqda MineNAV məlumatları tapılmadı. Təkrar cəhd edin.</string>
     <string name="plan_route_split_before">Əvvəl böl</string>
     <string name="route_descr_select_start_point">Çıxış nöqtəsini seçin</string>
     <string name="edit_map_marker">Xəritə işarəsinə düzəliş et</string>
@@ -2327,7 +2327,7 @@
     <string name="shortcut_navigate_to">Naviqasiya…</string>
     <string name="shortcut_start_recording">Qeydi başlat</string>
     <string name="shortcut_navigate_to_home">“Ev”ə get</string>
-    <string name="location_access_request_title">Naviqasiya üçün OsmAnd-a Məkan icazəsi lazımdır.</string>
+    <string name="location_access_request_title">Naviqasiya üçün MineNAV-a Məkan icazəsi lazımdır.</string>
     <string name="location_access_request_action">Giriş icazəsi ver</string>
     <string name="shared_string_server_url">Server URL-si</string>
     <string name="shared_string_api_key">API açarı</string>
@@ -2339,7 +2339,7 @@
     <string name="gpx_monitoring_stop">Səfər qeydinə fasilə ver</string>
     <string name="shared_string_discussion">Müzakirə</string>
     <string name="folder_access_denied">Seçilən qovluğa daxil olmaq üçün icazə tələb olunur.</string>
-    <string name="wikivoyage_travel_guide_descr">İnternet bağlantısı olmadan OsmAnd daxilində planetin ən maraqlı yerlərinə bələdçi.</string>
+    <string name="wikivoyage_travel_guide_descr">İnternet bağlantısı olmadan MineNAV daxilində planetin ən maraqlı yerlərinə bələdçi.</string>
     <string name="download_maps_travel">Səyahət bələdçiləri</string>
     <string name="mapillary_menu_title_pano">Yalnız 360° şəkilləri göstər</string>
     <string name="ltr_or_rtl_triple_combine_via_space">%1$s %2$s %3$s</string>
@@ -2355,7 +2355,7 @@
     <string name="welcome_to_open_beta_description">Hazırda səyahət bələdçiləri Vikisəyahət əsasında fəaliyyət göstərir. Açıq beta test zamanı bütün xüsusiyyətləri pulsuz test edin.</string>
     <string name="travel_card_download_descr">İnternet bağlantısı olmadan dünyanın müxtəlif yerləri haqqında məqalələrə baxmaq üçün Vikisəyahət bələdçilərini endirin.</string>
     <string name="start_editing_card_image_text">Pulsuz dünya səyahət bələdçisinə hər kəs düzəliş edə bilər.</string>
-    <string name="shared_storage_third_step">Qovluğa giriş üçün icazə verin. İcazə olmadan OsmAnd faylları kopyalaya bilməz.</string>
+    <string name="shared_storage_third_step">Qovluğa giriş üçün icazə verin. İcazə olmadan MineNAV faylları kopyalaya bilməz.</string>
     <string name="shared_storage">Paylaşılan yaddaş</string>
     <string name="markers_remove_dialog_msg">“%s” xəritə işarəsi silinsin\?</string>
     <string name="shared_storage_last_step">Daha sonra yeni məlumat qovluğu təyin edə bilərsiniz.</string>
@@ -2367,11 +2367,11 @@
     <string name="storage_found_files_size">%1$s fayl tapıldı %2$s</string>
     <string name="storage_copied_files_size">%1$s fayl kopyalandı %2$s</string>
     <string name="files_remaining">Qalan fayllar: %1$s %2$s</string>
-    <string name="edit_profiles_descr">OsmAnd standart profilləri silinə bilməz, lakin qeyri-aktiv edilə bilər (əvvəlki ekranda) və ya aşağıda sıralana bilər.</string>
+    <string name="edit_profiles_descr">MineNAV standart profilləri silinə bilməz, lakin qeyri-aktiv edilə bilər (əvvəlki ekranda) və ya aşağıda sıralana bilər.</string>
     <string name="gps_filter_speed_altitude_desc">Yalnız müəyyən edilmiş intervala uyğun iz nöqtələri qrafikdə və xəritədə görünəcək, qalanları gizlədiləcək.</string>
     <string name="progress_complete">%1$s tamamlandı</string>
     <string name="shared_storage_first_step">“%1$s”ə toxunun. \nFayl meneceri osmand qovluğunu tapmaq və açmaq üçün lazım olan yerdə açılır.</string>
-    <string name="shared_string_skip_warning">Köçürmə keçilsin\? OsmAnd artıq paylaşılan yaddaşdakı fayllarınıza daxil ola bilməz.
+    <string name="shared_string_skip_warning">Köçürmə keçilsin\? MineNAV artıq paylaşılan yaddaşdakı fayllarınıza daxil ola bilməz.
 \n
 \nProqram yeni məlumat qovluğunuzdan istifadə etməyə başlayacaq.</string>
     <string name="shared_string_turn">Döngə</string>
@@ -2403,7 +2403,7 @@
     <string name="shared_string_restart">Proqramı yenidən başlat</string>
     <string name="osmand_short_description_80_chars">Oflayn və onlayn OSM xəritələri üçün qlobal mobil xəritəyə baxış və naviqasiya</string>
     <string name="voices">Səsli göstərişlər</string>
-    <string name="shared_storage_migration_descr">Android yaddaş girişindəki dəyişikliklərə görə OsmAnd artıq %1$sı istifadə edə bilməz.
+    <string name="shared_storage_migration_descr">Android yaddaş girişindəki dəyişikliklərə görə MineNAV artıq %1$sı istifadə edə bilməz.
 \n
 \nBütün məlumatlarınızı yeni qovluğa kopyalayın.</string>
     <string name="shared_storage_second_step">“Bu qovluğu istifadə et” düyməsinə toxunun.</string>
@@ -2421,7 +2421,7 @@
     <string name="shared_string_show_slope">Yamacı göstər</string>
     <string name="route_between_points_whole_track_button_desc">Seçilmiş profildən istifadə etməklə bütün iz yenidən hesablanacaq.</string>
     <string name="open_saved_track">Yadda saxlanan izi aç</string>
-    <string name="gps_filter_actions_description">OsmAnd faylı yeniləmədən dəyişiklikləri izə tətbiq edəcək. Dəyişiklikləri əl ilə yadda saxlaya bilərsiniz.</string>
+    <string name="gps_filter_actions_description">MineNAV faylı yeniləmədən dəyişiklikləri izə tətbiq edəcək. Dəyişiklikləri əl ilə yadda saxlaya bilərsiniz.</string>
     <string name="gps_filter_hdop_desc">HDOP üçün qəbul edilən maksimum dəyəri seçin.
 \nDaha yüksək dəyəri olan nöqtələr gizlədiləcək.</string>
     <string name="simplified_track_description">Yalnız marşrut xətti yadda saxlanacaq, yol nöqtələri silinəcək.</string>
@@ -2481,11 +2481,11 @@
     <string name="all_groups">Bütün qruplar</string>
     <string name="list_of_groups">Qrupların siyahısı</string>
     <string name="permission_is_required">Bu seçimdən istifadə etmək üçün icazə tələb olunur.</string>
-    <string name="previous_run_crashed">OsmAnd-ın son çalışması çökdü. Qeyd faylı {0} qovluğundadır. Zəhmət olmasa, problemi bildirin və qeyd faylını əlavə edin.</string>
-    <string name="location_source_descr">Standart olaraq, Google Play-dən quraşdırılmış OsmAnd məkanı müəyyən etmək üçün %1$s istifadə edir. \n \nYanlış məkan məlumatı alsanız və ya cihazı %2$s olmadan istifadə etsəniz, “%3$s” rejiminə keçməyi yoxlayın.</string>
+    <string name="previous_run_crashed">MineNAV-ın son çalışması çökdü. Qeyd faylı {0} qovluğundadır. Zəhmət olmasa, problemi bildirin və qeyd faylını əlavə edin.</string>
+    <string name="location_source_descr">Standart olaraq, Google Play-dən quraşdırılmış MineNAV məkanı müəyyən etmək üçün %1$s istifadə edir. \n \nYanlış məkan məlumatı alsanız və ya cihazı %2$s olmadan istifadə etsəniz, “%3$s” rejiminə keçməyi yoxlayın.</string>
     <string name="exit_import">Çıxılsın\?</string>
     <string name="shared_string_crash">Çökmə</string>
-    <string name="last_launch_crashed">OsmAnd-ın son çalışması çökdü. Zəhmət olmasa, səhv mesajını paylaşaraq OsmAnd-ı təkmilləşdirməyə kömək edin.</string>
+    <string name="last_launch_crashed">MineNAV-ın son çalışması çökdü. Zəhmət olmasa, səhv mesajını paylaşaraq MineNAV-ı təkmilləşdirməyə kömək edin.</string>
     <string name="shared_string_reading_file">Fayl oxunur…</string>
     <string name="stop_download">Endirməni dayandır</string>
     <string name="stop_and_exit">Dayandır və çıx</string>
@@ -2590,8 +2590,8 @@
     <string name="kg">kq</string>
     <string name="display_position">Ekran mövqeyi</string>
     <string name="shared_string_mode">Rejim</string>
-    <string name="auto_backup_preference_desc">Standart olaraq Android yeni cihazlarda və ya yenidən quraşdırıldıqdan sonra bərpa etmək üçün favoritlərin, xəritə işarələrinin və OsmAnd parametrlərinin nüsxələrini saxlayır. Bu nüsxə 25 MB ilə məhdudlaşır.
-\nOsmAnd Cloud istifadə edərkən, bu, yenidən quraşdırmadan sonra anlaşılmazlıqlara səbəb ola bilər.</string>
+    <string name="auto_backup_preference_desc">Standart olaraq Android yeni cihazlarda və ya yenidən quraşdırıldıqdan sonra bərpa etmək üçün favoritlərin, xəritə işarələrinin və MineNAV parametrlərinin nüsxələrini saxlayır. Bu nüsxə 25 MB ilə məhdudlaşır.
+\nCloud istifadə edərkən, bu, yenidən quraşdırmadan sonra anlaşılmazlıqlara səbəb ola bilər.</string>
     <string name="ant_missing_dependency_descr">Tələb olunan “%1$s” xidmətini tapmaq olmadı. \nANT+ Plugins Xidmətini quraşdırmalı və ya yeniləməlisiniz. \nBunu etmək üçün Play Store-u işə salmaq istəyirsiniz?</string>
     <string name="routing_attr_motor_type_lpg_name">LPG</string>
     <string name="shared_string_identifiers">İdentifikatorlar</string>

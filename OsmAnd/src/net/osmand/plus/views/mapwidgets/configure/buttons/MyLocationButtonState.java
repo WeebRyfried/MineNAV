@@ -3,7 +3,7 @@ package net.osmand.plus.views.mapwidgets.configure.buttons;
 import static net.osmand.aidlapi.OsmAndCustomizationConstants.BACK_TO_LOC_HUD_ID;
 import static net.osmand.plus.quickaction.ButtonAppearanceParams.OPAQUE_ALPHA;
 import static net.osmand.shared.grid.ButtonPositionSize.POS_BOTTOM;
-import static net.osmand.shared.grid.ButtonPositionSize.POS_RIGHT;
+import static net.osmand.shared.grid.ButtonPositionSize.POS_LEFT;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -64,6 +64,7 @@ public class MyLocationButtonState extends MapButtonState {
 	@NonNull
 	@Override
 	protected ButtonPositionSize setupButtonPosition(@NonNull ButtonPositionSize position) {
-		return setupButtonPosition(position, POS_RIGHT, POS_BOTTOM, true, false);
+		// MineNAV: bottom left, next to the sheets, like the Waze recenter button
+		return setupButtonPosition(position, POS_LEFT, POS_BOTTOM, true, false);
 	}
 }

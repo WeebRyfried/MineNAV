@@ -6,76 +6,85 @@
 	android:layout_height="wrap_content"
 	android:layout_gravity="bottom"
 	android:clipToPadding="false"
-	android:padding="@dimen/content_padding_small"
+	android:paddingTop="@dimen/content_padding"
 	android:visibility="gone">
 
-	<com.google.android.material.card.MaterialCardView
+	<!-- Waze-like bottom sheet: handle, search pill with the mascot menu, shortcuts and recent places -->
+	<LinearLayout
 		android:id="@+id/where_to_surface"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		app:cardCornerRadius="@dimen/where_to_card_radius"
-		app:cardElevation="@dimen/where_to_card_elevation"
-		app:strokeWidth="0dp">
+		android:elevation="@dimen/where_to_card_elevation"
+		android:orientation="vertical"
+		android:paddingHorizontal="@dimen/content_padding"
+		android:paddingBottom="@dimen/content_padding_small">
+
+		<View
+			android:id="@+id/where_to_handle"
+			android:layout_width="@dimen/where_to_handle_width"
+			android:layout_height="@dimen/where_to_handle_height"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/content_padding_small" />
 
 		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:padding="@dimen/content_padding_small">
+			android:layout_marginTop="@dimen/content_padding_small"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:id="@+id/where_to_menu"
+				android:layout_width="@dimen/where_to_field_height"
+				android:layout_height="@dimen/where_to_field_height"
+				android:contentDescription="@string/shared_string_menu"
+				android:padding="@dimen/content_padding_half"
+				android:scaleType="fitCenter"
+				android:src="@drawable/ic_minenav_mascot" />
 
 			<LinearLayout
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
+				android:id="@+id/where_to_search"
+				android:layout_width="0dp"
+				android:layout_height="@dimen/where_to_field_height"
+				android:layout_marginStart="@dimen/content_padding_small"
+				android:layout_weight="1"
+				android:clickable="true"
+				android:focusable="true"
 				android:gravity="center_vertical"
-				android:orientation="horizontal">
+				android:orientation="horizontal"
+				android:paddingHorizontal="@dimen/content_padding">
 
 				<ImageView
-					android:id="@+id/where_to_menu"
-					android:layout_width="@dimen/where_to_field_height"
-					android:layout_height="@dimen/where_to_field_height"
-					android:contentDescription="@string/shared_string_menu"
-					android:padding="@dimen/content_padding_half"
-					android:scaleType="fitCenter"
-					android:src="@drawable/ic_minenav_mascot" />
+					android:id="@+id/where_to_search_icon"
+					android:layout_width="@dimen/standard_icon_size"
+					android:layout_height="@dimen/standard_icon_size"
+					android:importantForAccessibility="no"
+					android:src="@drawable/ic_action_search_dark" />
 
-				<LinearLayout
-					android:id="@+id/where_to_search"
-					android:layout_width="0dp"
-					android:layout_height="@dimen/where_to_field_height"
+				<TextView
+					android:id="@+id/where_to_search_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
 					android:layout_marginStart="@dimen/content_padding_small"
-					android:layout_weight="1"
-					android:clickable="true"
-					android:focusable="true"
-					android:gravity="center_vertical"
-					android:orientation="horizontal"
-					android:paddingHorizontal="@dimen/content_padding">
-
-					<ImageView
-						android:id="@+id/where_to_search_icon"
-						android:layout_width="@dimen/standard_icon_size"
-						android:layout_height="@dimen/standard_icon_size"
-						android:importantForAccessibility="no"
-						android:src="@drawable/ic_action_search_dark" />
-
-					<TextView
-						android:id="@+id/where_to_search_text"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:layout_marginStart="@dimen/content_padding_small"
-						android:fontFamily="@font/nunito_extrabold"
-						app:fontFamily="@font/nunito_extrabold"
-						android:maxLines="1"
-						android:text="@string/where_to_hint"
-						android:textSize="@dimen/where_to_text_size" />
-
-				</LinearLayout>
+					android:fontFamily="@font/nunito_semibold"
+					android:maxLines="1"
+					android:text="@string/where_to_hint"
+					android:textSize="@dimen/where_to_text_size"
+					app:fontFamily="@font/nunito_semibold" />
 
 			</LinearLayout>
 
+		</LinearLayout>
+
+		<HorizontalScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/content_padding_small"
+			android:scrollbars="none">
+
 			<LinearLayout
-				android:layout_width="match_parent"
+				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="@dimen/content_padding_small"
 				android:orientation="horizontal">
 
 				<include
@@ -98,8 +107,23 @@
 
 			</LinearLayout>
 
-		</LinearLayout>
+		</HorizontalScrollView>
 
-	</com.google.android.material.card.MaterialCardView>
+		<TextView
+			android:id="@+id/where_to_recent_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/content_padding"
+			android:text="@string/where_to_recent"
+			android:textSize="@dimen/default_desc_text_size"
+			android:visibility="gone" />
+
+		<LinearLayout
+			android:id="@+id/where_to_recent_list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" />
+
+	</LinearLayout>
 
 </net.osmand.plus.views.controls.WhereToCard>

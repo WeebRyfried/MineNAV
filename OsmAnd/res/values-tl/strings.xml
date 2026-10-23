@@ -5,7 +5,7 @@
     <string name="quick_action_directions_from">Punto ng simula</string>
     <string name="obd_connecting_to_device">Kumukonekta sa %s</string>
     <string name="shared_string_from">mula sa</string>
-    <string name="cloud_version_confirm_delete">Burahin ang \"%1$s\" mula sa OsmAnd Cloud?</string>
+    <string name="cloud_version_confirm_delete">Burahin ang \"%1$s\" mula sa Cloud?</string>
     <string name="arrived_at_destination">Nakarating ka na.</string>
     <string name="auto_25_chars_route_tsll">Bahagyang lumiko pakaliwa</string>
     <string name="switch_start_finish">Baliktarin ang punto ng simula &amp; patutunguhan</string>

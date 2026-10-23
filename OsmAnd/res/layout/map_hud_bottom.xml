@@ -73,6 +73,8 @@
 
 		<include layout="@layout/map_where_to_card" />
 
+		<include layout="@layout/map_route_preview_card" />
+
 		<include
 			layout="@layout/recording_note_fragment"
 			tools:visibility="gone" />

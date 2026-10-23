@@ -2,7 +2,7 @@
 <resources>
     <!-- Part of build.gradle -->
 
-    <string name="app_store_name">OsmAnd Maps</string>
+    <string name="app_store_name">MineNAV</string>
     
     <!-- Not translatable -->
     <string name="ais_protocol_tcp">TCP</string>
@@ -17,7 +17,7 @@
     <string name="degree_celsius">°C</string>
     <string name="amazon_market">Amazon</string>
     <string name="huawei_market">Huawei</string>
-    <string name="osmand_web_market">OsmAnd Web (FastSpring)</string>
+    <string name="osmand_web_market">Web (FastSpring)</string>
     <string name="apple_app_store">Apple App Store</string>
     <string name="google_play">Google Play</string>
     <string name="google_play_services">Google Play Services</string>
@@ -27,11 +27,11 @@
     <string name="full_version_price">€69,99</string>
     <string name="srtm_plugin_price">€2,99</string>
     <string name="sea_depth_maps_price">€1,39</string>
-    <string name="osm_live">OsmAnd Live</string>
-    <string name="osmand_start">OsmAnd Start</string>
-    <string name="osmand_pro">OsmAnd Pro</string>
+    <string name="osm_live">Live updates</string>
+    <string name="osmand_start">Start</string>
+    <string name="osmand_pro">Pro</string>
     <string name="maps_plus">Maps+</string>
-    <string name="osmand_plus">OsmAnd+</string>
+    <string name="osmand_plus">MineNAV</string>
     <string name="promo">Promo</string>
     <string name="android_auto">Android Auto</string>
     <string name="openstreetmap_copyright"><a href="https://www.openstreetmap.org/copyright">&#169; OpenStreetMap</a></string>
@@ -60,7 +60,7 @@
     <string name="default_changeset_delete">Delete</string>
     <string name="default_changeset_reopen">Reopen</string>
     <string name="items_modified">items modified</string>
-    <string name="osmand_unlimited">OsmAnd Unlimited</string>
+    <string name="osmand_unlimited">Unlimited</string>
     <string name="markers">Markers</string>
     <string name="cpp">C++</string>
     <string name="routing_type_hh_java">HH x Java</string>

@@ -48,6 +48,7 @@ import net.osmand.plus.card.color.palette.solid.SolidPaletteController;
 import net.osmand.plus.palette.contract.IExternalPaletteListener;
 import net.osmand.plus.card.icon.OnIconsPaletteListener;
 import net.osmand.plus.mapcontextmenu.editors.controller.EditorColorController;
+import net.osmand.plus.minenav.MineNavStyle;
 import net.osmand.plus.mapcontextmenu.editors.icon.EditorIconController;
 import net.osmand.plus.myplaces.MyPlacesActivity;
 import net.osmand.plus.utils.InsetsUtils;
@@ -178,6 +179,7 @@ public abstract class EditorFragment extends BaseFullScreenFragment
 		createShapeSelector();
 		createMediaSelector();
 		updateContent();
+		MineNavStyle.styleEditor(view, nightMode);
 
 		return view;
 	}

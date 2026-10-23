@@ -129,7 +129,7 @@
     <string name="general_settings">Amatu</string>
     <string name="city_type_village">Taddart</string>
     <string name="city_type_town">Tiɣremt</string>
-    <string name="button_upgrade_osmandplus">Leqqem OsmAnd+</string>
+    <string name="button_upgrade_osmandplus">Leqqem MineNAV</string>
     <string name="shared_string_others">Wiyyaḍ</string>
     <string name="shared_string_name">Isem</string>
     <string name="shared_string_no_thanks">Ala, tanmirt</string>
@@ -158,7 +158,7 @@
     <string name="poi_action_change">senfel</string>
     <string name="poi_action_delete">kkes</string>
     <string name="poi_dialog_opening_hours">Ldi</string>
-    <string name="app_name_osmand">OsmAnd</string>
+    <string name="app_name_osmand">MineNAV</string>
     <string name="building_number">Uṭṭun n Uzadaɣ</string>
     <string name="roads">Iberdan</string>
     <string name="buy">Aɣ</string>
@@ -725,7 +725,7 @@
     <string name="developer_plugin">Azegrir n tneflit</string>
     <string name="replace_point_descr">Semselsi agaz s wagi</string>
     <string name="app_mode_ski_snowmobile">Amuṭu n udfel</string>
-    <string name="custom_osmand_plugin">Azegrir OsmAnd udmawan</string>
+    <string name="custom_osmand_plugin">Azegrir MineNAV udmawan</string>
     <string name="changes_applied_to_profile">Ibeddilen ttwasmersen i umaɣnu %1$s.</string>
     <string name="settings_item_read_error">Ur izmir ara ad d-iɣer %1$s.</string>
     <string name="settings_item_write_error">Ur izmir ara ad yaru %1$s.</string>
@@ -1073,7 +1073,7 @@
     <string name="nm">nmi</string>
     <string name="foot">ft</string>
     <string name="osm_editing_plugin_name">Taẓrigt OpenStreetMap</string>
-    <string name="osmand_accessibility_description">Rmed, deg OsmAnd, iɣewwaren n tuffart n yibenk-ik (ṣeggem arured n taɣect-ik n uɛqal n taɣect, seqdec tignit trackball i usemɣer neɣ i urmad n yilɣa s taɣect n wadig-ik).</string>
+    <string name="osmand_accessibility_description">Rmed, deg MineNAV, iɣewwaren n tuffart n yibenk-ik (ṣeggem arured n taɣect-ik n uɛqal n taɣect, seqdec tignit trackball i usemɣer neɣ i urmad n yilɣa s taɣect n wadig-ik).</string>
     <string name="favorites_item">Inurifen</string>
     <string name="routing_attr_piste_type_skitour_name">Uccuḍ deg udfel</string>
     <string name="map_markers_item">Ticṛaḍ</string>
@@ -1117,7 +1117,7 @@
     <string name="route_between_points_add_track_desc">Fren afaylu n uḍfar iɣer ara yernu uḥric amaynut.</string>
     <string name="plan_route_exit_dialog_descr">Tebɣiḍ s tidet ad tmedleḍ abrid n uɣawas war asekles\? Ad tesruḥeḍ akk ibeddilen.</string>
     <string name="shared_string_is_saved">Ittwasekles</string>
-    <string name="profile_type_osmand_string">Amaɣnu OsmAnd</string>
+    <string name="profile_type_osmand_string">Amaɣnu MineNAV</string>
     <string name="profile_type_user_string">Amaɣnu n useqdac</string>
     <string name="shared_string_logout">Gzem tuqqna</string>
     <string name="duration_ago">%1$s aya</string>
@@ -1128,7 +1128,7 @@
     <string name="map_settings_weather_wind">Aḍu</string>
     <string name="map_settings_weather_cloud">Asigna</string>
     <string name="routing_settings_2">Iɣewwaren n tunigin</string>
-    <string name="osmand_settings">Iɣewwaren n OsmAnd</string>
+    <string name="osmand_settings">Iɣewwaren n MineNAV</string>
     <string name="plugins_settings">Iɣewwaren n usiɣzaf</string>
     <string name="navigate_point_format_D">DDD.DDDDD</string>
     <string name="ant_plus_open_settings">Ldi iɣewwaren</string>
@@ -1198,8 +1198,8 @@
     <string name="enable_3d_maps">Sermed tikarḍiwin 3D</string>
     <string name="help_article_troubleshooting_maps_data_name">Tikarḍiwin akked yisefka</string>
     <string name="missing_maps_ignore">Seqdec tikarḍiwin d-yettwasadren</string>
-    <string name="osmand_play_title_30_chars">Tikarḍiwin akked tunigin OsmAnd</string>
-    <string name="osmand_plus_play_title_30_chars">Tikarḍiwin akked tunigin OsmAnd+</string>
+    <string name="osmand_play_title_30_chars">Tikarḍiwin akked tunigin MineNAV</string>
+    <string name="osmand_plus_play_title_30_chars">Tikarḍiwin akked tunigin MineNAV</string>
     <string name="update_all_maps_now">Mucceḍ akk tikarḍiwin tura?</string>
     <string name="update_all_maps_q">Mucced %1$d n tkarḍiwin?</string>
     <string name="read_wikipedia_offline">Ɣeṛ Wikipidya s war tuqqna</string>
@@ -1259,7 +1259,7 @@
     <string name="plan_route">Sɣiwes amɣaras</string>
     <string name="plan_a_route">Sɣiwes amɣaras</string>
     <string name="help_article_plan_route_name">Sɣiwes amɣaras</string>
-    <string name="about_osmand">Ɣef OsmAnd</string>
+    <string name="about_osmand">Ɣef MineNAV</string>
     <string name="shared_string_identifiers">Isulayen</string>
     <string name="open_from_short">Seg</string>
     <string name="open_till_short">Alamma d</string>
