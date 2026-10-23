@@ -58,6 +58,7 @@ import net.osmand.plus.download.DownloadIndexesThread.DownloadEvents;
 import net.osmand.plus.exploreplaces.ExplorePlacesFragment;
 import net.osmand.plus.helpers.AndroidUiHelper;
 import net.osmand.plus.mapcontextmenu.MapContextMenu;
+import net.osmand.plus.minenav.MineNavActions;
 import net.osmand.plus.minenav.MineNavSearchHome;
 import net.osmand.plus.myplaces.favorites.FavoriteGroup;
 import net.osmand.plus.plugins.PluginsHelper;
@@ -741,6 +742,7 @@ public class QuickSearchDialogFragment extends BaseFullScreenDialogFragment impl
 				updateTabBarVisibility(true);
 			}
 		} else if (!processBackAction()) {
+			MineNavActions.cancelNewPlaceRequest();
 			Dialog dialog = getDialog();
 			if (dialog != null) {
 				dialog.cancel();

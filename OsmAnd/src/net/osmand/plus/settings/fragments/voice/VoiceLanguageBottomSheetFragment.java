@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import net.osmand.plus.R;
+import net.osmand.plus.minenav.MineNavVoices;
 import net.osmand.plus.base.bottomsheetmenu.BaseBottomSheetItem;
 import net.osmand.plus.download.DownloadActivityType;
 import net.osmand.plus.download.DownloadIndexesThread;
@@ -237,6 +238,10 @@ public class VoiceLanguageBottomSheetFragment extends BasePreferenceBottomSheet 
 	}
 
 	private void addVoiceItem(@NonNull List<IndexItem> items, @NonNull VoiceType voiceType, @NonNull IndexItem item) {
+		// MineNAV: English and Japanese voices only
+		if (!MineNavVoices.isAllowed(item.getFileName())) {
+			return;
+		}
 		if (voiceType == VoiceType.TTS && DownloadActivityType.isDefaultVoiceTTS(app, item)) {
 			items.add(0, item);
 		} else {

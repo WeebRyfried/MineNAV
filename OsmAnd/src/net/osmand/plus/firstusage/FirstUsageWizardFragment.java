@@ -50,6 +50,7 @@ import net.osmand.plus.download.DownloadIndexesThread.DownloadEvents;
 import net.osmand.plus.download.DownloadValidationManager;
 import net.osmand.plus.download.IndexItem;
 import net.osmand.plus.helpers.AndroidUiHelper;
+import net.osmand.plus.minenav.MineNavFirstRun;
 import net.osmand.plus.resources.ResourceManager;
 import net.osmand.plus.settings.datastorage.DataStorageFragment.StorageSelectionListener;
 import net.osmand.plus.settings.datastorage.DataStorageHelper;
@@ -155,11 +156,19 @@ public class FirstUsageWizardFragment extends BaseFullScreenFragment implements 
 		setupSkipButton();
 		updateWizardView();
 		updateTermsOfServiceView();
+		MineNavFirstRun.style(view, deviceNightMode);
 
 		return view;
 	}
 
 	private void updateWizardView() {
+		updateWizardViewForType();
+		if (view != null) {
+			MineNavFirstRun.style(view, deviceNightMode);
+		}
+	}
+
+	private void updateWizardViewForType() {
 		switch (wizardType) {
 			case SEARCH_LOCATION:
 				AndroidUiHelper.updateVisibility(wizardProgressBar, false);

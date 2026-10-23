@@ -12,6 +12,7 @@ import net.osmand.aidlapi.OsmAndCustomizationConstants.DRAWER_SETTINGS_ID
 import net.osmand.plus.R
 import net.osmand.plus.base.AppModeDependentComponent
 import net.osmand.plus.base.BaseMaterialFragment
+import net.osmand.plus.minenav.MineNavMaterialPage
 import net.osmand.plus.settings.backend.ApplicationMode
 import net.osmand.plus.utils.AndroidUtils
 import net.osmand.plus.utils.InsetTarget
@@ -38,7 +39,7 @@ class DefaultSpeedFragment : BaseMaterialFragment() {
 	private var routingChanged = false
 
 	override fun getStatusBarColorId(): Int =
-		if (nightMode) R.color.surface_dark else R.color.surface_light
+		if (nightMode) R.color.mn_row_bg_dark else R.color.mn_row_bg_light
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
@@ -52,6 +53,7 @@ class DefaultSpeedFragment : BaseMaterialFragment() {
 	): View {
 		val view = inflater.inflate(R.layout.fragment_default_speed, container, false)
 		setupToolbar(view)
+		MineNavMaterialPage.styleToolbar(view, requireActivity(), nightMode)
 
 		defaultSpeedRow = SliderListItem(view.findViewById(R.id.default_speed_row))
 		defaultSpeedRow.setTitle(R.string.default_speed_setting_title)
@@ -117,6 +119,7 @@ class DefaultSpeedFragment : BaseMaterialFragment() {
 			updateArrivalTime(view)
 		}
 		updateArrivalTime(view)
+		MineNavMaterialPage.styleContent(view.findViewById(R.id.scroll_view), nightMode)
 	}
 
 	/** The default speed can't leave the speed range, so the range is the slider scale. */
@@ -171,6 +174,7 @@ class DefaultSpeedFragment : BaseMaterialFragment() {
 		adaptSpeedRow.setChecked(enabled)
 		intervalRow.view.visibility = if (enabled) View.VISIBLE else View.GONE
 		SegmentedList.apply(view.findViewById(R.id.eta_rows))
+		MineNavMaterialPage.styleContent(view.findViewById(R.id.eta_rows), nightMode)
 
 		val interval = formatInterval(settings().ETA_AVERAGE_SPEED_INTERVAL.getModeValue(appMode))
 		val footer: GroupFooterView = view.findViewById(R.id.eta_footer)

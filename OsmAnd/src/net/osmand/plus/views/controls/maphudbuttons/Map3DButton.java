@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import net.osmand.plus.R;
-import net.osmand.plus.settings.enums.Map3DModeVisibility;
 import net.osmand.plus.views.AnimateDraggingMapThread;
 import net.osmand.plus.views.OsmandMapTileView;
 import net.osmand.plus.views.mapwidgets.configure.buttons.Map3DButtonState;
@@ -94,12 +93,8 @@ public class Map3DButton extends MapButton {
 
 	@Override
 	protected boolean shouldShow() {
-		boolean shouldShowFabButton = visibilityHelper.shouldShowMap3DButton();
-		Map3DModeVisibility visibility = buttonState.getVisibility();
-
-		return app.useOpenGlRenderer() && shouldShowFabButton
-				&& (visibility == Map3DModeVisibility.VISIBLE
-				|| (visibility == Map3DModeVisibility.VISIBLE_IN_3D_MODE && !buttonState.isFlatMapMode()));
+		// MineNAV: the map tilts by itself while it follows you, like Waze, so there is no 2D/3D button
+		return false;
 	}
 
 	@Override

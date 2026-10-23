@@ -98,17 +98,51 @@
 
 	</LinearLayout>
 
-	<!-- MineNAV sheets become a left-side panel in landscape, like Waze -->
-	<FrameLayout
-		android:layout_width="@dimen/mn_sheet_land_width"
+	<!-- MineNAV sheets become a left-side panel in landscape, like Waze, with the street name beside them -->
+	<LinearLayout
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_gravity="bottom|start">
+		android:layout_gravity="bottom"
+		android:orientation="horizontal">
 
-		<include layout="@layout/map_where_to_card" />
+		<FrameLayout
+			android:layout_width="@dimen/mn_sheet_land_width"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom">
 
-		<include layout="@layout/map_route_preview_card" />
+			<include layout="@layout/map_where_to_card" />
 
-	</FrameLayout>
+			<include layout="@layout/map_route_preview_card" />
+
+		</FrameLayout>
+
+		<FrameLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:layout_weight="1">
+
+				<net.osmand.plus.views.controls.MineNavStreetPill
+					android:id="@+id/mn_street_pill"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom|center_horizontal"
+					android:layout_marginBottom="@dimen/content_padding_small"
+					android:elevation="4dp"
+					android:fontFamily="@font/nunito_bold"
+					android:gravity="center"
+					android:maxWidth="@dimen/mn_street_pill_max_width"
+					android:maxLines="2"
+					android:ellipsize="end"
+					android:paddingHorizontal="@dimen/content_padding"
+					android:paddingVertical="@dimen/content_padding_small"
+					android:textSize="17sp"
+					android:visibility="gone"
+					app:fontFamily="@font/nunito_bold" />
+
+		</FrameLayout>
+
+	</LinearLayout>
 
 	<include
 		layout="@layout/add_gpx_point_bottom_sheet"

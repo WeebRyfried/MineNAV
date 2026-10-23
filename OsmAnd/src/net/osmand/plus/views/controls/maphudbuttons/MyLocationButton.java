@@ -110,7 +110,9 @@ public class MyLocationButton extends MapButton {
 
 	@Override
 	protected boolean shouldShow() {
-		return !routeDialogOpened && visibilityHelper.shouldShowBackToLocationButton();
+		// MineNAV: like the Waze recenter button, only there once the map no longer follows you
+		return !routeDialogOpened && visibilityHelper.shouldShowBackToLocationButton()
+				&& !(app.getMapViewTrackingUtilities().isMapLinkedToLocation() && app.getLocationProvider().getLastKnownLocation() != null);
 	}
 
 	protected void updateBackground() {

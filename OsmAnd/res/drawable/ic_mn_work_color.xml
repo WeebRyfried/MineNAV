@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MineNAV: colored briefcase for the Work shortcut, like the Waze sticker icons -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:width="28dp"
+	android:height="28dp"
+	android:viewportWidth="28"
+	android:viewportHeight="28">
+
+	<path
+		android:fillColor="#00000000"
+		android:pathData="M10.5,8.5L10.5,6.6C10.5,5.7 11.2,5 12.1,5L15.9,5C16.8,5 17.5,5.7 17.5,6.6L17.5,8.5"
+		android:strokeWidth="1.8"
+		android:strokeColor="#3A2218"
+		android:strokeLineCap="round" />
+
+	<path
+		android:fillColor="#E8813A"
+		android:pathData="M6.2,8.5L21.8,8.5C23.1,8.5 24,9.4 24,10.7L24,21.3C24,22.6 23.1,23.5 21.8,23.5L6.2,23.5C4.9,23.5 4,22.6 4,21.3L4,10.7C4,9.4 4.9,8.5 6.2,8.5Z"
+		android:strokeWidth="1.6"
+		android:strokeColor="#3A2218" />
+
+	<path
+		android:fillColor="#00000000"
+		android:pathData="M4.4,14.5L23.6,14.5"
+		android:strokeWidth="1.4"
+		android:strokeColor="#3A2218" />
+
+	<path
+		android:fillColor="#FFD07A"
+		android:pathData="M12.2,12.6L15.8,12.6L15.8,16.6L12.2,16.6Z"
+		android:strokeWidth="1.4"
+		android:strokeColor="#3A2218"
+		android:strokeLineJoin="round" />
+
+</vector>

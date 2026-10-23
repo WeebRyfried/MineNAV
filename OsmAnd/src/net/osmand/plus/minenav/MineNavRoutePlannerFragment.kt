@@ -113,9 +113,10 @@ class MineNavRoutePlannerFragment : MineNavPageFragment() {
 		val leftTime = routing.leftTime
 		val distance = OsmAndFormatter.getFormattedDistance(routing.leftDistance.toFloat(), app)
 		val arrival = DateFormat.getTimeFormat(app).format(Date(System.currentTimeMillis() + leftTime * 1000L))
+		val toll = MineNavToll.describe(requireContext(), routing.route)
 		return Row.Info(R.drawable.ic_action_time, R.color.mn_circle_teal,
 			OsmAndFormatter.getFormattedDuration(leftTime.toLong(), app),
-			getString(R.string.route_preview_details, distance, arrival))
+			getString(R.string.route_preview_details, distance, arrival) + (if (toll != null) " · $toll" else ""))
 	}
 
 	override fun createBottomButtons(): List<BottomButton> {

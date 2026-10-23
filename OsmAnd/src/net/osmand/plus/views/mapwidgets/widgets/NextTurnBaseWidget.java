@@ -87,7 +87,8 @@ public class NextTurnBaseWidget extends TextInfoWidget implements IComplexWidget
 			boolean horizontalMini) {
 		super(mapActivity, widgetType, customId, panel);
 		this.horizontalMini = horizontalMini;
-		widgetState = new ResizableWidgetState(app, customId, widgetType, WidgetSize.MEDIUM);
+		// MineNAV: the turn banner is shown at its largest by default
+		widgetState = new ResizableWidgetState(app, customId, widgetType, WidgetSize.LARGE);
 
 		String id = customId != null ? customId : widgetType.id;
 		ScreenLayoutMode layoutMode = ScreenLayoutMode.getDefault(mapActivity);

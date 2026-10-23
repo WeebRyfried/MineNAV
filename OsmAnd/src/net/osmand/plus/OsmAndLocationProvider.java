@@ -165,6 +165,8 @@ public class OsmAndLocationProvider implements SensorEventListener {
 
 	private final NavigationInfo navigationInfo;
 	private final CurrentPositionHelper currentPositionHelper;
+	private static final double SNAP_TO_ROAD_DISTANCE_M = 25;
+	private static final float SNAP_BEARING_MIN_SPEED = 1.5f;
 	private final OsmAndLocationSimulation locationSimulation;
 	private LocationServiceHelper locationServiceHelper;
 
@@ -712,7 +714,57 @@ public class OsmAndLocationProvider implements SensorEventListener {
 		} else if (getLocationSimulation().isRouteAnimating()) {
 			routingHelper.setCurrentLocation(location, false);
 		}
+		if (!routingHelper.isFollowingMode() && location != null && app.getSettings().SNAP_TO_ROAD.get()) {
+			updatedLocation = snapToCurrentRoad(location);
+		}
 		return updatedLocation;
+	}
+
+	/**
+	 * MineNAV: outside navigation the position sits on the road you are on, like the Waze cursor,
+	 * as long as that road is close enough to be the one you drive on.
+	 */
+	@NonNull
+	private net.osmand.Location snapToCurrentRoad(@NonNull net.osmand.Location location) {
+		RouteDataObject road = currentPositionHelper.getLastKnownRouteSegment(location);
+		if (road == null || road.getPointsLength() < 2) {
+			return location;
+		}
+		double lat = location.getLatitude();
+		double lon = location.getLongitude();
+		LatLon nearest = null;
+		double nearestDistance = Double.MAX_VALUE;
+		double segmentBearing = 0;
+		double prevLat = MapUtils.get31LatitudeY(road.getPoint31YTile(0));
+		double prevLon = MapUtils.get31LongitudeX(road.getPoint31XTile(0));
+		for (int i = 1; i < road.getPointsLength(); i++) {
+			double nextLat = MapUtils.get31LatitudeY(road.getPoint31YTile(i));
+			double nextLon = MapUtils.get31LongitudeX(road.getPoint31XTile(i));
+			LatLon projection = MapUtils.getProjection(lat, lon, prevLat, prevLon, nextLat, nextLon);
+			double distance = MapUtils.getDistance(projection, lat, lon);
+			if (distance < nearestDistance) {
+				nearestDistance = distance;
+				nearest = projection;
+				net.osmand.Location from = new net.osmand.Location("", prevLat, prevLon);
+				segmentBearing = from.bearingTo(new net.osmand.Location("", nextLat, nextLon));
+			}
+			prevLat = nextLat;
+			prevLon = nextLon;
+		}
+		if (nearest == null || nearestDistance > SNAP_TO_ROAD_DISTANCE_M) {
+			return location;
+		}
+		net.osmand.Location snapped = new net.osmand.Location(location);
+		snapped.setLatitude(nearest.getLatitude());
+		snapped.setLongitude(nearest.getLongitude());
+		if (location.hasBearing() && location.hasSpeed() && location.getSpeed() > SNAP_BEARING_MIN_SPEED) {
+			// Head along the road, in the direction you are going
+			double opposite = segmentBearing + 180;
+			boolean reversed = Math.abs(MapUtils.degreesDiff(location.getBearing(), segmentBearing))
+					> Math.abs(MapUtils.degreesDiff(location.getBearing(), opposite));
+			snapped.setBearing(MapUtils.unifyRotationTo360((float) (reversed ? opposite : segmentBearing)));
+		}
+		return snapped;
 	}
 
 	public void setLocationFromService(net.osmand.Location location) {

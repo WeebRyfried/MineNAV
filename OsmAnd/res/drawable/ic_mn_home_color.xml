@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MineNAV: colored house for the Home shortcut, like the Waze sticker icons -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:width="28dp"
+	android:height="28dp"
+	android:viewportWidth="28"
+	android:viewportHeight="28">
+
+	<path
+		android:fillColor="#FFE2CC"
+		android:pathData="M6,12.5L14,6L22,12.5L22,23.5L6,23.5Z"
+		android:strokeWidth="1.6"
+		android:strokeColor="#3A2218"
+		android:strokeLineJoin="round" />
+
+	<path
+		android:fillColor="#F05A35"
+		android:pathData="M3.5,13.2L14,4.4L24.5,13.2L22.6,15.2L14,8L5.4,15.2Z"
+		android:strokeWidth="1.6"
+		android:strokeColor="#3A2218"
+		android:strokeLineJoin="round" />
+
+	<path
+		android:fillColor="#F28C38"
+		android:pathData="M11.4,23.5L11.4,17.4C11.4,16.7 12,16.1 12.7,16.1L15.3,16.1C16,16.1 16.6,16.7 16.6,17.4L16.6,23.5Z"
+		android:strokeWidth="1.4"
+		android:strokeColor="#3A2218"
+		android:strokeLineJoin="round" />
+
+</vector>

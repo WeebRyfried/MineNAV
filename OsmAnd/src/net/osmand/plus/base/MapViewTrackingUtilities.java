@@ -58,7 +58,8 @@ public class MapViewTrackingUtilities implements OsmAndLocationListener, IMapLoc
 		OsmAndCompassListener, MapMarkerChangedListener {
 
 	public static final float COMPASS_HEADING_THRESHOLD = 1.0f;
-	private static final int MAP_LINKED_LOCATION_TIME_MS = 60 * 60 * 1000;
+	// MineNAV: camera tilt while the map follows you; 90 is straight down
+	private static final float FOLLOW_ELEVATION_ANGLE = 45f;
 	private static final int COMPASS_REQUEST_TIME_INTERVAL_MS = 5000;
 	private static final int AUTO_FOLLOW_MSG_ID = OsmAndConstants.UI_HANDLER_LOCATION_SERVICE + 4;
 	private static final long MOVE_ANIMATION_TIME = 500;
@@ -155,6 +156,10 @@ public class MapViewTrackingUtilities implements OsmAndLocationListener, IMapLoc
 			}
 			app.getLocationProvider().updateScreenOrientation(orientation);
 			mapView.addMapLocationListener(this);
+			if (isMapLinkedToLocation) {
+				// MineNAV: the app opens following you in 3D
+				mapView.setElevationAngle(mapView.normalizeElevationAngle(FOLLOW_ELEVATION_ANGLE));
+			}
 		}
 	}
 
@@ -590,16 +595,33 @@ public class MapViewTrackingUtilities implements OsmAndLocationListener, IMapLoc
 		return isMapLinkedToLocation;
 	}
 
-	private void initMapLinkedToLocation() {
-		if (!settings.MAP_LINKED_TO_LOCATION.get()) {
-			long lastAppClosedTime = settings.LAST_MAP_ACTIVITY_PAUSED_TIME.get();
-			isMapLinkedToLocation = System.currentTimeMillis() - lastAppClosedTime > MAP_LINKED_LOCATION_TIME_MS;
+	/**
+	 * MineNAV: like Waze, the map is a tilted 3D view while it follows you and turns flat as soon
+	 * as you move it yourself.
+	 */
+	private void updateFollowTilt(boolean following) {
+		OsmandMapTileView view = mapView;
+		if (view == null || !app.useOpenGlRenderer()) {
+			return;
 		}
-		settings.MAP_LINKED_TO_LOCATION.set(isMapLinkedToLocation);
+		float angle = view.normalizeElevationAngle(following ? FOLLOW_ELEVATION_ANGLE : DEFAULT_ELEVATION_ANGLE);
+		if (Math.abs(view.getElevationAngle() - angle) >= 1) {
+			view.getAnimatedDraggingThread().startTilting(angle, 0.0f);
+		}
+	}
+
+	private void initMapLinkedToLocation() {
+		// MineNAV: the app always opens following your position
+		isMapLinkedToLocation = true;
+		settings.MAP_LINKED_TO_LOCATION.set(true);
 	}
 
 	public void setMapLinkedToLocation(boolean isMapLinkedToLocation) {
+		boolean linkChanged = this.isMapLinkedToLocation != isMapLinkedToLocation;
 		this.isMapLinkedToLocation = isMapLinkedToLocation;
+		if (linkChanged) {
+			updateFollowTilt(isMapLinkedToLocation);
+		}
 		if (!isMapLinkedToLocation) {
 			movingToMyLocation = false;
 		}

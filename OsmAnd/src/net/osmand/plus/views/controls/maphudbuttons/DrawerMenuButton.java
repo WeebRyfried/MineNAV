@@ -1,15 +1,12 @@
 package net.osmand.plus.views.controls.maphudbuttons;
 
-import static net.osmand.plus.dashboard.DashboardType.DASHBOARD;
-
 import android.content.Context;
 import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import net.osmand.plus.activities.MapActivity;
-import net.osmand.plus.utils.AndroidUtils;
+import net.osmand.plus.minenav.MineNavActions;
 import net.osmand.plus.views.mapwidgets.configure.buttons.DrawerMenuButtonState;
 import net.osmand.plus.views.mapwidgets.configure.buttons.MapButtonState;
 
@@ -29,14 +26,8 @@ public class DrawerMenuButton extends MapButton {
 		super(context, attrs, defStyleAttr);
 		buttonState = app.getMapButtonsHelper().getDrawerMenuButtonState();
 
-		setOnClickListener(v -> {
-			MapActivity.clearPrevActivityIntent();
-			if (settings.SHOW_DASHBOARD_ON_MAP_SCREEN.get()) {
-				mapActivity.getDashboard().setDashboardVisibility(true, DASHBOARD, AndroidUtils.getCenterViewCoordinates(v));
-			} else {
-				mapActivity.openDrawer();
-			}
-		});
+		// MineNAV: the Waze menu button opens the MineNAV menu
+		setOnClickListener(v -> MineNavActions.openMenu(mapActivity));
 	}
 
 	@Nullable
@@ -47,6 +38,6 @@ public class DrawerMenuButton extends MapButton {
 
 	@Override
 	protected boolean shouldShow() {
-		return showBottomButtons && mapActivity.isDrawerAvailable() && !isMineNavSheetVisible();
+		return isMineNavHomeVisible();
 	}
 }

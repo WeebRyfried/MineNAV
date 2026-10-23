@@ -11,6 +11,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
+import android.graphics.Rect;
 import android.view.View;
 
 import androidx.annotation.LayoutRes;
@@ -32,7 +33,10 @@ import net.osmand.plus.settings.enums.ThemeUsageContext;
 import net.osmand.plus.utils.AndroidUtils;
 import net.osmand.plus.utils.UiUtilities;
 import net.osmand.plus.views.OsmandMapTileView;
+import net.osmand.plus.helpers.MapDisplayPositionManager;
+import net.osmand.plus.helpers.MapDisplayPositionManager.ICoveredScreenRectProvider;
 import net.osmand.plus.views.controls.MapHudLayout;
+import net.osmand.plus.views.controls.MineNavStreetPill;
 import net.osmand.plus.views.controls.RoutePreviewCard;
 import net.osmand.plus.views.controls.WhereToCard;
 import net.osmand.plus.views.controls.maphudbuttons.MapButton;
@@ -45,7 +49,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class MapControlsLayer extends OsmandMapLayer {
+public class MapControlsLayer extends OsmandMapLayer implements ICoveredScreenRectProvider {
 
 	private static final int TIMEOUT_TO_SHOW_BUTTONS = 7000;
 
@@ -58,6 +62,8 @@ public class MapControlsLayer extends OsmandMapLayer {
 	private MapHudLayout mapHudLayout;
 	private WhereToCard whereToCard;
 	private RoutePreviewCard routePreviewCard;
+	private MineNavStreetPill streetPill;
+	private String coveredScreenKey = "";
 	private List<MapButton> mapButtons = new ArrayList<>();
 	private List<MapButton> customMapButtons = new ArrayList<>();
 
@@ -89,13 +95,19 @@ public class MapControlsLayer extends OsmandMapLayer {
 	@Override
 	public void setMapActivity(@Nullable MapActivity mapActivity) {
 		super.setMapActivity(mapActivity);
+		MapDisplayPositionManager displayPositionManager = app.getMapViewTrackingUtilities().getMapDisplayPositionManager();
 		if (mapActivity != null) {
 			mapRouteInfoMenu = mapActivity.getMapRouteInfoMenu();
 			visibilityHelper = mapActivity.getWidgetsVisibilityHelper();
 			initMapButtons();
 			mapTransparencyHelper.initTransparencyBar();
+			// MineNAV: the map keeps your position in the space the sheets leave free, like Waze
+			displayPositionManager.registerCoveredScreenRectProvider(this);
 			updateControls(null);
 		} else {
+			displayPositionManager.unregisterCoveredScreenRectProvider(this);
+			coveredScreenKey = "";
+			streetPill = null;
 			mapButtons = new ArrayList<>();
 			customMapButtons = new ArrayList<>();
 			mapTransparencyHelper.destroyTransparencyBar();
@@ -142,6 +154,14 @@ public class MapControlsLayer extends OsmandMapLayer {
 		if (routePreviewCard != null) {
 			routePreviewCard.setMapActivity(activity);
 		}
+		streetPill = mapHudLayout.findViewById(R.id.mn_street_pill);
+		MapDisplayPositionManager.BoundsChangeListener boundsListener =
+				new MapDisplayPositionManager.BoundsChangeListener(app.getMapViewTrackingUtilities().getMapDisplayPositionManager(), true);
+		for (View view : new View[] {whereToCard, routePreviewCard, streetPill}) {
+			if (view != null) {
+				view.addOnLayoutChangeListener(boundsListener);
+			}
+		}
 
 		for (MapButton button : mapButtons) {
 			mapHudLayout.removeMapButton(button);
@@ -150,15 +170,17 @@ public class MapControlsLayer extends OsmandMapLayer {
 		boolean nightMode = app.getDaynightHelper().isNightMode(ThemeUsageContext.MAP);
 		LayoutInflater inflater = UiUtilities.getInflater(activity, nightMode);
 
+		// MineNAV: the menu goes first so the compass stacks under it, like in Waze
+		addMapButton(createMapButton(inflater, R.layout.drawer_menu_button));
+		addMapButton(createMapButton(inflater, R.layout.map_compass_button));
+		addMapButton(createMapButton(inflater, R.layout.map_sound_button));
 		addMapButton(createMapButton(inflater, R.layout.configure_map_button));
 		addMapButton(createMapButton(inflater, R.layout.map_search_button));
-		addMapButton(createMapButton(inflater, R.layout.map_compass_button));
 
 		addMapButton(createMapButton(inflater, R.layout.map_zoom_out_button));
 		addMapButton(createMapButton(inflater, R.layout.map_zoom_in_button));
 		addMapButton(createMapButton(inflater, R.layout.my_location_button));
 
-		addMapButton(createMapButton(inflater, R.layout.drawer_menu_button));
 		addMapButton(createMapButton(inflater, R.layout.navigation_menu_button));
 
 		MapButton button = createMapButton(inflater, R.layout.map_3d_button);
@@ -299,10 +321,42 @@ public class MapControlsLayer extends OsmandMapLayer {
 		set.start();
 	}
 
+	@NonNull
+	@Override
+	public List<Rect> getCoveredScreenRects() {
+		List<Rect> rects = new ArrayList<>();
+		for (View view : new View[] {whereToCard, routePreviewCard, streetPill}) {
+			if (view != null && view.getVisibility() == VISIBLE && view.getWidth() > 0) {
+				// Where the sheet rests, not where its show animation has it now
+				Rect rect = AndroidUtils.getViewBoundOnScreen(view);
+				rect.offset(0, (int) -view.getTranslationY());
+				rects.add(rect);
+			}
+		}
+		return rects;
+	}
+
+	// Sheets come and go without a layout of their own, so the free map space is checked on every update
+	private void updateCoveredScreen() {
+		StringBuilder key = new StringBuilder();
+		for (View view : new View[] {whereToCard, routePreviewCard, streetPill}) {
+			key.append(view != null && view.getVisibility() == VISIBLE ? view.getHeight() : -1).append(';');
+		}
+		if (!coveredScreenKey.contentEquals(key)) {
+			coveredScreenKey = key.toString();
+			app.getMapViewTrackingUtilities().getMapDisplayPositionManager().updateMapDisplayPosition(true);
+		}
+	}
+
 	// The Where-to sheet or the route preview replaces the menu, directions and search buttons
 	public boolean isMineNavSheetVisible() {
 		return whereToCard != null && whereToCard.getVisibility() == VISIBLE
 				|| routePreviewCard != null && routePreviewCard.getVisibility() == VISIBLE;
+	}
+
+	// The Waze home: browsing the map with the "Where to?" sheet up
+	public boolean isWhereToVisible() {
+		return whereToCard != null && whereToCard.getVisibility() == VISIBLE;
 	}
 
 	public boolean isRoutePreviewVisible() {
@@ -401,10 +455,15 @@ public class MapControlsLayer extends OsmandMapLayer {
 			boolean showWhereTo = showBottomMenuButtons && !isRoutePlanningMode && !isRouteFollowingMode
 					&& !isRouteDialogOpened && mapActivity.isDrawerAvailable();
 			whereToCard.update(showWhereTo, nightMode);
+			if (streetPill != null) {
+				streetPill.update(showWhereTo, nightMode);
+			}
 		}
 		if (routePreviewCard != null) {
 			routePreviewCard.update(showRoutePreview && showBottomMenuButtons && !mapRouteInfoMenu.isVisible(), nightMode);
 		}
+
+		updateCoveredScreen();
 
 		for (MapButton mapButton : getAllMapButtons()) {
 			mapButton.setNightMode(nightMode);

@@ -43,6 +43,7 @@ public class QuickSearchButton extends MapButton {
 
 	@Override
 	protected boolean shouldShow() {
-		return !routeDialogOpened && visibilityHelper.shouldShowTopButtons() && !isMineNavSheetVisible();
+		// MineNAV: search lives in the "Where to?" sheet, not in a map button
+		return false;
 	}
 }

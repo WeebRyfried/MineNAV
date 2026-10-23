@@ -104,6 +104,7 @@ public class MapButtonsHelper {
 	private ConfigureMapButtonState configureMapButtonState;
 	private DrawerMenuButtonState drawerMenuButtonState;
 	private CompassButtonState compassButtonState;
+	private SoundButtonState soundButtonState;
 	private List<QuickActionButtonState> quickActionStates = new ArrayList<>();
 
 	private List<QuickActionType> enabledTypes = new ArrayList<>();
@@ -125,6 +126,7 @@ public class MapButtonsHelper {
 
 	private void initDefaultButtons() {
 		compassButtonState = new CompassButtonState(app);
+		soundButtonState = new SoundButtonState(app);
 		configureMapButtonState = new ConfigureMapButtonState(app);
 		drawerMenuButtonState = new DrawerMenuButtonState(app);
 		map3DButtonState = new Map3DButtonState(app);
@@ -199,6 +201,11 @@ public class MapButtonsHelper {
 	}
 
 	@NonNull
+	public SoundButtonState getSoundButtonState() {
+		return soundButtonState;
+	}
+
+	@NonNull
 	public List<QuickActionButtonState> getQuickActionButtonsStates() {
 		return quickActionStates;
 	}
@@ -206,7 +213,7 @@ public class MapButtonsHelper {
 	@NonNull
 	public List<MapButtonState> getDefaultButtonsStates() {
 		return Arrays.asList(configureMapButtonState, quickSearchButtonState,
-				compassButtonState, drawerMenuButtonState, navigationMenuButtonState,
+				compassButtonState, drawerMenuButtonState, soundButtonState, navigationMenuButtonState,
 				map3DButtonState, myLocationButtonState, zoomInButtonState, zoomOutButtonState
 		);
 	}

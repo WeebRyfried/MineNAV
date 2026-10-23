@@ -59,6 +59,7 @@ import net.osmand.plus.mapcontextmenu.AdditionalActionsBottomSheetDialogFragment
 import net.osmand.plus.mapcontextmenu.MenuController.MenuState;
 import net.osmand.plus.mapcontextmenu.controllers.FavouritePointMenuController;
 import net.osmand.plus.mapcontextmenu.other.MenuObjectUtils;
+import net.osmand.plus.minenav.MineNavActions;
 import net.osmand.plus.minenav.MineNavPlaceCard;
 import net.osmand.plus.routepreparationmenu.ChooseRouteFragment;
 import net.osmand.plus.routepreparationmenu.MapRouteInfoMenu;
@@ -590,6 +591,10 @@ public class MapContextMenuFragment extends BaseFullScreenFragment implements Do
 		fitPolygon();
 		created = true;
 		MineNavPlaceCard.style(view, nightMode);
+		if (MineNavActions.consumeNewPlaceRequest()) {
+			// MineNAV: the place was searched from "New" on the map sheet, so it goes to the save editor
+			view.post(() -> menu.buttonFavoritePressed());
+		}
 		return view;
 	}
 

@@ -9,7 +9,8 @@
 	android:paddingTop="@dimen/content_padding"
 	android:visibility="gone">
 
-	<!-- Waze-like bottom sheet: handle, search pill with the mascot menu, shortcuts and recent places -->
+	<!-- Waze-like bottom sheet: handle, search pill with voice input, then shortcuts and recent
+	     places that fold away when the sheet is pulled down -->
 	<LinearLayout
 		android:id="@+id/where_to_surface"
 		android:layout_width="match_parent"
@@ -27,102 +28,102 @@
 			android:layout_marginTop="@dimen/content_padding_small" />
 
 		<LinearLayout
+			android:id="@+id/where_to_search"
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="@dimen/content_padding_small"
+			android:layout_height="@dimen/where_to_field_height"
+			android:layout_marginTop="@dimen/content_padding"
+			android:clickable="true"
+			android:focusable="true"
 			android:gravity="center_vertical"
-			android:orientation="horizontal">
+			android:orientation="horizontal"
+			android:paddingStart="@dimen/content_padding"
+			android:paddingEnd="@dimen/content_padding_small">
 
 			<ImageView
-				android:id="@+id/where_to_menu"
-				android:layout_width="@dimen/where_to_field_height"
-				android:layout_height="@dimen/where_to_field_height"
-				android:contentDescription="@string/shared_string_menu"
-				android:padding="@dimen/content_padding_half"
-				android:scaleType="fitCenter"
-				android:src="@drawable/ic_minenav_mascot" />
+				android:id="@+id/where_to_search_icon"
+				android:layout_width="@dimen/standard_icon_size"
+				android:layout_height="@dimen/standard_icon_size"
+				android:importantForAccessibility="no"
+				android:src="@drawable/ic_action_search_dark" />
 
-			<LinearLayout
-				android:id="@+id/where_to_search"
+			<TextView
+				android:id="@+id/where_to_search_text"
 				android:layout_width="0dp"
-				android:layout_height="@dimen/where_to_field_height"
-				android:layout_marginStart="@dimen/content_padding_small"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/content_padding"
 				android:layout_weight="1"
-				android:clickable="true"
-				android:focusable="true"
-				android:gravity="center_vertical"
-				android:orientation="horizontal"
-				android:paddingHorizontal="@dimen/content_padding">
+				android:fontFamily="@font/nunito_semibold"
+				android:maxLines="1"
+				android:text="@string/where_to_hint"
+				android:textSize="@dimen/where_to_text_size"
+				app:fontFamily="@font/nunito_semibold" />
 
-				<ImageView
-					android:id="@+id/where_to_search_icon"
-					android:layout_width="@dimen/standard_icon_size"
-					android:layout_height="@dimen/standard_icon_size"
-					android:importantForAccessibility="no"
-					android:src="@drawable/ic_action_search_dark" />
-
-				<TextView
-					android:id="@+id/where_to_search_text"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="@dimen/content_padding_small"
-					android:fontFamily="@font/nunito_semibold"
-					android:maxLines="1"
-					android:text="@string/where_to_hint"
-					android:textSize="@dimen/where_to_text_size"
-					app:fontFamily="@font/nunito_semibold" />
-
-			</LinearLayout>
+			<ImageView
+				android:id="@+id/where_to_voice"
+				android:layout_width="@dimen/acceptable_touch_radius"
+				android:layout_height="@dimen/acceptable_touch_radius"
+				android:background="?attr/selectableItemBackgroundBorderless"
+				android:contentDescription="@string/mn_voice_search"
+				android:padding="@dimen/content_padding_small"
+				android:src="@drawable/ic_action_micro_dark" />
 
 		</LinearLayout>
 
-		<HorizontalScrollView
+		<LinearLayout
+			android:id="@+id/where_to_expandable"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="@dimen/content_padding_small"
-			android:scrollbars="none">
+			android:orientation="vertical">
 
-			<LinearLayout
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/content_padding"
+				android:scrollbars="none">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<include
+						android:id="@+id/where_to_home"
+						layout="@layout/map_where_to_chip" />
+
+					<include
+						android:id="@+id/where_to_work"
+						layout="@layout/map_where_to_chip"
+						android:layout_width="wrap_content"
+						android:layout_height="@dimen/where_to_chip_height"
+						android:layout_marginStart="@dimen/content_padding_small" />
+
+					<include
+						android:id="@+id/where_to_new"
+						layout="@layout/map_where_to_chip"
+						android:layout_width="wrap_content"
+						android:layout_height="@dimen/where_to_chip_height"
+						android:layout_marginStart="@dimen/content_padding_small" />
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:id="@+id/where_to_recent_title"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:orientation="horizontal">
+				android:layout_marginTop="@dimen/content_padding"
+				android:text="@string/where_to_recent"
+				android:textSize="@dimen/default_list_text_size"
+				android:visibility="gone" />
 
-				<include
-					android:id="@+id/where_to_home"
-					layout="@layout/map_where_to_chip" />
+			<LinearLayout
+				android:id="@+id/where_to_recent_list"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" />
 
-				<include
-					android:id="@+id/where_to_work"
-					layout="@layout/map_where_to_chip"
-					android:layout_width="wrap_content"
-					android:layout_height="@dimen/where_to_chip_height"
-					android:layout_marginStart="@dimen/content_padding_half" />
-
-				<include
-					android:id="@+id/where_to_saved"
-					layout="@layout/map_where_to_chip"
-					android:layout_width="wrap_content"
-					android:layout_height="@dimen/where_to_chip_height"
-					android:layout_marginStart="@dimen/content_padding_half" />
-
-			</LinearLayout>
-
-		</HorizontalScrollView>
-
-		<TextView
-			android:id="@+id/where_to_recent_title"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="@dimen/content_padding"
-			android:text="@string/where_to_recent"
-			android:textSize="@dimen/default_desc_text_size"
-			android:visibility="gone" />
-
-		<LinearLayout
-			android:id="@+id/where_to_recent_list"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:orientation="vertical" />
+		</LinearLayout>
 
 	</LinearLayout>
 

@@ -363,7 +363,8 @@ public abstract class MapButton extends FrameLayoutEx implements OnAttachStateCh
 		normal.setShape(RECTANGLE);
 		normal.setColor(ColorUtilities.getColorWithAlpha(backgroundColor, opacity));
 		normal.setCornerRadius(cornerRadius);
-		if (opacity == 0 || nightMode) {
+		// MineNAV: solid buttons without an outline, like Waze
+		if (opacity == 0) {
 			normal.setStroke(strokeWidth, ColorUtilities.getColor(context, nightMode ? R.color.map_widget_dark_stroke : R.color.map_widget_light_trans));
 		}
 
@@ -371,7 +372,6 @@ public abstract class MapButton extends FrameLayoutEx implements OnAttachStateCh
 		pressed.setShape(RECTANGLE);
 		pressed.setColor(backgroundPressedColor);
 		pressed.setCornerRadius(cornerRadius);
-		pressed.setStroke(strokeWidth, ColorUtilities.getColor(context, nightMode ? R.color.map_widget_dark_stroke : R.color.map_widget_light_pressed));
 
 		imageView.setBackground(AndroidUtils.createPressedStateListDrawable(normal, pressed));
 	}
@@ -434,6 +434,11 @@ public abstract class MapButton extends FrameLayoutEx implements OnAttachStateCh
 	}
 
 	protected abstract boolean shouldShow();
+
+	protected boolean isMineNavHomeVisible() {
+		MapControlsLayer layer = mapActivity != null ? mapActivity.getMapLayers().getMapControlsLayer() : null;
+		return layer != null && layer.isWhereToVisible();
+	}
 
 	protected boolean isMineNavSheetVisible() {
 		MapControlsLayer layer = mapActivity != null ? mapActivity.getMapLayers().getMapControlsLayer() : null;

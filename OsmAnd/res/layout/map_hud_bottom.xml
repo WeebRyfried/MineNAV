@@ -16,6 +16,24 @@
 
 		<include layout="@layout/speedometer_widget" />
 
+		<net.osmand.plus.views.controls.MineNavStreetPill
+			android:id="@+id/mn_street_pill"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center_horizontal"
+			android:layout_marginBottom="@dimen/content_padding_small"
+			android:elevation="4dp"
+			android:fontFamily="@font/nunito_bold"
+			android:gravity="center"
+			android:maxWidth="@dimen/mn_street_pill_max_width"
+			android:maxLines="2"
+			android:ellipsize="end"
+			android:paddingHorizontal="@dimen/content_padding"
+			android:paddingVertical="@dimen/content_padding_small"
+			android:textSize="17sp"
+			android:visibility="gone"
+			app:fontFamily="@font/nunito_bold" />
+
 		<LinearLayout
 			android:id="@+id/map_transparency_layout"
 			android:layout_width="wrap_content"

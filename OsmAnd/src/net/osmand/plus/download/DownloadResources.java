@@ -14,6 +14,7 @@ import net.osmand.map.OsmandRegions;
 import net.osmand.map.WorldRegion;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.inapp.InAppPurchaseUtils;
+import net.osmand.plus.minenav.MineNavVoices;
 import net.osmand.plus.plugins.PluginsHelper;
 import net.osmand.plus.plugins.custom.CustomRegion;
 import net.osmand.plus.plugins.development.OsmandDevelopmentPlugin;
@@ -250,6 +251,9 @@ public class DownloadResources extends DownloadResourceGroup {
 			}
 			DownloadActivityType type = item.getType();
 			if (type == DownloadActivityType.VOICE_FILE) {
+				if (!MineNavVoices.isAllowed(item.getFileName())) {
+					continue;
+				}
 				if (DownloadActivityType.isVoiceTTS(item)) {
 					voiceTTS.addItem(item);
 				} else if (DownloadActivityType.isVoiceRec(item)) {

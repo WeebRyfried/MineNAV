@@ -207,7 +207,9 @@ public class StreetNameWidget extends MapWidget {
 	protected boolean shouldHide() {
 		return MapRouteInfoMenu.chooseRoutesVisible || MapRouteInfoMenu.waypointsVisible
 				|| visibilityHelper.shouldHideVerticalWidgets()
-				|| panel == BOTTOM && visibilityHelper.shouldHideBottomWidgets();
+				|| panel == BOTTOM && visibilityHelper.shouldHideBottomWidgets()
+				// MineNAV: no street name bar under the map while driving
+				|| panel == BOTTOM;
 	}
 
 	public boolean updateWaypoint() {

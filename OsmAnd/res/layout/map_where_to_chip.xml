@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- MineNAV: a Waze shortcut tile, a colored icon and a bold label in a rounded outline -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="wrap_content"
 	android:layout_height="@dimen/where_to_chip_height"
@@ -7,23 +8,23 @@
 	android:focusable="true"
 	android:gravity="center_vertical"
 	android:orientation="horizontal"
-	android:paddingStart="@dimen/content_padding_small"
+	android:paddingStart="@dimen/content_padding"
 	android:paddingEnd="@dimen/content_padding">
 
 	<ImageView
 		android:id="@+id/chip_icon"
-		android:layout_width="@dimen/standard_icon_size"
-		android:layout_height="@dimen/standard_icon_size"
+		android:layout_width="@dimen/where_to_chip_icon_size"
+		android:layout_height="@dimen/where_to_chip_icon_size"
 		android:importantForAccessibility="no" />
 
 	<TextView
 		android:id="@+id/chip_text"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginStart="@dimen/content_padding_half"
+		android:layout_marginStart="@dimen/content_padding_small"
 		android:fontFamily="@font/nunito"
 		android:maxLines="1"
-		android:textSize="@dimen/default_list_text_size"
+		android:textSize="@dimen/where_to_chip_text_size"
 		android:textStyle="bold" />
 
 </LinearLayout>

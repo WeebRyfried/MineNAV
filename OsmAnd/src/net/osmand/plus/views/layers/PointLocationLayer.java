@@ -71,6 +71,8 @@ public class PointLocationLayer extends OsmandMapLayer
 		implements OsmAndLocationListener, OsmAndCompassListener, IContextMenuProvider {
 
 	private static final int MODEL_3D_MAX_SIZE_DP = 6;
+	// MineNAV: a bigger position cursor, as easy to spot as the Waze one
+	private static final float CURSOR_SCALE = 1.4f;
 	protected static final float BEARING_SPEED_THRESHOLD = 0.1f;
 	protected static final int MIN_ZOOM = 3;
 	protected static final int RADIUS = 7;
@@ -307,6 +309,10 @@ public class PointLocationLayer extends OsmandMapLayer
 	}
 
 	@Nullable
+	private float getCursorScale() {
+		return getTextScale() * CURSOR_SCALE;
+	}
+
 	private CoreMapMarker recreateMarker(LayerDrawable icon, Model3D model3d, int id, @ColorInt int profileColor, boolean withHeading) {
 		if (view == null || (icon == null && model3d == null)) {
 			return null;
@@ -316,7 +322,7 @@ public class PointLocationLayer extends OsmandMapLayer
 			mapMarkersCollection.setPriority(Long.MAX_VALUE);
 		}
 		return CoreMapMarker.createAndAddToCollection(getContext(), mapMarkersCollection, id,
-				getPointsOrder(), icon, model3d, headingIconId, getTextScale(), profileColor, withHeading);
+				getPointsOrder(), icon, model3d, headingIconId, getCursorScale(), profileColor, withHeading);
 	}
 
 	private void setMarkerProvider() {
@@ -833,7 +839,7 @@ public class PointLocationLayer extends OsmandMapLayer
 				appMode.getProfileColor(nighMode);
 		String locationIconName = getLocationIconName(appMode);
 		String navigationIconName = getNavigationIconName(appMode);
-		float textScale = getTextScale();
+		float textScale = getCursorScale();
 		boolean carView = getApplication().getOsmandMap().getMapView().isCarView();
 		boolean locationIconChanged = !locationIconName.equals(this.locationIconName);
 		boolean navigationIconChanged = !navigationIconName.equals(this.navigationIconName);

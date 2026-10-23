@@ -8,7 +8,11 @@
     <dimen name="where_to_recent_height">60dp</dimen>
     <dimen name="where_to_card_elevation">8dp</dimen>
     <dimen name="where_to_field_height">56dp</dimen>
-    <dimen name="where_to_chip_height">48dp</dimen>
+    <dimen name="where_to_chip_height">60dp</dimen>
+    <dimen name="where_to_chip_icon_size">28dp</dimen>
+    <dimen name="where_to_chip_text_size">18sp</dimen>
+    <dimen name="where_to_chip_radius">16dp</dimen>
+    <dimen name="mn_street_pill_max_width">240dp</dimen>
     <dimen name="where_to_text_size">20sp</dimen>
     <dimen name="drawer_mascot_size">64dp</dimen>
     <dimen name="mn_menu_mascot_size">96dp</dimen>

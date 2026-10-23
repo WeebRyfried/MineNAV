@@ -11,6 +11,16 @@
 	Strings for MineNAV core
 	Thx - Hardy
 -->
+	<string name="mn_toll_estimate">Tolls ≈ %1$s</string>
+	<string name="mn_welcome_title">Welcome to MineNAV</string>
+	<string name="mn_voice_search">Search by voice</string>
+	<string name="mn_voice_search_unavailable">Voice search is not available on this device</string>
+	<string name="mn_new_place">New</string>
+	<string name="mn_new_place_hint">Find the place to save</string>
+	<string name="mn_sound_on">Voice guidance on</string>
+	<string name="mn_sound_off">Voice guidance muted</string>
+	<string name="mn_sound_button">Sound</string>
+	<string name="mn_sound_button_descr">Mutes or unmutes voice guidance</string>
 	<string name="mn_place_saved">Saved. Tap it again to drive there.</string>
 	<string name="mn_plan_current">Your drive</string>
 	<string name="mn_plan_from">From</string>

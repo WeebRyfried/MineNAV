@@ -23,7 +23,8 @@ public class RouteInfoWidgetState extends ResizableWidgetState {
 	private final CommonPreference<Boolean> showExpandButtonPref;
 
 	public RouteInfoWidgetState(@NonNull OsmandApplication app, @Nullable String customId) {
-		super(app, customId, WidgetType.ROUTE_INFO, WidgetSize.MEDIUM);
+		// MineNAV: the trip bar at the bottom is kept as low as possible by default
+		super(app, customId, WidgetType.ROUTE_INFO, WidgetSize.SMALL);
 		defaultViewPref = registerDefaultViewPreference(customId);
 		displayPriorityPref = registerDisplayPriorityPreference(customId);
 		showExpandButtonPref = registerShowExpandButtonPreference(customId);

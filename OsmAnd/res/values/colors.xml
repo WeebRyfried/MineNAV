@@ -30,6 +30,8 @@
 	<color name="mn_screen_bg_light">#F2F2F5</color>
 	<color name="mn_screen_bg_dark">#000000</color>
 	<color name="mn_row_bg_light">#FFFFFF</color>
+	<color name="mn_street_pill_dark">#000000</color>
+	<color name="mn_street_pill_light">#FFFFFF</color>
 	<color name="mn_row_bg_dark">#202227</color>
 	<color name="mn_divider_light">#E4E6EA</color>
 	<color name="mn_divider_dark">#2E3036</color>

@@ -18,6 +18,7 @@ import net.osmand.plus.minenav.MineNavColors
 import net.osmand.plus.minenav.MineNavMapCamera
 import net.osmand.plus.minenav.MineNavRouteOptionsFragment
 import net.osmand.plus.minenav.MineNavStyle
+import net.osmand.plus.minenav.MineNavToll
 import net.osmand.plus.utils.OsmAndFormatter
 import net.osmand.plus.widgets.FrameLayoutEx
 import java.util.Date
@@ -88,7 +89,9 @@ class RoutePreviewCard @JvmOverloads constructor(
 			val distance = OsmAndFormatter.getFormattedDistance(routingHelper.leftDistance.toFloat(), app)
 			val arrival = DateFormat.getTimeFormat(context).format(Date(System.currentTimeMillis() + leftTime * 1000L))
 			time.text = OsmAndFormatter.getFormattedDuration(leftTime.toLong(), app)
-			details.text = context.getString(R.string.route_preview_details, distance, arrival)
+			val toll = MineNavToll.describe(context, routingHelper.route)
+			details.text = context.getString(R.string.route_preview_details, distance, arrival) +
+					(if (toll != null) " · $toll" else "")
 			val route = routingHelper.route
 			if (route !== overviewRoute) {
 				overviewRoute = route

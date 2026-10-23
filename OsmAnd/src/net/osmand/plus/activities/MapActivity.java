@@ -83,6 +83,8 @@ import net.osmand.plus.keyevent.KeyEventHelper;
 import net.osmand.plus.keyevent.TrackballController;
 import net.osmand.plus.mapcontextmenu.AdditionalActionsBottomSheetDialogFragment;
 import net.osmand.plus.mapcontextmenu.MapContextMenu;
+import net.osmand.plus.minenav.MineNavActions;
+import net.osmand.plus.minenav.MineNavDefaults;
 import net.osmand.plus.mapcontextmenu.MenuController;
 import net.osmand.plus.mapcontextmenu.other.DestinationReachedFragment;
 import net.osmand.plus.mapcontextmenu.other.TrackDetailsMenu;
@@ -262,6 +264,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 		supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
 		setRequestedOrientation(AndroidUiHelper.getScreenOrientation(this));
 		super.onCreate(savedInstanceState);
+		MineNavDefaults.apply(app);
 		registerMapBackPressedCallback();
 		getSupportFragmentManager().registerFragmentLifecycleCallbacks(fragmentLifecycleCallbacks, true);
 		getSupportFragmentManager().addOnBackStackChangedListener(this::updateBackPressedCallbackState);
@@ -1482,6 +1485,10 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		if (MineNavActions.onActivityResult(this, requestCode, resultCode, data)) {
+			super.onActivityResult(requestCode, resultCode, data);
+			return;
+		}
 		PluginsHelper.onMapActivityResult(requestCode, resultCode, data);
 		extendedMapActivity.onActivityResult(this, requestCode, resultCode, data);
 		super.onActivityResult(requestCode, resultCode, data);

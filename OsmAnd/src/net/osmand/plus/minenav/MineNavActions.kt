@@ -1,6 +1,9 @@
 package net.osmand.plus.minenav
 
+import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.speech.RecognizerIntent
 import androidx.annotation.StringRes
 import net.osmand.data.LatLon
 import net.osmand.data.PointDescription
@@ -14,6 +17,68 @@ import net.osmand.plus.settings.backend.ApplicationMode
  * Actions shared by the MineNAV sheet, search and menu, so they all behave the same way.
  */
 object MineNavActions {
+
+	const val VOICE_SEARCH_REQUEST = 2601
+
+	// How long a "New" place search may take before its place card no longer opens the editor
+	private const val NEW_PLACE_TIMEOUT_MS = 5 * 60 * 1000L
+	private var newPlaceRequestTime = 0L
+
+	/** Opens the MineNAV menu, from the menu button on the map. */
+	@JvmStatic
+	fun openMenu(activity: MapActivity) {
+		MapActivity.clearPrevActivityIntent()
+		MineNavMenuFragment.showInstance(activity.supportFragmentManager)
+	}
+
+	/** Asks the system speech recognizer for a destination; the result opens the search. */
+	@JvmStatic
+	fun startVoiceSearch(activity: MapActivity) {
+		val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+			putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+			putExtra(RecognizerIntent.EXTRA_PROMPT, activity.getString(R.string.where_to_hint))
+		}
+		try {
+			activity.startActivityForResult(intent, VOICE_SEARCH_REQUEST)
+		} catch (e: ActivityNotFoundException) {
+			activity.app.showShortToastMessage(R.string.mn_voice_search_unavailable)
+		}
+	}
+
+	/** Handles the speech recognizer's answer; returns true when the result was ours. */
+	@JvmStatic
+	fun onActivityResult(activity: MapActivity, requestCode: Int, resultCode: Int, data: Intent?): Boolean {
+		if (requestCode != VOICE_SEARCH_REQUEST) {
+			return false
+		}
+		val text = data?.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)?.firstOrNull()
+		if (resultCode == Activity.RESULT_OK && !text.isNullOrBlank()) {
+			activity.fragmentsHelper.showQuickSearch(text)
+		}
+		return true
+	}
+
+	/** "New" on the sheet: find a place, and its card opens straight in the save editor. */
+	@JvmStatic
+	fun saveNewPlace(activity: MapActivity) {
+		newPlaceRequestTime = System.currentTimeMillis()
+		activity.app.showShortToastMessage(R.string.mn_new_place_hint)
+		activity.fragmentsHelper.showQuickSearch(ShowQuickSearchMode.NEW, false)
+	}
+
+	/** Called when a place card opens: true once after "New", when the card should go to the editor. */
+	@JvmStatic
+	fun consumeNewPlaceRequest(): Boolean {
+		val pending = newPlaceRequestTime > 0 && System.currentTimeMillis() - newPlaceRequestTime < NEW_PLACE_TIMEOUT_MS
+		newPlaceRequestTime = 0
+		return pending
+	}
+
+	/** The search was left without choosing a place: "New" is over. */
+	@JvmStatic
+	fun cancelNewPlaceRequest() {
+		newPlaceRequestTime = 0
+	}
 
 	/** Opens the "Go now" route preview to [latLon]. */
 	@JvmStatic

@@ -1,9 +1,8 @@
 package net.osmand.plus.widgets.multistatetoggle;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.LayerDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +11,12 @@ import android.widget.LinearLayout;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import net.osmand.plus.OsmandApplication;
+import net.osmand.plus.R;
+import net.osmand.plus.minenav.MineNavColors;
 import net.osmand.plus.utils.AndroidUtils;
-import net.osmand.plus.utils.ColorUtilities;
 import net.osmand.plus.utils.UiUtilities;
 import net.osmand.plus.widgets.multistatetoggle.RadioItem.OnRadioItemClickListener;
 
@@ -130,17 +131,12 @@ public abstract class MultiStateToggleButton<_Radio extends RadioItem> {
 	}
 
 	public void updateView() {
-		int activeColor = ColorUtilities.getActiveColor(app, nightMode);
-		int defaultColor = ColorUtilities.getDefaultIconColor(app, nightMode);
-		int textColorPrimary = ColorUtilities.getPrimaryTextColor(app, nightMode);
-		int textColorSecondary = ColorUtilities.getSecondaryTextColor(app, nightMode);
-
-		int selectedItemIndex = getSelectedItemIndex();
-		int radius = AndroidUtils.dpToPx(app, 4);
-		float[] leftBtnRadii = {radius, radius, 0, 0, 0, 0, radius, radius};
-		float[] rightBtnRadii = {0, 0, radius, radius, radius, radius, 0, 0};
-		float[] internalBtnRadii = {0, 0, 0, 0, 0, 0, 0, 0};
-		boolean isLayoutRtl = AndroidUtils.isLayoutRtl(app);
+		// MineNAV: a Waze-like segmented pill; the chosen part is filled with the accent color
+		MineNavColors colors = new MineNavColors(app, nightMode);
+		int accent = ContextCompat.getColor(app, R.color.mn_primary);
+		int inset = AndroidUtils.dpToPx(app, 3);
+		container.setBackground(colors.pill(colors.getField()));
+		container.setPadding(inset, inset, inset, inset);
 
 		for (int i = 0; i < items.size(); i++) {
 			_Radio item = items.get(i);
@@ -149,48 +145,21 @@ public abstract class MultiStateToggleButton<_Radio extends RadioItem> {
 
 			boolean enabled = item.isEnabled();
 			button.setEnabled(enabled);
-			int textColor = enabled ? textColorPrimary : textColorSecondary;
-			int selectedBgColor = enabled ? activeColor : defaultColor;
-			int contentColor = item.getCustomColor() != null ? item.getCustomColor() : activeColor;
-			int itemColor = enabled ? contentColor : defaultColor;
-			GradientDrawable background = new GradientDrawable();
-
-			if (i == 0) {
-				background.setCornerRadii(isLayoutRtl ? rightBtnRadii : leftBtnRadii);
-			} else if (isLastItem(i)) {
-				background.setCornerRadii(isLayoutRtl ? leftBtnRadii : rightBtnRadii);
-			} else {
-				background.setCornerRadii(internalBtnRadii);
-			}
+			button.setAlpha(enabled ? 1f : 0.5f);
 			if (selectedItem == item) {
-				background.setColor(ColorUtilities.getColorWithAlpha(selectedBgColor, BACKGROUND_ALPHA));
-				background.setStroke(AndroidUtils.dpToPx(app, 1.5f), ColorUtilities.getColorWithAlpha(selectedBgColor, BACKGROUND_STROKE_ALPHA));
-				borderBackgroundView.setBackground(background);
-				updateItemView(button, item, true, textColor);
+				borderBackgroundView.setBackground(colors.pill(accent));
+				updateItemView(button, item, true, Color.WHITE);
 			} else {
-				LayerDrawable layerDrawable = new LayerDrawable(new GradientDrawable[]{background});
-				setupLayerInset(i, selectedItemIndex, radius, layerDrawable);
-				background.setStroke(AndroidUtils.dpToPx(app, 1.5f), ColorUtilities.getStrokedButtonsOutlineColor(app, nightMode));
-				borderBackgroundView.setBackground(layerDrawable);
-				updateItemView(button, item, false, itemColor);
+				borderBackgroundView.setBackground(null);
+				int color = item.getCustomColor() != null ? item.getCustomColor() : colors.getText();
+				updateItemView(button, item, false, color);
 			}
 			String contentDescription = item.getContentDescription();
 			if (contentDescription != null) {
 				button.setContentDescription(contentDescription);
 			}
-			Drawable selectedDrawable = UiUtilities.getColoredSelectableDrawable(app, selectedBgColor, BACKGROUND_ALPHA);
+			Drawable selectedDrawable = UiUtilities.getColoredSelectableDrawable(app, accent, BACKGROUND_ALPHA);
 			borderBackgroundView.setForeground(selectedDrawable);
-		}
-	}
-
-	private void setupLayerInset(int currentItemIndex, int selectedItemIndex, int radius, @NonNull LayerDrawable layerDrawable) {
-		int hideSide = radius * -1;
-		if (currentItemIndex == 0) {
-			layerDrawable.setLayerInset(0, 0, 0, selectedItemIndex == currentItemIndex + 1 ? hideSide : 0, 0);
-		} else if (isLastItem(currentItemIndex)) {
-			layerDrawable.setLayerInset(0, hideSide, 0, 0, 0);
-		} else {
-			layerDrawable.setLayerInset(0, hideSide, 0, selectedItemIndex == currentItemIndex + 1 ? hideSide : 0, 0);
 		}
 	}
 
